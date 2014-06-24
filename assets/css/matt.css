@@ -1,3 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+
+
 html, body {
   height: 100%;
 }
@@ -17,6 +21,7 @@ html, body {
 }
 .header .container {
   height: 100%;
+  width: 990px;
 }
 .header .container .logo {
   padding: 15px 0 0 6px;
@@ -32,7 +37,7 @@ html, body {
   position: relative;
 }
 .header .container .logo span {
-  background: url('/assets/img/chrome/logos/arrowhead.png') no-repeat scroll left top transparent;
+  background: url('../../assets/img/chrome/logos/arrowhead.png') no-repeat scroll left top transparent;
   cursor: pointer;
   display: block;
   left: 0;
@@ -44,7 +49,7 @@ nav {
   position: relative;
 }
 .main {
-  background: #f5f0dd url('/assets/img/chrome/wallpapers/parks.jpg') no-repeat scroll center bottom;;
+  background: #f5f0dd url('../../assets/img/chrome/wallpapers/parks.jpg') no-repeat scroll center bottom;
 }
 .main .bap {
   position: relative;
@@ -53,7 +58,7 @@ nav {
   height: 241px;
 }
 .bap .title {
-  background: url('/assets/img/bg/transparent.png') repeat;
+  background: url('../../assets/img/bg/transparent.png') repeat;
   bottom: 0;
   color: #fff;
   left: 0;
@@ -77,7 +82,7 @@ nav {
   max-width: inherit;
 }
 .bap .title .secondary {
-  background: url('http://www.nps.gov/common/commonspot/templates/images/bg/bap-border.png') no-repeat 26px 19px transparent;
+  background: url('../../bg/bap-border.png') no-repeat 26px 19px transparent;
   height: 79px;
   display: table;
   padding-left: 52px;
@@ -108,3 +113,19 @@ nav {
   background: #000;
   height: 268px;
 }
+
+
+
+/*  MEDIA QUERY CHANGES  */
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-tablet) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-desktop) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-large-desktop) { ... }
