@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+html, body {
+  height: 100%;
+}
+#footer {
+  height: 300px;
+}
+.header-container {
+background-color: #000;
+height: 100px;
+width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.header .container .logo {
+  padding: 15px 0 0 6px;
+}
+.header .container .logo span, header .container .logo a {
+  display: block;
+  height: 51px;
+  width: 329px;
+}
+.header .container .logo a {
+  color: #000000;
+  font-size: 12px;
+  position: relative;
+}
+.header .container .logo span {
+  background: url('../../assets/img/chrome/logos/arrowhead.png') no-repeat scroll left top transparent;
+  cursor: pointer;
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+nav {
+  margin-top: 50px;
+  position: relative;
+}
+.main {
+  background: #f5f0dd url('../../assets/img/chrome/wallpapers/parks.jpg') no-repeat scroll center bottom;
+}
+.main .bap {
+  position: relative;
+}
+.bap .large {
+  height: 241px;
+}
+.bap .title {
+  background: url('../../assets/img/bg/transparent.png') repeat;
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  height: 79px;
+  position: absolute;
+}
+.bap .title .primary {
+  display: table;
+  float: left;
+  height: 79px;
+}
+.bap .title .primary h1 {
+  font-size: 42px;
+  font-weight: normal;
+  letter-spacing: -0.7px;
+  line-height: 79px;
+  margin: 0;
+  padding: 0 0 0 23px;
+}
+.bap .large .title .secondary {
+  max-width: inherit;
+}
+.bap .title .secondary {
+  background: url('../../bg/bap-border.png') no-repeat 26px 19px transparent;
+  height: 79px;
+  display: table;
+  padding-left: 52px;
+}
+.bap .title .secondary h3 {
+  color: #fff;
+  display: table-cell;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  vertical-align: middle;
+}
+.bap .title .secondary .location {
+  display: block;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+.breadcrumb {
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+  background-color: #918f7e;
+  height: 32px;
+  margin-bottom: 0;
+  padding: 0;
+}
+.footer {
+  background: #000;
+  height: 268px;
+}
+
+
+
+/*  MEDIA QUERY CHANGES  */
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-tablet) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-desktop) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-large-desktop) { ... }
