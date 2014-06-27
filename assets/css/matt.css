@@ -1,6 +1,29 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* THESE ARE THE MEDIA QUERY TYPES FOR BOOTSTRAP */
+@media (min-width: 768px) {
+}
+@media (max-width: 767px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+@media screen and (max-width: 767px) {
+}
+@media screen and (min-width: 768px) {
+}
+@media (max-width: 480px) and (orientation: landscape) {
+}
+@media (min-width: 768px) and (max-width: 991px) {
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+
+
+
 
 /* delete these next two classes when done laying out the rows/columns */
 [class*="col-"] {
@@ -15,6 +38,9 @@
 
 
 
+
+
+
 .chrome-center {
 	margin:  0 auto;
 	padding:0 4px 0;
@@ -24,41 +50,47 @@
 
 .header-container {
 	background-color: #000;
-	height: 100px;
+	height: 84px;
 	width: 100%;
 }
-.header {
-	background-color: #000;
-	height: 100px;
-	position: relative;
-	z-index: 100;
+.col-md-12 .nopadding {
+	padding:0;	
 }
 
+
+
+
+
+
 /* Logo */
-.header .logo {
-	padding: 15px 0 0 6px;
-}
-.header .logo span, .logo a {
-	display: block;
+.logo {
+	padding: 0;
+	margin: 15px 0 0 6px;
+    background: url("../img/chrome/logos/main-logo.png");
+    background-size: 329px 51px;
+    background-repeat: no-repeat;
 	height: 51px;
-	width: 329px;
 }
-.header .logo span {
-    background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/logos/main-logo.png") no-repeat scroll left top transparent;
-    cursor: pointer;
-    display: block;
-    left: 0;
-    position: absolute;
-    top: 0;
-}
-.header .logo a {
+.logo a {
     color: #000000;
     font-size: 12px;
     position: relative;
 }
+@media (max-width: 767px) {
+	.logo {
+	padding: 15px 0 0 6px;
+	}
+	.logo span, .logo a {
+		display: block;
+		height: 25px;
+		width: 161px;
+	}
+}
+
+
 
 /* Search */
-.header .search {
+.search {
     background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/bg/search_bg.png") no-repeat scroll left top transparent;
     height: 25px;
     font-size: 13px;
@@ -81,5 +113,70 @@
     width: 140px;
 }
 
+/* Search results */
+.search-results-container {
+	display: none;
+    position: absolute;
+    right: -7px;
+    top: 22px;
+    width: 190px;
+    z-index: 10;
+}
+.search-results-container .top {
+	background: url("http://www.nps.gov/hfc/global/images/chrome/bg/results-top.png") no-repeat scroll left top transparent;
+	height: 18px;
+}
+.search-results-container .bottom {
+	background: url("http://www.nps.gov/hfc/global/images/chrome/bg/results-bottom.png") no-repeat scroll left top transparent;
+	height: 18px;
+}
+.search-results-container #search-results {
+	background: url("http://www.nps.gov/hfc/global/images/chrome/bg/results.png") repeat-y scroll left top transparent;
+}
+.search-results {
+	font-size: 11px;
+	word-wrap: break-word;
+	padding: 0px 24px;
+}
+.search-results p {
+	color: #9e9e9e;
+}
+.search-results ul {
+	padding-top: 7px;
+}
+.search-results li {
+	padding-bottom: 7px;
+}
+.search-results a {
+	color: #363636;
+}
+.search-results .suggestions ul {
+	border-bottom: 1px solid #D5D5D5;
+    margin-bottom: 6px;
+    padding-bottom: 4px;
+}
+.ie7 .search-results .searches #result2 {
+	padding-bottom: 0px;
+}
+.ie7 .search-results .searches {
+	padding-bottom: 7px;
+}
 
 
+/* Nav Bar */
+.navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important;}
+.navbar {min-height:32px !important}
+.navbar {
+		background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #5F7832),
+		color-stop(1, #425222)
+	);
+	background-image: -o-linear-gradient(bottom, #5F7832 0%, #425222 100%);
+	background-image: -moz-linear-gradient(bottom, #5F7832 0%, #425222 100%);
+	background-image: -webkit-linear-gradient(bottom, #5F7832 0%, #425222 100%);
+	background-image: -ms-linear-gradient(bottom, #5F7832 0%, #425222 100%);
+	background-image: linear-gradient(to bottom, #5F7832 0%, #425222 100%);
+}
