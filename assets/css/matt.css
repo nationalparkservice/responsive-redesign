@@ -1,0 +1,304 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* THESE ARE THE MEDIA QUERY TYPES FOR BOOTSTRAP */
+@media (min-width: 768px) {
+}
+@media (max-width: 767px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+@media screen and (max-width: 767px) {
+}
+@media screen and (min-width: 768px) {
+}
+@media (max-width: 480px) and (orientation: landscape) {
+}
+@media (min-width: 768px) and (max-width: 991px) {
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+
+
+
+
+/* delete these next two classes when done laying out the rows/columns */
+[class*="col-"] {
+  background-color: #eee;
+  background-color: rgba(86,61,124,.15);
+}
+.row {
+	margin-bottom:10px;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxx DELETE EVERYTHING ABOVE THIS LINE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+
+
+
+.chrome-center {
+	margin:  0 auto;
+	padding:0 4px 0;
+	width: 960px;
+}
+
+
+.header-container {
+	background-color: #000;
+	height: 84px;
+	width: 100%;
+}
+.nopadding {
+	padding:0;	
+}
+
+
+
+
+
+
+/* Logo */
+.logo {
+	padding: 0;
+	margin: 15px 0 0 6px;
+    background: url("../img/chrome/logos/main-logo.png");
+    background-size: 329px 51px;
+    background-repeat: no-repeat;
+	height: 51px;
+}
+.logo a {
+    color: #000000;
+    font-size: 12px;
+    position: relative;
+}
+@media (max-width: 767px) {
+	.logo {
+	padding: 15px 0 0 6px;
+	}
+	.logo span, .logo a {
+		display: block;
+		height: 25px;
+		width: 161px;
+	}
+}
+
+
+
+
+
+
+/* Nav Bar */
+.navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important;}
+.navbar {min-height:32px !important}
+.navbar {
+		background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #5F7832),
+		color-stop(1, #425222)
+	);
+	background-image: -o-linear-gradient(bottom, #5F7832 0%, #425222 100%);
+	background-image: -moz-linear-gradient(bottom, #5F7832 0%, #425222 100%);
+	background-image: -webkit-linear-gradient(bottom, #5F7832 0%, #425222 100%);
+	background-image: -ms-linear-gradient(bottom, #5F7832 0%, #425222 100%);
+	background-image: linear-gradient(to bottom, #5F7832 0%, #425222 100%);
+}
+ul.nav a:hover { background-color: #b28000 !important; }
+
+.nav > li > a {
+  position: relative !important;;
+  display: block !important;;
+  padding: 10px 11px !important;;
+}
+/*add dividers between the nav items */
+/* put in the breakpoint variable and make some new ones in your variables.less file */
+
+@media (min-width:768px){
+  
+  .navbar-default .navbar-nav > li:not(:last-child) {
+    border-right:1px solid #455724;
+   }
+  .navbar-default .navbar-nav > li:not(:first-child) {
+    border-left:1px solid #607339;
+   }
+}
+
+
+/* LARGE HOMEPAGE BANNER */
+/* Big picture */
+#design {
+	display:none;
+    left: 407px;
+    position: absolute;
+    top: -199px;
+    z-index: 10010;
+}
+#main .bap {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+#bap-mini {
+	clear: both;
+	margin-bottom: 24px;
+}
+ul.cycle{
+	margin: 0;
+} 
+.bap .cycle li{
+	list-style-type: none;
+	position: relative;
+	width: 960px;
+}
+.bap .large, .bap .large .cycle li {
+	height: 241px;
+}
+.bap .small, .bap .small .cycle li {
+	height: 148px;
+	overflow: hidden;
+}
+.bap .mini, .bap .mini .cycle li {
+    height: 173px;
+    width: 688px;
+}
+.bap .title {
+	background: url("../img/bg/transparent.png") repeat;
+	bottom: 0;
+    color: #FFFFFF;
+	left: 0px;
+	height: 79px;
+	position: absolute;
+	width: 100%;
+}
+.no-js .bap .title, .no-js .bap .main {
+	height: auto;
+}
+.bap .bottom img {
+	position: absolute;
+	bottom: 0px;
+}
+.bap .top img {
+	position: absolute;
+	top: 0px;
+}
+.bap .super-header {
+	color: #fff;
+	font-size: 12px;
+	left: 9px;
+	position: absolute;
+	top: 10px;
+	z-index: 1000;
+	text-shadow: 2px 2px 3px #000;
+}
+.bap .main {
+	display: table;
+	float: left;
+	height: 79px;
+}
+.bap .sub {
+    background: url("/common/commonspot/templates/images/bg/bap-border.png") no-repeat 26px 19px transparent;
+    height: 79px;
+   	display: table;
+    /* max-width: 240px; this was causing some park designations to wrap */
+    padding-left: 52px;
+}
+.no-js .bap .sub {
+	background: none;
+	float: none;
+	margin-left: 0px;
+	margin-bottom: 15px;
+}
+.ie7 .bap .sub h2, .ie7 .bap .sub h3 { 
+	position: relative; 
+	margin-top: inherit;
+	*clear: expression(
+		style.marginTop = "" + (offsetHeight < parentNode.offsetHeight ? parseInt((parentNode.offsetHeight - offsetHeight) / 2) + "px" : "0"),
+		style.clear = "none", 0
+	);
+}
+.bap .sub h2 {
+	color: #fff;
+	display: table-cell;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 21px;
+	margin-bottom: 0;
+	vertical-align: middle;
+	text-shadow: 2px 2px 3px #000;
+}
+.bap .sub h2 .details {
+	display: block;
+	font-weight: normal;
+	font-size: 14px;
+}
+.bap .sub h3  {
+	color: #fff;
+ 	display: table-cell;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 20px;
+	margin: 0;
+    vertical-align: middle;
+    /* width: 240px; this was causing some park designations to wrap */
+}
+.bap .sub .location  {
+	display: block;
+	font-weight: normal;
+	margin-bottom: 0px;
+}
+.bap .sub .embedded {
+	color: #cbcbcb;
+	display: block;
+	font-size: 10px;
+	font-weight: bold;
+}
+.bap .sub p {
+	text-shadow: 2px 2px 3px #000;
+}
+.bap .sub a {
+	color: #fff;
+	text-shadow: 2px 2px 3px #000;
+}
+.bap .controls {
+    bottom: 53px;
+    position: absolute;
+    right: 16px;
+    z-index: 100;
+}
+.bap .controls li {
+	background: url("/common/commonspot/templates/images/bg/bap-tile.png") repeat left top;
+    border: 1px solid #B0B0AE;
+    cursor: pointer;
+    display: block;	
+    float: left;
+    height: 8px;
+    list-style: none;
+    margin-left: 2px;
+    width: 8px;
+	color: rgba(0,0,0,0);	
+	text-indent: -9999px;	
+}
+.bap .controls li:hover {
+	background-color: #fff;
+	border-color: #B0B0AE;
+	cursor: pointer;	
+}
+.bap .controls .active {
+	background-color: #fff;
+	border: 1px solid #fff;
+}
+.bap .main h1 {
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: -0.7px;
+    line-height: 79px;
+    padding: 0 0 0 23px;
+}
+.no-js .bap .main h1 {
+	line-height: 1.1;
+	width: 700px;
+}
