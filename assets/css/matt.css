@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-/* delete these next two classes when done laying out the rows/columns */
+/* delete these next two classes when done laying out the rows/columns 
 [class*="col-"] {
   background-color: #eee;
   background-color: rgba(86,61,124,.15);
@@ -9,7 +9,6 @@
 .row {
 	margin-bottom:10px;
 }
-
 
 /* THESE ARE THE MEDIA QUERY TYPES FOR BOOTSTRAP */
 @media (min-width: 768px) {
@@ -39,15 +38,8 @@
 
 body {
 	background-color:#f5f0dd;
-	background-image:url(../img/bg/blackbarBG_small.png);
-	background-repeat: repeat-x;
+	background-image:none;
 }
-	@media screen and (min-width: 768px) {
-		body {
-			background-image:url(../img/bg/blackbarBG_medium.png);
-			background-repeat: repeat-x;
-		}	
-	}
 	@media screen and (min-width: 992px) {
 		body {
 			background-image:url(../img/bg/blackbarBG.png);
@@ -55,7 +47,7 @@ body {
 		}	
 	}
 
-
+page.png
 
 
 .chrome-center {
@@ -141,18 +133,18 @@ body {
 .navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important;}
 .navbar {min-height:32px !important}
 .navbar {
-		background-image: -webkit-gradient(
-		linear,
-		left top,
-		left bottom,
-		color-stop(0, #5F7832),
-		color-stop(1, #425222)
-	);
 	background-image: -o-linear-gradient(bottom, #5F7832 0%, #425222 100%);
 	background-image: -moz-linear-gradient(bottom, #5F7832 0%, #425222 100%);
 	background-image: -webkit-linear-gradient(bottom, #5F7832 0%, #425222 100%);
 	background-image: -ms-linear-gradient(bottom, #5F7832 0%, #425222 100%);
 	background-image: linear-gradient(to bottom, #5F7832 0%, #425222 100%);
+}
+.navbar-inverse {
+	background-image: -o-linear-gradient(bottom, #000 0%, #000 100%);
+	background-image: -moz-linear-gradient(bottom, #000 0%, #000 100%);
+	background-image: -webkit-linear-gradient(bottom, #000 0%, #000 100%);
+	background-image: -ms-linear-gradient(bottom, #000 0%, #000 100%);
+	background-image: linear-gradient(to bottom, #000 0%, #000 100%);
 }
 ul.nav a:hover { background-color: #b28000 !important; }
 
@@ -161,10 +153,10 @@ ul.nav a:hover { background-color: #b28000 !important; }
   display: block !important;;
   padding: 6px 11px !important;;
 }
-/*add dividers between the nav items */
-/* put in the breakpoint variable and make some new ones in your variables.less file */
 
-@media (min-width:768px){
+/*add dividers between the nav items */
+
+@media (min-width:992px){
   
   .navbar-default .navbar-nav > li:not(:last-child) {
     border-right:1px solid #455724;
