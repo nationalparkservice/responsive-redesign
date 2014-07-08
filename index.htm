@@ -32,30 +32,12 @@
   
  
 
-
-
-
-<!-- TOP BLACK BAR --> 
-	<div class="header-container">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="logo"></div>
-                        
-           
-                    </div>
-                </div>
-            </div> 
-        </div>
-
+ 
 <div class="container">
-      
-<!-- MAIN NAV -->      
-	<div class="row">
-        <div class="col-md-12">
-         
-        <div class="navbar navbar-default" role="navigation">
-          <div class="container-fluid nopadding">
+
+<!-- TOP BLACK BAR - MOBILE -->
+	<div class="hidden-lg hidden-md">
+        <nav class="navbar navbar-default navbar-inverse" role="navigation">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -67,7 +49,6 @@
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li><a href="/findapark/index.htm">Find a Park</a></li>
-                <li class="divider-vertical"></li>
                 <li class="dropdown">
                   <a href="/history/" class="dropdown-toggle" data-toggle="dropdown">Discover History <b class="caret"></b></a>
                   <ul class="dropdown-menu">
@@ -143,36 +124,131 @@
                 </li>
               </ul>
             </div><!--/.nav-collapse -->
-          </div><!--/.container-fluid -->
-      </div>
-        
-        </div>
-      </div>
+		</nav>
+	</div>
+
+
+<!-- TOP BLACK BAR - DESKTOP-->
+    <div class="row hidden-sm hidden-sx">
+        <!-- LOGO -->
+            <div class="col-md-9">
+                <div class="logo"></div>
+            </div>
+        <!-- SEARCH -->
+            <div class="col-md-3 hidden-sm hidden-xs">
+                  <input class="form-control" type="search" />
+                  <span class="glyphicon glyphicon-search"></span>
+            </div>
+        <!-- Mobile Nav -->
+            
+        	
+    </div>
+
       
-<!-- LARGE BANNER -->      
+<!-- MAIN NAV -->      
+	<div class="hidden-sm hidden-xs">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="/findapark/index.htm">Find a Park</a></li>
+                <li class="dropdown">
+                  <a href="/history/" class="dropdown-toggle" data-toggle="dropdown">Discover History <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/history/people.htm">People - MEGAMENUS! This is an example of how you can make it as wide as you want to.</a></li>
+                    <li><a href="/history/places.htm">Places</a></li>
+                    <li><a href="/history/stories.htm">Stories</a></li>
+                    <li><a href="/history/preservation.htm">Preservation</a></li>
+                    <li><a href="/history/collections.htm">Collections</a></li>
+                    <li><a href="/history/travelers.htm">For Travelers</a></li>
+                    <li><a href="/history/teachers.htm">For Teachers</a></li>
+                    <li><a href="/history/kids.htm">For Kids</a></li>
+                    <li><a href="/history/publications.htm">Publications</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="nature.nps.gov" class="dropdown-toggle" data-toggle="dropdown">Explore Nature <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="http://www.nature.nps.gov/air/">Air Resources</a></li>
+                      <li><a href="http://www.nature.nps.gov/biology/">Biological Resources</a></li>
+                      <li><a href="/subjects/climatechange/index.htm">Climate Change</a></li>
+                      <li><a href="http://www.nature.nps.gov/protectingrestoring/">Environmental Quality</a></li>
+                      <li><a href="http://www.nature.nps.gov/geology/">Geologic Resources</a></li>
+                      <li><a href="http://science.nature.nps.gov/im/index.cfm">Inventory &amp; Monitoring</a></li>
+                      <li><a href="http://www.nature.nps.gov/nnl/">National Natural Landmarks</a></li>
+                      <li><a href="http://www.nature.nps.gov/sound_night/">Natural Sounds &amp; Night Skies</a></li>
+                      <li><a href="http://www.nature.nps.gov/partnerships.cfm">Partnerships</a></li>
+                      <li><a href="http://www.nature.nps.gov/multimedia.cfm">Photos &amp; Multimedia</a></li>
+                      <li><a href="http://www.nature.nps.gov/publications.cfm">Publications</a></li>
+              <li><a href="http://www.nature.nps.gov/rlc/">Research Learning Centers</a></li>
+                      <li><a href="http://www.nature.nps.gov/scienceresearch.cfm">Science &amp; Research</a></li>
+                      <li><a href="http://www.nature.nps.gov/socialscience/">Social Science</a></li>
+                      <li><a href="http://www.nature.nps.gov/water/">Water Resources</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="/getinvolved/" class="dropdown-toggle" data-toggle="dropdown">Get Involved <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="/getinvolved/volunteer.htm">Volunteer</a></li>
+                      <li><a href="/getinvolved/donate.htm">Donate</a></li>
+                      <li><a href="/getinvolved/partner.htm">Partner</a></li>
+                      <li><a href="/getinvolved/doyourpart.htm">Do Your Part</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="/communities/" class="dropdown-toggle" data-toggle="dropdown">Working with Communities <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="/tps/tax-incentives.htm">Tax Incentives</a></li>
+                      <li><a href="/history/nr">National Register of Historic Places</a></li>
+                      <li><a href="/history/grants.htm">Preservation</a></li>
+                      <li><a href="/lwcf">Outdoor Recreation</a></li>
+                      <li><a href="/nts">National Historic Trails</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="/teachers/" class="dropdown-toggle" data-toggle="dropdown">Teachers <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="/teachers/classrooms.htm">Parks as Classrooms</a></li>
+                      <li><a href="/teachers/development.htm">Professional Development</a></li>
+                      <li><a href="/teachers/distancelearning.htm">Distance Learning</a></li>
+                    </ul>
+                </li>
+                <li><a href="/kids/">Kids</a></li>
+                <li class="dropdown">
+                  <a href="/aboutus/" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="/aboutus/workwithus.htm">Work With Us</a></li>
+                      <li><a href="/aboutus/jobsforstudents.htm">Jobs for Students</a></li>
+                      <li><a href="/aboutus/budget.htm">Budget</a></li>
+                      <li><a href="/aboutus/doingbusinesswithus.htm">Doing Business with Us</a></li>
+                      <li><a href="/aboutus/lawsandpolicies.htm">Laws &amp; Policies</a></li>
+                      <li><a href="/aboutus/publications.htm">Publications</a></li>
+                    </ul>
+                </li>
+              </ul>
+            </div><!--/.nav-collapse -->
+		</nav>
+	</div>
+      
+<!-- LARGE BANNER -->
 	<div class="row">
-        <div class="col-md-12">
-        	<img class="img-responsive" src="assets/img/banner.jpg" alt="Rainbow over Half Dome" title="Yosemite National Park">
-        
-        </div>
-      </div>
-      
-    <div id="main">
-    	<div class="bap" id="bap">
+      <div class="col-md-12">      
+    	<div class="bap">
 			<div class="large">
 				
-					
-						<img src="assets/img/banner.jpg" alt="Rainbow over Half Dome" title="Rainbow over Half Dome">
+				<img src="assets/img/banner.jpg" class="img-responsive" alt="Rainbow over Half Dome" title="Rainbow over Half Dome">
 					
 				    <div class="title">
-					<div class="main">
-						
-							<h1>Yosemite</h1>
-						
-					</div>
-					
-					
-						
+                        <div class="bapTitleBox">
+                        	<h1>Yosemite</h1>
+                        </div>
 				        <div class="sub">
 						    <h3>National Park 
 								<span class="location">
@@ -185,7 +261,8 @@
 					
 			</div>
 		</div>
-    </div>  
+      </div>
+  </div>
       
       
 <!-- TEXT AND PRINT ICONS ROW -->      
@@ -335,7 +412,7 @@
       </div>
 
 
-    </div> <!-- /container -->
+</div> <!-- /container -->
 
 
     <!-- Bootstrap core JavaScript

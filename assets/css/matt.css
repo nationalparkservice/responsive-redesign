@@ -1,6 +1,15 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* delete these next two classes when done laying out the rows/columns 
+[class*="col-"] {
+  background-color: #eee;
+  background-color: rgba(86,61,124,.15);
+}
+.row {
+	margin-bottom:10px;
+}
+
 /* THESE ARE THE MEDIA QUERY TYPES FOR BOOTSTRAP */
 @media (min-width: 768px) {
 }
@@ -25,18 +34,20 @@
 
 
 
-/* delete these next two classes when done laying out the rows/columns */
-[class*="col-"] {
-  background-color: #eee;
-  background-color: rgba(86,61,124,.15);
+
+
+body {
+	background-color:#f5f0dd;
+	background-image:none;
 }
-.row {
-	margin-bottom:10px;
-}
-/* xxxxxxxxxxxxxxxxxxxxxxx DELETE EVERYTHING ABOVE THIS LINE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+	@media screen and (min-width: 992px) {
+		body {
+			background-image:url(../img/bg/blackbarBG.png);
+			background-repeat: repeat-x;
+		}	
+	}
 
-
-
+page.png
 
 
 .chrome-center {
@@ -46,78 +57,106 @@
 }
 
 
-.header-container {
+/*.header-container {
 	background-color: #000;
 	height: 84px;
 	width: 100%;
-}
+	padding-top: 15px;
+}*/
+
 .nopadding {
 	padding:0;	
 }
 
 
-
-
-
-
 /* Logo */
 .logo {
-	padding: 0;
-	margin: 15px 0 0 6px;
-    background: url("../img/chrome/logos/main-logo.png");
-    background-size: 329px 51px;
-    background-repeat: no-repeat;
-	height: 51px;
+	background-image:url(../img/chrome/logos/main-logoSmall.png);
+	background-repeat:no-repeat;
+	margin-top: .6em;
+	margin-bottom: .6em;
+	margin-left: 6px;
+	height:51px;
 }
+	@media screen and (min-width: 768px) {
+	.logo {
+		background-image:url(../img/chrome/logos/main-logoMedium.png);
+		background-repeat:no-repeat;
+		margin-top: 1em;
+		margin-bottom: .8em;
+		margin-left: 6px;
+		height:40px;
+	}	
+	}
+	@media screen and (min-width: 992px) {
+	.logo {
+		background-image:url(../img/chrome/logos/main-logo.png);
+		background-repeat:no-repeat;
+		margin-top: 1.2em;
+		margin-bottom: .8em;
+		margin-left: 6px;
+		height:51px;
+	}	
+	}
 .logo a {
     color: #000000;
     font-size: 12px;
     position: relative;
 }
-@media (max-width: 767px) {
-	.logo {
-	padding: 15px 0 0 6px;
-	}
-	.logo span, .logo a {
-		display: block;
-		height: 25px;
-		width: 161px;
-	}
+
+
+
+/* Search Box */
+.form-control {
+  padding-left: 30px;
+  margin: 30px 0 0 0;
+  height: 26px;
+  width: 95%;
+  border:0;
+  background: rgb(255, 255, 255); /* Creates the solid bg for IE8 */
+  background: rgba(255, 255, 255, 0.75); /* Creates the transparent bg for ALL OTHER BROWSERS */
+  
+}
+.form-control + .glyphicon {
+  position: absolute;
+  left: 0;
+  padding: 6px 20px;
+  margin: 30px 0 0 0;
 }
 
 
 
 
-
-
 /* Nav Bar */
+
+	
 .navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important;}
 .navbar {min-height:32px !important}
 .navbar {
-		background-image: -webkit-gradient(
-		linear,
-		left top,
-		left bottom,
-		color-stop(0, #5F7832),
-		color-stop(1, #425222)
-	);
 	background-image: -o-linear-gradient(bottom, #5F7832 0%, #425222 100%);
 	background-image: -moz-linear-gradient(bottom, #5F7832 0%, #425222 100%);
 	background-image: -webkit-linear-gradient(bottom, #5F7832 0%, #425222 100%);
 	background-image: -ms-linear-gradient(bottom, #5F7832 0%, #425222 100%);
 	background-image: linear-gradient(to bottom, #5F7832 0%, #425222 100%);
 }
+.navbar-inverse {
+	background-image: -o-linear-gradient(bottom, #000 0%, #000 100%);
+	background-image: -moz-linear-gradient(bottom, #000 0%, #000 100%);
+	background-image: -webkit-linear-gradient(bottom, #000 0%, #000 100%);
+	background-image: -ms-linear-gradient(bottom, #000 0%, #000 100%);
+	background-image: linear-gradient(to bottom, #000 0%, #000 100%);
+}
 ul.nav a:hover { background-color: #b28000 !important; }
 
 .nav > li > a {
   position: relative !important;;
   display: block !important;;
-  padding: 10px 11px !important;;
+  padding: 6px 11px !important;;
 }
-/*add dividers between the nav items */
-/* put in the breakpoint variable and make some new ones in your variables.less file */
 
-@media (min-width:768px){
+/*add dividers between the nav items */
+
+@media (min-width:992px){
   
   .navbar-default .navbar-nav > li:not(:last-child) {
     border-right:1px solid #455724;
@@ -128,45 +167,21 @@ ul.nav a:hover { background-color: #b28000 !important; }
 }
 
 
-/* LARGE HOMEPAGE BANNER */
-/* Big picture */
-#design {
-	display:none;
-    left: 407px;
-    position: absolute;
-    top: -199px;
-    z-index: 10010;
-}
-#main .bap {
+
+
+
+
+
+/* LARGE HOMEPAGE BANNER - BAP */
+.bap {
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
 }
-#bap-mini {
-	clear: both;
-	margin-bottom: 24px;
-}
-ul.cycle{
-	margin: 0;
-} 
-.bap .cycle li{
-	list-style-type: none;
-	position: relative;
-	width: 960px;
-}
-.bap .large, .bap .large .cycle li {
-	height: 241px;
-}
-.bap .small, .bap .small .cycle li {
-	height: 148px;
-	overflow: hidden;
-}
-.bap .mini, .bap .mini .cycle li {
-    height: 173px;
-    width: 688px;
-}
 .bap .title {
-	background: url("../img/bg/transparent.png") repeat;
+	/* TRANSPARENT STRIP BEHIND TEXT */
+	background: rgb(0, 0, 0); /* Creates the solid bg for IE8 */
+	background: rgba(0, 0, 0, 0.5); /* Creates the transparent bg for ALL OTHER BROWSERS */
 	bottom: 0;
     color: #FFFFFF;
 	left: 0px;
@@ -174,7 +189,31 @@ ul.cycle{
 	position: absolute;
 	width: 100%;
 }
-.no-js .bap .title, .no-js .bap .main {
+.bap .bapTitleBox {
+	display: table;
+	float: left;
+	height: 79px;
+}
+.bap .bapTitleBox h1 {
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: -0.7px;
+    line-height: 79px;
+    padding: 0 0 0 23px;
+	margin:0px;
+}
+.no-js .bap .bapTitleBox h1 {
+	line-height: 1.1;
+	width: 700px;
+}
+.bap .large {  /* This gives us the larger image for home pages */
+	height: 241px;
+}
+.bap .small {  /* This gives us the shorter image for interior pages */
+	height: 148px;
+	overflow: hidden;
+}
+.no-js .bap .title, .no-js .bap .bapTitleBox {
 	height: auto;
 }
 .bap .bottom img {
@@ -185,25 +224,10 @@ ul.cycle{
 	position: absolute;
 	top: 0px;
 }
-.bap .super-header {
-	color: #fff;
-	font-size: 12px;
-	left: 9px;
-	position: absolute;
-	top: 10px;
-	z-index: 1000;
-	text-shadow: 2px 2px 3px #000;
-}
-.bap .main {
-	display: table;
-	float: left;
-	height: 79px;
-}
 .bap .sub {
-    background: url("/common/commonspot/templates/images/bg/bap-border.png") no-repeat 26px 19px transparent;
+    background: url("../img/bg/bap-border.png") no-repeat 26px 19px transparent;
     height: 79px;
    	display: table;
-    /* max-width: 240px; this was causing some park designations to wrap */
     padding-left: 52px;
 }
 .no-js .bap .sub {
@@ -243,7 +267,6 @@ ul.cycle{
 	line-height: 20px;
 	margin: 0;
     vertical-align: middle;
-    /* width: 240px; this was causing some park designations to wrap */
 }
 .bap .sub .location  {
 	display: block;
@@ -262,43 +285,4 @@ ul.cycle{
 .bap .sub a {
 	color: #fff;
 	text-shadow: 2px 2px 3px #000;
-}
-.bap .controls {
-    bottom: 53px;
-    position: absolute;
-    right: 16px;
-    z-index: 100;
-}
-.bap .controls li {
-	background: url("/common/commonspot/templates/images/bg/bap-tile.png") repeat left top;
-    border: 1px solid #B0B0AE;
-    cursor: pointer;
-    display: block;	
-    float: left;
-    height: 8px;
-    list-style: none;
-    margin-left: 2px;
-    width: 8px;
-	color: rgba(0,0,0,0);	
-	text-indent: -9999px;	
-}
-.bap .controls li:hover {
-	background-color: #fff;
-	border-color: #B0B0AE;
-	cursor: pointer;	
-}
-.bap .controls .active {
-	background-color: #fff;
-	border: 1px solid #fff;
-}
-.bap .main h1 {
-    font-size: 40px;
-    font-weight: normal;
-    letter-spacing: -0.7px;
-    line-height: 79px;
-    padding: 0 0 0 23px;
-}
-.no-js .bap .main h1 {
-	line-height: 1.1;
-	width: 700px;
 }
