@@ -46,9 +46,9 @@ body {
 			background-repeat: repeat-x;
 		}	
 	}
-
-page.png
-
+@media screen and (max-width: 992px) {
+	.container { width: auto; }
+}
 
 .chrome-center {
 	margin:  0 auto;
