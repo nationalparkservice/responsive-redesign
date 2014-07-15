@@ -46,8 +46,10 @@ body {
 			background-repeat: repeat-x;
 		}	
 	}
+	
+/* make the container fluid 100% at 991 and below */
 @media screen and (max-width: 992px) {
-	.container { width: auto; }
+	.container { width: auto; padding:0px; }
 }
 
 .chrome-center {
@@ -157,9 +159,9 @@ padding-bottom: 0;
 /* Search Box */
 .form-control {
   padding-left: 30px;
-  margin: 30px 0 0 0;
+  margin: 30px 0 0 30px;
   height: 26px;
-  width: 95%;
+  width: 180px;
   border:0;
   background: rgb(255, 255, 255); /* Creates the solid bg for IE8 */
   background: rgba(255, 255, 255, 0.75); /* Creates the transparent bg for ALL OTHER BROWSERS */
@@ -169,7 +171,7 @@ padding-bottom: 0;
   position: absolute;
   left: 0;
   padding: 6px 20px;
-  margin: 30px 0 0 0;
+  margin: 30px 0 0 30px;
 }
 
 
@@ -217,6 +219,44 @@ ul.nav a:hover { background-color: #b28000 !important; }
 
 
 
+/* Small Banner */
+.bap-mobile {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;	
+}
+.bap-mobile .title {
+	background: rgb(0, 0, 0); /* Creates the solid bg for IE8 */
+	background: rgba(0, 0, 0, 0.5); /* Creates the transparent bg for ALL OTHER BROWSERS */
+	bottom: 0;
+    color: #FFFFFF;
+	left: 0px;
+	position: absolute;
+	width: 100%;
+}
+.bap-mobile .title H1 {
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: -0.7px;
+    line-height: 60px;
+    padding: 0 0 0 23px;
+	margin:0px;
+}
+.bap-mobile .sub h3 {
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 28px;
+	margin: 0 0 0 22px;
+    vertical-align: middle;
+}
+.bap-mobile .sub .location  {
+	font-weight: normal;
+	margin: 0 0 0 5px;
+	padding: 0 0 0 5px;
+	border-left: 1px solid #787777;
+}
+
 
 
 
@@ -242,6 +282,7 @@ ul.nav a:hover { background-color: #b28000 !important; }
 	float: left;
 	height: 79px;
 }
+
 .bap .bapTitleBox h1 {
     font-size: 40px;
     font-weight: normal;
@@ -333,4 +374,16 @@ ul.nav a:hover { background-color: #b28000 !important; }
 .bap .sub a {
 	color: #fff;
 	text-shadow: 2px 2px 3px #000;
+}
+
+
+/* Begin main content area */
+.content-container {
+	background-color:#FFF;
+	padding: 0 30px 0 30px;
+	margin: 0;
+}
+.parkIntroText H2 {
+	color: #000;
+	font-size:24px;
 }
