@@ -70,6 +70,16 @@ body {
 	padding:0;	
 }
 
+/* Force column to full-height of neighboring columns */
+.fullHeightRow {
+    display: table;
+}
+
+.fullHeightRow [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}
 
 /* Logo */
 
