@@ -57,6 +57,8 @@ body {
 .middleContentArea {
 	background-color:#f9f7f1;
 	height: 800px;
+	border-left: 1px solid #dfdbca;
+	border-right: 1px solid #dfdbca;
 }
 .utilsWrapper {
 	background-color:#f9f7f1;
@@ -64,6 +66,8 @@ body {
 	height:42px;
 	padding:none;
 	margin: none;
+	border-left: 1px solid #dfdbca;
+	border-right: 1px solid #dfdbca;
 }
 
 
