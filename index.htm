@@ -30,7 +30,7 @@
 
   <body>
   
- 
+
 
  
 <div class="container">
@@ -307,27 +307,50 @@
      </div>
 </span>
       
-      
-<!-- TEXT AND PRINT ICONS ROW -->      
+<!-- UTILITIES - TEXT AND PRINT ICONS -->      
+    <div class="row hidden-xs hidden-sm">
+        <div class="col-md-12">
+        	<div class="utilsWrapper">
+                <div class="utils">
+                    <div class="text-sizes">
+                        <span class="small"><a href="javascript:void(0);">small</a></span>
+                        <span class="medium"><a href="javascript:void(0);" class="active">medium</a></span>
+                        <span class="large"><a href="javascript:void(0);">large</a></span>
+                    </div>	
+                    <div class="print"><a href="javascript:void(0);">print</a>
+                    </div>
+                    </ul><!--! end of #utils -->
+                </div>
+        	</div>             
+        </div>
+    </div>
+    
+<!-- ALERTS -->
 	<div class="row hidden-xs hidden-sm">
         <div class="col-md-12">
-        	<p style="text-align:right">Text resize and print page</p></div>
-      </div>
-      
-</div>
+            <div class="alert alert-danger alert-dismissible" role="alert">
+              <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <strong>Alert! </strong>Better check yoself before yo wreck yoself.
+            </div>
+		</div>
+    </div>
+    
+</div>    
 
 
 
-<div class="container container-xs-height"><!-- container-sx-height creates the full-height columns. It's code that Matt added to his stylesheet. -->
-	<div class="row row-xs-height">
-            <div class="col-md-12 col-md-height"><!-- column that surrounds the left nav and main content columns. Must have this in order to have the 960 width. -->
+
+<div class="container"><!-- container-sx-height creates the full-height columns. It's code that Matt added to his stylesheet. -->
+	<div class="row">
+            <div class="col-md-12"><!-- column that surrounds the left nav and main content columns -->
+            	<div class="middleContentArea">
           
     <!-- LEFT NAV -->      
-            <div style="background-color:red" class="col-md-3 hidden-xs hidden-sm col-md-height">Left Nav</div>
+            <div class="col-md-3 hidden-xs hidden-sm">Left Nav</div>
             
             
     <!-- MAIN CONTENT -->        
-            <div class="content-container col-xs-12 col-md-9 col-md-height">
+            <div class="content-container col-xs-12 col-md-9">
                 <div class="parkIntroText">
                     <h2>Park Intro Text Title</h2>
                     
@@ -347,8 +370,9 @@
                     <img class="img-responsive" srcset="assets/img/medium.jpg" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
                 </picture>
             
+                </div>
+                </div>
             </div>
-        </div>
       
 	</div>
       
@@ -497,7 +521,7 @@
       </div>
 
 
-</div> <!-- /container -->
+</div> 
 
 
     <!-- Bootstrap core JavaScript
@@ -505,6 +529,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="http://www.nps.gov/npmap/bootstrap/dist/js/nps-bootstrap.js"></script>
     
-    
+      
   </body>
 </html>

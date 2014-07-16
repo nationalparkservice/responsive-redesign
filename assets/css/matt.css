@@ -40,12 +40,33 @@ body {
 	background-color:#f5f0dd;
 	background-image:none;
 }
-	@media screen and (min-width: 992px) {
-		body {
+@media (min-width: 992px) {
+	body {
 			background-image:url(../img/bg/blackbarBG.png);
 			background-repeat: repeat-x;
-		}	
 	}
+}
+
+
+
+.alert {/* DELETE if not using alert-box at top */
+	margin-bottom: 5px;
+}
+
+
+.middleContentArea {
+	background-color:#f9f7f1;
+	height: 800px;
+}
+.utilsWrapper {
+	background-color:#f9f7f1;
+	width: 100%;
+	height:42px;
+	padding:none;
+	margin: none;
+}
+
+
 	
 /* make the container fluid 100% at 991 and below */
 @media screen and (max-width: 992px) {
@@ -70,58 +91,8 @@ body {
 	padding:0;	
 }
 
-/* Force columns to full-height of neighboring columns */
-.container-xs-height {
-    display:table;
-    padding-left:0px;
-    padding-right:0px;
-}
-.row-xs-height {
-    display:table-row;
-}
-.col-xs-height {
-    display:table-cell;
-    float:none;
-}
-@media (min-width: 768px) {
-    .container-sm-height {
-        display:table;
-        padding-left:0px;
-        padding-right:0px;
-    }
-    .row-sm-height {
-        display:table-row;
-    }
-    .col-sm-height {
-        display:table-cell;
-        float:none;
-    }
-}
-@media (min-width: 992px) {
-    .container-md-height {
-        display:table;
-        padding-left:0px;
-        padding-right:0px;
-    }
-    .row-md-height {
-        display:table-row;
-    }
-    .col-md-height {
-        display:table-cell;
-        float:none;
-    }
-}
 
-/* vertically align within columns */
-.col-top {
-    vertical-align:top;
-}
-.col-middle {
-    vertical-align:middle;
-}
-.col-bottom {
-    vertical-align:bottom;
-}
+
 
 /* Logo */
 
@@ -450,6 +421,70 @@ ul.nav a:hover { background-color: #b28000 !important; }
 	color: #fff;
 	text-shadow: 2px 2px 3px #000;
 }
+
+
+
+
+/* Utilities area - Print and  */
+
+.utils {
+    float: right;
+    margin: 17px 17px 10px 0;
+}
+.utils a {
+    display: block;
+    height: 14px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+.text-sizes {
+	float: left;
+}
+.text-sizes .small a {
+    background: url(../img/chrome/text-sizes.png) no-repeat scroll 0 -13px transparent;
+    width: 7px;
+	margin: 0 10px 0 0;
+	float:left;
+}
+.text-sizes .small a:hover, 
+.text-sizes .small .active {
+	background-position: 0 0;
+}
+.text-sizes .medium a {
+ 	background: url(../img/chrome/text-sizes.png) no-repeat scroll -18px -13px transparent;
+    width: 9px;
+	margin: 0 10px 0 0;
+	float:left;
+}
+.text-sizes .medium a:hover, 
+.text-sizes .medium .active {
+	background-position: -18px 0;
+}
+.text-sizes .large a {
+    background: url(../img/chrome/text-sizes.png) no-repeat scroll -36px -13px transparent;
+    width: 11px;
+	float:right;
+}
+.text-sizes .large a:hover, 
+.text-sizes .large .active {
+	background-position: -36px 0;
+}
+.utils .print {
+    margin-left: 15px;
+    margin-top: 1px;
+    width: 14px;
+	float:right;
+}
+.utils .print a {
+    background: url(../img/chrome/print.png) no-repeat scroll 0 0 transparent;
+    width: 14px;
+}
+.utils .print a:hover {
+   	background-position: 0 -14px;
+}
+
+
+
 
 
 /* Begin main content area */
