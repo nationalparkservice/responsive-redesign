@@ -139,8 +139,8 @@ body {
 	.logo {
 		background-image:url(../img/chrome/logos/main-logo.png);
 		background-repeat:no-repeat;
-		margin-top: 1.2em;
-		margin-bottom: .8em;
+		margin-top: 1.0em;
+		margin-bottom: 1.4em;
 		margin-left: 6px;
 		height:51px;
 	}	
@@ -286,14 +286,37 @@ ul.nav a:hover { background-color: #b28000 !important; }
 	position: absolute;
 	width: 100%;
 }
+	@media (max-width:767px){
+		.bap-mobile .title {
+			background: 0; /* Creates the solid bg for IE8 */
+			background: 0; /* Creates the transparent bg for ALL OTHER BROWSERS */
+			bottom: 0;
+			left: 0px;
+			position: absolute;
+			width: 100%;
+		}
+	}
 .bap-mobile .title H1 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: normal;
     letter-spacing: -0.7px;
-    line-height: 60px;
+    line-height: 45px;
     padding: 0 0 0 23px;
 	margin:0px;
 }
+	@media (min-width:768px){
+		.bap-mobile .title H1 {
+			font-size: 40px;
+			font-weight: normal;
+			letter-spacing: -0.7px;
+			line-height: 60px;
+			padding: 0 0 0 23px;
+			margin:0px;
+		}
+	}
+
+
+
 .bap-mobile .sub h3 {
 	color: #000;
 	font-size: 14px;
