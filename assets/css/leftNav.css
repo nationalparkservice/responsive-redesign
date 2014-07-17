@@ -9,7 +9,6 @@
     float: left;
    	position: relative;
     width: 209px;
-    z-index: 2;
 }
 #sub-nav h2 {
     border-bottom: 1px solid #e4e2dd;
@@ -22,11 +21,11 @@
 }
 #sub-nav ul {
 	padding: 5px 0 0 25px;
+	list-style-type: none;
 }
 #sub-nav li {
     border-top: 1px solid #e4e2dd;
     line-height: 14px;
-   
 }
 #sub-nav li:first-child {
 	border: none;
