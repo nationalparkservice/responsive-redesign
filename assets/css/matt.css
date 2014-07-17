@@ -73,13 +73,19 @@ body {
 	@media (min-width: 992px) {
 		.content-container {
 			/*margin-left: -30px; /* move the content area to the left. May cause some problems in certain browsers? Need to test. */
-			padding-bottom: 30px;
+			width: 738px;
+			margin: 5px 0 0 0;
+			padding: 30px 23px 30px 23px;
 			border: 1px solid #dfdbca;
-			-moz-border-radius-topleft: 5px;
-			-moz-border-radius-topright: 5px;
-			border-top-left-radius: 5px;
-			border-top-right-radius: 5px;
-			margin-left: 0px;
+			/* rounded top corners */
+			-moz-border-radius-topleft: 2px;
+			-moz-border-radius-topright: 2px;
+			border-top-left-radius: 2px;
+			border-top-right-radius: 2px;
+			/* drop shadow around content-container */
+			-moz-box-shadow: 0 0 3px #cecece;
+			-webkit-box-shadow: 0 0 3px #cecece;
+			box-shadow: 0 0 3px #cecece;
 		}
 	}
 
@@ -168,44 +174,7 @@ padding-bottom: 0;
 
 
 
-/*  THIS SECTION MAKES THE TOP BLACK NAVBAR COLLAPSE at 991 */
-@media (max-width: 991px) {
-    .navbar-header {
-        float: none;
-    }
-    .navbar-left,.navbar-right {
-        float: none !important;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-    .navbar-fixed-top {
-		top: 0;
-		border-width: 0 0 1px;
-	}
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
-		margin-top: 7.5px;
-		padding-bottom: 5px;
-	}
-	.navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .collapse.in{
-  		display:block !important;
-	}
-}
+
 
 
 
@@ -262,7 +231,6 @@ ul.nav a:hover { background-color: #b28000 !important; }
 }
 
 /*add dividers between the nav items */
-
 @media (min-width:992px){
   
   .navbar-default .navbar-nav > li:not(:last-child) {
@@ -271,6 +239,45 @@ ul.nav a:hover { background-color: #b28000 !important; }
   .navbar-default .navbar-nav > li:not(:first-child) {
     border-left:1px solid #607339;
    }
+}
+
+/*  BLACK MOBILE NAVBAR */
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+		margin-top: 7.5px;
+		padding-bottom: 5px;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block !important;
+	}
 }
 
 
@@ -291,7 +298,7 @@ ul.nav a:hover { background-color: #b28000 !important; }
 	position: absolute;
 	width: 100%;
 }
-	@media (max-width:767px){
+	@media (max-width:599px){
 		.bap-mobile .title {
 			background: 0; /* Creates the solid bg for IE8 */
 			background: 0; /* Creates the transparent bg for ALL OTHER BROWSERS */
