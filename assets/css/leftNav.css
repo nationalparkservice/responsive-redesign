@@ -5,10 +5,15 @@
 
 
 /* Sub navigation */
+	.sub-nav-containerWidth {
+	width: 207px;
+}
+
 #sub-nav {
     float: left;
    	position: relative;
-    width: 209px;
+	padding: 0;
+	margin: 0 0 0 -10px;
 }
 #sub-nav h2 {
     border-bottom: 1px solid #e4e2dd;
@@ -50,7 +55,7 @@
 #sub-nav .sub .sub>a{
 	background: url(../images/icons/nav-pointer.png) no-repeat right .9em;
 	font-weight: bold;
-	padding-right: 20px;
+	/*padding-right: 20px;*/
 	color: #647630;
 }
 #sub-nav li ul {
