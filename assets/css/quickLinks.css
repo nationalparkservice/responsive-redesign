@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* Simple List */
+.quickLinks {
+	margin: 2px 0 0 0;
+	padding: 0px;
+	width: 181px;
+}
+.quickLinks li {
+	border-top: 1px solid #ededec;
+	list-style-type: none;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-left: 12px;
+}
+.quickLinks li a {	
+	font-size: 12px;
+	font-weight: bold;
+	color: #b28000;
+	text-decoration: underline;
+}
+.quickLinks li:first-child {
+	border-top: none;
+	padding-top: 0px;
+}
+
+/* create the 'more' arrows at end of each link */
+a.more:after {
+	content: '\A0\BB';
+}
+
+
