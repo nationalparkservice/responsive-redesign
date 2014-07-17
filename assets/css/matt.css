@@ -53,16 +53,36 @@ body {
 
 
 
-.alert {/* DELETE if not using alert-box at top */
-	margin-bottom: 5px;
+.parkAlerts {
+	margin: 5px 0 5px 0;
 }
 
 
-.middleContentArea {
+.middleContentArea {/* parent container for left nav and main content area */
 	background-color:#f9f7f1;
 	border-left: 1px solid #dfdbca;
 	border-right: 1px solid #dfdbca;
 	padding-bottom: 15px;
+}
+.content-container {/* main content area */
+	background-color:#FFF;
+	padding: 0 30px 0 30px;
+	margin: 0;
+}
+@media (min-width: 992px) {
+	.content-container {
+		margin-left: -20px; /* move the content area to the left. May cause some problems in certain browsers? Need to test. */
+		-mox-border-radius: 5px;
+		border-radius: 5px;
+		border: 1px solid #dfdbca;
+	}
+}
+
+
+
+.parkIntroText H2 {
+	color: #000;
+	font-size:24px;
 }
 .utilsWrapper {
 	background-color:#f9f7f1;
@@ -495,17 +515,3 @@ ul.nav a:hover { background-color: #b28000 !important; }
 
 
 
-/* Begin main content area */
-.content-container {
-	background-color:#FFF;
-	padding: 0 30px 0 30px;
-	margin: 0;
-}
-	div.content-container { /* add rounded corners to this div */
-		-mox-border-radius: 5px;
-		border-radius: 5px;
-	}
-.parkIntroText H2 {
-	color: #000;
-	font-size:24px;
-}
