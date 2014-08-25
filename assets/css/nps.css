@@ -45,11 +45,19 @@ body {
 	background-color:#f5f0dd;
 	background-image:none;
 }
+.wallpaper-parks {
+	background: none;
+}
 @media (min-width: 992px) {
 	body {
 			background-image:url(../img/bg/blackbarBG.png);
 			background-repeat: repeat-x;
 	}
+
+	.wallpaper-parks {
+	background: #f5f0dd url(../img/chrome/wallpapers/parks.jpg) no-repeat scroll center bottom;
+	width:100%;
+}
 }
 
 
@@ -65,6 +73,7 @@ body {
 	border-right: 1px solid #dfdbca;
 	border-bottom: 1px solid #dfdbca;
 	padding-bottom: 15px;
+	margin-bottom: 30px;
 }
 .content-container {/* main content area */
 	background-color:#FFF;
@@ -528,4 +537,246 @@ ul.nav a:hover { background-color: #b28000 !important; }
 
 
 
+/* ///////////////////////////////////////////////////////////////////// 
+//  Footer
+/////////////////////////////////////////////////////////////////////*/
+
+/* Breadcrumbs */
+.breadcrumb-container {
+	background-color: #918f7e;
+	height: 32px;
+}
+.breadcrumbs{
+	background-color: #918f7e;
+}
+.breadcrumbs ul {
+	float: left;
+	height: 32px;
+	overflow: hidden;
+    width: 860px;
+}
+.breadcrumbs li {
+    background: url(../img/chrome/bg/breadcrumb.png) no-repeat scroll 0 0 transparent;
+    float: left;
+    font-size: 12px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 10px 0 22px;
+}
+.breadcrumbs li a {
+    color: #F5F0DD;
+}
+.breadcrumbs ul .home {
+    background: none repeat scroll 0 0 transparent;
+    margin-left: 15px;
+    padding-left: 0;
+    padding-top: 8px;
+}
+.breadcrumbs ul .home a {
+    background: url(../img/chrome/bg/breadcrumb-home.png) no-repeat scroll 0 5px transparent;
+    display: block;
+    height: 13px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 55px;
+}
+.breadcrumbs ul .home a:hover {
+   	border-bottom: 1px solid #F5F0DD;
+}
+.breadcrumbs .sm-control {
+    float: right;
+    margin-right: 16px;
+    margin-top: 13px;
+}
+.sm-control a {
+	background: url(../img/chrome/bg/sm-control.png) no-repeat scroll 0 -13px transparent;
+	height: 10px;
+	width: 72px;
+    display: block;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+.sm-control .expanded {
+    background: url(../img/chrome/bg/sm-control.png) no-repeat scroll 0px 0px transparent;
+}
+
+
+
+
+.site-map-container {
+	background: url(../img/chrome/bg/site-map-container.jpg) repeat scroll 0 0 #EAEAE2;
+	padding-bottom: 33px;
+}
+.footer-gradient {
+	background: url(../img/chrome/bg/footer-gradient.png) repeat scroll 0 0 transparent;
+	height: 11px;
+}
+.footer-search-container {
+	margin-top: 15px;
+	position: relative;
+}
+.footer-search-container .search {
+    background: url(../img/chrome/bg/search-footer.png) no-repeat scroll left top transparent;
+    bottom: 0px;
+    height: 28px;
+    left: 23px;
+    position: absolute;
+    width: 394px;
+}
+.footer-search label {
+	display: block;
+	margin-top: 5px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+.footer-search input {
+    background-color: transparent;
+    border: medium none;
+    color: #808080;
+    font-size: 12px;
+    left: 30px;
+    position: absolute;
+    top: 6px;
+    width: 352px;
+    -webkit-appearance: none;
+}
+.site-map-container .search-control {
+	float: right;
+    margin-right: 13px;
+}
+.search-control label {
+    color: #556B2C;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.search-control select {
+    border: 1px solid #D3D2CA;
+    margin-top: 5px;
+    padding: 4px;
+    width: 146px;
+}
+
+/* Site map */
+.site-map-container #site-map {
+    background-color: #FCFCF7;
+    border: 1px solid #CFD1C9;
+    margin: 22px auto 0 auto;
+    padding-bottom: 10px;
+    padding-left: 19px;
+    padding-top: 17px;
+    position: static;
+    width: 893px;
+}
+.site-map h3 {
+	font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 12px;
+    margin-bottom: 0px;
+	text-transform: uppercase;
+	width: 126px;
+}
+.site-map h3 a {
+	color: #556b2c;
+}
+.site-map a {
+	color: #707070;
+}
+.site-map ul {
+    float: left;
+    margin-right: 7px;
+}
+.ie7 .site-map ul {
+    margin-right: 16px;
+}
+.site-map ul ul {
+    border-left: 1px solid #EAEAEA;
+    float: none;
+    line-height: 14px;
+    padding-left: 15px;
+    width: 146px;
+}
+.site-map li li {
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+.site-map .top-space {
+    margin-top: 25px;
+}
+
+
+.footer-container {
+	background-color: #000;
+}
+.footer-container .footer {
+    background: url(../img/chrome/logos/footer-logo.png) no-repeat scroll 20px 23px #000;
+	padding-bottom: 49px;
+}
+.footer .top {
+    border-bottom: 1px solid #7F7F7F;
+    margin-left: 82px;
+    padding-bottom: 16px;
+    padding-top: 33px;
+}
+.footer .text-logo {
+    background: url(../img/chrome/logos/text-logo.png) no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 28px;
+    width: 176px;
+}
+.footer .slogan {
+    background: url(../img/chrome/logos/slogan.png) no-repeat scroll 0 0 transparent;
+    float: right;
+    height: 12px;
+    margin-top: 14px;
+    width: 259px;
+}
+.footer .links {
+  	float: left;
+    margin-left: 81px;
+    margin-top: 13px;
+}
+.footer .links a {
+	color: #fff;
+}
+.footer .links li {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+.footer .social {
+    float: right;
+    margin-left: 37px;
+    margin-right: 5px;
+    margin-top: 14px;
+}
+.footer .social li {
+	margin-bottom: 7px;
+}
+.footer .social a {
+    color: #FFFFFF;
+    font-size: 12px;
+    padding-left: 26px;
+}
+.footer .social .facebook {
+	background: url(../img/chrome/utils/social_v2.png) no-repeat scroll 0px 4px transparent;
+}
+.footer .social .twitter {
+	background: url(../img/chrome/utils/social_v2.png) no-repeat scroll 0px -20px transparent;
+}
+.footer .social .youtube {
+	background: url(../img/chrome/utils/social_v2.png) no-repeat scroll 4px -42px transparent;
+	padding-left: 15px;
+}
+.footer .social .itunes {
+	background: url(../img/chrome/utils/social_v2.png) no-repeat scroll 4px -66px transparent;
+	padding-left:15px;
+}
+.footer .updated {
+    clear: right;
+    color: #9B9B9B;
+    float: right;
+    font-size: 10px;
+    margin-top: 14px;
+}
 
