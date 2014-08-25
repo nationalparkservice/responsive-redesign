@@ -596,12 +596,12 @@ ul.nav a:hover { background-color: #b28000 !important; }
 .breadcrumbs ul .home a:hover {
    	border-bottom: 1px solid #F5F0DD;
 }
-.breadcrumbs .sm-control {
+.breadcrumbs #sm-control {
     float: right;
     margin-right: 16px;
     margin-top: 13px;
 }
-.sm-control a {
+#sm-control a {
 	background: url(../img/chrome/bg/sm-control.png) no-repeat scroll 0 -13px transparent;
 	height: 10px;
 	width: 72px;
@@ -609,7 +609,7 @@ ul.nav a:hover { background-color: #b28000 !important; }
     overflow: hidden;
     text-indent: -9999px;
 }
-.sm-control .expanded {
+#sm-control .expanded {
     background: url(../img/chrome/bg/sm-control.png) no-repeat scroll 0px 0px transparent;
 }
 
