@@ -27,6 +27,8 @@
 	<!-- PICTUREFILL 2.0 -->
 	<script src="http://scottjehl.github.io/picturefill/dist/picturefill.js" async></script>
     
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
     
     
     <!-- NPS.gov core javascripts -->
@@ -439,6 +441,23 @@
 <!-- Feature Stories area -->
 
 				<H3>Feature stories go here</H3>
+                
+               
+               
+                   <script type="text/javascript">
+						$(document).ready(function(){
+							$('.featureCarousel').slick({
+								setting-name: setting-value
+							});
+						});
+					</script>
+                <div class="featureCarousel">
+                  <div>your content</div>
+                  <div>your content</div>
+                  <div>your content</div>
+                </div>
+                
+                
                 </div>
                 
 			</div>
@@ -681,6 +700,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="http://www.nps.gov/npmap/bootstrap/dist/js/nps-bootstrap.js"></script>
     
+    <!-- Slick Carousel -->
+    <script type="text/javascript" src="assets/slick/slick.min.js"></script>
       
   </body>
 </html>
