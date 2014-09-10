@@ -586,6 +586,7 @@ ul.nav a:hover { background-color: #b28000 !important; }
 }
 .carouselText {
 	width:140px;
+	background-color:blue;
 }
 
 
