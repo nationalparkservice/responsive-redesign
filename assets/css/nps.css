@@ -568,6 +568,8 @@ ul.nav a:hover { background-color: #b28000 !important; }
 
 .carouselItem {
 	width: 140px;
+	margin: 0 0 0 20px;
+	background-color:red;
 }
 .carouselItem .image-wrapper {
 	height: 105px;
@@ -584,7 +586,7 @@ ul.nav a:hover { background-color: #b28000 !important; }
 	height: 140px;
 }
 .carouselText {
-	width:200px;
+	width:180px;
 }
 
 
