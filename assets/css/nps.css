@@ -584,6 +584,9 @@ ul.nav a:hover { background-color: #b28000 !important; }
 .carouselItem .image-wrapper {
 	height: 140px;
 }
+.carouselText {
+	width:140px;
+}
 
 
 

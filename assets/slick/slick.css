@@ -13,7 +13,7 @@
 .slick-track:after { clear: both; }
 .slick-loading .slick-track { visibility: hidden; }
 
-.slick-slide { float: left; height: 100%; min-height: 1px; display: none; width:140px; }
+.slick-slide { float: left; height: 100%; min-height: 1px; display: none; }
 .slick-slide img { display: block; }
 .slick-slide.slick-loading img { display: none; }
 .slick-slide.dragging img { pointer-events: none; }
