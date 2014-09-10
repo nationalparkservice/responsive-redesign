@@ -4,18 +4,7 @@
 
 .content{margin:auto;padding:20px;width:600px;}
 .content:after,.buttons::after{clear:both;content:"";display:table;}
-.destroy{font-weight:400;margin-top:40px;}
-.features{display:block;list-style-type:none;margin-top:30px;padding:0;text-align:center;}
-.features li{margin:20px 0;}
 .filter .button{background:#FFF;color:#3498db; margin-bottom: 40px;}
-.fixed-header{background:#FFF;box-shadow:2px 0 5px rgba(0,0,0,0.5);display:none;padding:10px;position:fixed;top:0;width:100%;z-index:10000;}
-.fixed-header .header-content{margin:auto;width:600px;}
-.fixed-header .subheading{display:none;}
-.fixed-header h1.title{float:left;font-size:24px;margin:0;}
-.fixed-header ul.nav{float:right;margin:0;padding:5px;}
-.fixed-header ul.nav li{margin:0 0 0 10px;}
-.header{padding:20px 0;}
-.margin-40{margin-bottom:40px;}
 .more,.button.first{margin-top:40px;}
 .red{background:#e74c3c;color:#fff;}
 .slick-slide .image{padding:10px;}
