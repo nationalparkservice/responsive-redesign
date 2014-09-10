@@ -1,7 +1,7 @@
 /* Slider */
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: none; -webkit-tap-highlight-color: transparent; }
 
-.slick-list { position: relative; overflow: hidden; display: block; margin: 0; padding: 0; }
+.slick-list { position: relative; overflow: hidden; display: block; margin: 0; padding: 10; }
 .slick-list:focus { outline: none; }
 .slick-loading .slick-list { background: white url("./ajax-loader.gif") center center no-repeat; }
 .slick-list.dragging { cursor: pointer; cursor: hand; }
