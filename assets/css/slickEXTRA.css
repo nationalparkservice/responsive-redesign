@@ -3,9 +3,6 @@
 .blue h3{background:#fff;color:#3498db;font-size:36px;line-height:100px;margin:10px;padding:2%;position:relative;text-align:center;}
 
 .content{margin:auto;padding:20px;width:600px;}
-.content:after,.buttons::after{clear:both;content:"";display:table;}
-.filter .button{background:#FFF;color:#3498db; margin-bottom: 40px;}
-.more,.button.first{margin-top:40px;}
 
 section{width:100%;}
 
