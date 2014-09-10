@@ -550,6 +550,49 @@ ul.nav a:hover { background-color: #b28000 !important; }
 
 
 
+
+
+
+/* ====================================================== */
+/* ===========   CAROUSEL  ============================== */
+
+.carouselWrapper{margin:auto;padding:20px;width:608px;}*/
+
+@media (max-width: 420px) {
+}
+@media (max-width: 768px) {
+.carouselWrapper{margin:auto;padding:20px 40px;width:auto;}
+
+
+}
+
+.carouselItem {
+	width: 200px;
+}
+.carouselItem .image-wrapper {
+	height: 105px;
+	margin-bottom: 15px;
+	overflow: hidden;
+	width: 140px;
+}
+.carouselItem .image-wrapper img,
+.carouselItem img {
+	height: auto;
+	width: 140px;
+}
+.carouselItem .image-wrapper {
+	height: 140px;
+}
+
+
+
+
+
+
+
+
+
+
 /* ///////////////////////////////////////////////////////////////////// 
 //  Footer
 /////////////////////////////////////////////////////////////////////*/
