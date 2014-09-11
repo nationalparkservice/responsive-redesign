@@ -67,7 +67,13 @@ body {
 
 
 
-
+H1 {
+	border-bottom: 1px solid #d8d8d8;
+	color: #464646;
+	font: normal 32px/1.1 Georgia, "Times New Roman", Times, serif;
+	margin: 0 0 20px 0;
+	padding-bottom: 18px;
+}
 
 h2, .section_title { /* added for Commonspot */
 	color: #5e7630;
@@ -636,7 +642,7 @@ ul.nav a:hover { background-color: #b28000 !important; }
 	margin-bottom: 7px;
 }
 .carouselItem P {
-	font-size: 10px;
+	font-size: 12px;
 	margin-bottom: 5px;
 }
 
