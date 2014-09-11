@@ -659,6 +659,7 @@ ul.nav a:hover { background-color: #b28000 !important; }
 @media (max-width: 768px) {
 .carouselWrapper{margin:auto;padding:20px 40px;width:auto;}
 .carouselTitle H2 {font-size: 16px;padding: 5px 0 5px 10px;}
+.carouselItem{margin:0 auto 0 auto;}
 
 }
 
