@@ -74,11 +74,11 @@ body {
 	padding-bottom: 18px;
 }
 .landing-intro {
-	margin-top: 20px;
+	margin-bottom: 20px;
 }
 @media (min-width: 768px) {
 	.landing-intro {
-		margin-top: 30px;
+		margin-bottom: 30px;
 	}
 }
 .landing-intro .page-title {
