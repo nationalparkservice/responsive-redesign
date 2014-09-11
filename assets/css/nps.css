@@ -135,7 +135,24 @@ ul {
 
 
 
-
+a {
+	color: #936A00; /* 508 Change from #b28000 */
+	text-decoration: none;
+}
+a.more:after {
+	content: '\A0\BB';
+}
+a.back:before {
+	content: '\00AB\A0';
+}
+a:hover{
+	color: #B17F00;
+	text-decoration: underline;
+}
+a:active{
+	color: #B17F00;
+	text-decoration: underline;
+}
 
 
 
