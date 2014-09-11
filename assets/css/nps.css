@@ -672,6 +672,19 @@ ul.nav a:hover { background-color: #b28000 !important; }
 .carouselItem .image-wrapper {
 	height: 140px;
 }
+.carouselTitle {
+	width: 100%;
+	background-color: #5e7630;
+}
+carouselTitle H2 {
+	background-color: #5e7630;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0;
+	padding: 7px 0 7px 17px;
+}
+	
 .carouselText {
 	width:180px;
 }
