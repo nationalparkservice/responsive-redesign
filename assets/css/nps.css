@@ -660,7 +660,6 @@ ul.nav a:hover { background-color: #b28000 !important; }
 .carouselWrapper{margin:auto;padding:20px 40px;width:auto;}
 .carouselTitle H2 {font-size: 16px;padding: 5px 0 5px 10px;}
 
-
 }
 
 .carouselItem {
@@ -690,7 +689,7 @@ ul.nav a:hover { background-color: #b28000 !important; }
 	font-size: 18px;
 	font-weight: normal;
 	margin: 0;
-	padding: 7px 0 7px 17px;
+	padding: 10px 0 10px 17px;
 }
 	
 .carouselText {
