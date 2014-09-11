@@ -40,11 +40,12 @@
 
 
 /* to get rid of the extra space at right on small viewports */
-html, body {
-  width: auto !important;
-  overflow-x: hidden !important;
+@media screen and (max-width: 991px) {
+	html, body {
+	  width: auto !important;
+	  overflow-x: hidden !important;
+	}
 }
-
 
 
 body {
