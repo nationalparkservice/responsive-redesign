@@ -66,7 +66,25 @@ body {
 
 
 
-
+.page-title H1 {
+	border-bottom: 1px solid #d8d8d8;
+	color: #464646;
+	font: normal 32px/1.1 Georgia, "Times New Roman", Times, serif;
+	margin: 0 0 20px 0;
+	padding-bottom: 18px;
+}
+.landing-intro .page-title H1 {
+	border-bottom: none;
+	font-size: 26px;
+	margin-bottom: 12px;
+	padding-bottom: 0;
+}
+.content-container H1 {
+	border: none;
+	font-size: 20px;
+	margin-bottom: 28px;
+	padding: 0 0 0 35px;
+}
 
 
 h2, .section_title { /* added for Commonspot */
@@ -156,11 +174,6 @@ ul {
 
 
 
-.parkIntroText H2 {
-	color: #000;
-	font-size:24px;
-	margin-top: 0;
-}
 .utilsWrapper {
 	background-color:#f9f7f1;
 	width: 100%;
