@@ -587,6 +587,12 @@ ul.nav a:hover { background-color: #b28000 !important; }
 .carouselText {
 	width:180px;
 }
+.carousel H3 {
+	color: #5e7630;
+	font-size: 18px;
+	line-height: 20px;
+	margin-bottom: 7px;
+}
 
 
 
