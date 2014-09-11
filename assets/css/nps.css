@@ -78,7 +78,7 @@ body {
 }
 @media (min-width: 768px) {
 	.landing-intro {
-		margin-bottom: 50px;
+		margin-bottom: 40px;
 	}
 }
 .landing-intro .page-title {
