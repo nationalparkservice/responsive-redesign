@@ -44,6 +44,7 @@
 body {
 	background-color:#f5f0dd;
 	background-image:none;
+	font: 14px/1.42857 arial,helvetica,sans-serif;
 }
 .wallpaper-parks {
 	background: none;
@@ -62,6 +63,46 @@ body {
 	padding:0;
 	}
 }
+
+
+
+
+
+
+h2, .section_title { /* added for Commonspot */
+	color: #5e7630;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.content-container h2 a, .content-container .section_title a { /* added for Commonspot */
+	font-size: 24px;
+}
+h3, .subheading { /* added for Commonspot */
+	color: #5e7630;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.content-container h3 a, .content-container .subheading a { /* added for Commonspot */
+	font-size: 18px;
+}
+h4 {
+	line-height: 14px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+h5 {
+    color: #7f7565;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.content-container p {
+	margin-bottom: 16px;
+}
+
+
+
 
 
 
