@@ -239,7 +239,11 @@ text-decoration: underline;
 	.container { width: auto; padding:0px; }
 }
 
-
+.chrome-center {
+	margin:  0 auto;
+	padding:0 4px 0;
+	width: 960px;
+}
 
 /*.header-container {
 	background-color: #000;
