@@ -208,9 +208,6 @@ text-decoration: underline;
 			border-top-left-radius: 2px;
 			border-top-right-radius: 2px;
 			/* drop shadow around content-container */
-			-moz-box-shadow: 0 0 3px #cecece;
-			-webkit-box-shadow: 0 0 3px #cecece;
-			box-shadow: 0 0 3px #cecece;
 		}
 	}
 
