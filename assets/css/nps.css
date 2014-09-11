@@ -66,14 +66,14 @@ body {
 
 
 
-.page-title H1 {
+.page-title {
 	border-bottom: 1px solid #d8d8d8;
 	color: #464646;
 	font: normal 32px/1.1 Georgia, "Times New Roman", Times, serif;
 	margin: 0 0 20px 0;
 	padding-bottom: 18px;
 }
-.landing-intro .page-title H1 {
+.landing-intro .page-title {
 	border-bottom: none;
 	font-size: 26px;
 	margin-bottom: 12px;
