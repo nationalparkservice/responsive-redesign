@@ -198,7 +198,6 @@ text-decoration: underline;
 }
 	@media (min-width: 992px) {
 		.content-container {
-			/*margin-left: -30px; /* move the content area to the left. May cause some problems in certain browsers? Need to test. */
 			width: 738px;
 			margin: 5px 0 0 0;
 			padding: 30px 24px 30px 24px;
