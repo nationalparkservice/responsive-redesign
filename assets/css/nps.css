@@ -107,6 +107,15 @@ h3, .subheading { /* added for Commonspot */
 	font-weight: bold;
 	margin-bottom: 10px;
 }
+.headered-box h2 {
+	background-color: #5e7630;
+	background-repeat:repeat-x;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0;
+	padding: 7px 0 7px 17px;
+}
 .content-container h3 a, .content-container .subheading a { /* added for Commonspot */
 	font-size: 18px;
 }
