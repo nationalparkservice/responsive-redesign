@@ -676,7 +676,7 @@ ul.nav a:hover { background-color: #b28000 !important; }
 	width: 100%;
 	background-color: #5e7630;
 }
-carouselTitle H2 {
+.carouselTitle H2 {
 	color: #FFFFFF;
 	font-size: 18px;
 	font-weight: normal;
