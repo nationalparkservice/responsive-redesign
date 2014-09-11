@@ -184,11 +184,17 @@ text-decoration: underline;
 
 .middleContentArea {/* parent container for left nav and main content area */
 	background-color:#f9f7f1;
+}
+
+@media (min-width: 992px) {
+	.middleContentArea {/* parent container for left nav and main content area */
+	background-color:#f9f7f1;
 	border-left: 1px solid #dfdbca;
 	border-right: 1px solid #dfdbca;
 	border-bottom: 1px solid #dfdbca;
 	padding-bottom: 15px;
 	margin-bottom: 30px;
+	}
 }
 .content-container {/* main content area */
 	background-color:#FFF;
