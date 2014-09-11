@@ -153,6 +153,9 @@ a:active{
 	color: #B17F00;
 	text-decoration: underline;
 }
+.content-container a:link {
+text-decoration: underline;
+}
 
 
 
