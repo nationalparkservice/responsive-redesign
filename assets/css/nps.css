@@ -76,11 +76,13 @@ body {
 /* adds the word Menu next to the hamburger menu icon */
 .navbar-toggle:before
 {
-content:"Menu";
-left:-50px;
-top:4px;
+content:"MENU";
+left:-6px;
+top:24px;
 position:absolute;
 width:50px;
+color:white;
+font-size: 9px;
 }
 
 
