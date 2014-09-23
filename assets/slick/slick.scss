@@ -157,8 +157,8 @@ $opacity-not-active: .25;
 .slick-next {
     position: absolute;
     display: block;
-    height: 50px;
-    width: 50px;
+    height: 20px;
+    width: 20px;
     line-height: 0;
     font-size: 0;
     cursor: pointer;
@@ -184,7 +184,7 @@ $opacity-not-active: .25;
 }
 .slick-prev:before, .slick-next:before {
     font-family: $slick-font-family;
-    font-size: 20px;
+    font-size: 50px;
     line-height: 1;
     color: $slick-arrow-color;
     opacity: $opacity-default;
