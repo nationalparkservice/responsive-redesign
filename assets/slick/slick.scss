@@ -179,6 +179,7 @@ $opacity-not-active: .25;
     }
     &.slick-disabled:before {
         opacity: $opacity-not-active;
+		cursor:none;
     }
 }
 .slick-prev:before, .slick-next:before {
