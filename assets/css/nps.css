@@ -73,6 +73,18 @@ body {
 
 
 
+/* adds the word Menu next to the hamburger menu icon */
+.navbar-toggle:before
+{
+content:"Menu";
+left:-50px;
+top:4px;
+position:absolute;
+width:50px;
+}
+
+
+
 .page-title {
 	border-bottom: 1px solid #d8d8d8;
 	color: #464646;
