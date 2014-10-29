@@ -1,0 +1,86 @@
+@media print {
+html * {
+  float:none !important;
+}
+
+body { 
+  background: #fff; 
+  font-family: Georgia, 'Times New Roman', serif; 
+  line-height: 16pt; 
+  width:82%;
+  color: #000;
+  font-size: 12pt;
+}
+
+.page-title {line-height: 22pt;}
+
+body a {font-weight: bold; text-decoration: underline; color: #06c;}
+/* flatten ALL links internal and external */ 
+body a:link:after { content: " (http://www.nps.gov" attr(href) ") "; }
+/* NOW override if external links and only flatten external links */
+body a[href^=http]:after { content: " (" attr(href) ") "; } 
+/* now kill all the tel and mailto links... */
+body a[href^="tel"]:after {content: "";}
+body a[href^="mailto"]:after {content: "";}
+
+
+#printInformationDisplayPanel {
+  border:solid 1px black; 
+  padding:1em; 
+  font-size: 80%; 
+  width: 90%; 
+  height: 90%;
+  margin-top: 10px;
+}
+
+#skip,
+#sub-nav,
+#header-container,
+#bap,
+#admin-utils,
+#utils,
+#content-bottom, 
+#breadcrumb-container, 
+#site-map-container,
+.links,
+.social,
+.related-promo-list,
+.one-third-col,
+.carousel-list,
+#alert,
+#right,
+.mini,
+.urb-browser
+{display: none !important; height: 0px !important; width: 0px !important;}
+
+#header-container * {display: none;}
+
+.fact {height: 0px; width: 0px;}
+.fact p {display: none;}
+.fact img {display: none;}
+.fact h2 {display: none;}
+
+#leftnav, #npsNav {display: none !important;}
+.connect_with_us {display: none !important;}
+.ratings-box {display:none;}
+
+/* top level non park pages */
+#left {width: 100% !important; background: transparent;}
+
+#main-content {padding: 0px; margin: 0px; overflow: visible; width:100% !important;  background: transparent;}
+.textWrappedAroundImage  {padding: 0px; margin: 0px; overflow: visible; width:100% !important;}
+.textWrappedAroundImage div  {padding: 0px; margin: 0px; overflow: visible; width:100% !important;}
+/*.textWrappedAroundImage p  {width:120% !important;} */
+.two-third-col {width: 100%}
+
+/* education/lesson plan stuff */
+/* put a lot of these in, we never know how many a lesson plan will use, but PROBALLY never more than 16 */
+#step1, #step2, #step3, #step4, #step5, #step6, #step7, #step8, #step9, #step10, #step11, #step12, #step13, #step14, #step15, #step16 {
+  display: inline-block !important; overflow: visible; 
+}
+.ui-widget-content, .ui-tabs-panel {display: inline-block !important; overflow: visible; }
+.ui-tabs-nav, .tabbed-nav, .content-viewer-controls {display: none !important; height: 0px !important; width: 0px !important;}
+#procedure-view {display:none !important;}
+
+#header #nav li ul li a {display:  none !important;}
+}
