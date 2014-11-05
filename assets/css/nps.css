@@ -607,7 +607,16 @@ a:hover, a:active {
   width: 708px;
 }
 */
-.carouselWrapper, .carouselTitle {
+.carouselRow {
+    margin-bottom: 20px;   
+}
+.carouselWrapper {
+  margin: 0 15px;
+}
+.carouselItem h3 {
+    text-decoration: underline;
+}
+.carouselTitle {
   margin: 0 15px;
 }
 .carouselTitle {
