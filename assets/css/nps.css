@@ -1205,3 +1205,9 @@ a:hover, a:active {
 a.more:after {
   content: '\A0\BB';
 }
+
+/* Mobile style quicklinks */
+.mobileQuicklinks {
+    width:90%;
+    margin: 20px auto;
+}
