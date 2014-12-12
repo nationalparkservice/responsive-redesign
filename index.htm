@@ -1,3 +1,6 @@
+<!-- Build MENU text into navbar-toggle -->
+<!-- Work on slick slider -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,22 +25,24 @@
   <body>
     <div class="container">
       <!-- TOP BLACK BAR - MOBILE -->
-      <div class="hidden-md hidden-lg">
+      <div class="hidden-lg hidden-md">
         <nav class="navbar navbar-inverse" role="navigation">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <button style="padding:6px 8px 18px 8px;" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-mobile">
+            <button class="navbar-toggle" data-target=".navbar-mobile" data-toggle="collapse" type="button">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img class="img-responsive" src="assets/img/chrome/logos/main-logoSmall.png" alt="National Park Service"></a>
+            <a class="navbar-brand" href="#">
+              <img alt="National Park Service" class="img-responsive" src="assets/img/chrome/logos/main-logoSmall.png">
+            </a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse navbar-mobile" >
-            <ul class="mobileNavBar">
-              <h2>Explore the Park Website</h2>
+          <div class="collapse navbar-collapse navbar-mobile">
+            <ul>
+              <h2>Yosemite National Park</h2>
               <li><a href="/yose/">Park Home</a></li>
               <li><a href="/yose/planyourvisit/">Plan Your Visit</a></li>
               <li><a href="#">Photos &amp; Multimedia</a></li>
@@ -50,8 +55,8 @@
               <li><a href="#">Support Your Park</a></li>
               <li><a href="#">Bookstore</a></li>
             </ul>
-            <ul class="mobileNavBar">
-              <H2>Explore NPS.gov</H2>
+            <ul>
+              <h2>National Park Service</h2>
                 <li><a href="/findapark/index.htm">Find a Park</a></li>
                 <li class="dropdown">
                   <a href="/history/" class="dropdown-toggle" data-toggle="dropdown">Discover History</a>
@@ -160,7 +165,7 @@
             <ul class="nav navbar-nav">
               <li><a href="/findapark/index.htm">Find a Park</a></li>
               <li class="dropdown">
-                <a href="/history/" class="dropdown-toggle" data-toggle="dropdown">Discover History</a>
+                <a href="/history/" class="dropdown-toggle" data-toggle="dropdown">Discover History <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="/history/people.htm">People - MEGAMENUS! This is an example of how you can make it as wide as you want to.</a></li>
                   <li><a href="/history/places.htm">Places</a></li>
@@ -174,7 +179,7 @@
                 </ul>
               </li>
               <li class="dropdown">
-                <a href="nature.nps.gov" class="dropdown-toggle" data-toggle="dropdown">Explore Nature</a>
+                <a href="nature.nps.gov" class="dropdown-toggle" data-toggle="dropdown">Explore Nature <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="http://www.nature.nps.gov/air/">Air Resources</a></li>
                   <li><a href="http://www.nature.nps.gov/biology/">Biological Resources</a></li>
@@ -194,7 +199,7 @@
                 </ul>
               </li>
               <li class="dropdown">
-                <a href="/getinvolved/" class="dropdown-toggle" data-toggle="dropdown">Get Involved</a>
+                <a href="/getinvolved/" class="dropdown-toggle" data-toggle="dropdown">Get Involved <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="/getinvolved/volunteer.htm">Volunteer</a></li>
                   <li><a href="/getinvolved/donate.htm">Donate</a></li>
@@ -203,7 +208,7 @@
                 </ul>
               </li>
               <li class="dropdown">
-                <a href="/communities/" class="dropdown-toggle" data-toggle="dropdown">Working with Communities</a>
+                <a href="/communities/" class="dropdown-toggle" data-toggle="dropdown">Working with Communities <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="/tps/tax-incentives.htm">Tax Incentives</a></li>
                   <li><a href="/history/nr">National Register of Historic Places</a></li>
@@ -213,7 +218,7 @@
                 </ul>
               </li>
               <li class="dropdown">
-                <a href="/teachers/" class="dropdown-toggle" data-toggle="dropdown">Teachers</a>
+                <a href="/teachers/" class="dropdown-toggle" data-toggle="dropdown">Teachers <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="/teachers/classrooms.htm">Parks as Classrooms</a></li>
                   <li><a href="/teachers/development.htm">Professional Development</a></li>
@@ -222,7 +227,7 @@
               </li>
               <li><a href="/kids/">Kids</a></li>
               <li class="dropdown">
-                <a href="/aboutus/" class="dropdown-toggle" data-toggle="dropdown">About Us</a>
+                <a href="/aboutus/" class="dropdown-toggle" data-toggle="dropdown">About Us <span class="caret"></span></a>
                   <ul class="dropdown-menu" style="left:auto;right:0;">
                     <li><a href="/aboutus/workwithus.htm">Work With Us</a></li>
                     <li><a href="/aboutus/jobsforstudents.htm">Jobs for Students</a></li>
@@ -631,7 +636,6 @@
         </ul>
       </div><!-- end of Sitemap -->
     </div><!-- end of #site-map-container -->
-      
     <!-- Desktop Footer -->
     <div class="footer-container hidden-sm hidden-xs">
       <div class="clearfix container footer">
@@ -642,51 +646,56 @@
           <div class="slogan"></div>
         </div>
         <ul class="links">
-          <li><a href="/faqs.htm">Frequently Asked Questions</a></li>
-          <li><a href="/aboutus/website-policies.htm">Website Policies</a></li>
-          <li><a href="/contacts.htm">Contact Us</a></li>
+          <li>
+            <a href="/faqs.htm">Frequently Asked Questions</a>
+          </li>
+          <li>
+            <a href="/aboutus/website-policies.htm">Website Policies</a>
+          </li>
+          <li>
+            <a href="/contacts.htm">Contact Us</a>
+          </li>
         </ul>
         <ul class="social">
-          <li class="youtube"><a href="http://www.youtube.com/nationalparkservice">YouTube</a></li>
-          <li class="itunes"><a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewArtistLegacy?cc=us&amp;id=216751324">iTunes</a></li>
+          <li class="youtube">
+            <a href="http://www.youtube.com/nationalparkservice">YouTube</a>
+          </li>
+          <li class="itunes">
+            <a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewArtistLegacy?cc=us&amp;id=216751324">iTunes</a>
+          </li>
         </ul>
         <ul class="social">
-          <li class="facebook"><a href="http://www.facebook.com/nationalparkservice">Facebook</a></li>
-          <li class="twitter"><a href="http://twitter.com/natlparkservice">Twitter</a></li>
+          <li class="facebook">
+            <a href="http://www.facebook.com/nationalparkservice">Facebook</a>
+          </li>
+          <li class="twitter">
+            <a href="http://twitter.com/natlparkservice">Twitter</a>
+          </li>
         </ul>
         <div class="updated">
-          <p>Last Updated: 06/07/2014</p>
+          <p>Last Updated: 12/12/2014</p>
         </div>
       </div>
     </div><!-- end of desktop footer-->
-      
-<!-- Mobile Footer -->
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 mobileQuicklinks hidden-md hidden-lg hidden-sm">
-
-      <!-- Mobile QuickLinks Nav -->
-              <ul class="list-group">
-                  <li class="list-group-item"><h4>Park Quick Links</h4></li>
-                  <a href="/yose/planyourvisit/directions.htm" class="list-group-item">Directions</a>
-                  <a href="/yose/planyourvisit/hours.htm" class="list-group-item">Operating Hours &amp; Seasons</a>
-                  <a href="/yose/planyourvisit/feesandreservations.htm" class="list-group-item">Fees and Reservations</a>
-                  <a href="/yose/planyourvisit/conditions.htm" class="list-group-item">Current Conditions, Road Info, Facilities Status</a>
-                  <a href="/yose/supportyourpark/volunteer.htm" class="list-group-item">Volunteer in Yosemite</a>
-                  <a href="/yose/blogs/fireinfo.htm" class="list-group-item">Current Fire Information</a>
-                </ul>
-              
-            </div>
-          </div>
+    <!-- Mobile Footer -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mobileQuicklinks hidden-md hidden-lg hidden-sm">
+          <!-- Mobile QuickLinks Nav -->
+          <ul class="list-group">
+            <li class="list-group-item">
+              <h4>Quick Links</h4>
+            </li>
+            <a href="/yose/planyourvisit/directions.htm" class="list-group-item">Directions</a>
+            <a href="/yose/planyourvisit/hours.htm" class="list-group-item">Operating Hours &amp; Seasons</a>
+            <a href="/yose/planyourvisit/feesandreservations.htm" class="list-group-item">Fees and Reservations</a>
+            <a href="/yose/planyourvisit/conditions.htm" class="list-group-item">Current Conditions, Road Info, Facilities Status</a>
+            <a href="/yose/supportyourpark/volunteer.htm" class="list-group-item">Volunteer in Yosemite</a>
+            <a href="/yose/blogs/fireinfo.htm" class="list-group-item">Current Fire Information</a>
+          </ul>
+        </div>
       </div>
-      
-
-      
-<!-- End of Mobile Footer -->
-      
-      
-      
-      
+    </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://www.nps.gov/npmap/bootstrap/3.2.0/dist/js/nps-bootstrap.min.js"></script>
     <script src="assets/libs/slick/slick.min.js"></script>
