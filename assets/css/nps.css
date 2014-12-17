@@ -1207,14 +1207,45 @@ ul.related-promo-list {
 }
 
 
+
+
+
+
+
 /* More Content area on Subject Sites */
-
+.MoreContentContainer {
+    width: 738px;
+      border: none;
+      margin: 0;
+      padding: 0;
+    background-color:#5e7630;
+}
+.MoreContentHeader {
+    margin:0;
+    background-color: #506429;
+}
+    h2 {
+        color: #FFFFFF;
+        margin: 0;
+        padding: 15px 0 10px 23px;
+    }
 .MoreContent {
-    background-color:red;
+    margin:0;
+    padding:10px 0 0 0;
+    background-color:#5e7630;
+    width: 738px;
+    display:inline-block;
 }
-.MoreContentSpacer {
-    margin: 24px 0 0 25px;
+    .MoreContent h5{ 
+        color: #ffe195;
+        font-size: 11px;
+        font-weight: bold;
+        margin-bottom: 2px;
+    }
+.MoreContentSpacer {/* Makes the green box align horizontally with the bottom of the content area */
+    margin: 0;
     width: 158px;
+    display:inline-block;
 }
 
 
@@ -1222,60 +1253,40 @@ ul.related-promo-list {
 
 
 
-
-#content-more #more-top {
-	background: transparent url("http://www.nps.gov/common/commonspot/templates/images/chrome/bg/content-more-top.png") no-repeat left top;
-	height: 8px;
-    width: 100%;
-}
-#content-more #more-title {
-	background: transparent url("http://www.nps.gov/common/commonspot/templates/images/chrome/bg/content-more-title.png") repeat-y left top;
-	padding: 0 0;
-    width: 100%;	
-}
-#content-more #more-title h2 {
-	color: #FFFFFF;
-	margin-bottom: 0px;	
-	padding: 0 23px 5px;
-}
-#content-more #more-content {
-	background: transparent url("http://www.nps.gov/common/commonspot/templates/images/chrome/bg/content-more.png") repeat-y left top;
-	padding: 12px 5px;
-    width: 100%;	
-}
-.ie7 #content-more #more-content {
-	padding-bottom: 17px;
-}
-#content-more #more-content h5 {
-	color: #ffe195;
-	font-size: 11px;
-	font-weight: bold;
-	margin-bottom: 2px;
-}
-#content-more #more-list {
-	background: transparent url("http://www.nps.gov/common/commonspot/templates/images/chrome/bg/content-more-list.png") repeat-y left top;	
+.MoreContentList {
 	padding: 0 22px;
+    display:inline-block;
 }
-#content-more #more-list ul a {
-	color: #FFFFFF;
-	font-weight: bold;
+.MoreContentItem {
+    float:left;
+    border-right-style:dotted;
+    border-color: white;  
 }
-#content-more #more-list ul .all {
-	font-size: 12px;
-	font-weight: normal;
-}
-#content-more #more-list ul ul{
-	background: none;
-	margin-left: 0px;
-}
-#content-more #more-list li {
-    float: left;
+.MoreContentList li {
     line-height: 19px;
     margin-right: 31px;
     width: 210px;
+    list-style: none;
 }
-#content-more #more-list li li {
+
+.MoreContentList ul {
+    padding-left:0;
+}
+.MoreContentList li li {
 	float: inherit;
 	margin-bottom: 4px;
 	margin-right: 0px;
+}
+.MoreContentList ul a {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.MoreContentList ul .all {
+	font-size: 12px;
+	font-weight: normal;
+}
+@media screen
+.last {
+clear: right;
+margin-right: 0 !important;
 }
