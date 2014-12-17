@@ -1277,7 +1277,7 @@ ul.related-promo-list {
     .MoreContentItem {
         float:left;
         width:221px;
-        background: url(/assets/img/bg/borderForMoreContentBox.png) repeat-y right;
+        background: url("/assets/img/bg/borderForMoreContentBox.png") repeat-y right;
     }
 }
 .MoreContentLast {
@@ -1314,6 +1314,7 @@ ul.related-promo-list {
 	font-size: 12px;
 	font-weight: normal;
 }
+
 
 
 /* MOBILE FOOTER */
