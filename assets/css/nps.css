@@ -1181,12 +1181,20 @@ ul.related-promo-list {
 	clear: both;
     color: #7f7565;
     padding: 16px 0;
+    margin-bottom:20px;
+}
+@media (min-width:992px){
+    .content .fact, .fact {
+        margin-bottom:0;
+    }
 }
 .fact h2 {
 	color: #7f7565;
     font-size: 20px;
     font-weight: normal;
     margin-bottom: 12px;
+    margin-left:0;
+    padding-left:0;
 }
 .fact img {
     border: 1px solid #BDBBB1;
@@ -1213,12 +1221,22 @@ ul.related-promo-list {
 
 
 /* More Content area on Subject Sites */
+
+.MoreContentSpacer {/* Aligns the green box under the content area */
+    margin: 0;
+    display:inline-block;
+}
 .MoreContentContainer {
-    width: 738px;
-      border: none;
-      margin: 0;
-      padding: 0;
+    border: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     background-color:#5e7630;
+}
+@media (min-width: 992px) { 
+    .MoreContentContainer {
+        width: 738px;
+    }
 }
 .MoreContentHeader {
     margin:0;
@@ -1233,7 +1251,6 @@ ul.related-promo-list {
     margin:0;
     padding:10px 0 0 0;
     background-color:#5e7630;
-    width: 738px;
     display:inline-block;
 }
     .MoreContent h5{ 
@@ -1242,11 +1259,6 @@ ul.related-promo-list {
         font-weight: bold;
         margin-bottom: 2px;
     }
-.MoreContentSpacer {/* Makes the green box align horizontally with the bottom of the content area */
-    margin: 0;
-    width: 158px;
-    display:inline-block;
-}
 
 
 
@@ -1259,18 +1271,35 @@ ul.related-promo-list {
 }
 .MoreContentItem {
     float:left;
-    border-right-style:dotted;
-    border-color: white;  
+    width:100%;
+}
+@media (min-width: 768px) { 
+    .MoreContentItem {
+        float:left;
+        width:221px;
+        background: url(/assets/img/bg/borderForMoreContentBox.png) repeat-y right;
+    }
+}
+.MoreContentLast {
+    width:100%;
+}
+@media (min-width: 768px) { 
+    .MoreContentLast {
+        float:left;
+        margin-right: 0 !important;
+        width:221px;
+    }
 }
 .MoreContentList li {
     line-height: 19px;
-    margin-right: 31px;
-    width: 210px;
+    margin-right: 15px;
+    padding-right: 5px;
     list-style: none;
 }
 
 .MoreContentList ul {
     padding-left:0;
+    border-color: white; 
 }
 .MoreContentList li li {
 	float: inherit;
@@ -1285,8 +1314,9 @@ ul.related-promo-list {
 	font-size: 12px;
 	font-weight: normal;
 }
-@media screen
-.last {
-clear: right;
-margin-right: 0 !important;
+
+
+
+.mobileFooter {
+    background-color: black;
 }
