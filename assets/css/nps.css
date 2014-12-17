@@ -1316,8 +1316,84 @@ ul.related-promo-list {
 }
 
 
-
+/* MOBILE FOOTER */
 .mobileFooter {
     background-color: black;
     padding: 20px;
+    display: inline-block;
+    width:100%;
+}
+.mobileFooterLogo {
+    background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/logos/footer-logo.png") no-repeat scroll #000;
+	height: 59px;
+    width: 46px;
+    padding: 0 30px 20px; 0;
+    float:left;
+}
+.mobileFooter .text-logo {
+    background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/logos/text-logo.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 28px;
+    width: 176px;
+}
+.mobileFooter .slogan {
+    background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/logos/slogan.png") no-repeat scroll 0 0 transparent;
+    float: right;
+    height: 12px;
+    margin-top: 14px;
+    width: 259px;
+    float:right;
+    clear:right;
+}
+.mobileFooter .links {
+    float:none;
+    margin-top: 10px;
+    margin-left:20px;
+}
+@media (min-width: 768px) { 
+    .mobileFooter .links {
+  	float: left;
+    }
+}
+.mobileFooter .links a {
+	color: #fff;
+}
+.mobileFooter .links li {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.mobileFooter .social {
+    float:left;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-top: 20px;
+}
+@media (min-width: 768px) { 
+    .mobileFooter .social {
+        float: right;
+        margin-top: 0px;
+    }
+}
+.mobileFooter .social li {
+	margin-bottom: 7px;
+}
+.mobileFooter .social a {
+    color: #FFFFFF;
+    font-size: 12px;
+    padding-left: 26px;
+}
+.mobileFooter .social .facebook {
+	background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 0px 4px transparent;
+}
+.mobileFooter .social .twitter {
+	background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 0px -20px transparent;
+}
+.mobileFooter .social .youtube {
+	background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 4px -42px transparent;
+	padding-left: 15px;
+}
+.mobileFooter .social .itunes {
+	background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 4px -66px transparent;
+	padding-left:15px;
 }
