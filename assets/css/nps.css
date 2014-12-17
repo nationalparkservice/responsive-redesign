@@ -1134,3 +1134,148 @@ a.more:after {
   margin: 20px auto;
   width: 90%;
 }
+
+/* Related Promo List */
+ul.related-promo-list {
+	margin: 0;
+    padding:0;
+}
+.related-promo-list li{
+	font-size: 12px;
+	line-height: 17px;
+	list-style-type: none;
+	margin-bottom: 28px;
+    width:50%;
+    float:left;
+}
+@media (min-width: 768px) { 
+    .related-promo-list li{
+        width:100%;
+        float:none;
+    }
+}
+.related-promo-list li img {
+	margin-bottom: 12px;
+}
+.related-promo-list li h3,
+.related-promo-list li h3 a {
+	color: black;
+	font-size: 13px;
+	font-weight: bold;	
+	margin-bottom: 0;
+}
+.related-promo-list li p {
+	margin-bottom: 0;
+        width: 95%;
+}
+@media (min-width: 768px) { 
+    .related-promo-list li p {
+        margin-bottom: 0;
+    }
+}
+
+
+/* fact */
+.content .fact, .fact {
+	background: url("http://www.nps.gov/common/commonspot/templates/images/bg/divider.png") no-repeat scroll center top transparent;
+	clear: both;
+    color: #7f7565;
+    padding: 16px 0;
+}
+.fact h2 {
+	color: #7f7565;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+.fact img {
+    border: 1px solid #BDBBB1;
+    float: left;
+    margin: 4px 20px 5px 0;
+}
+.fact p {
+    color: #706D5F;
+	font: italic 14px/20px Georgia, "Times New Roman", Times, serif;
+	margin-bottom:0;
+}
+.adjusted-for-fact .fact {
+	zoom:1;
+	bottom:0;
+	left: 29px;
+	/* position: absolute; */
+	width: 688px;
+}
+
+
+/* More Content area on Subject Sites */
+
+.MoreContent {
+    background-color:red;
+}
+.MoreContentSpacer {
+    margin: 24px 0 0 25px;
+    width: 158px;
+}
+
+
+
+
+
+
+
+#content-more #more-top {
+	background: transparent url("http://www.nps.gov/common/commonspot/templates/images/chrome/bg/content-more-top.png") no-repeat left top;
+	height: 8px;
+    width: 100%;
+}
+#content-more #more-title {
+	background: transparent url("http://www.nps.gov/common/commonspot/templates/images/chrome/bg/content-more-title.png") repeat-y left top;
+	padding: 0 0;
+    width: 100%;	
+}
+#content-more #more-title h2 {
+	color: #FFFFFF;
+	margin-bottom: 0px;	
+	padding: 0 23px 5px;
+}
+#content-more #more-content {
+	background: transparent url("http://www.nps.gov/common/commonspot/templates/images/chrome/bg/content-more.png") repeat-y left top;
+	padding: 12px 5px;
+    width: 100%;	
+}
+.ie7 #content-more #more-content {
+	padding-bottom: 17px;
+}
+#content-more #more-content h5 {
+	color: #ffe195;
+	font-size: 11px;
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+#content-more #more-list {
+	background: transparent url("http://www.nps.gov/common/commonspot/templates/images/chrome/bg/content-more-list.png") repeat-y left top;	
+	padding: 0 22px;
+}
+#content-more #more-list ul a {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+#content-more #more-list ul .all {
+	font-size: 12px;
+	font-weight: normal;
+}
+#content-more #more-list ul ul{
+	background: none;
+	margin-left: 0px;
+}
+#content-more #more-list li {
+    float: left;
+    line-height: 19px;
+    margin-right: 31px;
+    width: 210px;
+}
+#content-more #more-list li li {
+	float: inherit;
+	margin-bottom: 4px;
+	margin-right: 0px;
+}
