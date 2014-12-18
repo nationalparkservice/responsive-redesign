@@ -1225,12 +1225,13 @@ ul.related-promo-list {
     border: none;
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 0 0 30px 0;
     background-color:#5e7630;
 }
 @media (min-width: 992px) { 
     .MoreContentContainer {
         width: 738px;
+        padding: 0 0 0 0;
     }
 }
 .MoreContentHeader {
@@ -1254,12 +1255,6 @@ ul.related-promo-list {
         font-weight: bold;
         margin-bottom: 2px;
     }
-
-
-
-
-
-
 .MoreContentList {
 	padding: 0 22px;
     display:inline-block;
@@ -1315,7 +1310,7 @@ ul.related-promo-list {
 /* MOBILE FOOTER */
 .mobileFooter {
     background-color: black;
-    padding: 20px;
+    padding: 20px 20px 50px 20px;
     display: inline-block;
     width:100%;
 }
@@ -1339,8 +1334,18 @@ ul.related-promo-list {
     margin-top: 14px;
     width: 259px;
     float:right;
-    clear:right;
 }
+.footerHR {
+    clear:right;
+    margin:40px 0 20px 60px;
+    border-top:1px solid #7F7F7F;
+}
+.footerHR2 {
+    clear:right;
+    margin:20px 0 0 60px;
+    border-top:1px solid #7F7F7F;
+}
+
 .mobileFooter .links {
     float:none;
     margin-top: 10px;
