@@ -1150,7 +1150,7 @@ ul.related-promo-list {
     }
 }
 .related-promo-list li img {
-	margin-bottom: 12px;
+	margin-bottom: 0;
 }
 .related-promo-list li h3,
 .related-promo-list li h3 a {
@@ -1392,4 +1392,13 @@ ul.related-promo-list {
 .mobileFooter .social .itunes {
 	background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 4px -66px transparent;
 	padding-left:15px;
+}
+
+
+/* Styles for Subject Site pages */
+.subjectSiteContent {
+    padding-right: 30px
+}   
+.subjectMainPhoto {
+    margin: 0 0 20px -30px;
 }
