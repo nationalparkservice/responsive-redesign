@@ -42,15 +42,15 @@ body {
   margin: 0 0 20px 0;
   padding-bottom: 18px;
 }
+.page-title.park-title {  
+    border-bottom: none;
+    font-size: 26px;
+    margin-bottom: 12px;
+    padding-bottom: 0;
+}
 .landing-intro {
   margin-bottom: 20px
 }
-    .landing-intro .page-title {
-      border-bottom: none;
-      font-size: 26px;
-      margin-bottom: 12px;
-      padding-bottom: 0;
-    }
     .landing-intro p {
       color: #706d5f;
       font-size: 16px;
@@ -60,11 +60,6 @@ body {
   .landing-intro {
     margin-bottom: 40px
   }
-}
-.content-container h1 {
-  border: none;
-  font-size: 20px;
-  margin-bottom: 28px;
 }
 /* added for Commonspot */
 h2,
