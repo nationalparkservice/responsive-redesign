@@ -345,6 +345,9 @@ a:active {
   position: relative;
   z-index: 1;
 }
+.img-responsive{
+    width:100%;   
+}
     .bap-mobile .title {
       background: rgb(0, 0, 0); /* Creates the solid bg for IE8 */
       background: rgba(0, 0, 0, 0.5); /* Creates the transparent bg for ALL OTHER BROWSERS */
