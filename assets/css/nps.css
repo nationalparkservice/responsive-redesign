@@ -1104,7 +1104,7 @@ a:active {
           text-decoration: none;
         }
 .quickLinks {
-  margin: 2px 0 0 0;
+  margin: 2px 0 30px 0;
   padding: 0px;
   width: 181px;
 }
@@ -1410,3 +1410,6 @@ ul.related-promo-list {
 .subjectMainPhoto {
     margin: 0 0 20px -30px;
 }
+
+/* Make equal heights columns for the top section on park homepages */
+/* This is the fix to adding margin to bottom of quicklinks without it always needing to be there */
