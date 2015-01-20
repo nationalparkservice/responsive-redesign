@@ -1410,6 +1410,3 @@ ul.related-promo-list {
 .subjectMainPhoto {
     margin: 0 0 20px -30px;
 }
-
-/* Make equal heights columns for the top section on park homepages */
-/* This is the fix to adding margin to bottom of quicklinks without it always needing to be there */
