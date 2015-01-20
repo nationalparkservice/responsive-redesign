@@ -42,7 +42,7 @@ body {
   margin: 0 0 20px 0;
   padding-bottom: 18px;
 }
-.page-title.park-title {  
+.page-title.park-title {
     border-bottom: none;
     font-size: 26px;
     margin-bottom: 12px;
@@ -51,11 +51,11 @@ body {
 .landing-intro {
   margin-bottom: 20px
 }
-    .landing-intro p {
-      color: #706d5f;
-      font-size: 16px;
-      line-height: 24px;
-    }
+  .landing-intro p {
+    color: #706d5f;
+    font-size: 16px;
+    line-height: 24px;
+  }
 @media (min-width: 768px) { 
   .landing-intro {
     margin-bottom: 40px
@@ -258,23 +258,23 @@ a:active {
   margin-left: -2px;
   padding: 5px 19px;
 }
-    .navbar .dropdown-menu li {
-      border-bottom: 1px solid #e4e2dd;
-      color: #5b5b5b;
-      font-size: 13px;
-      margin: 0 -19px;
+  .navbar .dropdown-menu li {
+    border-bottom: 1px solid #e4e2dd;
+    color: #5b5b5b;
+    font-size: 13px;
+    margin: 0 -19px;
+  }
+    .navbar .dropdown-menu li a {
+      padding: 7px 15px
     }
-        .navbar .dropdown-menu li a {
-          padding: 7px 15px
-        }
-    .navbar .dropdown-menu li:last-child {
-      border-bottom: none
-    }
-    .navbar .dropdown-menu li:hover,
-    .navbar .dropdown-menu li a:hover {
-      background-color: #916800;
-      color: #fff;
-    }
+  .navbar .dropdown-menu li:last-child {
+    border-bottom: none
+  }
+  .navbar .dropdown-menu li:hover,
+  .navbar .dropdown-menu li a:hover {
+    background-color: #916800;
+    color: #fff;
+  }
 .nav > li > a {
   font-size: 13px;
   padding: 6px 15px;
@@ -345,19 +345,19 @@ a:active {
   position: relative;
   z-index: 1;
 }
-.img-responsive{
-    width:100%;   
+.img-responsive {
+    width:100%;
 }
-    .bap-mobile .title {
-      background: rgb(0, 0, 0); /* Creates the solid bg for IE8 */
-      background: rgba(0, 0, 0, 0.5); /* Creates the transparent bg for ALL OTHER BROWSERS */
-      bottom: 0;
-      color: #FFFFFF;
-      left: 0px;
-      position: absolute;
-      width: 100%;
-    }
-@media (max-width: 599px) { 
+  .bap-mobile .title {
+    background: rgb(0, 0, 0); /* Creates the solid bg for IE8 */
+    background: rgba(0, 0, 0, 0.5); /* Creates the transparent bg for ALL OTHER BROWSERS */
+    bottom: 0;
+    color: #FFFFFF;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+  }
+@media (max-width: 599px) {
   .bap-mobile .title {
     background: rgb(0, 0, 0);
     /* Creates the solid bg for IE8 */
@@ -377,7 +377,7 @@ a:active {
   margin: 0;
   padding: 0 0 0 23px;
 }
-@media (min-width:768px) { 
+@media (min-width:768px) {
   .bap-mobile .title h1 {
     font-size: 40px;
     font-weight: normal;
@@ -407,30 +407,30 @@ a:active {
   position: relative;
   z-index: 1;
 }
-    .bap .title {
-      /* TRANSPARENT STRIP BEHIND TEXT */
-      background: rgb(0, 0, 0); /* Creates the solid bg for IE8 */
-      background: rgba(0, 0, 0, 0.5); /* Creates the transparent bg for ALL OTHER BROWSERS */
-      bottom: 0;
-      color: #fff;
-      height: 79px;
-      left: 0;
-      position: absolute;
-      width: 100%;
+  .bap .title {
+    /* TRANSPARENT STRIP BEHIND TEXT */
+    background: rgb(0, 0, 0); /* Creates the solid bg for IE8 */
+    background: rgba(0, 0, 0, 0.5); /* Creates the transparent bg for ALL OTHER BROWSERS */
+    bottom: 0;
+    color: #fff;
+    height: 79px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+  .bap .bapTitleBox {
+    display: table;
+    float: left;
+    height: 79px;
+  }
+    .bap .bapTitleBox h1 {
+      font-size: 40px;
+      font-weight: normal;
+      letter-spacing: -0.7px;
+      line-height: 79px;
+      margin: 0;
+      padding: 0 0 0 23px;
     }
-    .bap .bapTitleBox {
-      display: table;
-      float: left;
-      height: 79px;
-    }
-        .bap .bapTitleBox h1 {
-          font-size: 40px;
-          font-weight: normal;
-          letter-spacing: -0.7px;
-          line-height: 79px;
-          margin: 0;
-          padding: 0 0 0 23px;
-        }
 .no-js .bap .bapTitleBox h1 {
   line-height: 1.1;
   width: 700px;
@@ -1135,14 +1135,14 @@ a.more:after {
 
 /* Related Promo List */
 ul.related-promo-list {
-	margin: 0;
+  margin: 0;
     padding:0;
 }
 .related-promo-list li{
-	font-size: 12px;
-	line-height: 17px;
-	list-style-type: none;
-	margin-bottom: 28px;
+  font-size: 12px;
+  line-height: 17px;
+  list-style-type: none;
+  margin-bottom: 28px;
     width:50%;
     float:left;
 }
@@ -1153,17 +1153,17 @@ ul.related-promo-list {
     }
 }
 .related-promo-list li img {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 .related-promo-list li h3,
 .related-promo-list li h3 a {
-	color: black;
-	font-size: 13px;
-	font-weight: bold;	
-	margin-bottom: 0;
+  color: black;
+  font-size: 13px;
+  font-weight: bold;  
+  margin-bottom: 0;
 }
 .related-promo-list li p {
-	margin-bottom: 0;
+  margin-bottom: 0;
         width: 95%;
 }
 @media (min-width: 768px) { 
@@ -1175,8 +1175,8 @@ ul.related-promo-list {
 
 /* fact */
 .content .fact, .fact {
-	background: url("http://www.nps.gov/common/commonspot/templates/images/bg/divider.png") no-repeat scroll center top transparent;
-	clear: both;
+  background: url("http://www.nps.gov/common/commonspot/templates/images/bg/divider.png") no-repeat scroll center top transparent;
+  clear: both;
     color: #7f7565;
     padding: 16px 0;
     margin-bottom:20px;
@@ -1187,7 +1187,7 @@ ul.related-promo-list {
     }
 }
 .fact h2 {
-	color: #7f7565;
+  color: #7f7565;
     font-size: 20px;
     font-weight: normal;
     margin-bottom: 12px;
@@ -1201,15 +1201,15 @@ ul.related-promo-list {
 }
 .fact p {
     color: #706D5F;
-	font: italic 14px/20px Georgia, "Times New Roman", Times, serif;
-	margin-bottom:0;
+  font: italic 14px/20px Georgia, "Times New Roman", Times, serif;
+  margin-bottom:0;
 }
 .adjusted-for-fact .fact {
-	zoom:1;
-	bottom:0;
-	left: 29px;
-	/* position: absolute; */
-	width: 688px;
+  zoom:1;
+  bottom:0;
+  left: 29px;
+  /* position: absolute; */
+  width: 688px;
 }
 
 
@@ -1259,7 +1259,7 @@ ul.related-promo-list {
         margin-bottom: 2px;
     }
 .MoreContentList {
-	padding: 0 22px;
+  padding: 0 22px;
     display:inline-block;
 }
 .MoreContentItem {
@@ -1295,17 +1295,17 @@ ul.related-promo-list {
     border-color: white; 
 }
 .MoreContentList li li {
-	float: inherit;
-	margin-bottom: 4px;
-	margin-right: 0px;
+  float: inherit;
+  margin-bottom: 4px;
+  margin-right: 0px;
 }
 .MoreContentList ul a {
-	color: #FFFFFF;
-	font-weight: bold;
+  color: #FFFFFF;
+  font-weight: bold;
 }
 .MoreContentList ul .all {
-	font-size: 12px;
-	font-weight: normal;
+  font-size: 12px;
+  font-weight: normal;
 }
 
 
@@ -1319,7 +1319,7 @@ ul.related-promo-list {
 }
 .mobileFooterLogo {
     background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/logos/footer-logo.png") no-repeat scroll #000;
-	height: 59px;
+  height: 59px;
     width: 46px;
     padding: 0 30px 20px; 0;
     float:left;
@@ -1356,11 +1356,11 @@ ul.related-promo-list {
 }
 @media (min-width: 768px) { 
     .mobileFooter .links {
-  	float: left;
+    float: left;
     }
 }
 .mobileFooter .links a {
-	color: #fff;
+  color: #fff;
 }
 .mobileFooter .links li {
     font-size: 12px;
@@ -1380,7 +1380,7 @@ ul.related-promo-list {
     }
 }
 .mobileFooter .social li {
-	margin-bottom: 7px;
+  margin-bottom: 7px;
 }
 .mobileFooter .social a {
     color: #FFFFFF;
@@ -1388,20 +1388,19 @@ ul.related-promo-list {
     padding-left: 26px;
 }
 .mobileFooter .social .facebook {
-	background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 0px 4px transparent;
+  background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 0px 4px transparent;
 }
 .mobileFooter .social .twitter {
-	background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 0px -20px transparent;
+  background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 0px -20px transparent;
 }
 .mobileFooter .social .youtube {
-	background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 4px -42px transparent;
-	padding-left: 15px;
+  background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 4px -42px transparent;
+  padding-left: 15px;
 }
 .mobileFooter .social .itunes {
-	background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 4px -66px transparent;
-	padding-left:15px;
+  background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 4px -66px transparent;
+  padding-left:15px;
 }
-
 
 /* Styles for Subject Site pages */
 .subjectSiteContent {
@@ -1410,3 +1409,11 @@ ul.related-promo-list {
 .subjectMainPhoto {
     margin: 0 0 20px -30px;
 }
+
+#npsNav {
+  margin-top: -15px;
+}
+
+
+
+
