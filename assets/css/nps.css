@@ -1410,3 +1410,16 @@ ul.related-promo-list {
 .subjectMainPhoto {
     margin: 0 0 20px -30px;
 }
+
+
+
+
+/* EVERYTHING BELOW THIS LINE IS FOR TESTING THE MOBILE SEARCH DROPDOWN */
+
+
+.dropdown-menu {
+	min-width: 250px;
+}
+
+
+
