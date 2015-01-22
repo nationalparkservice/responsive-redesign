@@ -1428,9 +1428,11 @@ ul.related-promo-list {
     color: #fff;
 }
 .mobileSearch .navbar-toggle {
-  padding: 9px 8px 9px 8px;
+  padding: 9px 12px 9px 12px;
 }
-
+glyphiconBig {
+    font-size: 3em;   
+}
 
 
 /* Makes the glyphicons work */
