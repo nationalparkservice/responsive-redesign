@@ -1421,5 +1421,22 @@ ul.related-promo-list {
 	min-width: 250px;
 }
 
+.mobileSearch .navbar-toggle:before {
+  content:none;
+}
+.mobileSearch .navbar-toggle a {
+    color: #fff;
+}
+.mobileSearch .navbar-toggle {
+  padding: 9px 8px 9px 8px;
+}
 
 
+
+/* Makes the glyphicons work */
+@font-face {
+  font-family: 'Glyphicons Halflings';
+
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
