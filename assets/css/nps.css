@@ -1129,8 +1129,8 @@ a.more:after {
   content: '\A0\BB'
 }
 .mobileQuicklinks {
-  margin: 10px 0 50px 0 ;
-  /*width: 90%;*/
+  margin: 10px auto 50px auto ;
+  width: 90%;
 }
 
 /* Related Promo List */
