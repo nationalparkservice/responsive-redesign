@@ -1414,7 +1414,7 @@ ul.related-promo-list {
 
 
 
-/* EVERYTHING BELOW THIS LINE IS FOR TESTING THE MOBILE SEARCH DROPDOWN */
+/* MOBILE SEARCH DROPDOWN */
 
 
 .dropdown-menu {
@@ -1428,10 +1428,10 @@ ul.related-promo-list {
     color: #fff;
 }
 .mobileSearch .navbar-toggle {
-  padding: 9px 12px 9px 12px;
+    padding: 6px 8px 6px 8px;
 }
-glyphiconBig {
-    font-size: 3em;   
+.glyphicon.bigger {
+    font-size: 1.5em;
 }
 
 
