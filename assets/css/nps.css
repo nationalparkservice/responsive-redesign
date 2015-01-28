@@ -152,7 +152,7 @@ a:active {
 .content-container {
   background-color: #fff;
   border: none;
-  margin: 0;
+  margin: 5px 0 0 0;
   padding: 30px 30px 0 30px;
 }
 @media (min-width: 992px) { 
@@ -166,9 +166,7 @@ a:active {
     -moz-box-shadow: 0 0 3px #cecece;
     box-shadow: 0 0 3px #cecece;
     border: 1px solid #dfdbca;
-    margin: 5px 0 0 0;
     padding: 30px 24px;
-    width: 738px;
   }
 }
 .utilsWrapper {
