@@ -152,7 +152,7 @@ a:active {
 .content-container {
   background-color: #fff;
   border: none;
-  margin: 0;
+  margin: 5px 0 0 0;
   padding: 30px 30px 0 30px;
 }
 @media (min-width: 992px) { 
@@ -166,9 +166,7 @@ a:active {
     -moz-box-shadow: 0 0 3px #cecece;
     box-shadow: 0 0 3px #cecece;
     border: 1px solid #dfdbca;
-    margin: 5px 0 0 0;
     padding: 30px 24px;
-    width: 738px;
   }
 }
 .utilsWrapper {
@@ -1127,7 +1125,7 @@ a.more:after {
   content: '\A0\BB'
 }
 .mobileQuicklinks {
-  margin: 20px auto;
+  margin: 10px auto 50px auto ;
   width: 90%;
 }
 
@@ -1408,15 +1406,31 @@ ul.related-promo-list {
     margin: 0 0 20px -30px;
 }
 
-<<<<<<< HEAD
 #npsNav {
   margin-top: -15px;
 }
 
+/* MOBILE SEARCH DROPDOWN */
+.dropdown-menu {
+  min-width: 250px;
+}
+.mobileSearch .navbar-toggle:before {
+  content:none;
+}
+.mobileSearch .navbar-toggle a {
+    color: #fff;
+}
+.mobileSearch .navbar-toggle {
+    padding: 6px 8px 6px 8px;
+}
+.glyphicon.bigger {
+    font-size: 1.5em;
+}
 
+/* Makes the glyphicons work */
+@font-face {
+  font-family: 'Glyphicons Halflings';
 
-
-=======
-/* Make equal heights columns for the top section on park homepages */
-/* This is the fix to adding margin to bottom of quicklinks without it always needing to be there */
->>>>>>> 3cc932053e4d948150f352bd8d71cefa806b0960
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
