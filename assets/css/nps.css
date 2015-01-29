@@ -485,11 +485,11 @@ a:active {
   vertical-align: middle;
   text-shadow: 2px 2px 3px #000;
 }
-    .bap .sub h2 .details {
-      display: block;
-      font-weight: normal;
-      font-size: 14px;
-    }
+  .bap .sub h2 .details {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+  }
 .bap .sub h3 {
   color: #fff;
   display: table-cell;
@@ -512,64 +512,64 @@ a:active {
 }
 .bap .sub a,
 .bap .sub p {
-  text-shadow: 2px 2px 3px #000
+  text-shadow: 2px 2px 3px #000;
 }
 .bap .sub a {
-  color: #fff
+  color: #fff;
 }
 /* Utilities area - Print and  */
 .utils {
   float: right;
   margin: 17px 17px 10px 0;
 }
-    .utils a {
-      display: block;
-      height: 14px;
-      overflow: hidden;
-      text-indent: -9999px;
-    }
+  .utils a {
+    display: block;
+    height: 14px;
+    overflow: hidden;
+    text-indent: -9999px;
+  }
 .text-sizes {
-  float: left
+  float: left;
 }
-    .text-sizes .small a {
-      background: url(../img/chrome/text-sizes.png) no-repeat scroll 0 -13px transparent;
-      float: left;
-      margin: 0 10px 0 0;
-      width: 7px;
-    }
-    .text-sizes .small a:hover,
-    .text-sizes .small .active {
-      background-position: 0 0
-    }
-    .text-sizes .medium a {
-      background: url(../img/chrome/text-sizes.png) no-repeat scroll -18px -13px transparent;
-      float: left;
-      margin: 0 10px 0 0;
-      width: 9px;
-    }
-    .text-sizes .medium a:hover,
-    .text-sizes .medium .active {
-      background-position: -18px 0
-    }
-    .text-sizes .large a {
-      background: url(../img/chrome/text-sizes.png) no-repeat scroll -36px -13px transparent;
-      float: right;
-      width: 11px;
-    }
-    .text-sizes .large a:hover,
-    .text-sizes .large .active {
-      background-position: -36px 0
-    }
+  .text-sizes .small a {
+    background: url(../img/chrome/text-sizes.png) no-repeat scroll 0 -13px transparent;
+    float: left;
+    margin: 0 10px 0 0;
+    width: 7px;
+  }
+  .text-sizes .small a:hover,
+  .text-sizes .small .active {
+    background-position: 0 0
+  }
+  .text-sizes .medium a {
+    background: url(../img/chrome/text-sizes.png) no-repeat scroll -18px -13px transparent;
+    float: left;
+    margin: 0 10px 0 0;
+    width: 9px;
+  }
+  .text-sizes .medium a:hover,
+  .text-sizes .medium .active {
+    background-position: -18px 0
+  }
+  .text-sizes .large a {
+    background: url(../img/chrome/text-sizes.png) no-repeat scroll -36px -13px transparent;
+    float: right;
+    width: 11px;
+  }
+  .text-sizes .large a:hover,
+  .text-sizes .large .active {
+    background-position: -36px 0
+  }
 .utils .print {
   float: right;
   margin-left: 15px;
   margin-top: 1px;
   width: 14px;
 }
-    .utils .print a {
-      background: url(../img/chrome/print.png) no-repeat scroll 0 0 transparent;
-      width: 14px;
-    }
+  .utils .print a {
+    background: url(../img/chrome/print.png) no-repeat scroll 0 0 transparent;
+    width: 14px;
+  }
     .utils .print a:hover {
       background-position: 0 -14px
     }
@@ -585,31 +585,29 @@ a:active {
   text-decoration: underline
 }
 .carouselTitle {
-  margin: 0 15px
+  background-color: #5e7630;
+  margin: 0 15px;
 }
-.carouselTitle {
-  background-color: #5e7630
-}
-    .carouselTitle h2 {
-      color: #fff;
-      font-size: 18px;
-      font-weight: normal;
-      margin: 0;
-      padding: 10px 0 10px 17px;
-    }
+  .carouselTitle h2 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+    padding: 10px 0 10px 17px;
+  }
 .slick-slide {
   margin: 40px 40px 0 40px
 }
-    .slick-slide .image-wrapper img {
-      border: none;
-      height: 150px;
-      width: 150px;
-    }
+  .slick-slide .image-wrapper img {
+    border: none;
+    height: 150px;
+    width: 150px;
+  }
 .slick-next {
-  right: 0
+  right: 0;
 }
 .slick-prev {
-  left: 0
+  left: 0;
 }
 /* ///////////////////////////////////////////////////////////////////// 
 //  Footer
