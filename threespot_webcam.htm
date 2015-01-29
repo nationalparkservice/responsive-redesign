@@ -1,3 +1,5 @@
+<!-- Build MENU text into navbar-toggle -->
+<!-- Work on slick slider -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,6 +15,8 @@
     <link href="assets/libs/colorbox/colorbox.css" rel="stylesheet">
     <link href="assets/libs/slick/slick.css" rel="stylesheet">
     <link href="assets/css/nps.css" rel="stylesheet">
+    <link href="assets/css/jquery.fs.boxer.css" rel="stylesheet">
+    <link href="assets/css/threespot.css" rel="stylesheet">
     <link href="assets/css/print.css" rel="stylesheet">
     <!--[if lt IE 9]>
       <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -21,42 +25,18 @@
     <title>Yosemite National Park</title>
   </head>
   <body>
-      
-
-      
-      
     <div class="container">
       <!-- TOP BLACK BAR - MOBILE -->
       <div class="hidden-lg hidden-md">
         <nav class="navbar navbar-inverse" role="navigation">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-             <!-- hamburger --> 
             <button class="navbar-toggle" data-target=".navbar-mobile" data-toggle="collapse" type="button">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-              
-              <!-- mobile search -->
-              <span class="mobileSearch">
-                  <ul class="navbar-toggle">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon bigger glyphicon-search"></i></a>
-                      <li class="dropdown-menu" style="padding:12px; margin-left:-225px">
-                          <form class="form-inline">
-                              <button type="submit" class="btn btn-default pull-right"><i class="glyphicon glyphicon-search"></i></button>
-                              <input type="text" class="form-control pull-left" placeholder="Search">
-                          </form>
-                      </li>
-                  </ul>
-              </span>          
-              
-              
-              
-              
-              
-              
             <a class="navbar-brand" href="#">
               <img alt="National Park Service" class="img-responsive" src="assets/img/chrome/logos/main-logoSmall.png">
             </a>
@@ -83,7 +63,7 @@
                 <li class="dropdown">
                   <a href="/history/" class="dropdown-toggle" data-toggle="dropdown">Discover History</a>
                   <ul class="dropdown-menu">
-                    <li><a href="/history/people.htm">People</a></li>
+                    <li><a href="/history/people.htm">People - MEGAMENUS! This is an example of how you can make it as wide as you want to.</a></li>
                     <li><a href="/history/places.htm">Places</a></li>
                     <li><a href="/history/stories.htm">Stories</a></li>
                     <li><a href="/history/preservation.htm">Preservation</a></li>
@@ -170,6 +150,7 @@
             <span class="fa fa-search form-control-feedback"></span>
           </form>
         </div>
+        <!-- Mobile Nav -->
       </div>
       <!-- MAIN NAV -->
       <div class="hidden-sm hidden-xs">
@@ -266,8 +247,8 @@
       <div class="row hidden-xs hidden-sm">
         <div class="col-md-12">
           <div class="bap">
-            <div class="large">
-              <img src="assets/img/banner.jpg" class="img-responsive" alt="Rainbow over Half Dome" title="Rainbow over Half Dome">
+            <div class="small">
+              <img src="assets/img/bannerSecondary.jpg" class="img-responsive" alt="Rainbow over Half Dome" title="Rainbow over Half Dome">
               <div class="title">
                 <div class="bapTitleBox">
                   <h1>Yosemite</h1>
@@ -285,7 +266,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="bap-mobile">
-              <img src="assets/img/banner.jpg" class="img-responsive" alt="Rainbow over Half Dome" title="Rainbow over Half Dome">
+              <img src="assets/img/banner.jpg" class="img-responsive" alt="Rainbow over Half Dome" title="Rainbow over Half Dome" width="100%">
               <div class="title">
                 <h1>Yosemite</h1>
               </div>
@@ -301,16 +282,11 @@
         </div>
       </span>
       <!-- ALERTS -->
-
-
-
-
-
       <div class="row hidden-xs hidden-sm">
         <div class="col-md-12">
-          <div class="alert parkAlerts alert-danger alert-dismissible" role="alert" style="padding-left:23px;">
+          <div class="alert parkAlerts alert-danger alert-dismissible" role="alert">
             <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 style="font-size:14px;">Seasonal Road Closures</h4> Seasonal road closures are in effect for motorized vehicles. Closures include portions of the Teton Park Road (Taggart Lake TH to Signal Mt. Lodge), Moose-Wilson Road (Granite Canyon TH to Death Canyon Road), Antelope Flats Road and Grassy Lake Road. <a class="more" href="#">More</a>
+            <strong>Alert! </strong>This is an example of a dismissable alert box.
           </div>
         </div>
       </div>
@@ -333,43 +309,45 @@
     <div class="wallpaper-parks">
         
 <!-- Main central container -->
-    <div class="container">
+      <div class="container">
         <div class="row">
           <div class="col-md-12"><!-- column that surrounds the left nav and main content columns -->
-            <div class="middleContentArea group">
+              
+              <div class="middleContentArea group">
               <!-- LEFT NAV -->
-              <div class="col-md-3 hidden-xs hidden-sm sub-nav-containerWidth">
-                <div id="sub-nav">
-                  <!-- nav links -->
-                  <div id="npsNav">
-                    <h2>Explore This Park</h2>
-                    <ul>
-                      <li class="active"><a href="/yose/index.htm" class="active">Park Home</a></li>
-                      <li><a href="/yose/planyourvisit/index.htm">Plan Your Visit</a></li>
-                      <li><a href="/yose/photosmultimedia/index.htm">Photos &amp; Multimedia</a></li>
-                      <li><a href="/yose/historyculture/index.htm">History &amp; Culture</a></li>
-                      <li><a href="/yose/naturescience/index.htm">Nature &amp; Science</a></li>
-                      <li><a href="/yose/forteachers/index.htm">For Teachers</a></li>
-                      <li><a href="/yose/forkids/index.htm">For Kids</a></li>
-                      <li><a href="/yose/parknews/index.htm">News</a></li>
-                      <li><a href="/yose/parkmgmt/index.htm">Management</a></li>
-                      <li><a href="/yose/supportyourpark/index.htm">Support Your Park</a></li>
-                      <li class="last"><a href="/yose/supportyourpark/bookstore.htm">Bookstore</a></li>
-                    </ul>
-                  </div>
-                  <!-- Park Tools -->
-                  <div class="park-tools">
-                    <h2>Park Tools</h2>
-                    <ul>
-                      <li class="map"><a href="/common/commonspot/customcf/apps/maps/showmap.cfm?alphacode=yose&parkname=Yosemite" class="colorbox-iframe-map" name="Yosemite Map">View Park Map</a></li>
-                      <li class="faqs"><a href="/yose/faqs.htm"><abbr title="Frequently Asked Questions">FAQs</abbr></a></li>
-                      <li class="context"><a href="/yose/contacts.htm">Contact Us</a></li>
-                      <li class="index"><a href="/yose/siteindex.htm">Site Index</a></li>
-                      <li class="spanish"><a href="/yose/espanol/index.htm">Español</a></li>
-                    </ul>
-                  </div>
-                  <!-- Find Us -->
-                  <div class="find-us"> 
+              
+                  <div class="col-md-3 hidden-xs hidden-sm sub-nav-containerWidth">
+                      <div id="sub-nav">
+                          <!-- nav links -->
+                          <div id="npsNav">
+                            <h2>Explore This Park</h2>
+                            <ul>
+                              <li class="active"><a href="/yose/index.htm" class="active">Park Home</a></li>
+                              <li><a href="/yose/planyourvisit/index.htm">Plan Your Visit</a></li>
+                              <li><a href="/yose/photosmultimedia/index.htm">Photos &amp; Multimedia</a></li>
+                              <li><a href="/yose/historyculture/index.htm">History &amp; Culture</a></li>
+                              <li><a href="/yose/naturescience/index.htm">Nature &amp; Science</a></li>
+                              <li><a href="/yose/forteachers/index.htm">For Teachers</a></li>
+                              <li><a href="/yose/forkids/index.htm">For Kids</a></li>
+                              <li><a href="/yose/parknews/index.htm">News</a></li>
+                              <li><a href="/yose/parkmgmt/index.htm">Management</a></li>
+                              <li><a href="/yose/supportyourpark/index.htm">Support Your Park</a></li>
+                              <li class="last"><a href="/yose/supportyourpark/bookstore.htm">Bookstore</a></li>
+                            </ul>
+                          </div>
+                          <!-- Park Tools -->
+                          <div class="park-tools">
+                            <h2>Park Tools</h2>
+                            <ul>
+                              <li class="map"><a href="/common/commonspot/customcf/apps/maps/showmap.cfm?alphacode=yose&parkname=Yosemite" class="colorbox-iframe-map" name="Yosemite Map">View Park Map</a></li>
+                              <li class="faqs"><a href="/yose/faqs.htm"><abbr title="Frequently Asked Questions">FAQs</abbr></a></li>
+                              <li class="context"><a href="/yose/contacts.htm">Contact Us</a></li>
+                              <li class="index"><a href="/yose/siteindex.htm">Site Index</a></li>
+                              <li class="spanish"><a href="/yose/espanol/index.htm">Español</a></li>
+                            </ul>
+                          </div>
+                          <!-- Find Us -->
+                          <div class="find-us"> 
                     <h2>Find Us On</h2>
                     <ul class="social-connect">
                       <li class="cwu-facebook"><a href="http://www.facebook.com/YosemiteNPS">Facebook</a></li>
@@ -378,136 +356,187 @@
                       <li class="cwu-more"><a href="http://www.nps.gov/yose/parknews/socialmedia.htm">More</a></li>
                     </ul>
                   </div>
-                </div>
-              </div>
-              <!-- MAIN CONTENT -->
-              <div class="content-container col-xs-12 col-md-9">
-                <div class="row">
-                  <!-- Park Intro Text -->
-                  <div class="col-xs-12 col-md-8 col-sm-8">
-                    <div class="landing-intro">
-                      <h1 class="page-title park-title">Page Title</h1>
-                      <p>Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra.</p>
-                      <p>First protected in 1864, Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.</p>
-                    </div>
+                      </div>
                   </div>
-                  <!-- Desktop QuickLinks Nav -->
-                  <div class="hidden-xs col-md-4 col-sm-4">
-                    <ul class="quickLinks">
-                      <li><a href="/yose/planyourvisit/directions.htm" class="more">Directions</a></li>
-                      <li><a href="/yose/planyourvisit/hours.htm" class="more">Operating Hours &amp; Seasons</a></li>
-                      <li><a href="/yose/planyourvisit/feesandreservations.htm" class="more">Fees and Reservations</a></li>
-                      <li><a href="/yose/planyourvisit/conditions.htm" class="more">Current Conditions, Road Info, Facilities Status</a></li>
-                      <li><a href="/yose/supportyourpark/volunteer.htm" class="more">Volunteer in Yosemite</a></li>
-                      <li><a href="/yose/blogs/fireinfo.htm" class="more">Current Fire Information</a></li>
-                    </ul>
-                  </div>
-                </div>
-                  
-                  
                 
-      
-    <!-- Mobile Quick Links -->  
-        <div class="row">
-          <div class="col-md-12 mobileQuicklinks hidden-md hidden-lg hidden-sm">
-              <ul class="list-group">
-                  <li class="list-group-item"><b>Quick Links</b></li>
-                  <a href="/yose/planyourvisit/directions.htm" class="list-group-item">Directions</a>
-                  <a href="/yose/planyourvisit/hours.htm" class="list-group-item">Operating Hours &amp; Seasons</a>
-                  <a href="/yose/planyourvisit/feesandreservations.htm" class="list-group-item">Fees and Reservations</a>
-                  <a href="/yose/planyourvisit/conditions.htm" class="list-group-item">Current Conditions, Road Info, Facilities Status</a>
-                  <a href="/yose/supportyourpark/volunteer.htm" class="list-group-item">Volunteer in Yosemite</a>
-                  <a href="/yose/blogs/fireinfo.htm" class="list-group-item">Current Fire Information</a>
-                </ul>
-              
-            </div>
-          </div>
-                  
-                  
-                <!-- Feature Stories area -->
-                <div class="row carouselRow">
-                  <div class="carouselTitle">
-                    <h2>Features</h2>
-                  </div>
-                  <div class="carouselWrapper">
-                    <div class="slider responsive">
-                      <div class="carouselItem">
-                        <div class="image-wrapper">
-                          <a href="/yell/planyourvisit/bearsafety.htm"><img src="assets/img/features/bears.jpg" title="A grizzly bear cub trails its mother." alt="A grizzly bear cub trails its mother."></a>
-                        </div>
-                        <div class="carouselText">
-                          <a href="/yell/planyourvisit/bearsafety.htm"><h3>Feature One</h3></a>
-                          <p>Safety in bear country begins before you hit the trail. Learn how you can have a safe and enjoyable visit.</p>
-                          <a class="more" href="/yell/planyourvisit/bearsafety.htm" title="Be Bear Aware">Read More</a>
-                        </div>
+              <!-- MAIN CONTENT -->
+                  <div class="content" id="content">  
+
+                                        <!-- Alert Container  -->
+                    <script>
+                      jQuery(document).ready(function() {
+
+                        var isParkHomepage = false;
+
+                        /* CHANGE: 2015-01-05 (Toby Reiter <tobias_reiter@contractor.nps.gov>) */
+                                // Internet Explorer can frequestly cache all GET AJAX requests, leading to Alert changes not appearing for IE users
+                                // We're going to append a random string to the end of the request, to ensure that IE pulls the newer content
+                                // Using jQuery.now() to append a timestamp to the URL to make it unique
+                                NPS.newContent.placeAlerts("/akr/renderhandlers/cs_chooser/rh_alert_chooser_json.cfm?siteCode=dena&ts=" + jQuery.now(), isParkHomepage);
+                              });
+                    </script>
+
+                    <div id="alert-container" class="col-xs-12 col-sm-12 col-md-9 ">
+                      <div id="alert" class="clearfix">
+                        <div id="alert-box" class="alert-toggle">There are park alerts in effect.</div><a href="javascript:void(0);" id="alert-toggle" class="alert-toggle">Show Alerts »</a>
                       </div>
-                      <div class="carouselItem">
-                        <div class="image-wrapper">
-                          <img src="assets/img/features/biker.jpg" title="A grizzly bear cub trails its mother." alt="A grizzly bear cub trails its mother.">
-                        </div>
-                        <div class="carouselText">
-                          <h3>Feature Two</h3>
-                          <p>Safety in bear country begins before you hit the trail. Learn how you can have a safe and enjoyable visit.</p>
-                          <a class="more" href="/yell/planyourvisit/bearsafety.htm" title="Be Bear Aware">Read More</a>
-                        </div>
-                      </div>
-                      <div class="carouselItem">
-                        <div class="image-wrapper">
-                          <img src="assets/img/features/basin.jpg" title="A grizzly bear cub trails its mother." alt="A grizzly bear cub trails its mother."> 
-                        </div>
-                        <div class="carouselText">
-                          <h3>Feature Three</h3>
-                          <p>Safety in bear country begins before you hit the trail. Learn how you can have a safe and enjoyable visit.</p>
-                          <a class="more" href="/yell/planyourvisit/bearsafety.htm" title="Be Bear Aware">Read More</a>
-                        </div>
-                      </div>
-                      <div class="carouselItem">
-                        <div class="image-wrapper">
-                          <img src="assets/img/features/campgrounds.jpg" title="A grizzly bear cub trails its mother." alt="A grizzly bear cub trails its mother."> 
-                        </div>
-                        <div class="carouselText">
-                          <h3>Feature Four</h3>
-                          <p>Safety in bear country begins before you hit the trail. Learn how you can have a safe and enjoyable visit.</p>
-                          <a class="more" href="/yell/planyourvisit/bearsafety.htm" title="Be Bear Aware">Read More</a>
-                        </div>
-                      </div>
-                      <div class="carouselItem">
-                        <div class="image-wrapper">
-                          <img src="assets/img/features/dayHikes.jpg" title="A grizzly bear cub trails its mother." alt="A grizzly bear cub trails its mother."> 
-                        </div>
-                        <div class="carouselText">
-                          <h3>Feature Five</h3>
-                          <p>Safety in bear country begins before you hit the trail. Learn how you can have a safe and enjoyable visit.</p>
-                          <a class="more" href="/yell/planyourvisit/bearsafety.htm" title="Be Bear Aware">Read More</a>
-                        </div>
-                      </div>
-                      <div class="carouselItem">
-                        <div class="image-wrapper">
-                          <img src="assets/img/features/webcam.jpg" title="A grizzly bear cub trails its mother." alt="A grizzly bear cub trails its mother."> 
-                        </div>
-                        <div class="carouselText">
-                          <h3>Feature Six</h3>
-                          <p>Safety in bear country begins before you hit the trail. Learn how you can have a safe and enjoyable visit.</p>
-                          <a class="more" href="/yell/planyourvisit/bearsafety.htm" title="Be Bear Aware">Read More</a>
+                      <div id="content-top" class="content-top-alert"></div>
+                      <div class="row">
+                        <div class="col-xs-12" id="content-alert" style="display: none;">
+                          <div>
+                            <div id="alert-message">
+                              <ul class="last">
+                                <li>
+                                  <h4>Road Open To: Mile 3 (Park Headquarters)</h4>
+                                  <p>The Park Road is currently open to Mile 3, Park Headquarters. Wintry conditions beyond that point prevent vehicle travel, though pedestrian travel is permitted. <a href="http://www.nps.gov/dena/planyourvisit/hours.htm" title="Road Open To: Mile 3 (Park Headquarters)">More&nbsp;»</a>
+                                  </p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
+
+                    <div class="content-container col-xs-12 col-md-9">                  
+                      <div class="row">
+                          <div class="col-xs-12 col-sm-12 col-md-12">
+                            <!-- page title -->
+                            <p class="page-title">Page Title</p>
+                          </div>
+                      </div>
+                    
+                    <!-- CONTENT EXAMPLE WITH RIGHT-SIDE HIGHLIGHTS -->
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                              <script type="text/javascript">
+                                function popupCenter(pageURL, title, w, h) {
+                                  var left = (screen.width / 2) - (w / 2);
+                                  var top = (screen.height / 2) - (h / 2);
+                                  var targetWin = window.open(pageURL, title, 'status=no, menubar=no, toolbar=no, location=no, scrollbars=yes, resizable=yes, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+                                }
+                              </script>
+
+                              <div class="webcam-gallery" id="gallery-listing">
+                                <ul class="clearfix" id="gallery-content">
+                                  <li>
+                                    <div class="row">
+                                      <div class="col-xs-12 col-sm-3 col-md-3">
+                                        <div class="image">
+                                          <a class="webcam-link-876 webCamImageTitle" href="#">
+                                            <picture>
+                                              <!--[if IE 9]><video style="display: none;"><![endif]-->
+                                              <source class="img-responsive" srcset="http://placehold.it/300x268" media="(min-width: 768px)">
+                                              <source class="img-responsive" srcset="http://placehold.it/600x537" media="(min-width: 400px)">
+                                              <source class="img-responsive" srcset="http://placehold.it/300x268">
+                                              <!--[if IE 9]></video><![endif]-->
+                                              <img class="img-responsive" srcset="http://placehold.it/145x130" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
+                                            </picture>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-xs-12 col-sm-9 col-md-9">
+                                        <div class="description clearfix">
+                                          <h3>Alpine Tundra</h3>
+                                          <p>Have you ever wanted to check conditions for hiking, skiing, and other outdoor activities along the Denali Park Road corridor west of Park Headquarters? A new Alpine Tundra webcam, perched high atop a shoulder of Mount Healy along the park’s Outer Range, offers a westward perspective for several miles beyond the entrance area. Snow and extreme conditions may obscure the view at times. The image is set to refresh several times each minute.</p>
+                                          <ul>
+                                            <li class="play"><a class="webcam-link-876" href="http://www.nps.gov/akr/customcf/webcam/dsp_webcam_image.cfm?&webCam=56868082F6D1C0684BC473899D0AF3784984E6619EACCFAF9ABC5F9EBC098806D3F7CE93979ED515DC94&thumbnail=56868082F6D1C0684BC473899D0AF3784984E6729EA0CDE187A71D8EB614845CDEEFD7979C9F921E839A1A04819B84D4A656A95A591981A18147ADA3E827EFD28D1790&refreshRate=10&title=7F9E849BA29BCF4B49DD39958C&width=1024&height=576&altText=6D879A9EA599876B1CD23383CD1AB1705396BA3698BCC3BD84EF13DAAF068545D7E29E9B979FDB12C3861911879799888E5EBC40&description=76938297EC87806A1CD62B829F59AA7E4886AC72DBBAC3EE94A71799B2478A46DCFFD78E9094950C8C951817C6969E908E54BE1F170FC78F9A48A8D0F975B398C708839F99ABC689A988DAA0968BC798549A90B99D86A09C80FAAFA17185A8934716FA3EDDDB88939BA6596995AC9DB9BCB3FB931690A595A4A62BB415ED4C9C8080CF50510BB6AABD22F3A1025A1716479C6BABBF98BFCDEB9CECBBBB90ECBD814356F379C7A349A3998F78E95CFC4F94AAB3E3C74F50998454F983F946925C2113AC3998833B57ED8A57886E8956FC81DBA0FD4EB411879746DBDEFC8652E5C77EA0F390B5C746A141D9698B8F950FFF760F9DAA88889BA1198EBD89AE9C133F5D80BD3FBC941E86BF8599A7E75197891AC79F9ABD159682D5CAF688F2DCB1B0BCD78C59895B9497FEFF961C988F941FAD825E1C4100BB8D77B3E97389038F92A1199AECD58F58525BC6AD9151845EDBFC9ACF8395529DDC125BCF5010F34293828F8BF38FF3C6864AC69C51BC589BABBBC70A9E966B6F55AE1212878DE989579AA88F92FB279F17FB1E9EAC99A8B4FE95CCECBC43EF67985F9D59B5EBB98DF51F402A48D3948672FC8FB0FF9EAADC807BAC4EF7A65AB0D2BD89DA&parkID=/">View webcam</a>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div id="cs_spacer_610688" class="CS_Layout_SpacingHeight" style="line-height:1;">&nbsp;</div>
+                          <div id="cs_control_610688" class="cs_control CS_Element_Custom">
+                            <!--LARGE IMAGE module-->
+                            <style>
+                              .textWrappedAroundImage {
+                                margin-bottom: 15px;
+                              }
+                              .content ul {
+                                list-style-position: outside;
+                                list-style-type: disc;
+                              }
+                              .floatingImage {
+                                width: 150px;
+                                float: right;
+                                text-align: left;
+                                margin-left: 15px;
+                                margin-bottom: 8px;
+                              }
+                              .floatingImage p {
+                                padding: 0;
+                                margin: 0;
+                              }
+                              .floatingImage p.credit {
+                                color: #727163;
+                                /* Changed from #777 for 508 - Dan */
+
+                                font-size: 11px;
+                              }
+                              .floatingImage p.caption {
+                                color: #5A712D;
+                                /* Changed from #668033 for 508 - Dan */
+
+                                font-size: 11px;
+                                margin-bottom: 4px;
+                              }
+                            </style>
+
+                            <div class="textWrappedAroundImage clearfix">
+
+                              <ul>
+                                <li>Learn more about a variety of <a id="&nbsp;http://www.nps.gov/dena/planyourvisit/bctravel.htm|" href="/dena/photosmultimedia/&nbsp;http://www.nps.gov/dena/planyourvisit/bctravel.htm">landscape types</a> throughout the park.</li>
+                              </ul>
+
+                              <ul>
+                                <li>See for yourself through a study of <a id="http://denalirepeatphotos.uaf.edu:8080|" href="http://denalirepeatphotos.uaf.edu:8080" onclick="">repeat photography</a> how this area has changed over time.</li>
+                              </ul>
+
+                              <ul>
+                                <li>Explore online resources about factors that shape <a id="http://www.nps.gov/dena/naturescience/weather.htm|" href="http://www.nps.gov/dena/naturescience/weather.htm">weather and climate</a> in Denali.
+                                  <br>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      
+                      <!-- Did You Know area -->
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                          <div class="fact">
+                              <h2>Did You Know?</h2>
+                              <img id="dykImage" src="http://www.nps.gov/pwr/yose/photosmultimedia/images/ARC-_lowres.jpg" alt="ARC Students journaling near Hetch Hetchy"><p>Adventure Risk Challenge (ARC) brings youth to Yosemite each summer for a dynamic literacy and leadership immersion program. ARC works with students, boosting academic and leadership skills through a variety of programs, including a 40-day experience in Yosemite full of adventure and learning.&nbsp;<a id="dykMoreInfo" title="Read more about this Did You Know" href="http://www.yosemiteconservancy.org/youth-stewardship/adventure-leadership-youth-development-program-adventure-risk-challenge-arc">More...</a></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                  
                   </div>
-                </div><!-- end middleContentArea group -->
+                
               </div>
             </div>
           </div>
-        </div>
       </div><!-- end of main central container -->
-    </div><!-- end of wallpaper background -->  
-    <!-- Breadcrumbs -->
-    <div class="breadcrumb-container hidden-sm hidden-xs">
-      <div class="breadcrumbs container">
-        <div id="sm-control">
-          <a href="javascript:void(0);">Site Map</a>
-        </div><!--! end of #sm-control -->
-      </div><!--! end of #breadcrumb -->
-    </div>
+      </div><!-- end of wallpaper background -->
+      <!-- Breadcrumbs -->
+      <div class="breadcrumb-container hidden-sm hidden-xs">
+          <div class="breadcrumbs container">
+              <div id="sm-control">
+                  <a href="javascript:void(0);">Site Map</a>
+              </div><!--! end of #sm-control -->
+          </div><!--! end of #breadcrumb -->
+      </div>
     <!-- Sitemap -->
     <div id="site-map-container" class="hidden-sm hidden-xs">
       <div class="footer-gradient"></div>
@@ -590,7 +619,7 @@
         </div><!-- end of search box -->
       </div>
       <!-- Sitemap -->
-    <div class="clearfix container" id="site-map">
+      <div class="clearfix container" id="site-map">
         <ul>
           <li><h3><a href="http://www.nature.nps.gov/">Explore Nature</a></h3></li>
           <li>
@@ -684,11 +713,7 @@
         </ul>
       </div><!-- end of Sitemap -->
     </div><!-- end of #site-map -->
-   
-      
-      
-      
-      <!-- Desktop Footer -->
+    <!-- Desktop Footer -->
     <div class="footer-container hidden-sm hidden-xs">
       <div class="clearfix container footer">
         <div class="top clearfix">
@@ -729,10 +754,8 @@
         </div>
       </div>
     </div>
-      
-      
     <!-- Mobile Footer -->
-      <div class="mobileFooter hidden-md hidden-lg">
+    <div class="mobileFooter hidden-md hidden-lg">
           <a href="http://www.doi.gov/"><div class="mobileFooterLogo"></div></a>
           <a href="http://www.doi.gov/"><div class="text-logo"></div></a>
           <div class="slogan hidden-xs"></div>
@@ -751,10 +774,7 @@
                   <li class="facebook"><a href="http://www.facebook.com/nationalparkservice" onclick="">Facebook</a></li>
                   <li class="twitter"><a href="http://twitter.com/natlparkservice" onclick="">Twitter</a></li>
           </ul>
-        </div>
-      
-    
-      
+      </div>
       
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://www.nps.gov/npmap/bootstrap/3.2.0/dist/js/nps-bootstrap.min.js"></script>
@@ -763,5 +783,18 @@
     <script src="assets/libs/colorbox/colorbox.min.js"></script>
     <script src="assets/js/global.js"></script>
     <script src="assets/js/app.js"></script>
+    
+    <script src="assets/js/readmore.js"></script>
+    <script src="assets/js/threespot.js"></script>
+
+    <script>
+      jQuery(document).ready(function() {
+        jQuery('.webcam-link-876').click(function(e) {
+          e.preventDefault();
+          popupCenter(jQuery(this).attr('href'), 'newPop876', ((screen.width - 70) > 1059) ? 1059 : (screen.width - 70), ((screen.height - 50) > 846) ? 846 : (screen.height - 50));
+        });
+      });
+    </script>
+      
   </body>
 </html>

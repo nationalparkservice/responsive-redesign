@@ -42,7 +42,7 @@ body {
   margin: 0 0 20px 0;
   padding-bottom: 18px;
 }
-.page-title.park-title {  
+.page-title.park-title {
     border-bottom: none;
     font-size: 26px;
     margin-bottom: 12px;
@@ -51,11 +51,11 @@ body {
 .landing-intro {
   margin-bottom: 20px
 }
-    .landing-intro p {
-      color: #706d5f;
-      font-size: 16px;
-      line-height: 24px;
-    }
+  .landing-intro p {
+    color: #706d5f;
+    font-size: 16px;
+    line-height: 24px;
+  }
 @media (min-width: 768px) { 
   .landing-intro {
     margin-bottom: 40px
@@ -152,7 +152,7 @@ a:active {
 .content-container {
   background-color: #fff;
   border: none;
-  margin: 0;
+  margin: 5px 0 0 0;
   padding: 30px 30px 0 30px;
 }
 .content-container-nps {
@@ -172,9 +172,7 @@ a:active {
     -moz-box-shadow: 0 0 3px #cecece;
     box-shadow: 0 0 3px #cecece;
     border: 1px solid #dfdbca;
-    margin: 5px 0 0 0;
     padding: 30px 24px;
-    width: 738px;
   }
 }@media (min-width: 992px) { 
   /* main content area */
@@ -273,23 +271,23 @@ a:active {
   margin-left: -2px;
   padding: 5px 19px;
 }
-    .navbar .dropdown-menu li {
-      border-bottom: 1px solid #e4e2dd;
-      color: #5b5b5b;
-      font-size: 13px;
-      margin: 0 -19px;
+  .navbar .dropdown-menu li {
+    border-bottom: 1px solid #e4e2dd;
+    color: #5b5b5b;
+    font-size: 13px;
+    margin: 0 -19px;
+  }
+    .navbar .dropdown-menu li a {
+      padding: 7px 15px
     }
-        .navbar .dropdown-menu li a {
-          padding: 7px 15px
-        }
-    .navbar .dropdown-menu li:last-child {
-      border-bottom: none
-    }
-    .navbar .dropdown-menu li:hover,
-    .navbar .dropdown-menu li a:hover {
-      background-color: #916800;
-      color: #fff;
-    }
+  .navbar .dropdown-menu li:last-child {
+    border-bottom: none
+  }
+  .navbar .dropdown-menu li:hover,
+  .navbar .dropdown-menu li a:hover {
+    background-color: #916800;
+    color: #fff;
+  }
 .nav > li > a {
   font-size: 13px;
   padding: 6px 15px;
@@ -360,19 +358,19 @@ a:active {
   position: relative;
   z-index: 1;
 }
-.img-responsive{
-    width:100%;   
+.img-responsive {
+    width:100%;
 }
-    .bap-mobile .title {
-      background: rgb(0, 0, 0); /* Creates the solid bg for IE8 */
-      background: rgba(0, 0, 0, 0.5); /* Creates the transparent bg for ALL OTHER BROWSERS */
-      bottom: 0;
-      color: #FFFFFF;
-      left: 0px;
-      position: absolute;
-      width: 100%;
-    }
-@media (max-width: 599px) { 
+  .bap-mobile .title {
+    background: rgb(0, 0, 0); /* Creates the solid bg for IE8 */
+    background: rgba(0, 0, 0, 0.5); /* Creates the transparent bg for ALL OTHER BROWSERS */
+    bottom: 0;
+    color: #FFFFFF;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+  }
+@media (max-width: 599px) {
   .bap-mobile .title {
     background: rgb(0, 0, 0);
     /* Creates the solid bg for IE8 */
@@ -392,7 +390,7 @@ a:active {
   margin: 0;
   padding: 0 0 0 23px;
 }
-@media (min-width:768px) { 
+@media (min-width:768px) {
   .bap-mobile .title h1 {
     font-size: 40px;
     font-weight: normal;
@@ -422,30 +420,30 @@ a:active {
   position: relative;
   z-index: 1;
 }
-    .bap .title {
-      /* TRANSPARENT STRIP BEHIND TEXT */
-      background: rgb(0, 0, 0); /* Creates the solid bg for IE8 */
-      background: rgba(0, 0, 0, 0.5); /* Creates the transparent bg for ALL OTHER BROWSERS */
-      bottom: 0;
-      color: #fff;
-      height: 79px;
-      left: 0;
-      position: absolute;
-      width: 100%;
+  .bap .title {
+    /* TRANSPARENT STRIP BEHIND TEXT */
+    background: rgb(0, 0, 0); /* Creates the solid bg for IE8 */
+    background: rgba(0, 0, 0, 0.5); /* Creates the transparent bg for ALL OTHER BROWSERS */
+    bottom: 0;
+    color: #fff;
+    height: 79px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+  .bap .bapTitleBox {
+    display: table;
+    float: left;
+    height: 79px;
+  }
+    .bap .bapTitleBox h1 {
+      font-size: 40px;
+      font-weight: normal;
+      letter-spacing: -0.7px;
+      line-height: 79px;
+      margin: 0;
+      padding: 0 0 0 23px;
     }
-    .bap .bapTitleBox {
-      display: table;
-      float: left;
-      height: 79px;
-    }
-        .bap .bapTitleBox h1 {
-          font-size: 40px;
-          font-weight: normal;
-          letter-spacing: -0.7px;
-          line-height: 79px;
-          margin: 0;
-          padding: 0 0 0 23px;
-        }
 .no-js .bap .bapTitleBox h1 {
   line-height: 1.1;
   width: 700px;
@@ -500,11 +498,11 @@ a:active {
   vertical-align: middle;
   text-shadow: 2px 2px 3px #000;
 }
-    .bap .sub h2 .details {
-      display: block;
-      font-weight: normal;
-      font-size: 14px;
-    }
+  .bap .sub h2 .details {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+  }
 .bap .sub h3 {
   color: #fff;
   display: table-cell;
@@ -527,64 +525,64 @@ a:active {
 }
 .bap .sub a,
 .bap .sub p {
-  text-shadow: 2px 2px 3px #000
+  text-shadow: 2px 2px 3px #000;
 }
 .bap .sub a {
-  color: #fff
+  color: #fff;
 }
 /* Utilities area - Print and  */
 .utils {
   float: right;
   margin: 17px 17px 10px 0;
 }
-    .utils a {
-      display: block;
-      height: 14px;
-      overflow: hidden;
-      text-indent: -9999px;
-    }
+  .utils a {
+    display: block;
+    height: 14px;
+    overflow: hidden;
+    text-indent: -9999px;
+  }
 .text-sizes {
-  float: left
+  float: left;
 }
-    .text-sizes .small a {
-      background: url(../img/chrome/text-sizes.png) no-repeat scroll 0 -13px transparent;
-      float: left;
-      margin: 0 10px 0 0;
-      width: 7px;
-    }
-    .text-sizes .small a:hover,
-    .text-sizes .small .active {
-      background-position: 0 0
-    }
-    .text-sizes .medium a {
-      background: url(../img/chrome/text-sizes.png) no-repeat scroll -18px -13px transparent;
-      float: left;
-      margin: 0 10px 0 0;
-      width: 9px;
-    }
-    .text-sizes .medium a:hover,
-    .text-sizes .medium .active {
-      background-position: -18px 0
-    }
-    .text-sizes .large a {
-      background: url(../img/chrome/text-sizes.png) no-repeat scroll -36px -13px transparent;
-      float: right;
-      width: 11px;
-    }
-    .text-sizes .large a:hover,
-    .text-sizes .large .active {
-      background-position: -36px 0
-    }
+  .text-sizes .small a {
+    background: url(../img/chrome/text-sizes.png) no-repeat scroll 0 -13px transparent;
+    float: left;
+    margin: 0 10px 0 0;
+    width: 7px;
+  }
+  .text-sizes .small a:hover,
+  .text-sizes .small .active {
+    background-position: 0 0
+  }
+  .text-sizes .medium a {
+    background: url(../img/chrome/text-sizes.png) no-repeat scroll -18px -13px transparent;
+    float: left;
+    margin: 0 10px 0 0;
+    width: 9px;
+  }
+  .text-sizes .medium a:hover,
+  .text-sizes .medium .active {
+    background-position: -18px 0
+  }
+  .text-sizes .large a {
+    background: url(../img/chrome/text-sizes.png) no-repeat scroll -36px -13px transparent;
+    float: right;
+    width: 11px;
+  }
+  .text-sizes .large a:hover,
+  .text-sizes .large .active {
+    background-position: -36px 0
+  }
 .utils .print {
   float: right;
   margin-left: 15px;
   margin-top: 1px;
   width: 14px;
 }
-    .utils .print a {
-      background: url(../img/chrome/print.png) no-repeat scroll 0 0 transparent;
-      width: 14px;
-    }
+  .utils .print a {
+    background: url(../img/chrome/print.png) no-repeat scroll 0 0 transparent;
+    width: 14px;
+  }
     .utils .print a:hover {
       background-position: 0 -14px
     }
@@ -600,31 +598,29 @@ a:active {
   text-decoration: underline
 }
 .carouselTitle {
-  margin: 0 15px
+  background-color: #5e7630;
+  margin: 0 15px;
 }
-.carouselTitle {
-  background-color: #5e7630
-}
-    .carouselTitle h2 {
-      color: #fff;
-      font-size: 18px;
-      font-weight: normal;
-      margin: 0;
-      padding: 10px 0 10px 17px;
-    }
+  .carouselTitle h2 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+    padding: 10px 0 10px 17px;
+  }
 .slick-slide {
   margin: 40px 40px 0 40px
 }
-    .slick-slide .image-wrapper img {
-      border: none;
-      height: 150px;
-      width: 150px;
-    }
+  .slick-slide .image-wrapper img {
+    border: none;
+    height: 150px;
+    width: 150px;
+  }
 .slick-next {
-  right: 0
+  right: 0;
 }
 .slick-prev {
-  left: 0
+  left: 0;
 }
 /* ///////////////////////////////////////////////////////////////////// 
 //  Footer
@@ -1150,14 +1146,14 @@ a.more:after {
 
 /* Related Promo List */
 ul.related-promo-list {
-	margin: 0;
+  margin: 0;
     padding:0;
 }
 .related-promo-list li{
-	font-size: 12px;
-	line-height: 17px;
-	list-style-type: none;
-	margin-bottom: 28px;
+  font-size: 12px;
+  line-height: 17px;
+  list-style-type: none;
+  margin-bottom: 28px;
     width:50%;
     float:left;
 }
@@ -1168,17 +1164,17 @@ ul.related-promo-list {
     }
 }
 .related-promo-list li img {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 .related-promo-list li h3,
 .related-promo-list li h3 a {
-	color: black;
-	font-size: 13px;
-	font-weight: bold;	
-	margin-bottom: 0;
+  color: black;
+  font-size: 13px;
+  font-weight: bold;  
+  margin-bottom: 0;
 }
 .related-promo-list li p {
-	margin-bottom: 0;
+  margin-bottom: 0;
         width: 95%;
 }
 @media (min-width: 768px) { 
@@ -1190,8 +1186,8 @@ ul.related-promo-list {
 
 /* fact */
 .content .fact, .fact {
-	background: url("http://www.nps.gov/common/commonspot/templates/images/bg/divider.png") no-repeat scroll center top transparent;
-	clear: both;
+  background: url("http://www.nps.gov/common/commonspot/templates/images/bg/divider.png") no-repeat scroll center top transparent;
+  clear: both;
     color: #7f7565;
     padding: 16px 0;
     margin-bottom:20px;
@@ -1202,7 +1198,7 @@ ul.related-promo-list {
     }
 }
 .fact h2 {
-	color: #7f7565;
+  color: #7f7565;
     font-size: 20px;
     font-weight: normal;
     margin-bottom: 12px;
@@ -1216,15 +1212,15 @@ ul.related-promo-list {
 }
 .fact p {
     color: #706D5F;
-	font: italic 14px/20px Georgia, "Times New Roman", Times, serif;
-	margin-bottom:0;
+  font: italic 14px/20px Georgia, "Times New Roman", Times, serif;
+  margin-bottom:0;
 }
 .adjusted-for-fact .fact {
-	zoom:1;
-	bottom:0;
-	left: 29px;
-	/* position: absolute; */
-	width: 688px;
+  zoom:1;
+  bottom:0;
+  left: 29px;
+  /* position: absolute; */
+  width: 688px;
 }
 
 
@@ -1274,7 +1270,7 @@ ul.related-promo-list {
         margin-bottom: 2px;
     }
 .MoreContentList {
-	padding: 0 22px;
+  padding: 0 22px;
     display:inline-block;
 }
 .MoreContentItem {
@@ -1310,17 +1306,17 @@ ul.related-promo-list {
     border-color: white; 
 }
 .MoreContentList li li {
-	float: inherit;
-	margin-bottom: 4px;
-	margin-right: 0px;
+  float: inherit;
+  margin-bottom: 4px;
+  margin-right: 0px;
 }
 .MoreContentList ul a {
-	color: #FFFFFF;
-	font-weight: bold;
+  color: #FFFFFF;
+  font-weight: bold;
 }
 .MoreContentList ul .all {
-	font-size: 12px;
-	font-weight: normal;
+  font-size: 12px;
+  font-weight: normal;
 }
 
 
@@ -1334,7 +1330,7 @@ ul.related-promo-list {
 }
 .mobileFooterLogo {
     background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/logos/footer-logo.png") no-repeat scroll #000;
-	height: 59px;
+  height: 59px;
     width: 46px;
     padding: 0 30px 20px; 0;
     float:left;
@@ -1371,11 +1367,11 @@ ul.related-promo-list {
 }
 @media (min-width: 768px) { 
     .mobileFooter .links {
-  	float: left;
+    float: left;
     }
 }
 .mobileFooter .links a {
-	color: #fff;
+  color: #fff;
 }
 .mobileFooter .links li {
     font-size: 12px;
@@ -1395,7 +1391,7 @@ ul.related-promo-list {
     }
 }
 .mobileFooter .social li {
-	margin-bottom: 7px;
+  margin-bottom: 7px;
 }
 .mobileFooter .social a {
     color: #FFFFFF;
@@ -1403,20 +1399,19 @@ ul.related-promo-list {
     padding-left: 26px;
 }
 .mobileFooter .social .facebook {
-	background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 0px 4px transparent;
+  background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 0px 4px transparent;
 }
 .mobileFooter .social .twitter {
-	background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 0px -20px transparent;
+  background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 0px -20px transparent;
 }
 .mobileFooter .social .youtube {
-	background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 4px -42px transparent;
-	padding-left: 15px;
+  background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 4px -42px transparent;
+  padding-left: 15px;
 }
 .mobileFooter .social .itunes {
-	background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 4px -66px transparent;
-	padding-left:15px;
+  background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 4px -66px transparent;
+  padding-left:15px;
 }
-
 
 /* Styles for Subject Site pages */
 .subjectSiteContent {
@@ -1426,16 +1421,14 @@ ul.related-promo-list {
     margin: 0 0 20px -30px;
 }
 
-
-
-
-/* MOBILE SEARCH DROPDOWN */
-
-
-.dropdown-menu {
-	min-width: 250px;
+#npsNav {
+  margin-top: -15px;
 }
 
+/* MOBILE SEARCH DROPDOWN */
+.dropdown-menu {
+  min-width: 250px;
+}
 .mobileSearch .navbar-toggle:before {
   content:none;
 }
@@ -1449,7 +1442,6 @@ ul.related-promo-list {
     font-size: 1.5em;
 }
 
-
 /* Makes the glyphicons work */
 @font-face {
   font-family: 'Glyphicons Halflings';
@@ -1457,6 +1449,7 @@ ul.related-promo-list {
   src: url('../fonts/glyphicons-halflings-regular.eot');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
+<<<<<<< HEAD
 
 
 
