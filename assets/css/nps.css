@@ -1552,8 +1552,13 @@ ul.related-promo-list {
 
 
 /* WEBCAMS */
-.blackBG {
-    background-color: black;
+.bodyColor {
+    background-color: white;
+}
+@media (min-width:992px) {
+    .bodyColor {
+        background-color: black;
+    }
 }
 .webcamContainer {
     padding: 0;
