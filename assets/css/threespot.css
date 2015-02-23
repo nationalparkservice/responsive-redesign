@@ -978,18 +978,18 @@
 }
 
 .tile .title {
-    color: #fff;
-    background: url("http://www.nps.gov/common/commonspot/templates/images/bg/transparent-70.png") repeat scroll 0 0 transparent;
-    bottom: 0;
-    font-size: 24px;
-    padding: 12px 13px;
-    position: absolute;
-    margin: 0;
-    width: 100%;
-
-    -webkit-transition: all ease 0.3s;
-    -moz-transition: all ease 0.3s;
-    transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+     -moz-transition: all ease 0.3s;
+          transition: all ease 0.3s;
+  background: url("http://www.nps.gov/common/commonspot/templates/images/bg/transparent-70.png") repeat scroll 0 0 transparent;
+  color: #fff;
+  bottom: 0;
+  font-size: 24px;
+  padding: 12px 13px;
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  
 }
 @media screen and (max-width: 768px) {
   .tile .title {
@@ -1082,7 +1082,7 @@
 #webcam #content-container #content {
   max-width: 940px;
   padding: 0;
-    width: 100%;
+  width: 100%;
 }
 #webcam #logo {
   padding: 15px 0 0 35px;
@@ -1170,7 +1170,6 @@ h2.urb-header-title {
     font-size: 16px;
   }
 }
-  
 
 .urb-submitBtn {
   background-color: #EFE7D1;
@@ -1197,5 +1196,3 @@ h2.urb-header-title {
   left: 15px;
   top: 99%;
 }
-
-
