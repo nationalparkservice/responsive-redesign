@@ -1066,57 +1066,6 @@
   width: 100%;
 }
 
-/*---------------------------------------------------*\
-** WebCam
-\*---------------------------------------------------*/
-#webcam {
-  min-width: 0;
-}
-#webcam #main-container {
-  background-image: none;
-  background-color: #f9f7f1;
-}
-#webcam #header,
-#webcam #main,
-#webcam #main-content #content-container,
-#webcam #content-container #content {
-  max-width: 940px;
-  padding: 0;
-    width: 100%;
-}
-#webcam #logo {
-  padding: 15px 0 0 35px;
-}
-#webcam #main {
-  background-image: none;
-  padding: 0;
-}
-#webcam #main-content {
-  padding: 0;
-}
-#webcam #main-content .content-container {
-  margin: 24px 0 0 0;
-}
-#webcam .content-container .content {
-    background: transparent;
-    padding: 0;
-}
-#webcam .content-container .content h1 {
-  border: none;
-  font-size: 20px;
-  margin-bottom: 28px;
-  padding: 0 0 0 35px;
-}
-#webcam .content-container .webcam-description {
-  font-size: 16px;
-  line-height: 22px;
-  margin-top: 20px;
-}
-#webcam .content-container .webcam-image {
-  -ms-interpolation-mode: bicubic; /* IE image re-size rendering fix */
-  max-width: 100%;
-  margin-bottom: 20px;
-}
 
 /*---------------------------------------------------*\
 ** URB 

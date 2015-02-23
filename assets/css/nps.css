@@ -8,13 +8,11 @@
   clear: both;
 }
 /* to get rid of the extra space at right on small viewports */
-@media screen and (max-width: 991px) { 
   html,
   body {
     overflow-x: hidden !important;
     width: auto !important;
   }
-}
 body {
   background-color: #f5f0dd;
   background-image: none;
@@ -1526,10 +1524,10 @@ ul.related-promo-list {
     margin: 0 10px 0 20px;   
 }
 .tilesTitle h2 {
-color: #5e7630;
-font-size: 24px;
-font-weight: bold;
-margin-bottom: 10px;
+    color: #5e7630;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .visuallyhidden {
@@ -1550,3 +1548,28 @@ margin-bottom: 10px;
 .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; display:block; }
 /* Hide visually and from screenreaders, but maintain layout */
 .invisible { visibility: hidden; }
+
+
+/* WEBCAMS */
+.blackBG {
+    background-color: black;
+}
+.webcamContainer {
+    padding: 0;
+    width: auto;
+}
+.webcamWidth {
+    max-width: 1024px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.webcam-description {
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 20px;
+}
+.webcam-image {
+  -ms-interpolation-mode: bicubic; /* IE image re-size rendering fix */
+  max-width: 100%;
+  margin-bottom: 20px;
+}
