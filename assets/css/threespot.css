@@ -728,8 +728,10 @@
 
 .middleContentArea {}
 
-.middleContentArea.-full_width {
-  padding: 0 20px 20px;
+@media (min-width: 992px) {
+  .middleContentArea.-full_width {
+    padding: 0 20px 20px;
+  }
 }
 
 /*---------------------------------------------------*\
