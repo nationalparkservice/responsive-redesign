@@ -3,9 +3,9 @@
 /* MODERN CLEARFIX */
 /* this is a clearfix to make parents expand with their children. Doesn't work in IE7 */
 .group:after {
+  clear: both;
   content: '';
   display: table;
-  clear: both;
 }
 /* to get rid of the extra space at right on small viewports */
   html,
@@ -41,10 +41,10 @@ body {
   padding-bottom: 18px;
 }
 .page-title.park-title {
-    border-bottom: none;
-    font-size: 26px;
-    margin-bottom: 12px;
-    padding-bottom: 0;
+  border-bottom: none;
+  font-size: 26px;
+  margin-bottom: 12px;
+  padding-bottom: 0;
 }
 .landing-intro {
   margin-bottom: 20px
@@ -115,10 +115,10 @@ a {
   text-decoration: none;
 }
 a.more:after {
-  content: '\A0\BB'
+  content: '\A0\BB';
 }
 a.back:before {
-  content: '\00AB\A0'
+  content: '\00AB\A0';
 }
 a:hover,
 a:active {
@@ -150,15 +150,15 @@ a:active {
 .content-container {
   background-color: #fff;
   border: none;
-  padding: 30px 30px 0 30px;
+  padding: 30px;
 }
 .content-container-nps {
   background-color: #fff;
-  margin: 0;
   border: none;
+  margin: 0;
   padding: 30px 30px 0 30px;
 }
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
   /* main content area */
   .content-container {
     -moz-border-radius-topleft: 2px;
@@ -166,18 +166,16 @@ a:active {
     -moz-border-radius-topright: 2px;
     border-top-right-radius: 2px;
     -webkit-box-shadow: 0 0 3px #cecece;
-    -moz-box-shadow: 0 0 3px #cecece;
-    box-shadow: 0 0 3px #cecece;
+       -moz-box-shadow: 0 0 3px #cecece;
+            box-shadow: 0 0 3px #cecece;
     border: 1px solid #dfdbca;
     margin: 5px 0 0 0;
     padding: 30px 24px;
   }
-}@media (min-width: 992px) { 
-  /* main content area */
   .content-container-nps {
+    border-bottom: 1px solid #dfdbca;
     border-left: 1px solid #dfdbca;
     border-right: 1px solid #dfdbca;
-    border-bottom: 1px solid #dfdbca;
     margin: 0;
     padding: 30px 24px;
   }
@@ -327,6 +325,9 @@ a:active {
     border-top: 1px solid transparent;
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
   }
+    .navbar-collapse.navbar-mobile ul h2 {
+      padding-left: 0;
+    }
   .navbar-fixed-top {
     border-width: 0 0 1px;
     top: 0;

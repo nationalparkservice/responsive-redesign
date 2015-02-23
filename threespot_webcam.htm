@@ -1,6 +1,3 @@
-<!-- Build MENU text into navbar-toggle -->
-<!-- Work on slick slider -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -307,47 +304,44 @@
       </div>
     </div>
     <div class="wallpaper-parks">
-        
-<!-- Main central container -->
+      <!-- Main central container -->
       <div class="container">
         <div class="row">
           <div class="col-md-12"><!-- column that surrounds the left nav and main content columns -->
-              
-              <div class="middleContentArea group">
+            <div class="middleContentArea group">
               <!-- LEFT NAV -->
-              
-                  <div class="col-md-3 hidden-xs hidden-sm sub-nav-containerWidth">
-                      <div id="sub-nav">
-                          <!-- nav links -->
-                          <div id="npsNav">
-                            <h2>Explore This Park</h2>
-                            <ul>
-                              <li class="active"><a href="/yose/index.htm" class="active">Park Home</a></li>
-                              <li><a href="/yose/planyourvisit/index.htm">Plan Your Visit</a></li>
-                              <li><a href="/yose/photosmultimedia/index.htm">Photos &amp; Multimedia</a></li>
-                              <li><a href="/yose/historyculture/index.htm">History &amp; Culture</a></li>
-                              <li><a href="/yose/naturescience/index.htm">Nature &amp; Science</a></li>
-                              <li><a href="/yose/forteachers/index.htm">For Teachers</a></li>
-                              <li><a href="/yose/forkids/index.htm">For Kids</a></li>
-                              <li><a href="/yose/parknews/index.htm">News</a></li>
-                              <li><a href="/yose/parkmgmt/index.htm">Management</a></li>
-                              <li><a href="/yose/supportyourpark/index.htm">Support Your Park</a></li>
-                              <li class="last"><a href="/yose/supportyourpark/bookstore.htm">Bookstore</a></li>
-                            </ul>
-                          </div>
-                          <!-- Park Tools -->
-                          <div class="park-tools">
-                            <h2>Park Tools</h2>
-                            <ul>
-                              <li class="map"><a href="/common/commonspot/customcf/apps/maps/showmap.cfm?alphacode=yose&parkname=Yosemite" class="colorbox-iframe-map" name="Yosemite Map">View Park Map</a></li>
-                              <li class="faqs"><a href="/yose/faqs.htm"><abbr title="Frequently Asked Questions">FAQs</abbr></a></li>
-                              <li class="context"><a href="/yose/contacts.htm">Contact Us</a></li>
-                              <li class="index"><a href="/yose/siteindex.htm">Site Index</a></li>
-                              <li class="spanish"><a href="/yose/espanol/index.htm">Español</a></li>
-                            </ul>
-                          </div>
-                          <!-- Find Us -->
-                          <div class="find-us"> 
+              <div class="col-md-3 hidden-xs hidden-sm sub-nav-containerWidth">
+                <div id="sub-nav">
+                  <!-- nav links -->
+                  <div id="npsNav">
+                    <h2>Explore This Park</h2>
+                    <ul>
+                      <li class="active"><a href="/yose/index.htm" class="active">Park Home</a></li>
+                      <li><a href="/yose/planyourvisit/index.htm">Plan Your Visit</a></li>
+                      <li><a href="/yose/photosmultimedia/index.htm">Photos &amp; Multimedia</a></li>
+                      <li><a href="/yose/historyculture/index.htm">History &amp; Culture</a></li>
+                      <li><a href="/yose/naturescience/index.htm">Nature &amp; Science</a></li>
+                      <li><a href="/yose/forteachers/index.htm">For Teachers</a></li>
+                      <li><a href="/yose/forkids/index.htm">For Kids</a></li>
+                      <li><a href="/yose/parknews/index.htm">News</a></li>
+                      <li><a href="/yose/parkmgmt/index.htm">Management</a></li>
+                      <li><a href="/yose/supportyourpark/index.htm">Support Your Park</a></li>
+                      <li class="last"><a href="/yose/supportyourpark/bookstore.htm">Bookstore</a></li>
+                    </ul>
+                  </div>
+                  <!-- Park Tools -->
+                  <div class="park-tools">
+                    <h2>Park Tools</h2>
+                    <ul>
+                      <li class="map"><a href="/common/commonspot/customcf/apps/maps/showmap.cfm?alphacode=yose&parkname=Yosemite" class="colorbox-iframe-map" name="Yosemite Map">View Park Map</a></li>
+                      <li class="faqs"><a href="/yose/faqs.htm"><abbr title="Frequently Asked Questions">FAQs</abbr></a></li>
+                      <li class="context"><a href="/yose/contacts.htm">Contact Us</a></li>
+                      <li class="index"><a href="/yose/siteindex.htm">Site Index</a></li>
+                      <li class="spanish"><a href="/yose/espanol/index.htm">Español</a></li>
+                    </ul>
+                  </div>
+                  <!-- Find Us -->
+                  <div class="find-us"> 
                     <h2>Find Us On</h2>
                     <ul class="social-connect">
                       <li class="cwu-facebook"><a href="http://www.facebook.com/YosemiteNPS">Facebook</a></li>
@@ -356,187 +350,157 @@
                       <li class="cwu-more"><a href="http://www.nps.gov/yose/parknews/socialmedia.htm">More</a></li>
                     </ul>
                   </div>
-                      </div>
-                  </div>
-                
+                </div>
+              </div>
               <!-- MAIN CONTENT -->
-                  <div class="content" id="content">  
-
-                                        <!-- Alert Container  -->
-                    <script>
-                      jQuery(document).ready(function() {
-
-                        var isParkHomepage = false;
-
-                        /* CHANGE: 2015-01-05 (Toby Reiter <tobias_reiter@contractor.nps.gov>) */
-                                // Internet Explorer can frequestly cache all GET AJAX requests, leading to Alert changes not appearing for IE users
-                                // We're going to append a random string to the end of the request, to ensure that IE pulls the newer content
-                                // Using jQuery.now() to append a timestamp to the URL to make it unique
-                                NPS.newContent.placeAlerts("/akr/renderhandlers/cs_chooser/rh_alert_chooser_json.cfm?siteCode=dena&ts=" + jQuery.now(), isParkHomepage);
-                              });
-                    </script>
-
-                    <div id="alert-container" class="col-xs-12 col-sm-12 col-md-9 ">
-                      <div id="alert" class="clearfix">
-                        <div id="alert-box" class="alert-toggle">There are park alerts in effect.</div><a href="javascript:void(0);" id="alert-toggle" class="alert-toggle">Show Alerts »</a>
-                      </div>
-                      <div id="content-top" class="content-top-alert"></div>
-                      <div class="row">
-                        <div class="col-xs-12" id="content-alert" style="display: none;">
-                          <div>
-                            <div id="alert-message">
-                              <ul class="last">
-                                <li>
-                                  <h4>Road Open To: Mile 3 (Park Headquarters)</h4>
-                                  <p>The Park Road is currently open to Mile 3, Park Headquarters. Wintry conditions beyond that point prevent vehicle travel, though pedestrian travel is permitted. <a href="http://www.nps.gov/dena/planyourvisit/hours.htm" title="Road Open To: Mile 3 (Park Headquarters)">More&nbsp;»</a>
-                                  </p>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
+              <div class="content" id="content">
+                <!-- Alert Container  -->
+                <div id="alert-container" class="col-xs-12 col-sm-12 col-md-9 ">
+                  <div id="alert" class="clearfix">
+                    <div id="alert-box" class="alert-toggle">There are park alerts in effect.</div><a href="javascript:void(0);" id="alert-toggle" class="alert-toggle">Show Alerts »</a>
+                  </div>
+                  <div id="content-top" class="content-top-alert"></div>
+                  <div class="row">
+                    <div class="col-xs-12" id="content-alert" style="display: none;">
+                      <div>
+                        <div id="alert-message">
+                          <ul class="last">
+                            <li>
+                              <h4>Road Open To: Mile 3 (Park Headquarters)</h4>
+                              <p>The Park Road is currently open to Mile 3, Park Headquarters. Wintry conditions beyond that point prevent vehicle travel, though pedestrian travel is permitted. <a href="http://www.nps.gov/dena/planyourvisit/hours.htm" title="Road Open To: Mile 3 (Park Headquarters)">More&nbsp;»</a>
+                              </p>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
-
-                    <div class="content-container col-xs-12 col-md-9">                  
-                      <div class="row">
-                          <div class="col-xs-12 col-sm-12 col-md-12">
-                            <!-- page title -->
-                            <p class="page-title">Page Title</p>
-                          </div>
-                      </div>
-                    
-                    <!-- CONTENT EXAMPLE WITH RIGHT-SIDE HIGHLIGHTS -->
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12">
-                          <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-12">
-                              <script type="text/javascript">
-                                function popupCenter(pageURL, title, w, h) {
-                                  var left = (screen.width / 2) - (w / 2);
-                                  var top = (screen.height / 2) - (h / 2);
-                                  var targetWin = window.open(pageURL, title, 'status=no, menubar=no, toolbar=no, location=no, scrollbars=yes, resizable=yes, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
-                                }
-                              </script>
-
-                              <div class="webcam-gallery" id="gallery-listing">
-                                <ul class="clearfix" id="gallery-content">
-                                  <li>
-                                    <div class="row">
-                                      <div class="col-xs-12 col-sm-3 col-md-3">
-                                        <div class="image">
-                                          <a class="webcam-link-876 webCamImageTitle" href="#">
-                                            <picture>
-                                              <!--[if IE 9]><video style="display: none;"><![endif]-->
-                                              <source class="img-responsive" srcset="http://placehold.it/300x268" media="(min-width: 768px)">
-                                              <source class="img-responsive" srcset="http://placehold.it/600x537" media="(min-width: 400px)">
-                                              <source class="img-responsive" srcset="http://placehold.it/300x268">
-                                              <!--[if IE 9]></video><![endif]-->
-                                              <img class="img-responsive" srcset="http://placehold.it/145x130" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
-                                            </picture>
-                                          </a>
-                                        </div>
-                                      </div>
-                                      <div class="col-xs-12 col-sm-9 col-md-9">
-                                        <div class="description clearfix">
-                                          <h3>Alpine Tundra</h3>
-                                          <p>Have you ever wanted to check conditions for hiking, skiing, and other outdoor activities along the Denali Park Road corridor west of Park Headquarters? A new Alpine Tundra webcam, perched high atop a shoulder of Mount Healy along the park’s Outer Range, offers a westward perspective for several miles beyond the entrance area. Snow and extreme conditions may obscure the view at times. The image is set to refresh several times each minute.</p>
-                                          <ul>
-                                            <li class="play"><a class="webcam-link-876" href="http://www.nps.gov/akr/customcf/webcam/dsp_webcam_image.cfm?&webCam=56868082F6D1C0684BC473899D0AF3784984E6619EACCFAF9ABC5F9EBC098806D3F7CE93979ED515DC94&thumbnail=56868082F6D1C0684BC473899D0AF3784984E6729EA0CDE187A71D8EB614845CDEEFD7979C9F921E839A1A04819B84D4A656A95A591981A18147ADA3E827EFD28D1790&refreshRate=10&title=7F9E849BA29BCF4B49DD39958C&width=1024&height=576&altText=6D879A9EA599876B1CD23383CD1AB1705396BA3698BCC3BD84EF13DAAF068545D7E29E9B979FDB12C3861911879799888E5EBC40&description=76938297EC87806A1CD62B829F59AA7E4886AC72DBBAC3EE94A71799B2478A46DCFFD78E9094950C8C951817C6969E908E54BE1F170FC78F9A48A8D0F975B398C708839F99ABC689A988DAA0968BC798549A90B99D86A09C80FAAFA17185A8934716FA3EDDDB88939BA6596995AC9DB9BCB3FB931690A595A4A62BB415ED4C9C8080CF50510BB6AABD22F3A1025A1716479C6BABBF98BFCDEB9CECBBBB90ECBD814356F379C7A349A3998F78E95CFC4F94AAB3E3C74F50998454F983F946925C2113AC3998833B57ED8A57886E8956FC81DBA0FD4EB411879746DBDEFC8652E5C77EA0F390B5C746A141D9698B8F950FFF760F9DAA88889BA1198EBD89AE9C133F5D80BD3FBC941E86BF8599A7E75197891AC79F9ABD159682D5CAF688F2DCB1B0BCD78C59895B9497FEFF961C988F941FAD825E1C4100BB8D77B3E97389038F92A1199AECD58F58525BC6AD9151845EDBFC9ACF8395529DDC125BCF5010F34293828F8BF38FF3C6864AC69C51BC589BABBBC70A9E966B6F55AE1212878DE989579AA88F92FB279F17FB1E9EAC99A8B4FE95CCECBC43EF67985F9D59B5EBB98DF51F402A48D3948672FC8FB0FF9EAADC807BAC4EF7A65AB0D2BD89DA&parkID=/">View webcam</a>
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </li>
-
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="cs_spacer_610688" class="CS_Layout_SpacingHeight" style="line-height:1;">&nbsp;</div>
-                          <div id="cs_control_610688" class="cs_control CS_Element_Custom">
-                            <!--LARGE IMAGE module-->
-                            <style>
-                              .textWrappedAroundImage {
-                                margin-bottom: 15px;
-                              }
-                              .content ul {
-                                list-style-position: outside;
-                                list-style-type: disc;
-                              }
-                              .floatingImage {
-                                width: 150px;
-                                float: right;
-                                text-align: left;
-                                margin-left: 15px;
-                                margin-bottom: 8px;
-                              }
-                              .floatingImage p {
-                                padding: 0;
-                                margin: 0;
-                              }
-                              .floatingImage p.credit {
-                                color: #727163;
-                                /* Changed from #777 for 508 - Dan */
-
-                                font-size: 11px;
-                              }
-                              .floatingImage p.caption {
-                                color: #5A712D;
-                                /* Changed from #668033 for 508 - Dan */
-
-                                font-size: 11px;
-                                margin-bottom: 4px;
-                              }
-                            </style>
-
-                            <div class="textWrappedAroundImage clearfix">
-
-                              <ul>
-                                <li>Learn more about a variety of <a id="&nbsp;http://www.nps.gov/dena/planyourvisit/bctravel.htm|" href="/dena/photosmultimedia/&nbsp;http://www.nps.gov/dena/planyourvisit/bctravel.htm">landscape types</a> throughout the park.</li>
-                              </ul>
-
-                              <ul>
-                                <li>See for yourself through a study of <a id="http://denalirepeatphotos.uaf.edu:8080|" href="http://denalirepeatphotos.uaf.edu:8080" onclick="">repeat photography</a> how this area has changed over time.</li>
-                              </ul>
-
-                              <ul>
-                                <li>Explore online resources about factors that shape <a id="http://www.nps.gov/dena/naturescience/weather.htm|" href="http://www.nps.gov/dena/naturescience/weather.htm">weather and climate</a> in Denali.
-                                  <br>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-                      
-                      <!-- Did You Know area -->
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12">
-                          <div class="fact">
-                              <h2>Did You Know?</h2>
-                              <img id="dykImage" src="http://www.nps.gov/pwr/yose/photosmultimedia/images/ARC-_lowres.jpg" alt="ARC Students journaling near Hetch Hetchy"><p>Adventure Risk Challenge (ARC) brings youth to Yosemite each summer for a dynamic literacy and leadership immersion program. ARC works with students, boosting academic and leadership skills through a variety of programs, including a 40-day experience in Yosemite full of adventure and learning.&nbsp;<a id="dykMoreInfo" title="Read more about this Did You Know" href="http://www.yosemiteconservancy.org/youth-stewardship/adventure-leadership-youth-development-program-adventure-risk-challenge-arc">More...</a></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>                  
                   </div>
-                
+                </div>
+                <div class="content-container col-xs-12 col-md-9">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                      <!-- page title -->
+                      <p class="page-title">Page Title</p>
+                    </div>
+                  </div>
+                  <!-- CONTENT EXAMPLE WITH RIGHT-SIDE HIGHLIGHTS -->
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                          <script type="text/javascript">
+                            function popupCenter(pageURL, title, w, h) {
+                              var left = (screen.width / 2) - (w / 2);
+                              var top = (screen.height / 2) - (h / 2);
+                              var targetWin = window.open(pageURL, title, 'status=no, menubar=no, toolbar=no, location=no, scrollbars=yes, resizable=yes, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+                            }
+                          </script>
+                          <div class="webcam-gallery" id="gallery-listing">
+                            <ul class="clearfix" id="gallery-content">
+                              <li>
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-3 col-md-3">
+                                    <div class="image">
+                                      <a class="webcam-link-876 webCamImageTitle" href="#">
+                                        <picture>
+                                          <!--[if IE 9]><video style="display: none;"><![endif]-->
+                                          <source class="img-responsive" srcset="http://placehold.it/300x268" media="(min-width: 768px)">
+                                          <source class="img-responsive" srcset="http://placehold.it/600x537" media="(min-width: 400px)">
+                                          <source class="img-responsive" srcset="http://placehold.it/300x268">
+                                          <!--[if IE 9]></video><![endif]-->
+                                          <img class="img-responsive" srcset="http://placehold.it/145x130" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
+                                        </picture>
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div class="col-xs-12 col-sm-9 col-md-9">
+                                    <div class="description clearfix">
+                                      <h3>Alpine Tundra</h3>
+                                      <p>Have you ever wanted to check conditions for hiking, skiing, and other outdoor activities along the Denali Park Road corridor west of Park Headquarters? A new Alpine Tundra webcam, perched high atop a shoulder of Mount Healy along the park’s Outer Range, offers a westward perspective for several miles beyond the entrance area. Snow and extreme conditions may obscure the view at times. The image is set to refresh several times each minute.</p>
+                                      <ul>
+                                        <li class="play"><a class="webcam-link-876" href="http://www.nps.gov/akr/customcf/webcam/dsp_webcam_image.cfm?&webCam=56868082F6D1C0684BC473899D0AF3784984E6619EACCFAF9ABC5F9EBC098806D3F7CE93979ED515DC94&thumbnail=56868082F6D1C0684BC473899D0AF3784984E6729EA0CDE187A71D8EB614845CDEEFD7979C9F921E839A1A04819B84D4A656A95A591981A18147ADA3E827EFD28D1790&refreshRate=10&title=7F9E849BA29BCF4B49DD39958C&width=1024&height=576&altText=6D879A9EA599876B1CD23383CD1AB1705396BA3698BCC3BD84EF13DAAF068545D7E29E9B979FDB12C3861911879799888E5EBC40&description=76938297EC87806A1CD62B829F59AA7E4886AC72DBBAC3EE94A71799B2478A46DCFFD78E9094950C8C951817C6969E908E54BE1F170FC78F9A48A8D0F975B398C708839F99ABC689A988DAA0968BC798549A90B99D86A09C80FAAFA17185A8934716FA3EDDDB88939BA6596995AC9DB9BCB3FB931690A595A4A62BB415ED4C9C8080CF50510BB6AABD22F3A1025A1716479C6BABBF98BFCDEB9CECBBBB90ECBD814356F379C7A349A3998F78E95CFC4F94AAB3E3C74F50998454F983F946925C2113AC3998833B57ED8A57886E8956FC81DBA0FD4EB411879746DBDEFC8652E5C77EA0F390B5C746A141D9698B8F950FFF760F9DAA88889BA1198EBD89AE9C133F5D80BD3FBC941E86BF8599A7E75197891AC79F9ABD159682D5CAF688F2DCB1B0BCD78C59895B9497FEFF961C988F941FAD825E1C4100BB8D77B3E97389038F92A1199AECD58F58525BC6AD9151845EDBFC9ACF8395529DDC125BCF5010F34293828F8BF38FF3C6864AC69C51BC589BABBBC70A9E966B6F55AE1212878DE989579AA88F92FB279F17FB1E9EAC99A8B4FE95CCECBC43EF67985F9D59B5EBB98DF51F402A48D3948672FC8FB0FF9EAADC807BAC4EF7A65AB0D2BD89DA&parkID=/">View webcam</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="cs_spacer_610688" class="CS_Layout_SpacingHeight" style="line-height:1;">&nbsp;</div>
+                      <div id="cs_control_610688" class="cs_control CS_Element_Custom">
+                        <!--LARGE IMAGE module-->
+                        <style>
+                          .textWrappedAroundImage {
+                            margin-bottom: 15px;
+                          }
+                          .content ul {
+                            list-style-position: outside;
+                            list-style-type: disc;
+                          }
+                          .floatingImage {
+                            width: 150px;
+                            float: right;
+                            text-align: left;
+                            margin-left: 15px;
+                            margin-bottom: 8px;
+                          }
+                          .floatingImage p {
+                            padding: 0;
+                            margin: 0;
+                          }
+                          .floatingImage p.credit {
+                            color: #727163;
+                            /* Changed from #777 for 508 - Dan */
+                            font-size: 11px;
+                          }
+                          .floatingImage p.caption {
+                            color: #5A712D;
+                            /* Changed from #668033 for 508 - Dan */
+                            font-size: 11px;
+                            margin-bottom: 4px;
+                          }
+                        </style>
+                        <div class="textWrappedAroundImage clearfix">
+                          <ul>
+                            <li>Learn more about a variety of <a id="&nbsp;http://www.nps.gov/dena/planyourvisit/bctravel.htm|" href="/dena/photosmultimedia/&nbsp;http://www.nps.gov/dena/planyourvisit/bctravel.htm">landscape types</a> throughout the park.</li>
+                          </ul>
+                          <ul>
+                            <li>See for yourself through a study of <a id="http://denalirepeatphotos.uaf.edu:8080|" href="http://denalirepeatphotos.uaf.edu:8080" onclick="">repeat photography</a> how this area has changed over time.</li>
+                          </ul>
+                          <ul>
+                            <li>Explore online resources about factors that shape <a id="http://www.nps.gov/dena/naturescience/weather.htm|" href="http://www.nps.gov/dena/naturescience/weather.htm">weather and climate</a> in Denali.<br></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Did You Know area -->
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                      <div class="fact">
+                          <h2>Did You Know?</h2>
+                          <img id="dykImage" src="http://www.nps.gov/pwr/yose/photosmultimedia/images/ARC-_lowres.jpg" alt="ARC Students journaling near Hetch Hetchy"><p>Adventure Risk Challenge (ARC) brings youth to Yosemite each summer for a dynamic literacy and leadership immersion program. ARC works with students, boosting academic and leadership skills through a variety of programs, including a 40-day experience in Yosemite full of adventure and learning.&nbsp;<a id="dykMoreInfo" title="Read more about this Did You Know" href="http://www.yosemiteconservancy.org/youth-stewardship/adventure-leadership-youth-development-program-adventure-risk-challenge-arc">More...</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+        </div>
       </div><!-- end of main central container -->
-      </div><!-- end of wallpaper background -->
-      <!-- Breadcrumbs -->
-      <div class="breadcrumb-container hidden-sm hidden-xs">
-          <div class="breadcrumbs container">
-              <div id="sm-control">
-                  <a href="javascript:void(0);">Site Map</a>
-              </div><!--! end of #sm-control -->
-          </div><!--! end of #breadcrumb -->
-      </div>
+    </div><!-- end of wallpaper background -->
+    <!-- Breadcrumbs -->
+    <div class="breadcrumb-container hidden-sm hidden-xs">
+      <div class="breadcrumbs container">
+        <div id="sm-control">
+          <a href="javascript:void(0);">Site Map</a>
+        </div><!--! end of #sm-control -->
+      </div><!--! end of #breadcrumb -->
+    </div>
     <!-- Sitemap -->
     <div id="site-map-container" class="hidden-sm hidden-xs">
       <div class="footer-gradient"></div>
@@ -551,71 +515,71 @@
           </form>
         </div>
         <div class="search-control one-fifth">
-            <form method="get" action="/findapark">
-              <label for="park-query">Find a Park</label><br>
-              <select id="park-query">
-                <option value="">Select a State</option> 
-                <option value="/state/al/index.htm?program=parks">Alabama</option>
-                <option value="/state/ak/index.htm?program=parks">Alaska</option>
-                <option value="/state/as/index.htm?program=parks">American Samoa</option>
-                <option value="/state/az/index.htm?program=parks">Arizona</option>
-                <option value="/state/ar/index.htm?program=parks">Arkansas</option>
-                <option value="/state/ca/index.htm?program=parks">California</option>
-                <option value="/state/co/index.htm?program=parks">Colorado</option>
-                <option value="/state/ct/index.htm?program=parks">Connecticut</option>
-                <option value="/state/de/index.htm?program=parks">Delaware</option>
-                <option value="/state/dc/index.htm?program=parks">District of Columbia</option>
-                <option value="/state/fl/index.htm?program=parks">Florida</option>
-                <option value="/state/ga/index.htm?program=parks">Georgia</option>
-                <option value="/state/gu/index.htm?program=parks">Guam</option>
-                <option value="/state/hi/index.htm?program=parks">Hawaii</option>
-                <option value="/state/id/index.htm?program=parks">Idaho</option>
-                <option value="/state/il/index.htm?program=parks">Illinois</option>
-                <option value="/state/in/index.htm?program=parks">Indiana</option>
-                <option value="/state/ia/index.htm?program=parks">Iowa</option>
-                <option value="/state/ks/index.htm?program=parks">Kansas</option>
-                <option value="/state/ky/index.htm?program=parks">Kentucky</option>
-                <option value="/state/la/index.htm?program=parks">Louisiana</option>
-                <option value="/state/me/index.htm?program=parks">Maine</option>
-                <option value="/state/md/index.htm?program=parks">Maryland</option>
-                <option value="/state/ma/index.htm?program=parks">Massachusetts</option>
-                <option value="/state/mi/index.htm?program=parks">Michigan</option>
-                <option value="/state/mn/index.htm?program=parks">Minnesota</option>
-                <option value="/state/ms/index.htm?program=parks">Mississippi</option>
-                <option value="/state/mo/index.htm?program=parks">Missouri</option>
-                <option value="/state/mt/index.htm?program=parks">Montana</option>
-                <option value="/state/ne/index.htm?program=parks">Nebraska</option>
-                <option value="/state/nv/index.htm?program=parks">Nevada</option>
-                <option value="/state/nh/index.htm?program=parks">New Hampshire</option>
-                <option value="/state/nj/index.htm?program=parks">New Jersey</option>
-                <option value="/state/nm/index.htm?program=parks">New Mexico</option>
-                <option value="/state/ny/index.htm?program=parks">New York</option>
-                <option value="/state/nc/index.htm?program=parks">North Carolina</option>
-                <option value="/state/nd/index.htm?program=parks">North Dakota</option>
-                <option value="/state/mp/index.htm?program=parks">Northern Mariana Islands</option>
-                <option value="/state/oh/index.htm?program=parks">Ohio</option>
-                <option value="/state/ok/index.htm?program=parks">Oklahoma</option>
-                <option value="/state/or/index.htm?program=parks">Oregon</option>
-                <option value="/state/pa/index.htm?program=parks">Pennsylvania</option>
-                <option value="/state/pr/index.htm?program=parks">Puerto Rico</option>
-                <option value="/state/ri/index.htm?program=parks">Rhode Island</option>
-                <option value="/state/sc/index.htm?program=parks">South Carolina</option>
-                <option value="/state/sd/index.htm?program=parks">South Dakota</option>
-                <option value="/state/tn/index.htm?program=parks">Tennessee</option>
-                <option value="/state/tx/index.htm?program=parks">Texas</option>
-                <option value="/state/ut/index.htm?program=parks">Utah</option>
-                <option value="/state/vt/index.htm?program=parks">Vermont</option>
-                <option value="/state/vi/index.htm?program=parks">Virgin Islands</option>
-                <option value="/state/va/index.htm?program=parks">Virginia</option>
-                <option value="/state/wa/index.htm?program=parks">Washington</option>
-                <option value="/state/wv/index.htm?program=parks">West Virginia</option>
-                <option value="/state/wi/index.htm?program=parks">Wisconsin</option>
-                <option value="/state/wy/index.htm?program=parks">Wyoming</option>
-              </select>
-              <input type="submit" value="Submit" style="display:none;">
-              <input type="hidden" name="as_sfid" value="AAAAAAUKLIfgS0Dlxjq0Q+oWIu7yC30WEF6r+FQOyPTA3rq67ot+hOVH1dp2c8JpFF42vtwJGvZre/oX6scJG1oLgDCSfQBk1cV0kUITIBUHW8VIWw==">
-              <input type="hidden" name="as_fid" value="xnF6xxBk+WcGVlekmyRd">
-            </form>
+          <form method="get" action="/findapark">
+            <label for="park-query">Find a Park</label><br>
+            <select id="park-query">
+              <option value="">Select a State</option> 
+              <option value="/state/al/index.htm?program=parks">Alabama</option>
+              <option value="/state/ak/index.htm?program=parks">Alaska</option>
+              <option value="/state/as/index.htm?program=parks">American Samoa</option>
+              <option value="/state/az/index.htm?program=parks">Arizona</option>
+              <option value="/state/ar/index.htm?program=parks">Arkansas</option>
+              <option value="/state/ca/index.htm?program=parks">California</option>
+              <option value="/state/co/index.htm?program=parks">Colorado</option>
+              <option value="/state/ct/index.htm?program=parks">Connecticut</option>
+              <option value="/state/de/index.htm?program=parks">Delaware</option>
+              <option value="/state/dc/index.htm?program=parks">District of Columbia</option>
+              <option value="/state/fl/index.htm?program=parks">Florida</option>
+              <option value="/state/ga/index.htm?program=parks">Georgia</option>
+              <option value="/state/gu/index.htm?program=parks">Guam</option>
+              <option value="/state/hi/index.htm?program=parks">Hawaii</option>
+              <option value="/state/id/index.htm?program=parks">Idaho</option>
+              <option value="/state/il/index.htm?program=parks">Illinois</option>
+              <option value="/state/in/index.htm?program=parks">Indiana</option>
+              <option value="/state/ia/index.htm?program=parks">Iowa</option>
+              <option value="/state/ks/index.htm?program=parks">Kansas</option>
+              <option value="/state/ky/index.htm?program=parks">Kentucky</option>
+              <option value="/state/la/index.htm?program=parks">Louisiana</option>
+              <option value="/state/me/index.htm?program=parks">Maine</option>
+              <option value="/state/md/index.htm?program=parks">Maryland</option>
+              <option value="/state/ma/index.htm?program=parks">Massachusetts</option>
+              <option value="/state/mi/index.htm?program=parks">Michigan</option>
+              <option value="/state/mn/index.htm?program=parks">Minnesota</option>
+              <option value="/state/ms/index.htm?program=parks">Mississippi</option>
+              <option value="/state/mo/index.htm?program=parks">Missouri</option>
+              <option value="/state/mt/index.htm?program=parks">Montana</option>
+              <option value="/state/ne/index.htm?program=parks">Nebraska</option>
+              <option value="/state/nv/index.htm?program=parks">Nevada</option>
+              <option value="/state/nh/index.htm?program=parks">New Hampshire</option>
+              <option value="/state/nj/index.htm?program=parks">New Jersey</option>
+              <option value="/state/nm/index.htm?program=parks">New Mexico</option>
+              <option value="/state/ny/index.htm?program=parks">New York</option>
+              <option value="/state/nc/index.htm?program=parks">North Carolina</option>
+              <option value="/state/nd/index.htm?program=parks">North Dakota</option>
+              <option value="/state/mp/index.htm?program=parks">Northern Mariana Islands</option>
+              <option value="/state/oh/index.htm?program=parks">Ohio</option>
+              <option value="/state/ok/index.htm?program=parks">Oklahoma</option>
+              <option value="/state/or/index.htm?program=parks">Oregon</option>
+              <option value="/state/pa/index.htm?program=parks">Pennsylvania</option>
+              <option value="/state/pr/index.htm?program=parks">Puerto Rico</option>
+              <option value="/state/ri/index.htm?program=parks">Rhode Island</option>
+              <option value="/state/sc/index.htm?program=parks">South Carolina</option>
+              <option value="/state/sd/index.htm?program=parks">South Dakota</option>
+              <option value="/state/tn/index.htm?program=parks">Tennessee</option>
+              <option value="/state/tx/index.htm?program=parks">Texas</option>
+              <option value="/state/ut/index.htm?program=parks">Utah</option>
+              <option value="/state/vt/index.htm?program=parks">Vermont</option>
+              <option value="/state/vi/index.htm?program=parks">Virgin Islands</option>
+              <option value="/state/va/index.htm?program=parks">Virginia</option>
+              <option value="/state/wa/index.htm?program=parks">Washington</option>
+              <option value="/state/wv/index.htm?program=parks">West Virginia</option>
+              <option value="/state/wi/index.htm?program=parks">Wisconsin</option>
+              <option value="/state/wy/index.htm?program=parks">Wyoming</option>
+            </select>
+            <input type="submit" value="Submit" style="display:none;">
+            <input type="hidden" name="as_sfid" value="AAAAAAUKLIfgS0Dlxjq0Q+oWIu7yC30WEF6r+FQOyPTA3rq67ot+hOVH1dp2c8JpFF42vtwJGvZre/oX6scJG1oLgDCSfQBk1cV0kUITIBUHW8VIWw==">
+            <input type="hidden" name="as_fid" value="xnF6xxBk+WcGVlekmyRd">
+          </form>
         </div><!-- end of search box -->
       </div>
       <!-- Sitemap -->
@@ -756,26 +720,25 @@
     </div>
     <!-- Mobile Footer -->
     <div class="mobileFooter hidden-md hidden-lg">
-          <a href="http://www.doi.gov/"><div class="mobileFooterLogo"></div></a>
-          <a href="http://www.doi.gov/"><div class="text-logo"></div></a>
-          <div class="slogan hidden-xs"></div>
-          <div class="footerHR"></div>
-          <ul class="links">
-              <li><a href="/faqs.htm">Frequently Asked Questions</a></li>
-              <li><a href="/aboutus/website-policies.htm">Website Policies</a></li>
-              <li><a href="/contacts.htm">Contact Us</a></li>
-          </ul>
-          <div class="footerHR2 hidden-sm"></div>
-          <ul class="social">
-              <li class="youtube"><a href="http://www.youtube.com/nationalparkservice" onclick="">YouTube</a></li>
-                  <li class="itunes"><a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewArtistLegacy?cc=us&amp;id=216751324" onclick="">iTunes</a></li>
-              </ul>
-              <ul class="social">
-                  <li class="facebook"><a href="http://www.facebook.com/nationalparkservice" onclick="">Facebook</a></li>
-                  <li class="twitter"><a href="http://twitter.com/natlparkservice" onclick="">Twitter</a></li>
-          </ul>
-      </div>
-      
+      <a href="http://www.doi.gov/"><div class="mobileFooterLogo"></div></a>
+      <a href="http://www.doi.gov/"><div class="text-logo"></div></a>
+      <div class="slogan hidden-xs"></div>
+      <div class="footerHR"></div>
+      <ul class="links">
+        <li><a href="/faqs.htm">Frequently Asked Questions</a></li>
+        <li><a href="/aboutus/website-policies.htm">Website Policies</a></li>
+        <li><a href="/contacts.htm">Contact Us</a></li>
+      </ul>
+      <div class="footerHR2 hidden-sm"></div>
+      <ul class="social">
+        <li class="youtube"><a href="http://www.youtube.com/nationalparkservice" onclick="">YouTube</a></li>
+        <li class="itunes"><a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewArtistLegacy?cc=us&amp;id=216751324" onclick="">iTunes</a></li>
+      </ul>
+      <ul class="social">
+        <li class="facebook"><a href="http://www.facebook.com/nationalparkservice" onclick="">Facebook</a></li>
+        <li class="twitter"><a href="http://twitter.com/natlparkservice" onclick="">Twitter</a></li>
+      </ul>
+    </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://www.nps.gov/npmap/bootstrap/3.2.0/dist/js/nps-bootstrap.min.js"></script>
     <script src="assets/libs/slick/slick.min.js"></script>
@@ -783,12 +746,17 @@
     <script src="assets/libs/colorbox/colorbox.min.js"></script>
     <script src="assets/js/global.js"></script>
     <script src="assets/js/app.js"></script>
-    
     <script src="assets/js/readmore.js"></script>
     <script src="assets/js/threespot.js"></script>
-
     <script>
       jQuery(document).ready(function() {
+        var isParkHomepage = false;
+
+        /* CHANGE: 2015-01-05 (Toby Reiter <tobias_reiter@contractor.nps.gov>) */
+        // Internet Explorer can frequestly cache all GET AJAX requests, leading to Alert changes not appearing for IE users
+        // We're going to append a random string to the end of the request, to ensure that IE pulls the newer content
+        // Using jQuery.now() to append a timestamp to the URL to make it unique
+        NPS.newContent.placeAlerts("/akr/renderhandlers/cs_chooser/rh_alert_chooser_json.cfm?siteCode=dena&ts=" + jQuery.now(), isParkHomepage);
         jQuery('.webcam-link-876').click(function(e) {
           e.preventDefault();
           popupCenter(jQuery(this).attr('href'), 'newPop876', ((screen.width - 70) > 1059) ? 1059 : (screen.width - 70), ((screen.height - 50) > 846) ? 846 : (screen.height - 50));
