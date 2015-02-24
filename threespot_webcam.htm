@@ -756,13 +756,12 @@
         // Internet Explorer can frequestly cache all GET AJAX requests, leading to Alert changes not appearing for IE users
         // We're going to append a random string to the end of the request, to ensure that IE pulls the newer content
         // Using jQuery.now() to append a timestamp to the URL to make it unique
-        NPS.newContent.placeAlerts("/akr/renderhandlers/cs_chooser/rh_alert_chooser_json.cfm?siteCode=dena&ts=" + jQuery.now(), isParkHomepage);
+        //NPS.newContent.placeAlerts("/akr/renderhandlers/cs_chooser/rh_alert_chooser_json.cfm?siteCode=dena&ts=" + jQuery.now(), isParkHomepage);
         jQuery('.webcam-link-876').click(function(e) {
           e.preventDefault();
           popupCenter(jQuery(this).attr('href'), 'newPop876', ((screen.width - 70) > 1059) ? 1059 : (screen.width - 70), ((screen.height - 50) > 846) ? 846 : (screen.height - 50));
         });
       });
     </script>
-      
   </body>
 </html>

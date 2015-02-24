@@ -1,41 +1,78 @@
-/*
-  Name: National Park Service global javascript
-  Date: December 2011
-  Version: 0.0.5
-  Author: Pim Linders + Matt Baily @threespot.com
-*/
-
 var NPS = NPS || {};
 
-NPS.loadPlugins = function(){
-  //slide box
-  jQuery.fn.slidebox = function() {
-      var slidebox = this;
-      var originalPosition = slidebox.css('right');
-      var open = false;
-      var boxAnimations;
-  
-      if (Modernizr.cssanimations) {
-        boxAnimations = {
-            open:  function() { slidebox.addClass('open'); },
-            close: function() { slidebox.removeClass('open'); }
-          }
-      } else {
-      boxAnimations = {
-            open: function() {
-              slidebox.animate({
-                  'right': '10px'
-                }, 300);
-            },
-            close: function() {
-              slidebox.stop(true).animate({
-                  'right': originalPosition
-                }, 100);
-            }
-      }
+NPS.loadPlugins = function() {
+  // Mouse hold down jquery function.
+  jQuery.fn.mousehold = function(timeout, f) {
+    if (timeout && typeof timeout === 'function') {
+      f = timeout;
+      timeout = 100;
     }
+
+    if (f && typeof f === 'function') {
+      var fireStep = 0,
+        timer = 0;
+
+      return this.each(function() {
+        jQuery(this).mousedown(function() {
+          var ctr = 0,
+            t = this;
+
+          fireStep = 1;
+          timer = setInterval(function() {
+            ctr++;
+            f.call(t, ctr);
+            fireStep = 2;
+          }, timeout);
+        });
+        clearMousehold = function() {
+          clearInterval(timer);
+
+          if (fireStep === 1) {
+            f.call(this, 1);
+          }
+
+          fireStep = 0;
+        };
+        jQuery(this)
+          .mouseout(clearMousehold)
+          .mouseup(clearMousehold);
+      });
+    }
+  };
+  // Slide box.
+  jQuery.fn.slidebox = function() {
+    var slidebox = this,
+      open = false,
+      originalPosition = slidebox.css('right'),
+      boxAnimations;
+
+    if (Modernizr.cssanimations) {
+      boxAnimations = {
+        open: function() {
+          slidebox.addClass('open');
+        },
+        close: function() {
+          slidebox.removeClass('open');
+        }
+      };
+    } else {
+      boxAnimations = {
+        open: function() {
+          slidebox.animate({
+            right: '10px'
+          }, 300);
+        },
+        close: function() {
+          slidebox.stop(true).animate({
+            right: originalPosition
+          }, 100);
+        }
+      };
+    }
+
     jQuery(window).scroll(function() {
       var distanceTop = jQuery('#content-bottom').offset().top - jQuery(window).height() - 80;
+
       if (jQuery(window).scrollTop() > distanceTop) {
         if (!open) {
           open = true;
@@ -46,490 +83,426 @@ NPS.loadPlugins = function(){
         boxAnimations.close();
       }
     });
-    
     slidebox.find('.close').click(function() {
       jQuery(this).parent().parent().remove();
-    });  
-  }
-  
+    });
+  };
   /** 
-  * jQuery split a list into multiple rows or columns
-  * usage: 
-  *    jQuery(".dropdown ul").splitList(3);
-  *    jQuery(".dropdown ul").splitList(3, { wrapClass: "div_class_name" });
-  *    jQuery(".dropdown ul").splitList(3, { splitInto: "div_class_name" });
-  */
-  jQuery.fn.splitList = function(n, options){
+   * jQuery split a list into multiple rows or columns
+   *   Usage: 
+   *     jQuery(".dropdown ul").splitList(3);
+   *     jQuery(".dropdown ul").splitList(3, { wrapClass: "div_class_name" });
+   *     jQuery(".dropdown ul").splitList(3, { splitInto: "div_class_name" });
+   */
+  jQuery.fn.splitList = function(n, options) {
     settings = jQuery.extend({
       wrapClass: false,
       splitInto: 'cols'
     }, options);
+
     return this.each(function(){
-      var intoCols = (settings['splitInto'] == 'cols');
-      jQuerylis = jQuery(this).find("> li");    
-      jQueryinc = intoCols ? parseInt((jQuerylis.length/n) + (jQuerylis.length % n > 0 )) : n;
-      var w = '<div' + (settings['wrapClass'] ? ' class="' + settings['wrapClass'] + '"' : '' ) + '></div>';
-      for(var i=0; i<(intoCols ? n : Math.ceil(jQuerylis.length/n)); i++)
+      var intoCols = (settings.splitInto === 'cols'),
+        w = '<div' + (settings.wrapClass ? ' class="' + settings.wrapClass + '"' : '' ) + '></div>';
+
+      jQuerylis = jQuery(this).find('> li');
+      jQueryinc = intoCols ? parseInt((jQuerylis.length/n) + (jQuerylis.length % n > 0 ), 10) : n;
+
+      for (var i = 0; i < (intoCols ? n : Math.ceil(jQuerylis.length/n)); i++) {
         jQuerylis.slice(jQueryinc*i, jQueryinc*(i+1)).wrapAll(w);
+      }
     });
   };
-  
-  //mouse hold down jquery function
-  jQuery.fn.mousehold = function(timeout, f) {
-    if (timeout && typeof timeout == 'function') {
-      f = timeout;
-      timeout = 100;
-    }
-    if (f && typeof f == 'function') {
-      var timer = 0;
-      var fireStep = 0;
-      return this.each(function() {
-        jQuery(this).mousedown(function() {
-          fireStep = 1;
-          var ctr = 0;
-          var t = this;
-          timer = setInterval(function() {
-            ctr++;
-            f.call(t, ctr);
-            fireStep = 2;
-          }, timeout);
-        })
-        clearMousehold = function() {
-          clearInterval(timer);
-          if (fireStep == 1) f.call(this, 1);
-          fireStep = 0;
-        }
-        jQuery(this).mouseout(clearMousehold);
-        jQuery(this).mouseup(clearMousehold);
-      })
-    }
-  }
-} 
-
+};
 NPS.utility = {
-  pageSetups: function(value) {
-    jQuery('#site-map-container').hide();
-    jQuery('#sm-control a').removeClass('expanded');
-    //show utilities
-    jQuery('#main-content #utils').css('visibility', 'visible');
-    //hide search option submit buttons
-    jQuery('.search-control input[type=submit]').hide();
-    //remove no js class
-    jQuery('html').removeClass('no-js').addClass('js');
+  // Global parameters.
+  params: {
+    resize : [
+      'h1',
+      'h2',
+      'h3',
+      'h4',
+      'h5',
+      'h6',
+      'p',
+      'ol',
+      'ul',
+      'dt',
+      'dd'
+    ],
+    preloadChrome: [
+      ['/common/commonspot/templates/images/chrome/bg/results.png'],
+      ['/common/commonspot/templates/images/chrome/bg/results-bottom.png'],
+      ['/common/commonspot/templates/images/chrome/bg/results-top.png'],
+      ['/common/commonspot/templates/images/chrome/bg/nav-dd-edges.png']
+    ],
+    saytId: '277'
   },
-  
-  setMinContentHeight: function() {
-    //set min height to content if the sub-nav is larger
-    if(jQuery('#sub-nav').length && jQuery('#content').length) {
-      if(jQuery('#sub-nav').height() > jQuery('#content').height()){
-        if(jQuery('.fact').length){
-          /* old way of getting the content div the proper height */
-          //var jQueryfact = jQuery('.fact');
-          //var factHeight = jQueryfact.outerHeight();
-          var newMarginHeight = jQuery('#sub-nav').height() - jQuery('#content').height() - 60;
+  // Detect versions of IE.
+  getIeVersion: function() {
+    if (this.ieVersion === 'undefined') {
+      var div = document.createElement('div'),
+        all = div.getElementsByTagName('i'),
+        v = 3,
+        undef;
 
-          /* push the dyk to the bottom of the page. */
-          jQuery('.fact').before('<br style="clear: both; height:1px; line-height:1px;" />').css({
-            'margin-top': newMarginHeight + 'px',
-            'display': 'block'
-          });
-          
-          /* the below code just added height to the bottom of the content div and left the Did You Know in the middle of the page. */
-          /*
-          jQuery('#content').addClass('adjusted-for-fact').css({
-            'padding-bottom': factHeight + 'px',
-            'min-height': jQuery('#sub-nav').height()-(35 + factHeight)
-          });
-          */
-        } 
-        else {
-          jQuery('#content').css('min-height', jQuery('#sub-nav').height()-35);
-        }
+      while (
+        div.innerHTML = '<!--[if gt IE ' + (++v) + ']><i></i><![endif]-->',
+        all[0]
+      );
+
+      if (v > 4) {
+        this.ieVersion = v;
+      } else {
+        this.ieVersion = NaN;
       }
     }
+    return this.ieVersion;
   },
-
-  /** 
-  * Checks to see if a value is an integer
-  */
-    isInt: function(value) {
-    if((parseFloat(value) == parseInt(value)) && !isNaN(value)) {
+  // Checks to see if a value is an integer.
+  isInt: function(value) {
+    if ((parseFloat(value) === parseInt(value, 10)) && !isNaN(value)) {
       return true;
     } else {
       return false;
     }
   },
-  
-  /** 
-  * detect versions of IE
-  */
-  getIeVersion: function() {
-    if(this.ieVersion == undefined){
-      var undef,
-      v = 3,
-      div = document.createElement('div'),
-      all = div.getElementsByTagName('i');
-      while (
-        div.innerHTML = '<!--[if gt IE ' + (++v) + ']><i></i><![endif]-->',
-        all[0]
-      );
-      if(v > 4) this.ieVersion = v;
-      else this.ieVersion = NaN;
-    }
-    return this.ieVersion;
+  pageSetups: function(value) {
+    jQuery('#site-map-container').hide();
+    jQuery('#sm-control a').removeClass('expanded');
+    jQuery('.content-container .utils').css('visibility', 'visible');
+    jQuery('.search-control input[type=submit]').hide();
+    jQuery('html').removeClass('no-js').addClass('js');
   },
-  
-  /**
-  * Image preload
-  */
+  // Image preload.
   preload: function(arrayOfImages) {
-      jQuery(arrayOfImages).each(function() {
-          jQuery('<img/>')[0].src = this;
-      });
+    jQuery(arrayOfImages).each(function() {
+      jQuery('<img/>')[0].src = this;
+    });
   },
-
-  /**
-  * Global parameters
-  */
-  params: {
-      resize : [
-          ['h1'],
-          ['h2'],
-          ['h3'],
-          ['h4'],
-          ['p'],
-          ['a'],
-          ['ul'],
-          ['dt'],
-          ['dd']
-      ],
-      preloadChrome : [
-        ['/common/commonspot/templates/images/chrome/bg/results.png'],
-        ['/common/commonspot/templates/images/chrome/bg/results-bottom.png'],
-        ['/common/commonspot/templates/images/chrome/bg/results-top.png'],
-        ['/common/commonspot/templates/images/chrome/bg/nav-dd-edges.png']
-    ], 
-      saytId : "277" 
-  } 
-};
-
-
-NPS.cycle = {
-  
-  /**
-  * Sets height of cycle containers
-  */
-  setCycleHeight: function(element) {
-      var height = 0;
-      var childHeight = 0;
-      jQuery.each(jQuery(element).children(), function(index) {
-        //get height, add 25 pixels of padding
-        childHeight = jQuery(this).height() + 25;
-        if(childHeight > height) {
-          height = childHeight;
+  setMinContentHeight: function() {
+    //set min height to content if the sub-nav is larger
+    if (jQuery('#sub-nav').length && jQuery('.content-container').length) {
+      if (jQuery('#sub-nav').height() > jQuery('.content-container').height()) {
+        if (jQuery('.fact').length) {
+          jQuery('.fact').before('<br style="clear: both; height:1px; line-height:1px;" />').css({
+            'display': 'block',
+            'margin-top': (jQuery('#sub-nav').height() - jQuery('.content-container').height() - 60) + 'px'
+          });
+        } else {
+          jQuery('.content-container').css('min-height', jQuery('#sub-nav').height()-35);
         }
-      });
-      jQuery(element).parent().css("height", height);
+      }
+    }
+  }
+};
+NPS.cycle = {
+  // Sets height of cycle containers.
+  setCycleHeight: function(element) {
+    var childHeight = 0,
+      height = 0;
+
+    jQuery.each(jQuery(element).children(), function(index) {
+      childHeight = jQuery(this).height() + 25;
+
+      if(childHeight > height) {
+        height = childHeight;
+      }
+    });
+    jQuery(element).parent().css('height', height);
   },
-  
-  /**
-  * remove fade effect from cycle for IE7, IE8
-  */
+  // Remove fade effect from cycle for IE7, IE8.
   cycleEffect: function() {
     var effect = 'fade';
-    if(NPS.utility.getIeVersion() < 9)  effect = 'none';
+
+    if (NPS.utility.getIeVersion() < 9) {
+      effect = 'none';
+    }
+
     return effect;
   },
-
-  /**
-  * Enables slider on bap
-  */
+  // Enables slider on bap.
   bapSlider: function() {
-    var effect = this.cycleEffect();
-    if(jQuery('#bap').length) {
-      //ensure that the title fits in the provided space
-      jQuery.each(jQuery('#bap .title'), function(index) {
+    var effect = this.cycleEffect(),
+      bapSize;
+
+    if (jQuery('.bap').length) {
+      jQuery.each(jQuery('.bap .title'), function(index) {
         var maxWidth = 640;
-        //add resize class
-        if(jQuery(this).children('.main').children('h1').width() > maxWidth) {
+
+        if (jQuery(this).children('.main').children('h1').width() > maxWidth) {
           jQuery(this).children('.main').children('h1').addClass('resized');
         }
-        //resize title until it reaches the max allowed witdth pixels
+
         while(jQuery(this).children('.main').children('h1').width() > maxWidth) {
-          var curSize = jQuery(this).children('.main').children('h1').css('font-size');
-          //new pixel size
-          var newSize = parseInt(curSize.replace('px','')) + -2 + 'px';
+          var curSize = jQuery(this).children('.main').children('h1').css('font-size'),
+            newSize = parseInt(curSize.replace('px',''), 10) + -2 + 'px';
+
           jQuery(this).children('.main').children('h1').css('font-size', newSize);
         }
       });
-      var bapSize = jQuery('#bap .cycle').children().size();
-      //enable slider if there are more than 1 images
-      if(bapSize > 1) {
-        //insert controls
-        jQuery('#bap .cycle').after(jQuery('<ul>').addClass('controls'));
-        //enable cycle
-        jQuery('#bap .cycle').cycle({
-          fx: effect,
-          autostop: 0,
-          activePagerClass: 'active',
-            pager: '#bap .controls',
-            //create pager
-              pagerAnchorBuilder: function(idx, slide) { 
-                 return jQuery('<li>')
-                 .attr('class', 'ir')
-                 .text('Go to slide ' + ++idx); 
-              },
-              end: function(options) {  
-                  jQuery('#bap .cycle').cycle(0).cycle('pause');
-              }
-        });
-      }
-    }
-    if(jQuery('#bap-mini').length) {
-      var bapSize = jQuery('#bap-mini .cycle').children().size();
-      //enable slider if there are more than 1 images
-      if(bapSize > 1) {
-        //insert controls
-        jQuery('#bap-mini .cycle').after(jQuery('<ul>').addClass('controls'));
-        //enable cycle
-        jQuery('#bap-mini .cycle').cycle({ 
-          fx: effect,
-          autostop: 0,
-          activePagerClass: 'active',
-            pager: '#bap-mini .controls',
-            //create pager
-              pagerAnchorBuilder: function(idx, slide) { 
-                  return jQuery('<li>')
-                  .attr('class', 'ir')
-                  .text('Go to slide ' + ++idx); 
-              },
-              end: function(options) {  
-                  jQuery('#bap-mini .cycle').cycle(0).cycle('pause');
-              }
-        });
-      }
-    }
-  },
 
-  /**
-  * Enables slider on bap 
-  */
-  carousel: function() {
-    var self = this;
-    if(!(jQuery('.carousel-list ul').length)) return;
-      this.carousel = jQuery('.carousel-list ul'),
-      this.slideCount = jQuery('.carousel-list ul li').length,
-      this.contentsWrap = function() {
-          var classes = jQuery('.carousel-list').attr('class');
-      var countIndex = classes.indexOf('carousel-list-');
-      var carNum = parseInt(classes.substr(countIndex+14,1));
-      jQuery(".carousel-list ul").splitList(carNum, {
-          'splitInto': 'rows'
-      }).children('div').addClass('clearfix row');
-      //more than one slide, enable controls
-      },
-      this.addControls = function() {
-          jQuery('<ul id="carousel-controls"><li id="carousel-controls-prev"><a class="ir" href="#"><img src="/common/commonspot/templates/images/controls/carousel_arrow_left.png" /></a></li><li id="carousel-controls-next"><a class="ir" href="#"><img src="/common/commonspot/templates/images/controls/carousel_arrow_right.png" /></a></li></ul>').appendTo(jQuery('.carousel-list'));
-          if(jQuery('.carousel-list .row').length > 1){
-            this.carousel.next('#carousel-controls').show();
-      }      
-      },
-      this.cycleItems = function() {
-      var effect = self.cycleEffect();
-      this.carousel.cycle({ 
-          fx: effect,
-            speed:  'fast', 
-            timeout: 0, 
-            next:   '#carousel-controls-next a', 
-        prev:   '#carousel-controls-prev a',
-            after:  this.cycleAfter,
-            nowrap: 1
-        });
-      },
-      this.cycleAfter = function (curr, next, opts){
-        //apply disabled states to controls based on which slide is being displayed 
-          if (opts == undefined) return;
-          var position = opts.currSlide;
-           //IE7 / IE8 fix for determining currSlide
-      if(NPS.utility.getIeVersion() < 9){
-            jQuery.each(jQuery('.carousel-list ul:first').children(), function(index){
-          //identify the current slide in the list, if it matches cycles current slid set the index
-              if(this == next){
-              position = index;
+      bapSize = jQuery('.bap .cycle').children().size();
+
+      if (bapSize > 1) {
+        jQuery('.bap .cycle')
+          .after(jQuery('<ul>').addClass('controls'))
+          .cycle({
+            fx: effect,
+            autostop: 0,
+            activePagerClass: 'active',
+            pager: '.bap .controls',
+            pagerAnchorBuilder: function(idx, slide) {
+              return jQuery('<li>')
+                .attr('class', 'ir')
+                .text('Go to slide ' + ++idx);
+            },
+            end: function(options) {
+              jQuery('.bap .cycle').cycle(0).cycle('pause');
             }
           });
       }
-          position == 0 ? jQuery('#carousel-controls-prev').addClass('prev-disabled') : jQuery('#carousel-controls-prev').removeClass('prev-disabled');
-          position+1 == opts.slideCount ? jQuery('#carousel-controls-next').addClass('next-disabled') : jQuery('#carousel-controls-next').removeClass('next-disabled');
-           //set the cycle height
-          self.setCycleHeight(this);
-    },
+    }
+
+    if(jQuery('.bap-mini').length) {
+      bapSize = jQuery('.bap-mini .cycle').children().size();
+
+      if (bapSize > 1) {
+        jQuery('.bap-mini .cycle')
+          .after(jQuery('<ul>').addClass('controls'))
+          .cycle({
+            autostop: 0,
+            fx: effect,
+            activePagerClass: 'active',
+            pager: '.bap-mini .controls',
+            pagerAnchorBuilder: function(idx, slide) {
+              return jQuery('<li>')
+                .attr('class', 'ir')
+                .text('Go to slide ' + ++idx);
+            },
+            end: function(options) {
+              jQuery('.bap-mini .cycle').cycle(0).cycle('pause');
+            }
+          });
+      }
+    }
+  },
+  // Enables slider on bap.
+  carousel: function() {
+    var self = this;
+
+    if (!(jQuery('.carousel-list ul').length)) {
+      return;
+    }
+
+    this.carousel = jQuery('.carousel-list ul');
+    this.slideCount = jQuery('.carousel-list ul li').length;
+    this.addControls = function() {
+      jQuery('' +
+        '<ul id="carousel-controls"><li id="carousel-controls-prev"><a class="ir" href="#"><img src="/common/commonspot/templates/images/controls/carousel_arrow_left.png" /></a></li><li id="carousel-controls-next"><a class="ir" href="#"><img src="/common/commonspot/templates/images/controls/carousel_arrow_right.png" /></a></li></ul>' +
+      '').appendTo(jQuery('.carousel-list'));
+
+      if (jQuery('.carousel-list .row').length > 1) {
+        this.carousel.next('#carousel-controls').show();
+      }
+    };
+    this.contentsWrap = function() {
+      var classes = jQuery('.carousel-list').attr('class'),
+        countIndex = classes.indexOf('carousel-list-'),
+        carNum = parseInt(classes.substr(countIndex + 14, 1), 10);
+
+      jQuery('.carousel-list ul').splitList(carNum, {
+        splitInto: 'rows'
+      }).children('div').addClass('clearfix row');
+    };
+    this.cycleItems = function() {
+      var effect = self.cycleEffect();
+      this.carousel.cycle({
+        after:  this.cycleAfter,
+        fx: effect,
+        next: '#carousel-controls-next a',
+        nowrap: 1,
+        prev: '#carousel-controls-prev a',
+        speed: 'fast',
+        timeout: 0
+      });
+    };
+    this.cycleAfter = function (curr, next, opts) {
+      if (opts === 'undefined') {
+        return;
+      }
+
+      var $next = jQuery('#carousel-controls-next'),
+        $prev = jQuery('#carousel-controls-prev'),
+        position = opts.currSlide;
+
+      if (NPS.utility.getIeVersion() < 9) {
+        jQuery.each(jQuery('.carousel-list ul:first').children(), function(index) {
+          if (this === next) {
+            position = index;
+          }
+        });
+      }
+
+      if (position === 0) {
+        $prev.addClass('prev-disabled');
+      } else {
+        $prev.removeClass('prev-disabled');
+      }
+
+      if ((position + 1) === opts.slideCount) {
+        $next.addClass('next-disabled');
+      } else {
+        $next.removeClass('next-disabled');
+      }
+
+      self.setCycleHeight(this);
+    };
     this.init = function() {
-          this.contentsWrap();
-          this.addControls();
-          this.cycleItems();
-          this.cycleAfter();
-      };
-      this.init();  
+      this.contentsWrap();
+      this.addControls();
+      this.cycleItems();
+      this.cycleAfter();
+    };
+
+    this.init();
   }
 };
-
-
 NPS.newContent = {
-
-  /**
-  * Creates a list element that contains a print
-  * link - inserts it into the download-print-share
-  * list. Attaches a click event to the anchor that
-  * calls the window.print method. Does this if
-  * the page is not home.
-  */ 
   addPrintLink: function() {
-    jQuery('.addthis_toolbox').before(jQuery('<li>').addClass('print').append(jQuery('<a>').attr('href','javascript:;').text('print')));
+    jQuery('.addthis_toolbox')
+      .before(jQuery('<li>')
+      .addClass('print')
+      .append(jQuery('<a>')
+        .attr('href','javascript:void(0);')
+        .text('print')
+      ));
     jQuery('.print a').click(function() {
-        window.print();
-        return false;
+      window.print();
+      return false;
     });
   },
-  
-  /**
-  * popup window for webcam
-  */
+  // Popup window for webcam.
   webcamLink: function() {
-    
-     jQuery('.webcam-link').click(function(e) {
+    jQuery('.webcam-link').click(function(e) {
       e.preventDefault();
-      newwindow=window.open(jQuery(this).attr('href'),'','height=800,width=960,scrollbars=yes');
-      if (window.focus) {newwindow.focus()}
-     });
-    
+
+      if (window.focus) {
+        window.open(jQuery(this).attr('href'),'','height=800,width=960,scrollbars=yes').focus();
+      }
+    });
   },
-  
-  
-  /**
-  * Simple function that adds the double right
-  * brackets to the links with the .more class
-  * A condition uses the getIeVersion object to test
-  * and only run function if ie6 and ie7 return
-  * true.
-  */
+  // Simple function that adds the double right brackets to the links with the .more class.
   moreLinks: function () {
-       if(NPS.utility.getIeVersion() < 8) {
-            jQuery('.more').each(function() {
-                 var jQuerythis = jQuery(this);
-           jQuerythis[0].innerHTML = jQuerythis.text() + '&nbsp;&raquo;';
-            });
-            jQuery('.back').each(function() {
-                 var jQuerythis = jQuery(this);
-           jQuerythis[0].innerHTML = '&laquo;&nbsp;' + jQuerythis.text();
-            });
-       }    
-  },
+    if (NPS.utility.getIeVersion() < 8) {
+      var $this = jQuery(this);
 
-  /**
-  * Twitter
-  */
-  getTweets: function (username, tweetNum, container) {
-    if (container && container.length){
-      container.append(jQuery('<span>').addClass("loading"));
-      jQuery.getJSON('http://twitter.com/statuses/user_timeline.json?screen_name=' + username + '&count=' + tweetNum + '&callback=?', function(data) {
-        //result returned
-            var tweet = data[0].text;
-            //process links and reply
-            tweet = tweet.replace(/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig, function(url) {
-                return '<a href="' + url + '">'+url+'</a>';
-            }).replace(/B@([_a-z0-9]+)/ig, function(reply) {
-                return  reply.charAt(0)+'<a href="http://twitter.com/' + reply.substring(1) + '">' + reply.substring(1) + '</a>';
-
-            });
-            container.empty().append(jQuery('<p>').append(tweet));
+      jQuery('.more').each(function() {
+        $this[0].innerHTML = $this.text() + '&nbsp;&raquo;';
       });
-    } 
+      jQuery('.back').each(function() {
+        $this = jQuery(this);
+        $this[0].innerHTML = '&laquo;&nbsp;' + $this.text();
+      });
+    }
+  },
+  // Twitter.
+  getTweets: function (username, tweetNum, container) {
+    if (container && container.length) {
+      container.append(jQuery('<span>').addClass('loading'));
+
+      jQuery.getJSON('http://twitter.com/statuses/user_timeline.json?screen_name=' + username + '&count=' + tweetNum + '&callback=?', function(data) {
+        var tweet = data[0].text;
+
+        tweet = tweet.replace(/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig, function(url) {
+          return '<a href="' + url + '">'+url+'</a>';
+        }).replace(/B@([_a-z0-9]+)/ig, function(reply) {
+          return  reply.charAt(0)+'<a href="http://twitter.com/' + reply.substring(1) + '">' + reply.substring(1) + '</a>';
+        });
+        container
+          .empty()
+          .append(jQuery('<p>').append(tweet));
+      });
+    }
   }
 };
-
-
 NPS.text = {
-  
-  /**
-  * resizes the container to width of the child image
-  */
-  resizeToImage: function () {
-    if(jQuery('.resize-to-image img').length) {
-      jQuery.each(jQuery('.resize-to-image'), function(index, val){
-        jQuerythis = jQuery(this);
-        jQuery(this).children('img').load(function() {
-          jQuerythis.width(jQuerythis.children('img').width());
+  // Resizes the container to the width of the child image.
+  resizeToImage: function() {
+    if (jQuery('.resize-to-image img').length) {
+      jQuery.each(jQuery('.resize-to-image'), function(index, val) {
+        $this = jQuery(this);
+
+        $this.children('img').load(function() {
+          $this.width($this.children('img').width());
         });
       });
     }
-    
   },
-  
-  /**
-  * update text controls
-  */
-  textSizes: function () {
+  // Update text controls.
+  textSizes: function() {
     var self = this;
-    jQuery('#utils .text-sizes a').click(function() {
-      var activeSize = jQuery('#utils .text-sizes .active').parent().attr('class');
-      var size = jQuery(this).parent().attr('class');
-      jQuery('#utils .text-sizes a').removeClass('active');
+
+    jQuery('.utils .text-sizes a').click(function() {
+      var activeSize = jQuery('.utils .text-sizes .active').parent().attr('class'),
+        size = jQuery(this).parent().attr('class');
+
+      jQuery('.utils .text-sizes a').removeClass('active');
       jQuery(this).addClass('active');
       self.textResize(activeSize, size);
-      if(jQuery('.carousel-list').length) NPS.cycle.setCycleHeight('.carousel-list .row');
+
+      if (jQuery('.carousel-list').length) {
+        NPS.cycle.setCycleHeight('.carousel-list .row');
+      }
     });
   },
-  
-  /**
-  * Resize text by - or + 2 pixels
-  */
-   textResize: function(activeSize, size) {
+  // Resize text by - or + 2 pixels.
+  textResize: function(activeSize, size) {
     var value = 0;
-    //large text
-    if(activeSize == 'large') {
-      //if its the same size
-      if(size == 'large') return;
-      //one size down
-      else if(size == 'medium') value = -2;
-      //two sizes down
-      else if(size == 'small') value = -4;
+
+    switch (activeSize) {
+    case 'large':
+      switch (size) {
+      case 'medium':
+        value = -2;
+        break;
+      case 'small':
+        value = -4;
+        break;
+      }
+      break;
+    case 'medium':
+      switch (size) {
+      case 'large':
+        value = 2;
+        break;
+      case 'small':
+        value = -2;
+        break;
+      }
+      break;
+    case 'small':
+      switch (size) {
+      case 'medium':
+        value = 2;
+        break;
+      case 'large':
+        value = 4;
+        break;
+      }
+      break;
     }
-    //medium text
-    else if(activeSize == 'medium') {
-      //if its the same size
-      if(size == 'medium') return;
-      //one size up
-      else if(size == 'large') value = 2;
-      //one sizes down
-      else if(size == 'small') value = -2;
-    }
-    //small text
-    else if(activeSize == 'small') {
-      //if its the same size
-      if(size == 'small') return;
-      //one size up
-      else if(size == 'medium') value = 2;
-      //two sizes up
-      else if(size == 'large') value = 4;
-    }
-    //loop through each resize element
-    jQuery.each(NPS.utility.params.resize, function(index, val) { 
-      //loop through each html element
-      jQuery(val.toString()).each(function() {
-        //ignore resizing on bap
-        if(jQuery(this).parents('.bap').length == 0 && jQuery(this).parents('#alert').length == 0) {
-          curSize = jQuery(this).css('font-size');
-          //new pixel size
-          newSize = parseInt(curSize.replace('px','')) + value + 'px';
-          jQuery(this).css('font-size', newSize);
+
+    jQuery.each(NPS.utility.params.resize, function(index, elementType) {
+      jQuery(elementType).each(function() {
+        var $this = jQuery(this);
+
+        if (!$this.parents('.bap').length && !$this.parents('.navbar').length) {
+          $this.css('font-size', (parseInt(jQuery.trim($this.css('font-size').replace('px', '')), 10) + value) + 'px');
         }
       });
     });
   }
 };
-  
-
 NPS.forms = {
 
   /**
@@ -761,10 +734,9 @@ NPS.gallery = {
         });
     } 
   },
-  
   /**
-  * photo gallery setup
-  */
+   * photo gallery setup
+   */
   photoGallery: function() {
     if(jQuery('.gallery-views').length) {
       var buildControl = jQuery('<div id="gallery-controls"><ul class="view-controls"><li class="active"><a href="#" class="list-view">List View</a></li><li><a href="#" class="grid-view">Grid View</a></li></ul></div>');
@@ -777,10 +749,9 @@ NPS.gallery = {
       jQuery(this).parent().parent().prev().children('a').click();
     });
   },
-  
   /**
-  * switch between grid and list view
-  */
+   * switch between grid and list view
+   */
   galleryControls: function() {
     jQuery('.list-view, .grid-view').click(function(e){
       e.preventDefault();
@@ -799,10 +770,7 @@ NPS.gallery = {
     });
   }
 };
-
-
 NPS.lightbox = {
-
   lightboxTitle: function(title, currentArray, currentIndex, currentOpts) {
     var index = (currentIndex + 1);
     var html = jQuery('<div>').addClass('clearfix');
@@ -829,26 +797,27 @@ NPS.lightbox = {
       html.append(jQuery('<div>').attr('id','fancybox-description').append(jQuery('<p>').text(title)));
     return html;
   },
-
   /**
   * lightbox gallery
   */
   lightbox: function() {
-    if(jQuery('a[data-rel="gallery1"]').length) {
+    if (jQuery('a[data-rel="gallery1"]').length) {
       jQuery('a[data-rel="gallery1"]').fancybox({
         'titlePosition': 'inside',
         'titleFormat': NPS.lightbox.lightboxTitle
       });
     }
+
     //photo gallery
-    if(jQuery('#photo-gallery #gallery-content .image').length) {
+    if (jQuery('#photo-gallery #gallery-content .image').length) {
       jQuery('#photo-gallery #gallery-content .image a').fancybox({
         'titlePosition': 'inside',
         'titleFormat': NPS.lightbox.lightboxTitle
       });
     }
+
     //slideshow
-    if(jQuery('#gallery-listing .slideshow').length) {
+    if (jQuery('#gallery-listing .slideshow').length) {
       jQuery('#gallery-listing .view-slideshow').click(function() {
         //remove relationship groupings
         jQuery('#photo-galleries .slideshow li a').attr('rel','');
@@ -863,12 +832,12 @@ NPS.lightbox = {
       });
     }
   },
-  
   eventDetails: function(){
     if(jQuery('.results .show-event').length) {
       jQuery('.results .show-event').click(function(event) {
         jQuerythis = jQuery(this);
-        if(!jQuerythis.hasClass('is-fancy')){
+
+        if (!jQuerythis.hasClass('is-fancy')){
           //stop event
           event.preventDefault();
           //add is-fancy class to link
@@ -883,7 +852,7 @@ NPS.lightbox = {
             'titleShow': false,
             'transitionIn': 'none',
             'transitionOut': 'none',
-            'onComplete': function(){
+            'onComplete': function() {
               //add print style sheet
               jQuery('<link rel="stylesheet" media="print" id="print-event" href="../global/css/event-details-print.css"/>').appendTo('head');
               //add print click event
@@ -893,14 +862,15 @@ NPS.lightbox = {
                 return false;
               });
             },
-            'onCleanup': function(){
+            'onCleanup': function() {
               //remove print style sheet
               jQuery('#print-event').remove();
             }
           });
+
           //continue event
           jQuerythis.trigger(event)
-        }       
+        }
       });
       jQuery('.results .show-event-trigger').click(function(event) {
         event.preventDefault();
@@ -909,17 +879,18 @@ NPS.lightbox = {
       });
     }
   },
-
   /**
-  * iframe for rate button
-  */
+   * iframe for rate button
+   */
   rateBtn: function () {
     var height = 805;
+
     //ie 7 height
-    if(NPS.utility.getIeVersion() < 8) {
+    if (NPS.utility.getIeVersion() < 8) {
       height = 855;
     }
-    if(jQuery('.rate-btn').length) {
+
+    if (jQuery('.rate-btn').length) {
       jQuery('.rate-btn').fancybox({
         'width': 598,
         'height': height,
@@ -929,20 +900,17 @@ NPS.lightbox = {
     }
   }
 };
-
-
 NPS.starRating = {
-
   /**
-  * enable star ratings
-  */
+   * enable star ratings
+   */
   starRatings: function () {
     if(jQuery('.ratings-wrapper').length) {
       jQuery.each(jQuery(".ratings-wrapper"), function() {
         jQuery(this).stars({
-            inputType: "select",
-            captionEl: jQuery(this).next('.stars-cap'),
-            disabled: true
+          inputType: "select",
+          captionEl: jQuery(this).next('.stars-cap'),
+          disabled: true
         });
       });
 
@@ -963,28 +931,27 @@ NPS.starRating = {
     }
   }
 };
-
 NPS.display = {
-
   /**
-  * Wraps the dt and dd pair in each dl with a class of wrapper with a div
-  */
+   * Wraps the dt and dd pair in each dl with a class of wrapper with a div
+   */
   wrapdldt: function() {
      jQuery('.wrapped dt').each(function() {
       //get current dt
       var jQuerycurElement = jQuery(this);
       //add dt to selection list
-          var jQueryselection = jQuery(this);
-          //add next children
-          while(jQuerycurElement.next().is('dd')) {
-            jQuerycurElement = jQuerycurElement.next();
-            jQueryselection.push(jQuerycurElement[0]);
-          }
-          //wrap all elements in a dl wrapper
-          jQueryselection.wrapAll('<div class="dl-wrapper">');
-      });
-  },
+      var jQueryselection = jQuery(this);
+      //add next children
 
+      while (jQuerycurElement.next().is('dd')) {
+        jQuerycurElement = jQuerycurElement.next();
+        jQueryselection.push(jQuerycurElement[0]);
+      }
+
+      //wrap all elements in a dl wrapper
+      jQueryselection.wrapAll('<div class="dl-wrapper">');
+    });
+  },
   /**
   * Setting up results show / hide functionality
   */
@@ -1000,40 +967,39 @@ NPS.display = {
       }
     });
   },
-
   /**
-  * Setting up tabs functionality - relies on jQuery ui
-  */
+   * Setting up tabs functionality - relies on jQuery ui
+   */
   tabsSetup: function() {
-    if(jQuery('.list-nav li').length) {
+    if (jQuery('.list-nav li').length) {
       jQuery(".list-nav li:not(:first-child)").hide();
       jQuery(".list-nav li:first-child").addClass("active");
       jQuery(".list-nav li a").click(function(){
         var jQuerythis = jQuery(this);
         var jQuerylist = jQuery(this).parent().parent();
+
         if(jQuerythis.parent().siblings(':visible').length==0) {
           jQuerythis.parent().siblings().show();
-
-        }
-        else {
+        } else {
           jQuerythis.parent().siblings().removeClass("active")
-          .end().addClass("active");
-              var move = jQuery(this).parent().detach();
-              move.prependTo(jQuerylist);
-              move = null;
-              jQuerythis.parent().siblings().hide();
+            .end().addClass("active");
 
+          var move = jQuery(this).parent().detach();
+          move.prependTo(jQuerylist);
+          move = null;
+          jQuerythis.parent().siblings().hide();
         }
       });
     }
+
     if(jQuery('.content-viewer').length) {
       jQuery( ".content-viewer" ).tabs();
     }
+
     if(jQuery('.tabbed').length) {
       jQuery('.tabbed').tabs(); 
     }
   },
-
   /**
   * Show and hide global alert message
   */
@@ -1052,7 +1018,6 @@ NPS.display = {
       });
     }
   },
-
   /**
   * Show and hide transcript controls
   */
@@ -1078,7 +1043,6 @@ NPS.display = {
       });
     }
   },
-
   /**
   * hide and show full field trips
   */
@@ -1096,7 +1060,6 @@ NPS.display = {
       });
     }
   },
-
   /**
   * Show and hide the footer
   */
@@ -1115,7 +1078,6 @@ NPS.display = {
       });
     }
   },
-
   /**
   * Monitor click events, blur divs if shown
   */
@@ -1128,7 +1090,6 @@ NPS.display = {
       }
     });
   },
-  
   /**
   * click functionality for tiles
   */
@@ -1152,7 +1113,6 @@ NPS.display = {
       });
     }
   },
-
   /**
   * Add show-hide buttons to reviews
   */
@@ -1163,7 +1123,6 @@ NPS.display = {
       this.showHide();
     }
   }
-
 };
 
 jQuery(document).ready(function(){
@@ -1189,14 +1148,11 @@ jQuery('#global-search').attr('autocomplete', 'off');
   NPS.display.tabsSetup();
   NPS.display.alert();
   NPS.display.tiles();
-
   NPS.text.textSizes();
-
   NPS.newContent.webcamLink();
   NPS.newContent.moreLinks();
   NPS.newContent.getTweets("CivilWarReportr", 1, jQuery('#tweet'));
   NPS.newContent.addPrintLink();
-  
   NPS.forms.searchDropdown();
   NPS.forms.liveSearch();
   NPS.forms.placeholder();
@@ -1204,17 +1160,13 @@ jQuery('#global-search').attr('autocomplete', 'off');
   /* Commented out 2/27/12 by Lisa Backer, Fig Leaf Software.  Awaiting instructions on how to properly remove this from the global.js file.
   NPS.forms.regForm();
   */
-  
   NPS.cycle.bapSlider();
   NPS.cycle.carousel();
-
   NPS.lightbox.lightbox();
   NPS.lightbox.rateBtn();
   NPS.lightbox.eventDetails();
-  
   NPS.gallery.tooltip();
   NPS.gallery.photoGallery();
-
   NPS.starRating.starRatings();
   
   if(jQuery('#slidebox').length) {
@@ -1245,7 +1197,7 @@ jQuery(window).load(function(){
   NPS.utility.setMinContentHeight();
 });
 
-if ( location.href.indexOf( 'www' ) > -1 ) {
-     document.write("<script src='/common/commonspot/templates/js/federated-analytics.js'><\/script>");
-   document.write("<script src='/common/commonspot/templates/js/nps-analytics.js'><\/script>");
+if (location.href.indexOf('www') > -1) {
+  document.write("<script src='/common/commonspot/templates/js/federated-analytics.js'><\/script>");
+  document.write("<script src='/common/commonspot/templates/js/nps-analytics.js'><\/script>");
 }

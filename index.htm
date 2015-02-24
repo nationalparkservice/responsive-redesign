@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,45 +20,70 @@
     <title>Yosemite National Park</title>
   </head>
   <body>
-      
-
-      
-      
     <div class="container">
       <!-- TOP BLACK BAR - MOBILE -->
       <div class="hidden-lg hidden-md">
         <nav class="navbar navbar-inverse" role="navigation">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-             <!-- hamburger --> 
+            <a class="navbar-brand" href="#">
+              <img alt="National Park Service" class="img-responsive" src="assets/img/chrome/logos/main-logoSmall.png">
+            </a>
+            <!-- hamburger --> 
             <button class="navbar-toggle" data-target=".navbar-mobile" data-toggle="collapse" type="button">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-              
-              <!-- mobile search -->
-              <span class="mobileSearch">
-                  <ul class="navbar-toggle">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon bigger glyphicon-search"></i></a>
-                      <li class="dropdown-menu" style="padding:12px; margin-left:-225px">
-                          <form class="form-inline">
-                              <button type="submit" class="btn btn-default pull-right"><i class="glyphicon glyphicon-search"></i></button>
-                              <input type="text" class="form-control pull-left" placeholder="Search">
-                          </form>
-                      </li>
-                  </ul>
-              </span>          
-              
-              
-              
-              
-              
-              
-            <a class="navbar-brand" href="#">
-              <img alt="National Park Service" class="img-responsive" src="assets/img/chrome/logos/main-logoSmall.png">
-            </a>
+            <!-- mobile search -->
+            <span class="dropdown mobile-search">
+              <button class="dropdown-toggle navbar-toggle" data-toggle="dropdown" id="dropdownSearch" type="button">
+                <span class="sr-only">Toggle search</span>
+                <i class="fa fa-lg fa-search"></i>
+              </button>
+              <ul aria-labeledby="dropdownSearch" class="dropdown-menu">
+                <li role="presentation">
+                  <form class="form-inline">
+                    <div class="input-group">
+                      <input class="form-control" placeholder="Search" type="text">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="submit">Go!</button>
+                      </span>
+                    </div>
+                  </form>
+                </li>
+              </ul>
+            </span>
+            <!--
+                    <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                    <input class="form-control" placeholder="Search" type="text">
+                    -->
+            <!-- mobile search -->
+            <!--<span class="mobileSearch">
+              <ul class="navbar-toggle">
+                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-lg fa-search"></i></a></li>
+-->
+                <!--
+                <div class="input-group">
+                  <input type="text" class="form-control">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Go!</button>
+                  </span>
+                </div>
+                -->
+
+                <!--
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon bigger glyphicon-search"></i></a>
+                <li class="dropdown-menu" style="padding:12px; margin-left:-225px">
+                  <form class="form-inline">
+                    <button type="submit" class="btn btn-default pull-right"><i class="glyphicon glyphicon-search"></i></button>
+                    <input type="text" class="form-control pull-left" placeholder="Search">
+                  </form>
+                </li>
+                -->
+              <!--</ul>
+            </span>-->
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse navbar-mobile">
@@ -164,10 +188,10 @@
           <div class="logo"></div>
         </div>
         <!-- SEARCH -->
-        <div class="col-md-3">
+        <div class="col-md-3 large-search">
           <form class="form-inline" role="form">
             <input class="form-control" type="text">
-            <span class="fa fa-search form-control-feedback"></span>
+            <span class="fa fa-search"></span>
           </form>
         </div>
       </div>
@@ -188,7 +212,7 @@
               <li class="dropdown">
                 <a href="/history/" class="dropdown-toggle" data-toggle="dropdown">Discover History <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="/history/people.htm">People - MEGAMENUS! This is an example of how you can make it as wide as you want to.</a></li>
+                  <li><a href="/history/people.htm">People</a></li>
                   <li><a href="/history/places.htm">Places</a></li>
                   <li><a href="/history/stories.htm">Stories</a></li>
                   <li><a href="/history/preservation.htm">Preservation</a></li>
@@ -301,16 +325,12 @@
         </div>
       </span>
       <!-- ALERTS -->
-
-
-
-
-
       <div class="row hidden-xs hidden-sm">
         <div class="col-md-12">
           <div class="alert parkAlerts alert-danger alert-dismissible" role="alert" style="padding-left:23px;">
             <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 style="font-size:14px;">Seasonal Road Closures</h4> Seasonal road closures are in effect for motorized vehicles. Closures include portions of the Teton Park Road (Taggart Lake TH to Signal Mt. Lodge), Moose-Wilson Road (Granite Canyon TH to Death Canyon Road), Antelope Flats Road and Grassy Lake Road. <a class="more" href="#">More</a>
+            <h4 style="font-size:14px;">Seasonal Road Closures</h4>
+            <p>Seasonal road closures are in effect for motorized vehicles. Closures include portions of the Teton Park Road (Taggart Lake TH to Signal Mt. Lodge), Moose-Wilson Road (Granite Canyon TH to Death Canyon Road), Antelope Flats Road and Grassy Lake Road. <a class="more" href="#">More</a></p>
           </div>
         </div>
       </div>
@@ -331,9 +351,8 @@
       </div>
     </div>
     <div class="wallpaper-parks">
-        
-<!-- Main central container -->
-    <div class="container">
+      <!-- Main central container -->
+      <div class="container">
         <div class="row">
           <div class="col-md-12"><!-- column that surrounds the left nav and main content columns -->
             <div class="middleContentArea group">
@@ -384,7 +403,7 @@
               <div class="content-container col-xs-12 col-md-9">
                 <div class="row">
                   <!-- Park Intro Text -->
-                  <div class="col-xs-12 col-md-8 col-sm-8">
+                  <div class="col-md-8 col-sm-8 col-xs-12">
                     <div class="landing-intro">
                       <h1 class="page-title park-title">Page Title</h1>
                       <p>Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra.</p>
@@ -392,7 +411,7 @@
                     </div>
                   </div>
                   <!-- Desktop QuickLinks Nav -->
-                  <div class="hidden-xs col-md-4 col-sm-4">
+                  <div class="col-md-4 col-sm-4 hidden-xs">
                     <ul class="quickLinks">
                       <li><a href="/yose/planyourvisit/directions.htm" class="more">Directions</a></li>
                       <li><a href="/yose/planyourvisit/hours.htm" class="more">Operating Hours &amp; Seasons</a></li>
@@ -403,27 +422,20 @@
                     </ul>
                   </div>
                 </div>
-                  
-                  
-                
-      
-    <!-- Mobile Quick Links -->  
-        <div class="row">
-          <div class="col-md-12 mobileQuicklinks hidden-md hidden-lg hidden-sm">
-              <ul class="list-group">
-                  <li class="list-group-item"><b>Quick Links</b></li>
-                  <a href="/yose/planyourvisit/directions.htm" class="list-group-item">Directions</a>
-                  <a href="/yose/planyourvisit/hours.htm" class="list-group-item">Operating Hours &amp; Seasons</a>
-                  <a href="/yose/planyourvisit/feesandreservations.htm" class="list-group-item">Fees and Reservations</a>
-                  <a href="/yose/planyourvisit/conditions.htm" class="list-group-item">Current Conditions, Road Info, Facilities Status</a>
-                  <a href="/yose/supportyourpark/volunteer.htm" class="list-group-item">Volunteer in Yosemite</a>
-                  <a href="/yose/blogs/fireinfo.htm" class="list-group-item">Current Fire Information</a>
-                </ul>
-              
-            </div>
-          </div>
-                  
-                  
+                <!-- Mobile Quick Links -->
+                <div class="row">
+                  <div class="col-md-12 hidden-lg hidden-md hidden-sm mobileQuicklinks">
+                    <ul class="list-group">
+                      <li class="list-group-item"><b>Quick Links</b></li>
+                      <li class="list-group-item"><a href="/yose/planyourvisit/directions.htm">Directions</a></li>
+                      <li class="list-group-item"><a href="/yose/planyourvisit/hours.htm">Operating Hours &amp; Seasons</a></li>
+                      <li class="list-group-item"><a href="/yose/planyourvisit/feesandreservations.htm">Fees and Reservations</a></li>
+                      <li class="list-group-item"><a href="/yose/planyourvisit/conditions.htm">Current Conditions, Road Info, Facilities Status</a></li>
+                      <li class="list-group-item"><a href="/yose/supportyourpark/volunteer.htm">Volunteer in Yosemite</a></li>
+                      <li class="list-group-item"><a href="/yose/blogs/fireinfo.htm">Current Fire Information</a></li>
+                    </ul>
+                  </div>
+                </div>
                 <!-- Feature Stories area -->
                 <div class="row carouselRow">
                   <div class="carouselTitle">
@@ -522,75 +534,75 @@
           </form>
         </div>
         <div class="search-control one-fifth">
-            <form method="get" action="/findapark">
-              <label for="park-query">Find a Park</label><br>
-              <select id="park-query">
-                <option value="">Select a State</option> 
-                <option value="/state/al/index.htm?program=parks">Alabama</option>
-                <option value="/state/ak/index.htm?program=parks">Alaska</option>
-                <option value="/state/as/index.htm?program=parks">American Samoa</option>
-                <option value="/state/az/index.htm?program=parks">Arizona</option>
-                <option value="/state/ar/index.htm?program=parks">Arkansas</option>
-                <option value="/state/ca/index.htm?program=parks">California</option>
-                <option value="/state/co/index.htm?program=parks">Colorado</option>
-                <option value="/state/ct/index.htm?program=parks">Connecticut</option>
-                <option value="/state/de/index.htm?program=parks">Delaware</option>
-                <option value="/state/dc/index.htm?program=parks">District of Columbia</option>
-                <option value="/state/fl/index.htm?program=parks">Florida</option>
-                <option value="/state/ga/index.htm?program=parks">Georgia</option>
-                <option value="/state/gu/index.htm?program=parks">Guam</option>
-                <option value="/state/hi/index.htm?program=parks">Hawaii</option>
-                <option value="/state/id/index.htm?program=parks">Idaho</option>
-                <option value="/state/il/index.htm?program=parks">Illinois</option>
-                <option value="/state/in/index.htm?program=parks">Indiana</option>
-                <option value="/state/ia/index.htm?program=parks">Iowa</option>
-                <option value="/state/ks/index.htm?program=parks">Kansas</option>
-                <option value="/state/ky/index.htm?program=parks">Kentucky</option>
-                <option value="/state/la/index.htm?program=parks">Louisiana</option>
-                <option value="/state/me/index.htm?program=parks">Maine</option>
-                <option value="/state/md/index.htm?program=parks">Maryland</option>
-                <option value="/state/ma/index.htm?program=parks">Massachusetts</option>
-                <option value="/state/mi/index.htm?program=parks">Michigan</option>
-                <option value="/state/mn/index.htm?program=parks">Minnesota</option>
-                <option value="/state/ms/index.htm?program=parks">Mississippi</option>
-                <option value="/state/mo/index.htm?program=parks">Missouri</option>
-                <option value="/state/mt/index.htm?program=parks">Montana</option>
-                <option value="/state/ne/index.htm?program=parks">Nebraska</option>
-                <option value="/state/nv/index.htm?program=parks">Nevada</option>
-                <option value="/state/nh/index.htm?program=parks">New Hampshire</option>
-                <option value="/state/nj/index.htm?program=parks">New Jersey</option>
-                <option value="/state/nm/index.htm?program=parks">New Mexico</option>
-                <option value="/state/ny/index.htm?program=parks">New York</option>
-                <option value="/state/nc/index.htm?program=parks">North Carolina</option>
-                <option value="/state/nd/index.htm?program=parks">North Dakota</option>
-                <option value="/state/mp/index.htm?program=parks">Northern Mariana Islands</option>
-                <option value="/state/oh/index.htm?program=parks">Ohio</option>
-                <option value="/state/ok/index.htm?program=parks">Oklahoma</option>
-                <option value="/state/or/index.htm?program=parks">Oregon</option>
-                <option value="/state/pa/index.htm?program=parks">Pennsylvania</option>
-                <option value="/state/pr/index.htm?program=parks">Puerto Rico</option>
-                <option value="/state/ri/index.htm?program=parks">Rhode Island</option>
-                <option value="/state/sc/index.htm?program=parks">South Carolina</option>
-                <option value="/state/sd/index.htm?program=parks">South Dakota</option>
-                <option value="/state/tn/index.htm?program=parks">Tennessee</option>
-                <option value="/state/tx/index.htm?program=parks">Texas</option>
-                <option value="/state/ut/index.htm?program=parks">Utah</option>
-                <option value="/state/vt/index.htm?program=parks">Vermont</option>
-                <option value="/state/vi/index.htm?program=parks">Virgin Islands</option>
-                <option value="/state/va/index.htm?program=parks">Virginia</option>
-                <option value="/state/wa/index.htm?program=parks">Washington</option>
-                <option value="/state/wv/index.htm?program=parks">West Virginia</option>
-                <option value="/state/wi/index.htm?program=parks">Wisconsin</option>
-                <option value="/state/wy/index.htm?program=parks">Wyoming</option>
-              </select>
-              <input type="submit" value="Submit" style="display:none;">
-              <input type="hidden" name="as_sfid" value="AAAAAAUKLIfgS0Dlxjq0Q+oWIu7yC30WEF6r+FQOyPTA3rq67ot+hOVH1dp2c8JpFF42vtwJGvZre/oX6scJG1oLgDCSfQBk1cV0kUITIBUHW8VIWw==">
-              <input type="hidden" name="as_fid" value="xnF6xxBk+WcGVlekmyRd">
-            </form>
+          <form method="get" action="/findapark">
+            <label for="park-query">Find a Park</label><br>
+            <select id="park-query">
+              <option value="">Select a State</option> 
+              <option value="/state/al/index.htm?program=parks">Alabama</option>
+              <option value="/state/ak/index.htm?program=parks">Alaska</option>
+              <option value="/state/as/index.htm?program=parks">American Samoa</option>
+              <option value="/state/az/index.htm?program=parks">Arizona</option>
+              <option value="/state/ar/index.htm?program=parks">Arkansas</option>
+              <option value="/state/ca/index.htm?program=parks">California</option>
+              <option value="/state/co/index.htm?program=parks">Colorado</option>
+              <option value="/state/ct/index.htm?program=parks">Connecticut</option>
+              <option value="/state/de/index.htm?program=parks">Delaware</option>
+              <option value="/state/dc/index.htm?program=parks">District of Columbia</option>
+              <option value="/state/fl/index.htm?program=parks">Florida</option>
+              <option value="/state/ga/index.htm?program=parks">Georgia</option>
+              <option value="/state/gu/index.htm?program=parks">Guam</option>
+              <option value="/state/hi/index.htm?program=parks">Hawaii</option>
+              <option value="/state/id/index.htm?program=parks">Idaho</option>
+              <option value="/state/il/index.htm?program=parks">Illinois</option>
+              <option value="/state/in/index.htm?program=parks">Indiana</option>
+              <option value="/state/ia/index.htm?program=parks">Iowa</option>
+              <option value="/state/ks/index.htm?program=parks">Kansas</option>
+              <option value="/state/ky/index.htm?program=parks">Kentucky</option>
+              <option value="/state/la/index.htm?program=parks">Louisiana</option>
+              <option value="/state/me/index.htm?program=parks">Maine</option>
+              <option value="/state/md/index.htm?program=parks">Maryland</option>
+              <option value="/state/ma/index.htm?program=parks">Massachusetts</option>
+              <option value="/state/mi/index.htm?program=parks">Michigan</option>
+              <option value="/state/mn/index.htm?program=parks">Minnesota</option>
+              <option value="/state/ms/index.htm?program=parks">Mississippi</option>
+              <option value="/state/mo/index.htm?program=parks">Missouri</option>
+              <option value="/state/mt/index.htm?program=parks">Montana</option>
+              <option value="/state/ne/index.htm?program=parks">Nebraska</option>
+              <option value="/state/nv/index.htm?program=parks">Nevada</option>
+              <option value="/state/nh/index.htm?program=parks">New Hampshire</option>
+              <option value="/state/nj/index.htm?program=parks">New Jersey</option>
+              <option value="/state/nm/index.htm?program=parks">New Mexico</option>
+              <option value="/state/ny/index.htm?program=parks">New York</option>
+              <option value="/state/nc/index.htm?program=parks">North Carolina</option>
+              <option value="/state/nd/index.htm?program=parks">North Dakota</option>
+              <option value="/state/mp/index.htm?program=parks">Northern Mariana Islands</option>
+              <option value="/state/oh/index.htm?program=parks">Ohio</option>
+              <option value="/state/ok/index.htm?program=parks">Oklahoma</option>
+              <option value="/state/or/index.htm?program=parks">Oregon</option>
+              <option value="/state/pa/index.htm?program=parks">Pennsylvania</option>
+              <option value="/state/pr/index.htm?program=parks">Puerto Rico</option>
+              <option value="/state/ri/index.htm?program=parks">Rhode Island</option>
+              <option value="/state/sc/index.htm?program=parks">South Carolina</option>
+              <option value="/state/sd/index.htm?program=parks">South Dakota</option>
+              <option value="/state/tn/index.htm?program=parks">Tennessee</option>
+              <option value="/state/tx/index.htm?program=parks">Texas</option>
+              <option value="/state/ut/index.htm?program=parks">Utah</option>
+              <option value="/state/vt/index.htm?program=parks">Vermont</option>
+              <option value="/state/vi/index.htm?program=parks">Virgin Islands</option>
+              <option value="/state/va/index.htm?program=parks">Virginia</option>
+              <option value="/state/wa/index.htm?program=parks">Washington</option>
+              <option value="/state/wv/index.htm?program=parks">West Virginia</option>
+              <option value="/state/wi/index.htm?program=parks">Wisconsin</option>
+              <option value="/state/wy/index.htm?program=parks">Wyoming</option>
+            </select>
+            <input type="submit" value="Submit" style="display:none;">
+            <input type="hidden" name="as_sfid" value="AAAAAAUKLIfgS0Dlxjq0Q+oWIu7yC30WEF6r+FQOyPTA3rq67ot+hOVH1dp2c8JpFF42vtwJGvZre/oX6scJG1oLgDCSfQBk1cV0kUITIBUHW8VIWw==">
+            <input type="hidden" name="as_fid" value="xnF6xxBk+WcGVlekmyRd">
+          </form>
         </div><!-- end of search box -->
       </div>
       <!-- Sitemap -->
-    <div class="clearfix container" id="site-map">
+      <div class="clearfix container" id="site-map">
         <ul>
           <li><h3><a href="http://www.nature.nps.gov/">Explore Nature</a></h3></li>
           <li>
@@ -684,11 +696,7 @@
         </ul>
       </div><!-- end of Sitemap -->
     </div><!-- end of #site-map -->
-   
-      
-      
-      
-      <!-- Desktop Footer -->
+    <!-- Desktop Footer -->
     <div class="footer-container hidden-sm hidden-xs">
       <div class="clearfix container footer">
         <div class="top clearfix">
@@ -729,33 +737,27 @@
         </div>
       </div>
     </div>
-      
-      
     <!-- Mobile Footer -->
-      <div class="mobileFooter hidden-md hidden-lg">
-          <a href="http://www.doi.gov/"><div class="mobileFooterLogo"></div></a>
-          <a href="http://www.doi.gov/"><div class="text-logo"></div></a>
-          <div class="slogan hidden-xs"></div>
-          <div class="footerHR"></div>
-          <ul class="links">
-              <li><a href="/faqs.htm">Frequently Asked Questions</a></li>
-              <li><a href="/aboutus/website-policies.htm">Website Policies</a></li>
-              <li><a href="/contacts.htm">Contact Us</a></li>
-          </ul>
-          <div class="footerHR2 hidden-sm"></div>
-          <ul class="social">
-              <li class="youtube"><a href="http://www.youtube.com/nationalparkservice" onclick="">YouTube</a></li>
-                  <li class="itunes"><a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewArtistLegacy?cc=us&amp;id=216751324" onclick="">iTunes</a></li>
-              </ul>
-              <ul class="social">
-                  <li class="facebook"><a href="http://www.facebook.com/nationalparkservice" onclick="">Facebook</a></li>
-                  <li class="twitter"><a href="http://twitter.com/natlparkservice" onclick="">Twitter</a></li>
-          </ul>
-        </div>
-      
-    
-      
-      
+    <div class="mobileFooter hidden-md hidden-lg">
+      <a href="http://www.doi.gov/"><div class="mobileFooterLogo"></div></a>
+      <a href="http://www.doi.gov/"><div class="text-logo"></div></a>
+      <div class="slogan hidden-xs"></div>
+      <div class="footerHR"></div>
+      <ul class="links">
+        <li><a href="/faqs.htm">Frequently Asked Questions</a></li>
+        <li><a href="/aboutus/website-policies.htm">Website Policies</a></li>
+        <li><a href="/contacts.htm">Contact Us</a></li>
+      </ul>
+      <div class="footerHR2 hidden-sm"></div>
+      <ul class="social">
+        <li class="youtube"><a href="http://www.youtube.com/nationalparkservice" onclick="">YouTube</a></li>
+        <li class="itunes"><a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewArtistLegacy?cc=us&amp;id=216751324" onclick="">iTunes</a></li>
+      </ul>
+      <ul class="social">
+        <li class="facebook"><a href="http://www.facebook.com/nationalparkservice" onclick="">Facebook</a></li>
+        <li class="twitter"><a href="http://twitter.com/natlparkservice" onclick="">Twitter</a></li>
+      </ul>
+    </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://www.nps.gov/npmap/bootstrap/3.2.0/dist/js/nps-bootstrap.min.js"></script>
     <script src="assets/libs/slick/slick.min.js"></script>

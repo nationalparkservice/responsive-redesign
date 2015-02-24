@@ -7,6 +7,43 @@
   content: '';
   display: table;
 }
+/* Hide for both screenreaders and browsers */
+.hidden { display: none; visibility: hidden; }
+/* Hide only visually, but have it available for screenreaders */
+.visuallyhidden {
+  clip: auto;
+  height: auto;
+  margin: auto;
+  overflow: auto;
+  padding: 0;
+  position: relative;
+  width: auto;
+}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+  /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard */
+  .visuallyhidden.focusable:active,
+  .visuallyhidden.focusable:focus {
+    clip: auto;
+    display: block;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible {
+  visibility: hidden;
+}
 /* to get rid of the extra space at right on small viewports */
 @media screen and (max-width: 991px) { 
   html,
@@ -61,7 +98,7 @@ body {
     margin-bottom: 40px
   }
 }
-/* added for Commonspot */
+/* Added for Commonspot */
 h2,
 .section_title {
   color: #5e7630;
@@ -69,12 +106,12 @@ h2,
   font-weight: bold;
   margin-bottom: 10px;
 }
-/* added for Commonspot */
+/* Added for Commonspot */
 .content-container h2 a,
 .content-container .section_title a {
   font-size: 24px
 }
-/* added for Commonspot */
+/* Added for Commonspot */
 h3,
 .subheading {
   color: #5e7630;
@@ -85,13 +122,13 @@ h3,
 .headered-box h2 {
   background-color: #5e7630;
   background-repeat: repeat-x;
-  color: #FFFFFF;
+  color: #fff;
   font-size: 18px;
   font-weight: normal;
   margin: 0;
   padding: 7px 0 7px 17px;
 }
-/* added for Commonspot */
+/* Added for Commonspot */
 .content-container h3 a,
 .content-container .subheading a {
   font-size: 18px
@@ -107,13 +144,14 @@ h5 {
   text-transform: uppercase;
 }
 .content-container p {
-  margin-bottom: 16px
+  margin-bottom: 16px;
 }
 ul {
-  list-style: none outside none
+  list-style: none outside none;
 }
 a {
-  color: #936a00; /* 508 Change from #b28000 */
+  /* 508 Change from #b28000 */
+  color: #936a00;
   text-decoration: none;
 }
 a.more:after {
@@ -127,15 +165,12 @@ a:active {
   color: #b17f00;
   text-decoration: underline;
 }
-.content-container a:link {
-  text-decoration: underline
-}
 .parkAlerts {
-  margin: 5px 0 5px 0
+  margin: 5px 0 5px 0;
 }
 /* parent container for left nav and main content area */
 .middleContentArea {
-  background-color: #f9f7f1
+  background-color: #f9f7f1;
 }
 @media (min-width: 992px) { 
   /* parent container for left nav and main content area */
@@ -148,7 +183,7 @@ a:active {
     padding-bottom: 15px;
   }
 }
-/* main content area */
+/* Main Content Area */
 .content-container {
   background-color: #fff;
   border: none;
@@ -161,7 +196,7 @@ a:active {
   padding: 30px 30px 0 30px;
 }
 @media (min-width: 992px) {
-  /* main content area */
+  /* Main Content Area */
   .content-container {
     -moz-border-radius-topleft: 2px;
     border-top-left-radius: 2px;
@@ -191,15 +226,15 @@ a:active {
   padding: 0;
   width: 100%;
 }
-/* make the container fluid 100% at 991 and below */
-@media screen and (max-width: 992px) { 
+/* Make the container fluid 100% at 991px and below */
+@media screen and (max-width: 992px) {
   .container {
     padding: 0;
     width: auto;
   }
 }
 /* Logo */
-@media screen and (min-width: 768px) { 
+@media screen and (min-width: 768px) {
   .logo {
     background-image: url(../img/chrome/logos/main-logoMedium.png);
     background-repeat: no-repeat;
@@ -225,9 +260,9 @@ a:active {
   position: relative;
 }
 /* Search Box */
-.form-inline .form-control {
-  background: rgb(255, 255, 255); /* Creates the solid bg for IE8 */
-  background: rgba(255, 255, 255, 0.75); /* Creates the transparent bg for ALL OTHER BROWSERS */
+.large-search .form-inline .form-control {
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.75);
   border: 0;
   color: #000;
   height: 26px;
@@ -235,9 +270,10 @@ a:active {
   padding-left: 25px;
   width: 180px;
 }
-.form-inline .fa-search {
-  left: 45px;
-  top: 25px;
+.large-search .fa-search {
+  left: 57px;
+  position: absolute;
+  top: 36px;
 }
 /* Nav Bar */
 .navbar {
@@ -300,7 +336,7 @@ a:active {
       color: #fff;
       text-decoration: underline;
     }
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
   .navbar-default .navbar-nav > li:not(:last-child) {
     border-right: 1px solid #455724
   }
@@ -311,8 +347,8 @@ a:active {
     border-left: 1px solid #607339
   }
 }
-/*  BLACK MOBILE NAVBAR */
-@media (max-width: 991px) { 
+/*  Black Mobile NavBar */
+@media (max-width: 991px) {
   .navbar-header {
     float: none
   }
@@ -343,14 +379,14 @@ a:active {
     padding-bottom: 5px;
   }
   .navbar-nav > li {
-    float: none
+    float: none;
   }
   .navbar-nav > li > a {
     padding-bottom: 10px;
     padding-top: 10px;
   }
   .collapse.in {
-    display: block !important
+    display: block !important;
   }
 }
 /* Small Banner */
@@ -360,11 +396,13 @@ a:active {
   z-index: 1;
 }
 .img-responsive {
-    width:100%;
+  width: 100%;
 }
   .bap-mobile .title {
-    background: rgb(0, 0, 0); /* Creates the solid bg for IE8 */
-    background: rgba(0, 0, 0, 0.5); /* Creates the transparent bg for ALL OTHER BROWSERS */
+    /* Creates the solid bg for IE8 */
+    background: rgb(0, 0, 0);
+    /* Creates the transparent bg for ALL OTHER BROWSERS */
+    background: rgba(0, 0, 0, 0.5);
     bottom: 0;
     color: #FFFFFF;
     left: 0px;
@@ -373,10 +411,10 @@ a:active {
   }
 @media (max-width: 599px) {
   .bap-mobile .title {
-    background: rgb(0, 0, 0);
     /* Creates the solid bg for IE8 */
-    background: rgba(0, 0, 0, 0.5);
+    background: rgb(0, 0, 0);
     /* Creates the transparent bg for ALL OTHER BROWSERS */
+    background: rgba(0, 0, 0, 0.5);
     bottom: 0;
     left: 0;
     position: absolute;
@@ -415,16 +453,18 @@ a:active {
   margin: 0 0 0 5px;
   padding: 0 0 0 5px;
 }
-/* LARGE HOMEPAGE BANNER - BAP */
+/* Large BAP */
 .bap {
   overflow: hidden;
   position: relative;
   z-index: 1;
 }
   .bap .title {
-    /* TRANSPARENT STRIP BEHIND TEXT */
-    background: rgb(0, 0, 0); /* Creates the solid bg for IE8 */
-    background: rgba(0, 0, 0, 0.5); /* Creates the transparent bg for ALL OTHER BROWSERS */
+    /* Transparent strip behind text */
+    /* Creates the solid bg for IE8 */
+    background: rgb(0, 0, 0);
+    /* Creates the transparent bg for ALL OTHER BROWSERS */
+    background: rgba(0, 0, 0, 0.5);
     bottom: 0;
     color: #fff;
     height: 79px;
@@ -534,7 +574,7 @@ a:active {
 /* Utilities area - Print and  */
 .utils {
   float: right;
-  margin: 17px 17px 10px 0;
+  margin: 17px 35px 10px 0;
 }
   .utils a {
     display: block;
@@ -587,8 +627,7 @@ a:active {
     .utils .print a:hover {
       background-position: 0 -14px
     }
-/* ====================================================== */
-/* ===========   CAROUSEL  ============================== */
+/* Carousel */
 .carouselRow {
   margin-bottom: 20px
 }
@@ -623,9 +662,7 @@ a:active {
 .slick-prev {
   left: 0;
 }
-/* ///////////////////////////////////////////////////////////////////// 
-//  Footer
-/////////////////////////////////////////////////////////////////////*/
+/* Footer */
 /* Breadcrumbs */
 .breadcrumb-container {
   background-color: #918f7e;
@@ -634,44 +671,44 @@ a:active {
 .breadcrumbs {
   background-color: #918f7e
 }
-    .breadcrumbs ul {
-      float: left;
-      height: 32px;
+  .breadcrumbs ul {
+    float: left;
+    height: 32px;
+    overflow: hidden;
+    width: 860px;
+  }
+  .breadcrumbs li {
+    background: url(../img/chrome/bg/breadcrumb.png) no-repeat scroll 0 0 transparent;
+    float: left;
+    font-size: 12px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 10px 0 22px;
+  }
+    .breadcrumbs li a {
+      color: #f5f0dd
+    }
+  .breadcrumbs ul .home {
+    background: none repeat scroll 0 0 transparent;
+    margin-left: 15px;
+    padding-left: 0;
+    padding-top: 8px;
+  }
+    .breadcrumbs ul .home a {
+      background: url(../img/chrome/bg/breadcrumb-home.png) no-repeat scroll 0 5px transparent;
+      display: block;
+      height: 13px;
       overflow: hidden;
-      width: 860px;
+      text-indent: -9999px;
+      width: 55px;
     }
-    .breadcrumbs li {
-      background: url(../img/chrome/bg/breadcrumb.png) no-repeat scroll 0 0 transparent;
-      float: left;
-      font-size: 12px;
-      height: 32px;
-      line-height: 32px;
-      padding: 0 10px 0 22px;
+    .breadcrumbs ul .home a:hover {
+      border-bottom: 1px solid #F5F0DD
     }
-        .breadcrumbs li a {
-          color: #f5f0dd
-        }
-    .breadcrumbs ul .home {
-      background: none repeat scroll 0 0 transparent;
-      margin-left: 15px;
-      padding-left: 0;
-      padding-top: 8px;
-    }
-        .breadcrumbs ul .home a {
-          background: url(../img/chrome/bg/breadcrumb-home.png) no-repeat scroll 0 5px transparent;
-          display: block;
-          height: 13px;
-          overflow: hidden;
-          text-indent: -9999px;
-          width: 55px;
-        }
-        .breadcrumbs ul .home a:hover {
-          border-bottom: 1px solid #F5F0DD
-        }
-    .breadcrumbs #sm-control {
-      float: right;
-      margin-top: 13px;
-    }
+  .breadcrumbs #sm-control {
+    float: right;
+    margin-top: 13px;
+  }
 #sm-control a {
   background: url(../img/chrome/bg/sm-control.png) no-repeat scroll 0 -13px transparent;
   display: block;
@@ -691,13 +728,13 @@ a:active {
   margin-top: 15px;
   position: relative;
 }
-    .footer-search-container .search {
-      background: url(../img/chrome/bg/search-footer.png) no-repeat scroll left top transparent;
-      bottom: 0;
-      height: 28px;
-      position: absolute;
-      width: 394px;
-    }
+  .footer-search-container .search {
+    background: url(../img/chrome/bg/search-footer.png) no-repeat scroll left top transparent;
+    bottom: 0;
+    height: 28px;
+    position: absolute;
+    width: 394px;
+  }
 .footer-search label {
   display: block;
   margin-top: 5px;
@@ -721,17 +758,17 @@ a:active {
   margin: 0;
   padding: 0 0 33px 0;
 }
-    #site-map-container .search-control {
-      float: right
-    }
+  #site-map-container .search-control {
+    float: right
+  }
 .search-control label {
-  color: #556B2C;
+  color: #556b2c;
   font-size: 10px;
   font-weight: bold;
   text-transform: uppercase;
 }
 .search-control select {
-  border: 1px solid #D3D2CA;
+  border: 1px solid #d3d2ca;
   margin-top: 5px;
   padding: 4px;
   width: 146px;
@@ -743,26 +780,26 @@ a:active {
   margin-top: 22px;
   padding: 0 0 15px 15px;
 }
-    #site-map h3 {
-      font-size: 12px;
-      font-weight: bold;
-      margin-bottom: 0;
-      margin-left: 10px;
-      padding-bottom: 12px;
-      text-transform: uppercase;
-      width: 126px;
+  #site-map h3 {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-left: 10px;
+    padding-bottom: 12px;
+    text-transform: uppercase;
+    width: 126px;
+  }
+    #site-map h3 a {
+      color: #556b2c
     }
-        #site-map h3 a {
-          color: #556b2c
-        }
-    #site-map a {
-      color: #707070
-    }
-    #site-map ul {
-      float: left;
-      margin: 0 7px 0 0;
-      padding: 0 0 10px 0;
-    }
+  #site-map a {
+    color: #707070
+  }
+  #site-map ul {
+    float: left;
+    margin: 0 7px 0 0;
+    padding: 0 0 10px 0;
+  }
 .ie7 #site-map ul {
   margin-right: 16px
 }
@@ -784,10 +821,10 @@ a:active {
 .footer-container {
   background-color: #000
 }
-    .footer-container .footer {
-      background: url(../img/chrome/logos/footer-logo.png) no-repeat scroll 20px 23px #000;
-      padding-bottom: 49px;
-    }
+  .footer-container .footer {
+    background: url(../img/chrome/logos/footer-logo.png) no-repeat scroll 20px 23px #000;
+    padding-bottom: 49px;
+  }
 .footer .top {
   border-bottom: 1px solid #7F7F7F;
   margin-left: 82px;
@@ -812,50 +849,50 @@ a:active {
   margin-left: 42px;
   margin-top: 13px;
 }
-    .footer .links a {
-      color: #fff
-    }
-    .footer .links li {
-      font-size: 12px;
-      font-weight: bold;
-      margin-bottom: 13px;
-    }
+  .footer .links a {
+    color: #fff
+  }
+  .footer .links li {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 13px;
+  }
 .footer .social {
   float: right;
   margin-left: 20px;
   margin-right: 5px;
   margin-top: 14px;
 }
-    .footer .social li {
-      margin-bottom: 7px
-    }
-    .footer .social a {
-      color: #FFFFFF;
-      font-size: 12px;
-      padding-left: 26px;
-    }
-    .footer .social .facebook {
-      background: url(../img/chrome/utils/social_v2.png) no-repeat scroll 0 4px transparent
-    }
-    .footer .social .twitter {
-      background: url(../img/chrome/utils/social_v2.png) no-repeat scroll 0 -20px transparent
-    }
-    .footer .social .youtube {
-      background: url(../img/chrome/utils/social_v2.png) no-repeat scroll 4px -42px transparent;
-      padding-left: 15px;
-    }
-    .footer .social .itunes {
-      background: url(../img/chrome/utils/social_v2.png) no-repeat scroll 4px -66px transparent;
-      padding-left: 15px;
-    }
+  .footer .social li {
+    margin-bottom: 7px
+  }
+  .footer .social a {
+    color: #FFFFFF;
+    font-size: 12px;
+    padding-left: 26px;
+  }
+  .footer .social .facebook {
+    background: url(../img/chrome/utils/social_v2.png) no-repeat scroll 0 4px transparent
+  }
+  .footer .social .twitter {
+    background: url(../img/chrome/utils/social_v2.png) no-repeat scroll 0 -20px transparent
+  }
+  .footer .social .youtube {
+    background: url(../img/chrome/utils/social_v2.png) no-repeat scroll 4px -42px transparent;
+    padding-left: 15px;
+  }
+  .footer .social .itunes {
+    background: url(../img/chrome/utils/social_v2.png) no-repeat scroll 4px -66px transparent;
+    padding-left: 15px;
+  }
 .footer .updated {
   clear: right;
-  color: #9B9B9B;
+  color: #9b9b9b;
   float: right;
   font-size: 10px;
   margin-top: 14px;
 }
-/* Sub navigation */
+/* Sub Navigation */
 .sub-nav-containerWidth {
   margin-top: -12px;
   width: 209px;
@@ -868,301 +905,313 @@ a:active {
   width: 209px;
   z-index: 2;
 }
-    #sub-nav h2 {
-      border-bottom: 1px solid #e4e2dd;
-      color: #804711;
-      font-size: 16px;
+  #sub-nav h2 {
+    border-bottom: 1px solid #e4e2dd;
+    color: #804711;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 25px;
+    margin: 0;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    padding-left: 27px;
+  }
+  #sub-nav ul {
+    padding: 5px 25px;
+    list-style-type: none;
+  }
+  #sub-nav li {
+    border-top: 1px solid #e4e2dd;
+    line-height: 14px;
+  }
+  #sub-nav li:first-child {
+    border: none
+  }
+  #sub-nav li ul {
+    padding: 0 0 4px 15px
+  }
+  #sub-nav li li {
+    border: none
+  }
+  #sub-nav a {
+    color: #737062;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2857;
+    padding: 7px 0;
+  }
+  #sub-nav a:hover {
+    color: #706d5f
+  }
+  #sub-nav a.active,
+  #sub-nav .sub a.active {
+    color: #607832;
+    font-weight: bold;
+  }
+  #sub-nav .sub > a,
+  #sub-nav .sub .sub > a {
+    background: url(../images/icons/nav-pointer.png) no-repeat right .9em;
+    font-weight: bold;
+    padding-right: 20px;
+    color: #647630;
+  }
+  #sub-nav .sub li a {
+    background: none;
+    color: #727163;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 5px 0 4px 0;
+  }
+  #sub-nav .park-tools {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #e4e3df;
+    border-radius: 5px;
+    margin: 24px 0 0 25px;
+    width: 158px;
+  }
+    #sub-nav .park-tools h2 {
+      background-color: #737062;
+      color: #fff;
+      font-size: 11px;
+      font-weight: bold;
+      padding: 2px 0 0 6px;
+    }
+    #sub-nav .park-tools ul {
+      padding: 16px 10px 10px
+    }
+    #sub-nav .park-tools li {
+      background: url(../img/chrome/park-tools.png) no-repeat;
+      border: none;
+      padding: 2px 0 4px 30px;
+    }
+    #sub-nav .park-tools li:first-child {
+      border-bottom: 1px solid #E4E3DF;
+      margin-bottom: 8px;
+      padding-bottom: 17px;
+      padding-top: 4px;
+    }
+    #sub-nav .park-tools li a {
+      font-size: 12px;
+      line-height: 14px;
+      padding: 0;
+    }
+  #sub-nav .share li:first-child {
+    border: none;
+    padding: 2px 0 3px 30px;
+    margin: 0px;
+  }
+  #sub-nav .find-us {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #e4e3df;
+    border-radius: 5px;
+    margin: 24px 0 0 25px;
+    width: 158px;
+  }
+    #sub-nav .find-us h2 {
+      background-color: #737062;
+      color: #fff;
+      font-size: 11px;
       font-weight: bold;
       margin: 0;
-      margin-bottom: 0;
-      padding-bottom: 20px;
-      padding-left: 27px;
+      padding: 2px 0 0 6px;
     }
-    #sub-nav ul {
-      padding: 5px 25px;
-      list-style-type: none;
+    #sub-nav .find-us ul {
+      padding: 16px 20px 10px
     }
-    #sub-nav li {
-      border-top: 1px solid #e4e2dd;
-      line-height: 14px;
+    #sub-nav .find-us li a {
+      margin-bottom: 2px;
+      padding: 0;
     }
-    #sub-nav li:first-child {
-      border: none
-    }
-    #sub-nav li ul {
-      padding: 0 0 4px 15px
-    }
-    #sub-nav li li {
-      border: none
-    }
-    #sub-nav a {
-      color: #737062;
+  #sub-nav .social-connect ul {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  #sub-nav .social-connect li {
+    list-style: none;
+    padding: 4px 0 3px;
+    border: none;
+  }
+    #sub-nav .social-connect li a {
+      background: url(../img/chrome/connect-icons.gif) no-repeat;
+      color: #706d5f;
       display: block;
-      font-size: 14px;
-      font-weight: bold;
-      line-height: 1.2857;
-      padding: 7px 0;
-    }
-    #sub-nav a:hover {
-      color: #706d5f
-    }
-    #sub-nav a.active,
-    #sub-nav .sub a.active {
-      color: #607832;
-      font-weight: bold;
-    }
-    #sub-nav .sub > a,
-    #sub-nav .sub .sub > a {
-      background: url(../images/icons/nav-pointer.png) no-repeat right .9em;
-      font-weight: bold;
-      padding-right: 20px;
-      color: #647630;
-    }
-    #sub-nav .sub li a {
-      background: none;
-      color: #727163;
       font-size: 12px;
+      font-weight: bold;
+      height: 18px;
+      line-height: 14px;
+      padding-left: 26px;
+    }
+    #sub-nav .social-connect li a:hover {
+      text-decoration: underline
+    }
+  #sub-nav .social-connect .cwu-facebook a {
+    background-position: 0 -2px
+  }
+  #sub-nav .social-connect .cwu-facebook a:hover {
+    background-position: 0 -125px
+  }
+  #sub-nav .social-connect .cwu-flickr a {
+    background-position: 0 -73px
+  }
+  #sub-nav .social-connect .cwu-flickr a:hover {
+    background-position: 0 -196px
+  }
+  #sub-nav .social-connect .cwu-more a {
+    background-position: 0 -97px
+  }
+  #sub-nav .social-connect .cwu-more a:hover {
+    background-position: 0 -220px
+  }
+  #sub-nav .social-connect .cwu-twitter a {
+    background-position: 0 -26px
+  }
+  #sub-nav .social-connect .cwu-twitter a:hover {
+    background-position: 0 -149px
+  }
+  #sub-nav .social-connect .cwu-youtube a {
+    background-position: 0 -49px
+  }
+  #sub-nav .social-connect .cwu-youtube a:hover {
+    background-position: 0 -172px
+  }
+  #sub-nav .share .facebook {
+    background-position: 5px 3px
+  }
+  #sub-nav .share .twitter {
+    background-position: 5px -16px
+  }
+  #sub-nav .share .youtube {
+    background-position: 5px -37px
+  }
+  #sub-nav .share .flickr {
+    background-position: 5px -56px
+  }
+  #sub-nav .park-tools .timeline {
+    background-position: 0px 0px
+  }
+  #sub-nav .park-tools .faqs {
+    background-position: 2px -31px
+  }
+  #sub-nav .park-tools .context {
+    background-position: 2px -51px
+  }
+  #sub-nav .park-tools .index {
+    background-position: 2px -71px
+  }
+  #sub-nav .park-tools .spanish {
+    background-position: 2px -92px
+  }
+  #sub-nav .park-tools li:first-child a {
+    font-size: 14px
+  }
+  #sub-nav .share li:first-child a {
+    font-size: 12px
+  }
+  #sub-nav .tags {
+    margin: 35px 0 0 26px;
+    width: 158px;
+  }
+    #sub-nav .tags h2 {
+      border: none;
+      font-size: 11px;
+      font-weight: bold;
+      margin: 0 0 7px;
+      padding: 0;
+    }
+    #sub-nav .tags ul {
+      padding: 0
+    }
+    #sub-nav .tags li {
+      border-top: medium none;
+      float: left;
+      margin: 0;
+      padding: 0;
+    }
+    #sub-nav .tags a {
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      background: none repeat scroll 0 0 #fff;
+      color: #7f7565;
+      display: block;
+      font-size: 11px;
       font-weight: normal;
-      padding: 5px 0 4px 0;
+      height: 8px;
+      line-height: 8px;
+      margin-bottom: 5px;
+      margin-right: 6px;
+      padding: 6px 7px;
+      width: auto;
     }
-    #sub-nav .park-tools {
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      background-color: #fff;
-      border: 1px solid #e4e3df;
-      border-radius: 5px;
-      margin: 24px 0 0 25px;
-      width: 158px;
-    }
-        #sub-nav .park-tools h2 {
-          background-color: #737062;
-          color: #fff;
-          font-size: 11px;
-          font-weight: bold;
-          padding: 2px 0 0 6px;
-        }
-        #sub-nav .park-tools ul {
-          padding: 16px 10px 10px
-        }
-        #sub-nav .park-tools li {
-          background: url(../img/chrome/park-tools.png) no-repeat;
-          border: none;
-          padding: 2px 0 4px 30px;
-        }
-        #sub-nav .park-tools li:first-child {
-          border-bottom: 1px solid #E4E3DF;
-          margin-bottom: 8px;
-          padding-bottom: 17px;
-          padding-top: 4px;
-        }
-        #sub-nav .park-tools li a {
-          font-size: 12px;
-          line-height: 14px;
-          padding: 0;
-        }
-    #sub-nav .share li:first-child {
-      border: none;
-      padding: 2px 0 3px 30px;
-      margin: 0px;
-    }
-    #sub-nav .find-us {
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      background-color: #fff;
-      border: 1px solid #e4e3df;
-      border-radius: 5px;
-      margin: 24px 0 0 25px;
-      width: 158px;
-    }
-        #sub-nav .find-us h2 {
-          background-color: #737062;
-          color: #fff;
-          font-size: 11px;
-          font-weight: bold;
-          margin: 0;
-          padding: 2px 0 0 6px;
-        }
-        #sub-nav .find-us ul {
-          padding: 16px 20px 10px
-        }
-        #sub-nav .find-us li a {
-          margin-bottom: 2px;
-          padding: 0;
-        }
-    #sub-nav .social-connect ul {
-      border-bottom: none;
-      margin-bottom: 0;
-    }
-    #sub-nav .social-connect li {
-      list-style: none;
-      padding: 4px 0 3px;
-      border: none;
-    }
-        #sub-nav .social-connect li a {
-          background: url(../img/chrome/connect-icons.gif) no-repeat;
-          color: #706d5f;
-          display: block;
-          font-size: 12px;
-          font-weight: bold;
-          height: 18px;
-          line-height: 14px;
-          padding-left: 26px;
-        }
-        #sub-nav .social-connect li a:hover {
-          text-decoration: underline
-        }
-    #sub-nav .social-connect .cwu-facebook a {
-      background-position: 0 -2px
-    }
-    #sub-nav .social-connect .cwu-facebook a:hover {
-      background-position: 0 -125px
-    }
-    #sub-nav .social-connect .cwu-flickr a {
-      background-position: 0 -73px
-    }
-    #sub-nav .social-connect .cwu-flickr a:hover {
-      background-position: 0 -196px
-    }
-    #sub-nav .social-connect .cwu-more a {
-      background-position: 0 -97px
-    }
-    #sub-nav .social-connect .cwu-more a:hover {
-      background-position: 0 -220px
-    }
-    #sub-nav .social-connect .cwu-twitter a {
-      background-position: 0 -26px
-    }
-    #sub-nav .social-connect .cwu-twitter a:hover {
-      background-position: 0 -149px
-    }
-    #sub-nav .social-connect .cwu-youtube a {
-      background-position: 0 -49px
-    }
-    #sub-nav .social-connect .cwu-youtube a:hover {
-      background-position: 0 -172px
-    }
-    #sub-nav .share .facebook {
-      background-position: 5px 3px
-    }
-    #sub-nav .share .twitter {
-      background-position: 5px -16px
-    }
-    #sub-nav .share .youtube {
-      background-position: 5px -37px
-    }
-    #sub-nav .share .flickr {
-      background-position: 5px -56px
-    }
-    #sub-nav .park-tools .timeline {
-      background-position: 0px 0px
-    }
-    #sub-nav .park-tools .faqs {
-      background-position: 2px -31px
-    }
-    #sub-nav .park-tools .context {
-      background-position: 2px -51px
-    }
-    #sub-nav .park-tools .index {
-      background-position: 2px -71px
-    }
-    #sub-nav .park-tools .spanish {
-      background-position: 2px -92px
-    }
-    #sub-nav .park-tools li:first-child a {
-      font-size: 14px
-    }
-    #sub-nav .share li:first-child a {
-      font-size: 12px
-    }
-    #sub-nav .tags {
-      margin: 35px 0 0 26px;
-      width: 158px;
-    }
-        #sub-nav .tags h2 {
-          border: none;
-          font-size: 11px;
-          font-weight: bold;
-          margin: 0 0 7px;
-          padding: 0;
-        }
-        #sub-nav .tags ul {
-          padding: 0
-        }
-        #sub-nav .tags li {
-          border-top: medium none;
-          float: left;
-          margin: 0;
-          padding: 0;
-        }
-        #sub-nav .tags a {
-          -webkit-border-radius: 3px;
-          -moz-border-radius: 3px;
-          border-radius: 3px;
-          background: none repeat scroll 0 0 #fff;
-          color: #7f7565;
-          display: block;
-          font-size: 11px;
-          font-weight: normal;
-          height: 8px;
-          line-height: 8px;
-          margin-bottom: 5px;
-          margin-right: 6px;
-          padding: 6px 7px;
-          width: auto;
-        }
-        #sub-nav .tags a:hover {
-          background-color: #916800;
-          color: #fff;
-          text-decoration: none;
-        }
+      #sub-nav .tags a:hover {
+        background-color: #916800;
+        color: #fff;
+        text-decoration: none;
+      }
 .quickLinks {
   margin: 2px 0 30px 0;
-  padding: 0px;
+  padding: 0;
   width: 181px;
 }
-    .quickLinks li {
-      border-top: 1px solid #ededec;
-      list-style-type: none;
-      margin-bottom: 5px;
-      padding-top: 5px;
-      padding-left: 12px;
+  .quickLinks li {
+    border-top: 1px solid #ededec;
+    list-style-type: none;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 12px;
+  }
+    .quickLinks li a {
+      font-size: 12px;
+      font-weight: bold;
+      color: #b28000;
     }
-        .quickLinks li a {
-          font-size: 12px;
-          font-weight: bold;
-          color: #b28000;
-          text-decoration: underline;
-        }
     .quickLinks li:first-child {
       border-top: none;
-      padding-top: 0px;
+      padding-top: 0;
     }
 a.more:after {
-  content: '\A0\BB'
+  content: '\A0\BB';
 }
 .mobileQuicklinks {
-  margin: 10px auto 50px auto ;
+  margin: 10px auto 50px auto;
   width: 90%;
 }
-
+  .mobileQuicklinks ul li {
+    padding: 0;
+  }
+  .mobileQuicklinks ul li:first-child, .mobileQuicklinks ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none !important;
+  }
+  .mobileQuicklinks ul li a:hover {
+    background-color: #e6e6e6;
+    border-color: #adadad;
+    text-decoration: underline !important;
+  }
 /* Related Promo List */
 ul.related-promo-list {
   margin: 0;
-    padding:0;
+  padding:0;
 }
-.related-promo-list li{
+.related-promo-list li {
+  float: left;
   font-size: 12px;
   line-height: 17px;
   list-style-type: none;
   margin-bottom: 28px;
-    width:50%;
-    float:left;
+  width: 50%;
 }
-@media (min-width: 768px) { 
-    .related-promo-list li{
-        width:100%;
-        float:none;
-    }
+@media (min-width: 768px) {
+  .related-promo-list li{
+    float: none;
+    width: 100%;
+  }
 }
 .related-promo-list li img {
   margin-bottom: 0;
@@ -1171,383 +1220,342 @@ ul.related-promo-list {
 .related-promo-list li h3 a {
   color: black;
   font-size: 13px;
-  font-weight: bold;  
+  font-weight: bold;
   margin-bottom: 0;
 }
 .related-promo-list li p {
   margin-bottom: 0;
-        width: 95%;
+  width: 95%;
 }
 @media (min-width: 768px) { 
-    .related-promo-list li p {
-        margin-bottom: 0;
-    }
+  .related-promo-list li p {
+    margin-bottom: 0;
+  }
 }
-
-
-/* fact */
-.content .fact, .fact {
+/* Fact */
+.content .fact,
+.fact {
   background: url("http://www.nps.gov/common/commonspot/templates/images/bg/divider.png") no-repeat scroll center top transparent;
   clear: both;
-    color: #7f7565;
-    padding: 16px 0;
-    margin-bottom:20px;
+  color: #7f7565;
+  margin-bottom: 20px;
+  padding: 16px 0;
 }
 @media (min-width:992px){
-    .content .fact, .fact {
-        margin-bottom:0;
-    }
+  .content .fact,
+  .fact {
+    margin-bottom: 0;
+  }
 }
 .fact h2 {
   color: #7f7565;
-    font-size: 20px;
-    font-weight: normal;
-    margin-bottom: 12px;
-    margin-left:0;
-    padding-left:0;
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 12px;
+  margin-left: 0;
+  padding-left: 0;
 }
 .fact img {
-    border: 1px solid #BDBBB1;
-    float: left;
-    margin: 4px 20px 5px 0;
+  border: 1px solid #bdbbb1;
+  float: left;
+  margin: 4px 20px 5px 0;
 }
 .fact p {
-    color: #706D5F;
+  color: #706D5F;
   font: italic 14px/20px Georgia, "Times New Roman", Times, serif;
-  margin-bottom:0;
+  margin-bottom: 0;
 }
 .adjusted-for-fact .fact {
-  zoom:1;
-  bottom:0;
+  bottom: 0;
   left: 29px;
-  /* position: absolute; */
   width: 688px;
+  zoom: 1;
 }
-
-
-
-
-
-
-
 /* More Content area on Subject Sites */
-
-.MoreContentSpacer {/* Aligns the green box under the content area */
-    margin: 0;
-    display:inline-block;
+/* Aligns the green box under the content area */
+.MoreContentSpacer {
+  display: inline-block;
+  margin: 0;
 }
 .MoreContentContainer {
-    border: none;
-    width: 100%;
-    margin: 0;
-    padding: 0 0 30px 0;
-    background-color:#5e7630;
+  background-color: #5e7630;
+  border: none;
+  margin: 0;
+  padding: 0 0 30px 0;
+  width: 100%;
 }
 @media (min-width: 992px) { 
-    .MoreContentContainer {
-        width: 738px;
-        padding: 0 0 0 0;
-    }
+  .MoreContentContainer {
+    padding: 0;
+    width: 738px;
+  }
 }
 .MoreContentHeader {
-    margin:0;
-    background-color: #506429;
+  background-color: #506429;
+  margin: 0;
 }
-    h2 {
-        color: #FFFFFF;
-        margin: 0;
-        padding: 15px 0 10px 23px;
-    }
+h2 {
+  color: #ffffff;
+  margin: 0;
+  padding: 15px 0 10px 23px;
+}
 .MoreContent {
-    margin:0;
-    padding:10px 0 0 0;
-    background-color:#5e7630;
-    display:inline-block;
+  background-color: #5e7630;
+  display: inline-block;
+  margin: 0;
+  padding: 10px 0 0 0;
 }
-    .MoreContent h5{ 
-        color: #ffe195;
-        font-size: 11px;
-        font-weight: bold;
-        margin-bottom: 2px;
-    }
+  .MoreContent h5 {
+    color: #ffe195;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
 .MoreContentList {
+  display: inline-block;
   padding: 0 22px;
-    display:inline-block;
 }
 .MoreContentItem {
-    float:left;
-    width:100%;
+  float: left;
+  width: 100%;
 }
 @media (min-width: 768px) { 
-    .MoreContentItem {
-        float:left;
-        width:221px;
-        background: url(../../assets/img/bg/borderForMoreContentBox.png) repeat-y right;
-    }
+  .MoreContentItem {
+    background: url(../../assets/img/bg/borderForMoreContentBox.png) repeat-y right;
+    float: left;
+    width: 221px;
+  }
 }
 .MoreContentLast {
-    width:100%;
+  width: 100%;
 }
 @media (min-width: 768px) { 
-    .MoreContentLast {
-        float:left;
-        margin-right: 0 !important;
-        width:221px;
-    }
+  .MoreContentLast {
+    float: left;
+    margin-right: 0 !important;
+    width: 221px;
+  }
 }
 .MoreContentList li {
-    line-height: 19px;
-    margin-right: 15px;
-    padding-right: 5px;
-    list-style: none;
+  line-height: 19px;
+  list-style: none;
+  margin-right: 15px;
+  padding-right: 5px;
 }
-
 .MoreContentList ul {
-    padding-left:0;
-    border-color: white; 
+  border-color: white;
+  padding-left: 0;
 }
 .MoreContentList li li {
   float: inherit;
   margin-bottom: 4px;
-  margin-right: 0px;
+  margin-right: 0;
 }
 .MoreContentList ul a {
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: bold;
 }
 .MoreContentList ul .all {
   font-size: 12px;
   font-weight: normal;
 }
-
-
-
-/* MOBILE FOOTER */
+/* Mobile Footer */
 .mobileFooter {
-    background-color: black;
-    padding: 20px 20px 50px 20px;
-    display: inline-block;
-    width:100%;
+  background-color: black;
+  padding: 20px 20px 50px 20px;
+  display: inline-block;
+  width: 100%;
 }
 .mobileFooterLogo {
-    background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/logos/footer-logo.png") no-repeat scroll #000;
+  background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/logos/footer-logo.png") no-repeat scroll #000;
+  float: left;
   height: 59px;
-    width: 46px;
-    padding: 0 30px 20px; 0;
-    float:left;
+  padding: 0 30px 20px;
+  width: 46px;
 }
 .mobileFooter .text-logo {
-    background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/logos/text-logo.png") no-repeat scroll 0 0 transparent;
-    float: left;
-    height: 28px;
-    width: 176px;
+  background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/logos/text-logo.png") no-repeat scroll 0 0 transparent;
+  float: left;
+  height: 28px;
+  width: 176px;
 }
 .mobileFooter .slogan {
-    background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/logos/slogan.png") no-repeat scroll 0 0 transparent;
-    float: right;
-    height: 12px;
-    margin-top: 14px;
-    width: 259px;
-    float:right;
+  background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/logos/slogan.png") no-repeat scroll 0 0 transparent;
+  float: right;
+  height: 12px;
+  margin-top: 14px;
+  width: 259px;
 }
 .footerHR {
-    clear:right;
-    margin:40px 0 20px 60px;
-    border-top:1px solid #7F7F7F;
+  border-top: 1px solid #7f7f7f;
+  clear: right;
+  margin: 40px 0 20px 60px;
 }
 .footerHR2 {
-    clear:right;
-    margin:20px 0 0 60px;
-    border-top:1px solid #7F7F7F;
+  border-top: 1px solid #7f7f7f;
+  clear: right;
+  margin: 20px 0 0 60px;
 }
-
 .mobileFooter .links {
-    float:none;
-    margin-top: 10px;
-    margin-left:20px;
+  float: none;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 @media (min-width: 768px) { 
-    .mobileFooter .links {
+  .mobileFooter .links {
     float: left;
-    }
+  }
 }
 .mobileFooter .links a {
   color: #fff;
 }
 .mobileFooter .links li {
-    font-size: 12px;
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 .mobileFooter .social {
-    float:left;
-    margin-left: 20px;
-    margin-right: 0px;
-    margin-top: 20px;
+  float:left;
+  margin-left: 20px;
+  margin-right: 0;
+  margin-top: 20px;
 }
-@media (min-width: 768px) { 
-    .mobileFooter .social {
-        float: right;
-        margin-top: 0px;
-    }
-}
-.mobileFooter .social li {
-  margin-bottom: 7px;
-}
-.mobileFooter .social a {
-    color: #FFFFFF;
+  .mobileFooter .social li {
+    margin-bottom: 7px;
+  }
+  .mobileFooter .social a {
+    color: #ffffff;
     font-size: 12px;
     padding-left: 26px;
+  }
+  .mobileFooter .social .facebook {
+    background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 0 4px transparent;
+  }
+  .mobileFooter .social .twitter {
+    background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 0 -20px transparent;
+  }
+  .mobileFooter .social .youtube {
+    background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 4px -42px transparent;
+    padding-left: 15px;
+  }
+  .mobileFooter .social .itunes {
+    background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 4px -66px transparent;
+    padding-left:15px;
+  }
+@media (min-width: 768px) {
+  .mobileFooter .social {
+    float: right;
+    margin-top: 0;
+  }
 }
-.mobileFooter .social .facebook {
-  background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 0px 4px transparent;
-}
-.mobileFooter .social .twitter {
-  background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 0px -20px transparent;
-}
-.mobileFooter .social .youtube {
-  background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 4px -42px transparent;
-  padding-left: 15px;
-}
-.mobileFooter .social .itunes {
-  background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 4px -66px transparent;
-  padding-left:15px;
-}
-
 /* Styles for Subject Site pages */
 .subjectSiteContent {
-    padding-right: 0
-}   
-.subjectMainPhoto {
-    margin: 0 0 20px -30px;
+  padding-right: 0
 }
-
+.subjectMainPhoto {
+  margin: 0 0 20px -30px;
+}
 #npsNav {
   margin-top: -15px;
 }
-
-/* MOBILE SEARCH DROPDOWN */
-.dropdown-menu {
-  min-width: 250px;
+/* Mobile Search Dropdown */
+.mobile-search .navbar-toggle {
+  color: #fff;
+  padding: 9.5px 10.5px;
 }
-.mobileSearch .navbar-toggle:before {
-  content:none;
+  .mobile-search .navbar-toggle:before {
+    content: none;
+  }
+.mobile-search .dropdown-menu {
+  margin-left: 275px;
+  margin-top: 50px;
 }
-.mobileSearch .navbar-toggle a {
-    color: #fff;
+  .mobile-search .dropdown-menu .input-group {
+    padding: 5px;
+  }
+  .mobile-search .dropdown-menu li:hover,
+  .mobile-search .dropdown-menu li a:hover {
+    background-color: #fff;
+  }
+.mobile-search .form-control {
+  width: 180px !important;
 }
-.mobileSearch .navbar-toggle {
-    padding: 6px 8px 6px 8px;
-}
-.glyphicon.bigger {
-    font-size: 1.5em;
-}
-
-/* Makes the glyphicons work */
-@font-face {
-  font-family: 'Glyphicons Halflings';
-
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
-}
-
-
-
 /* Tiles */
 .tiles {
-	margin: 0 0 0 10px;
-    padding:0;
-	width: 100%;
+  margin: 0 0 0 10px;
+  padding: 0;
+  width: 100%;
 }
 .tiles li {
-    float: left;
-    list-style: none outside none;
-    height: 262px;
-    margin: 0 0 19px 0;
-    padding: 0;
-    position: relative;
-    margin-right: 10px;
-    width: 336px;
+  float: left;
+  list-style: none outside none;
+  height: 262px;
+  margin: 0 0 19px 0;
+  padding: 0;
+  position: relative;
+  margin-right: 10px;
+  width: 336px;
 }
 .tiles .title {
-    background: url("http://www.nps.gov/common/commonspot/templates/images/bg/transparent-70.png") repeat scroll 0 0 transparent;
-    bottom: 0;
-    margin: 13px 11px;
-    padding: 8px 13px;
-    position: absolute;
-    width: 288px;
+  background: url("http://www.nps.gov/common/commonspot/templates/images/bg/transparent-70.png") repeat scroll 0 0 transparent;
+  bottom: 0;
+  margin: 13px 11px;
+  padding: 8px 13px;
+  position: absolute;
+  width: 288px;
 }
 .tiles .title h3 {
-	color: #FFFFFF;
-	font-size: 24px;
-	line-height: 30px;
-	margin: 0px;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0px;
 }
 .tiles .description a {
-	font-size: 16px;
+  font-size: 16px;
 }
 .tiles li:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 .tiles img {
-	display: block;
-	height: 262px;
-	width: 336px;
+  display: block;
+  height: 262px;
+  width: 336px;
 }
 .tiles .show-info {
-    background: url("http://www.nps.gov/common/commonspot/templates/images/bg/tile-info.jpg") repeat scroll 0 0 transparent;
-    height: 262px;
-    padding: 32px 28px;
-    width: 336px;
+  background: url("http://www.nps.gov/common/commonspot/templates/images/bg/tile-info.jpg") repeat scroll 0 0 transparent;
+  height: 262px;
+  padding: 32px 28px;
+  width: 336px;
 }
 .tiles .show-info .title {
-    background: none;
-    bottom: auto;
-    margin: 0px;
-    padding: 0px;
-    position: relative;
-    width: auto;
+  background: none;
+  bottom: auto;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: auto;
 }
 .tiles .show-info h3 {
-	color: #464646;
-	margin-bottom: 13px;
+  color: #464646;
+  margin-bottom: 13px;
 }
 .tiles .show-info .description p {
-	color: #706d5f;
-	font-size: 16px; 
-	line-height: 22px;
+  color: #706d5f;
+  font-size: 16px; 
+  line-height: 22px;
 }
 .tiles .show-info .description a {
-	font-weight: bold;
+  font-weight: bold;
 }
 .tiles .show-info img {
-	display: none;
+  display: none;
 }
 .tilesPageTitle {
-    margin: 0 10px 0 20px;   
+  margin: 0 10px 0 20px;
 }
 .tilesTitle h2 {
-color: #5e7630;
-font-size: 24px;
-font-weight: bold;
-margin-bottom: 10px;
+  color: #5e7630;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
-
-.visuallyhidden {
-    clip: auto;
-    height: auto;
-    margin: auto;
-    overflow: auto;
-    padding: 0;
-    position: relative;
-    width: auto;
-}
-/* Hide for both screenreaders and browsers */
-.hidden { display: none; visibility: hidden; }
-/* Hide only visually, but have it available for screenreaders */
-.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
-/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard */
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; display:block; }
-/* Hide visually and from screenreaders, but maintain layout */
-.invisible { visibility: hidden; }
