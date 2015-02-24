@@ -1551,7 +1551,14 @@ ul.related-promo-list {
 .invisible { visibility: hidden; }
 
 
-/* WEBCAMS */
+
+/* WEBCAM LISTINGS PAGE */
+.webcamItem {
+    padding:0;
+}
+
+
+/* WEBCAM ASSET PAGE */
 .bodyColor {
     background-color: white;
 }
