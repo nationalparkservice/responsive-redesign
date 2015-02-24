@@ -718,9 +718,6 @@
   margin-bottom: 0;
 }
 
-.more-links .related-advanced-search {
-  
-}
 
 /*---------------------------------------------------*\
 ** Layout Overrides
@@ -817,7 +814,7 @@
   font-weight: bold;
   font-size: 14px;
   margin-bottom: 0px;
-  padding: 2px 8px;
+  padding: 5px 8px;
 }
 .more-links h4 {
   color: #5e7630;
@@ -1052,7 +1049,16 @@
 #content .webcam-gallery ul {
   list-style: none;
 }
-
+@media screen and (min-width: 992px) {
+    .webcam-gallery .description {
+      margin: 0 0 0 20px;; 
+    }
+}
+@media screen and (max-width: 768px) {
+    .webcam-gallery .description {
+      margin: 0 0 0 20px;; 
+    }
+}
 .webcam-gallery .description p {
   margin-bottom: 7px; 
 }
@@ -1061,15 +1067,16 @@
 }
 
 .webcam-gallery img {
-  height: auto;
-  margin-bottom: 15px;
-  width: 100%;
+  margin: 0;
 }
 
+<<<<<<< HEAD
+=======
 /*---------------------------------------------------*\
 ** WebCam
 \*---------------------------------------------------*/
 #webcam {
+  min-width: 0;
   min-width: 0;
 }
 #webcam #main-container {
@@ -1114,9 +1121,9 @@
 }
 #webcam .content-container .webcam-image {
   -ms-interpolation-mode: bicubic; /* IE image re-size rendering fix */
-  max-width: 100%;
   margin-bottom: 20px;
 }
+>>>>>>> FETCH_HEAD
 
 /*---------------------------------------------------*\
 ** URB 
