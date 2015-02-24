@@ -1565,7 +1565,11 @@ ul.related-promo-list {
     width: auto;
 }
 .webcamContainer H1 {
-    margin:0 0 20px 0;
+    margin:0;
+    padding:0;
+}
+.webcamParkName {
+    line-height: 50px;
 }
 .webcamWidth {
     max-width: 1024px;
