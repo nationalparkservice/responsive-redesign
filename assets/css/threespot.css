@@ -156,6 +156,14 @@
   font-size: 22px;
   padding-left: 0;
 }
+.content-container .super-header {
+color: #7f7565;
+font-size: 10px;
+font-weight: bold;
+line-height: 15px;
+margin-bottom: 4px;
+text-transform: uppercase;
+}
 .content-container .subtitle {
   color: #647630;
   font-size: 12px;
@@ -852,13 +860,13 @@
 /*---------------------------------------------------*\
 ** Multimedia Meta
 \*---------------------------------------------------*/
-.multimedia-meta-data-usage-content {
-  
-}
 
 #multimedia-description h2 {
   color: #5e7630;
   padding-left: 0;
+}
+.usageInformation {
+    font-size: 12px;
 }
 
 
