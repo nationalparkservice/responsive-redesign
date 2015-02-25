@@ -655,6 +655,12 @@ text-transform: uppercase;
     margin-bottom: 20px;
   }
 
+.photoCredit {
+    font-size:80%;
+    margin:0 0 3px 0;
+    padding: 0;
+}
+
   .gallery-content {}
 
     .gallery-content .galleryItem {}
