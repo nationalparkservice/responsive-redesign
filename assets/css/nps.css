@@ -1566,3 +1566,8 @@ h2 {
 .webcamItem {
     padding:0;
 }
+@media (max-width: 767px) {
+  .webcamItem {
+    margin-top: 20px;
+  }
+}
