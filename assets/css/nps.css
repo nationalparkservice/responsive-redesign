@@ -1566,38 +1566,3 @@ h2 {
 .webcamItem {
     padding:0;
 }
-/* WEBCAM ASSET PAGE */
-.bodyColor {
-    background-color: white;
-}
-@media (min-width:992px) {
-  .bodyColor {
-    background-color: black;
-  }
-}
-.webcamContainer {
-  padding: 0;
-  width: auto;
-}
-.webcamContainer H1 {
-  margin: 0;
-  padding: 0;
-}
-.webcamParkName {
-  line-height: 50px;
-}
-.webcamWidth {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1024px;
-}
-.webcam-description {
-  font-size: 16px;
-  line-height: 22px;
-  margin-top: 20px;
-}
-.webcam-image {
-  -ms-interpolation-mode: bicubic; /* IE image re-size rendering fix */
-  max-width: 100%;
-  margin-bottom: 20px;
-}
