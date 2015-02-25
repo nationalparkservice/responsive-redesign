@@ -1462,7 +1462,7 @@ h2 {
 }
 /* Styles for Subject Site pages */
 .subjectSiteContent {
-  padding-right: 0
+  padding-right: 20px;
 }
 .subjectMainPhoto {
   margin: 0 0 20px -30px;
