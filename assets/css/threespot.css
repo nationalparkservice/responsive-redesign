@@ -623,6 +623,11 @@ text-transform: uppercase;
 ** Photo Gallery
 \*---------------------------------------------------*/
 
+.photoGalleryContent a {
+    text-decoration: underline;
+}
+
+
 #galleryDescription {
   border-bottom: solid 1px #dfdcdb;
   margin-bottom: 20px;
