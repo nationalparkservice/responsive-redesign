@@ -163,6 +163,17 @@ a:active {
   color: #b17f00;
   text-decoration: underline;
 }
+
+
+
+.content-container a:link {text-decoration:underline;}      /* unvisited link */
+.content-container a:visited {text-decoration:underline;}  /* visited link */
+.content-container a:hover {text-decoration:none;}  /* mouse over link */
+.content-container a:active {text-decoration:underline;}  /* selected link */
+.content-container a:focus {border:solid 1px gray;}  /* selected link */
+
+
+
 .parkAlerts {
   margin: 5px 0 5px 0;
 }
