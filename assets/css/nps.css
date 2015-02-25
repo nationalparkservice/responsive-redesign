@@ -324,6 +324,9 @@ a:active {
   font-size: 13px;
   padding: 6px 15px;
 }
+.navbar-mobile ul {
+  padding-left: 20px;
+}
 .navbar-mobile li {
   padding: 3px 0;
 }
@@ -1465,18 +1468,20 @@ h2 {
     content: none;
   }
 .mobile-search .dropdown-menu {
-  margin-left: 275px;
+  /*margin-left: 275px;*/
   margin-top: 50px;
 }
+  /*
   .mobile-search .dropdown-menu .input-group {
     padding: 5px;
   }
+  */
   .mobile-search .dropdown-menu li:hover,
   .mobile-search .dropdown-menu li a:hover {
     background-color: #fff;
   }
 .mobile-search .form-control {
-  width: 180px !important;
+  /*width: 180px !important;*/
 }
 /* Tiles */
 .tiles {
