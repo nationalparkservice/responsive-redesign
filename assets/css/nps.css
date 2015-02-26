@@ -1498,7 +1498,11 @@ h2 {
 .tiles {
   margin: 0 0 0 10px;
   padding: 0;
-  width: 100%;
+}
+@media (min-width: 992px) {
+  .tiles {
+  width: 692px;
+  }
 }
 .tiles li {
   float: left;
