@@ -8,7 +8,10 @@
   display: table;
 }
 /* Hide for both screenreaders and browsers */
-.hidden { display: none; visibility: hidden; }
+.hidden {
+  display: none;
+  visibility: hidden;
+}
 /* Hide only visually, but have it available for screenreaders */
 .visuallyhidden {
   clip: auto;
@@ -166,17 +169,21 @@ a:active {
   color: #b17f00;
   text-decoration: underline;
 }
-
-
-
-.content-container a:link {text-decoration:underline;}      /* unvisited link */
-.content-container a:visited {text-decoration:underline;}  /* visited link */
-.content-container a:hover {text-decoration:none;}  /* mouse over link */
-.content-container a:active {text-decoration:underline;}  /* selected link */
-.content-container a:focus {border:solid 1px gray;}  /* selected link */
-
-
-
+.content-container a:link {
+  text-decoration: underline;
+}
+.content-container a:visited {
+  text-decoration: underline;
+}
+.content-container a:hover {
+  text-decoration: none;
+}
+.content-container a:active {
+  text-decoration: underline;
+}
+.content-container a:focus {
+  border: solid 1px gray;
+}
 .parkAlerts {
   margin: 5px 0 5px 0;
 }
@@ -272,7 +279,7 @@ a:active {
   position: relative;
 }
 /* Search Box */
-.large-search .form-inline .form-control {
+.search-large .form-inline .form-control {
   background: rgb(255, 255, 255);
   background: rgba(255, 255, 255, 0.75);
   border: 0;
@@ -282,7 +289,7 @@ a:active {
   padding-left: 25px;
   width: 180px;
 }
-.large-search .fa-search {
+.search-large .fa-search {
   left: 57px;
   position: absolute;
   top: 36px;
@@ -296,11 +303,8 @@ a:active {
 .navbar-default .navbar-nav > li > a:hover {
   background-color: #b28000 !important
 }
-.navbar .navbar-collapse {
-  padding: 0
-}
 .navbar a.navbar-brand {
-  padding: 9px 15px 8px
+  padding: 9px 15px 8px;
 }
 .navbar .navbar-inverse {
   background-image: -o-linear-gradient(bottom, #000 0%, #000 100%);
@@ -338,19 +342,47 @@ a:active {
   font-size: 13px;
   padding: 6px 15px;
 }
-.navbar-mobile ul {
-  padding-left: 20px;
+
+.navbar-toggle-search-mobile {
+  color: #fff;
+  padding: 9.5px 10.5px;
 }
-.navbar-mobile li {
-  padding: 3px 0;
-}
-  .navbar-mobile li a {
-    color: #fff;
+  .navbar-toggle-search-mobile:before {
+    content: none;
   }
-    .navbar-mobile li a:hover {
+.navbar-mobile {
+  padding: 0;
+}
+  .navbar-mobile div:first-child {
+    padding: 15px;
+  }
+  .navbar-mobile h2 {
+    padding: 0 0 10px 0;
+  }
+  .navbar-mobile ul {
+    padding-left: 0;
+  }
+  .navbar-mobile ul:last-child {
+    margin-bottom: 0;
+  }
+  .navbar-mobile li {
+    padding: 3px 0 0;
+  }
+    .navbar-mobile li a {
       color: #fff;
-      text-decoration: underline;
     }
+      .navbar-mobile li a:hover {
+        color: #fff;
+        text-decoration: underline;
+      }
+.search-mobile {
+  padding: 0 15px;
+}
+.search-mobile .input-group {
+  float: right;
+  padding: 0 15px 10px 15px;
+}
+
 @media (min-width: 992px) {
   .navbar-default .navbar-nav > li:not(:last-child) {
     border-right: 1px solid #455724
@@ -1375,26 +1407,26 @@ h2 {
   font-weight: normal;
 }
 /* Mobile Footer */
-.mobileFooter {
+.footer-mobile {
   background-color: black;
   padding: 20px 20px 50px 20px;
   display: inline-block;
   width: 100%;
 }
-.mobileFooterLogo {
+.footer-mobile .logo {
   background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/logos/footer-logo.png") no-repeat scroll #000;
   float: left;
   height: 59px;
   padding: 0 30px 20px;
   width: 46px;
 }
-.mobileFooter .text-logo {
+.footer-mobile .text-logo {
   background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/logos/text-logo.png") no-repeat scroll 0 0 transparent;
   float: left;
   height: 28px;
   width: 176px;
 }
-.mobileFooter .slogan {
+.footer-mobile .slogan {
   background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/logos/slogan.png") no-repeat scroll 0 0 transparent;
   float: right;
   height: 12px;
@@ -1411,54 +1443,54 @@ h2 {
   clear: right;
   margin: 20px 0 0 60px;
 }
-.mobileFooter .links {
+.footer-mobile .links {
   float: none;
   margin-left: 20px;
   margin-top: 10px;
 }
 @media (min-width: 768px) { 
-  .mobileFooter .links {
+  .footer-mobile .links {
     float: left;
   }
 }
-.mobileFooter .links a {
+.footer-mobile .links a {
   color: #fff;
 }
-.mobileFooter .links li {
+.footer-mobile .links li {
   font-size: 12px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-.mobileFooter .social {
+.footer-mobile .social {
   float:left;
   margin-left: 20px;
   margin-right: 0;
   margin-top: 20px;
 }
-  .mobileFooter .social li {
+  .footer-mobile .social li {
     margin-bottom: 7px;
   }
-  .mobileFooter .social a {
+  .footer-mobile .social a {
     color: #ffffff;
     font-size: 12px;
     padding-left: 26px;
   }
-  .mobileFooter .social .facebook {
+  .footer-mobile .social .facebook {
     background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 0 4px transparent;
   }
-  .mobileFooter .social .twitter {
+  .footer-mobile .social .twitter {
     background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 0 -20px transparent;
   }
-  .mobileFooter .social .youtube {
+  .footer-mobile .social .youtube {
     background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 4px -42px transparent;
     padding-left: 15px;
   }
-  .mobileFooter .social .itunes {
+  .footer-mobile .social .itunes {
     background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 4px -66px transparent;
     padding-left:15px;
   }
 @media (min-width: 768px) {
-  .mobileFooter .social {
+  .footer-mobile .social {
     float: right;
     margin-top: 0;
   }
@@ -1473,30 +1505,6 @@ h2 {
 #npsNav {
   margin-top: -15px;
 }
-/* Mobile Search Dropdown */
-.mobile-search .navbar-toggle {
-  color: #fff;
-  padding: 9.5px 10.5px;
-}
-  .mobile-search .navbar-toggle:before {
-    content: none;
-  }
-.mobile-search .dropdown-menu {
-  /*margin-left: 275px;*/
-  margin-top: 50px;
-}
-  /*
-  .mobile-search .dropdown-menu .input-group {
-    padding: 5px;
-  }
-  */
-  .mobile-search .dropdown-menu li:hover,
-  .mobile-search .dropdown-menu li a:hover {
-    background-color: #fff;
-  }
-.mobile-search .form-control {
-  /*width: 180px !important;*/
-}
 /* Tiles */
 .tiles {
   margin: 0 0 0 10px;
@@ -1504,7 +1512,7 @@ h2 {
 }
 @media (min-width: 992px) {
   .tiles {
-  width: 692px;
+    width: 692px;
   }
 }
 .tiles li {
