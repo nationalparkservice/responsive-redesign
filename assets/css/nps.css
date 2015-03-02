@@ -342,9 +342,14 @@ a:active {
   font-size: 13px;
   padding: 6px 15px;
 }
-
+/* Desktop */
+.desktop-nav .navbar-collapse {
+  padding: 0;
+}
+/* Mobile */
 .navbar-toggle-search-mobile {
   color: #fff;
+  margin-right: 10px;
   padding: 9.5px 10.5px;
 }
   .navbar-toggle-search-mobile:before {
