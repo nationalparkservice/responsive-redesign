@@ -191,7 +191,7 @@ a:active {
 .middleContentArea {
   background-color: #f9f7f1;
 }
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
   /* parent container for left nav and main content area */
   .middleContentArea {
     background-color: #f9f7f1;
@@ -202,20 +202,18 @@ a:active {
     padding-bottom: 15px;
   }
 }
-/* Main Content Area */
 .content-container {
   background-color: #fff;
   border: none;
-  padding: 30px;
+  padding: 20px;
 }
 .content-container-nps {
   background-color: #fff;
   border: none;
   margin: 0;
-  padding: 30px 30px 0 30px;
+  padding: 20px 20px 0 20px;
 }
 @media (min-width: 992px) {
-  /* Main Content Area */
   .content-container {
     -moz-border-radius-topleft: 2px;
     border-top-left-radius: 2px;
@@ -1233,23 +1231,23 @@ a:active {
 a.more:after {
   content: '\A0\BB';
 }
-.mobileQuicklinks {
-  margin: 10px auto 50px auto;
-  width: 90%;
+/* mobile quick links */
+.mobileQuicklinks ul li {
+  padding: 0;
 }
-  .mobileQuicklinks ul li {
-    padding: 0;
-  }
-  .mobileQuicklinks ul li:first-child, .mobileQuicklinks ul li a {
-    display: block;
-    padding: 10px 15px;
-    text-decoration: none !important;
-  }
-  .mobileQuicklinks ul li a:hover {
-    background-color: #e6e6e6;
-    border-color: #adadad;
-    text-decoration: underline !important;
-  }
+.mobileQuicklinks ul li:first-child, .mobileQuicklinks ul li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none !important;
+}
+.mobileQuicklinks ul li a {
+  text-decoration: underline !important;
+}
+.mobileQuicklinks ul li a:hover {
+  background-color: #e6e6e6;
+  border-color: #adadad;
+  text-decoration: none !important;
+}
 /* Related Promo List */
 ul.related-promo-list {
   margin: 0;
