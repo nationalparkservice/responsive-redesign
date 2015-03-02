@@ -1,4 +1,4 @@
-/* globals: jQuery, jwplayer */
+/* globals jQuery, jwplayer */
 
 jQuery(document).ready(function() {
   jwplayer('playerrIqlfrkNZSRG').setup({
