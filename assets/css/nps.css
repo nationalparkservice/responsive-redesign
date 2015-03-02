@@ -969,7 +969,7 @@ a:active {
     line-height: 25px;
     margin: 0;
     margin-bottom: 0;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     padding-left: 27px;
   }
   #sub-nav ul {
@@ -1133,7 +1133,7 @@ a:active {
     background-position: 0 -49px
   }
   #sub-nav .social-connect .cwu-youtube a:hover {
-    background-position: 0 -172px
+    background-position: 0 -173px
   }
   #sub-nav .share .facebook {
     background-position: 5px 3px
@@ -1512,7 +1512,7 @@ h2 {
   margin: 0 0 20px -30px;
 }
 #npsNav {
-  margin-top: -15px;
+  margin-top: -3px;
 }
 /* Tiles */
 .tiles {
