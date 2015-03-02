@@ -387,6 +387,10 @@ a:active {
   float: right;
   padding: 0 15px 10px 15px;
 }
+  .search-mobile .input-group input {
+    border-top-left-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+  }
 
 @media (min-width: 992px) {
   .navbar-default .navbar-nav > li:not(:last-child) {

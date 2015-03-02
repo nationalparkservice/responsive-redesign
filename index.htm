@@ -29,8 +29,12 @@
         </div>
         <!-- SEARCH -->
         <div class="col-md-3 search-large">
-          <form class="form-inline" role="form">
-            <input class="form-control" type="text">
+          <form action="http://www.nps.gov/search/index.htm" autocomplete="off" class="form-inline" id="global-search" method="get" role="form">
+            <label class="visuallyhidden" for="header-query">Search</label>
+            <input class="form-control" id="header-query" name="query" type="text">
+            <input name="siteLimit" type="hidden" value="nps.gov/yose">
+            <input name="as_sfid" type="hidden" value="AAAAAAVIXgb9Jvp45gBKLe5jrkoUEnJcCTlr9kt2dN_NFij81tXP8FBI_-ESDDp0brr3KUVKPFM5m83ZgsAyV6VSm16f4mlK3Dte5DM_k2J3pFGOkQ==">
+            <input name="as_fid" type="hidden" value="5sPXH0SK9fPvqhVCFP2L">
             <span class="fa fa-search"></span>
           </form>
         </div>
@@ -144,13 +148,17 @@
               <i class="fa fa-lg fa-search"></i>
             </button>
           </div>
-          <form class="collapse form-inline row search-mobile">
+          <form action="http://www.nps.gov/search/index.htm" autocomplete="off" class="collapse form-inline row search-mobile" method="get" role="form">
             <div class="input-group">
-              <input class="form-control" placeholder="Search" type="text">
+              <label class="visuallyhidden" for="search-mobile-query">Search</label>
+              <input class="form-control" id="search-mobile-query" name="query" placeholder="Search" type="text">
               <span class="input-group-btn">
                 <button class="btn btn-default" type="submit">Search</button>
               </span>
             </div>
+            <input name="siteLimit" type="hidden" value="nps.gov/yose">
+            <input name="as_sfid" type="hidden" value="AAAAAAVIXgb9Jvp45gBKLe5jrkoUEnJcCTlr9kt2dN_NFij81tXP8FBI_-ESDDp0brr3KUVKPFM5m83ZgsAyV6VSm16f4mlK3Dte5DM_k2J3pFGOkQ==">
+            <input name="as_fid" type="hidden" value="5sPXH0SK9fPvqhVCFP2L">
           </form>
           <div class="collapse navbar-collapse navbar-mobile">
             <div>
