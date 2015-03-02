@@ -1,0 +1,296 @@
+<div id="wrapper">
+        <div id="page" class="clearfix">
+
+                
+                
+<!-- Slider -->			
+				<div id="slideShowWrapper">
+					<script type="text/javascript" src="/common/commonspot/ADF/thirdparty/jQuery/tools/1.1/jquery.tools.tabs.min.js"></script>     
+    <div id="rightShadow">&nbsp;</div><div class="images"><div style="display: none;"><a href="http://www.nps.gov/getaways"><img src="/npsfeatures/images/MORA_Paradise_pano_710X340_1.jpg" alt="Photo of winter in the Paradise area" title="Photo of winter in the Paradise area"></a><div class="descriptor black" style="display: block;"></div><div class="descriptor caption" style="display: block;"><h1>National Park Getaways</h1><a href="http://www.nps.gov/getaways">This month: Mount Rainier</a></div><!-- end class=descriptor --></div><!-- end base image div --><div style="display: block;"><a href="http://www.nps.gov/romo/planyourvisit/100th-anniversary.htm"><img src="/npsfeatures/images/ROMO_Dream-11-19-13_NPS-Crystal-Brindle_710x340_1.jpg" alt="Photo of winter scene at Rocky Mountain National Park" title="Photo of winter scene at Rocky Mountain National Park"></a><div class="descriptor black" style="display: block;"></div><div class="descriptor caption" style="display: block;"><h1>Wilderness, wildlife, and wonder</h1><a href="http://www.nps.gov/romo/planyourvisit/100th-anniversary.htm">Rocky Mountain celebrates 100 years</a></div><!-- end class=descriptor --></div><!-- end base image div --><div style="display: none;"><a href="http://www.nps.gov/mlkm/historyculture/people.htm"><img src="/npsfeatures/images/NAMA_MLKmemorial_DB_01102012_080_710x340_1.jpg" alt="Photo of the Martin Luther King, Jr. Memorial" title="Photo of the Martin Luther King, Jr. Memorial"></a><div class="descriptor black" style="display: block;"></div><div class="descriptor caption" style="display: block;"><h1>The dream lives on</h1><a href="http://www.nps.gov/mlkm/historyculture/people.htm">Martin Luther King, Jr. Memorial</a></div><!-- end class=descriptor --></div><!-- end base image div --><div style="display: none;"><a href="http://www.nature.nps.gov/careers/index.cfm"><img src="/npsfeatures/images/GRSA_Pineda_Bovin_2008-07-29_Research_Monitoring_710x340_1.jpg" alt="Photo of researchers at Great Sand Dunes" title="Photo of researchers at Great Sand Dunes"></a><div class="descriptor black" style="display: block;"></div><div class="descriptor caption" style="display: block;"><h1>Find your ground</h1><a href="http://www.nature.nps.gov/careers/index.cfm">Explore careers in science</a></div><!-- end class=descriptor --></div><!-- end base image div --><div style="display: none;"><a href="http://www.nps.gov/grca/photosmultimedia/grand-canyon-in-depth.htm"><img src="/npsfeatures/images/GRCA-phantom-ranch-packer-710x340_1.jpg" alt="Photo of man leading a string of mules" title="Photo of man leading a string of mules"></a><div class="descriptor black" style="display: block;"></div><div class="descriptor caption" style="display: block;"><h1>In depth</h1><a href="http://www.nps.gov/grca/photosmultimedia/grand-canyon-in-depth.htm">Beyond the rim of Grand Canyon</a></div><!-- end class=descriptor --></div><!-- end base image div --></div><!-- end class=images --><div id="tab_wrapper"><div class="slidetabs"><a href="#" class=""></a><a href="#" class="current"></a><a href="#" class=""></a><a href="#" class=""></a><a href="#" class=""></a></div><!-- end slidetabs --><div id="viewall"><a href="/npsfeatures/index.htm">View All »</a></div><!-- end ID=viewall --></div><!-- end ID=tab_wrapper -->
+
+
+<script language="JavaScript" type="text/javascript">
+	jQuery(function() {
+		jQuery(".slidetabs").tabs(".images > div", {
+			effect: 'fade',
+			fadeOutSpeed: 1200,
+			fadeInSpeed: 1200,
+			rotate: true
+		// use the slideshow plugin. It accepts its own configuration
+		}).slideshow({autoplay: true, interval: 6000, clickable: false});
+		
+		// Get access to the API - This has to be done after your Tabs instance is created
+		var api = jQuery(".slidetabs").data("tabs");
+		
+		api.onBeforeClick(function() {   
+			jQuery('.descriptor').hide(); 
+		});
+
+		//When the slideshow transitions, wait 2 seconds then fade in captions
+		api.onClick(function() {
+			if (jQuery.browser.msie && jQuery.browser.version < '9.0') {
+				jQuery('.descriptor.black').css('filter','alpha(opacity=60)'); // had to do this to fix the IE png problem.
+			}
+			jQuery('.descriptor').delay(2000).fadeIn(1000);//.delay(2500).fadeOut(1000) 
+		});
+		
+	});
+</script>
+
+				</div>
+                
+                
+<!-- Orange background area tools -->               
+				<div id="tools">
+					
+					
+					<a name="findapark"></a>
+					<div id="skip"><a href="#navigation">Skip to Navigation</a></div>
+					
+
+					<form id="find_park_form" action="/findapark" method="get">
+						<div>
+							<label for="park-query"><img src="/common/commonspot/templates/images/titles/find_a_park.gif" alt="Find a Park"></label>
+							<select id="park-query">
+								<option value="">by State...</option>
+								
+								 
+									<option value="/state/al/index.htm">Alabama</option>
+								 
+									<option value="/state/ak/index.htm">Alaska</option>
+								 
+									<option value="/state/as/index.htm">American Samoa</option>
+								 
+									<option value="/state/az/index.htm">Arizona</option>
+								 
+									<option value="/state/ar/index.htm">Arkansas</option>
+								 
+									<option value="/state/ca/index.htm">California</option>
+								 
+									<option value="/state/co/index.htm">Colorado</option>
+								 
+									<option value="/state/ct/index.htm">Connecticut</option>
+								 
+									<option value="/state/de/index.htm">Delaware</option>
+								 
+									<option value="/state/dc/index.htm">District of Columbia</option>
+								 
+									<option value="/state/fl/index.htm">Florida</option>
+								 
+									<option value="/state/ga/index.htm">Georgia</option>
+								 
+									<option value="/state/gu/index.htm">Guam</option>
+								 
+									<option value="/state/hi/index.htm">Hawaii</option>
+								 
+									<option value="/state/id/index.htm">Idaho</option>
+								 
+									<option value="/state/il/index.htm">Illinois</option>
+								 
+									<option value="/state/in/index.htm">Indiana</option>
+								 
+									<option value="/state/ia/index.htm">Iowa</option>
+								 
+									<option value="/state/ks/index.htm">Kansas</option>
+								 
+									<option value="/state/ky/index.htm">Kentucky</option>
+								 
+									<option value="/state/la/index.htm">Louisiana</option>
+								 
+									<option value="/state/me/index.htm">Maine</option>
+								 
+									<option value="/state/md/index.htm">Maryland</option>
+								 
+									<option value="/state/ma/index.htm">Massachusetts</option>
+								 
+									<option value="/state/mi/index.htm">Michigan</option>
+								 
+									<option value="/state/mn/index.htm">Minnesota</option>
+								 
+									<option value="/state/ms/index.htm">Mississippi</option>
+								 
+									<option value="/state/mo/index.htm">Missouri</option>
+								 
+									<option value="/state/mt/index.htm">Montana</option>
+								 
+									<option value="/state/ne/index.htm">Nebraska</option>
+								 
+									<option value="/state/nv/index.htm">Nevada</option>
+								 
+									<option value="/state/nh/index.htm">New Hampshire</option>
+								 
+									<option value="/state/nj/index.htm">New Jersey</option>
+								 
+									<option value="/state/nm/index.htm">New Mexico</option>
+								 
+									<option value="/state/ny/index.htm">New York</option>
+								 
+									<option value="/state/nc/index.htm">North Carolina</option>
+								 
+									<option value="/state/nd/index.htm">North Dakota</option>
+								 
+									<option value="/state/mp/index.htm">Northern Mariana Islands</option>
+								 
+									<option value="/state/oh/index.htm">Ohio</option>
+								 
+									<option value="/state/ok/index.htm">Oklahoma</option>
+								 
+									<option value="/state/or/index.htm">Oregon</option>
+								 
+									<option value="/state/pa/index.htm">Pennsylvania</option>
+								 
+									<option value="/state/pr/index.htm">Puerto Rico</option>
+								 
+									<option value="/state/ri/index.htm">Rhode Island</option>
+								 
+									<option value="/state/sc/index.htm">South Carolina</option>
+								 
+									<option value="/state/sd/index.htm">South Dakota</option>
+								 
+									<option value="/state/tn/index.htm">Tennessee</option>
+								 
+									<option value="/state/tx/index.htm">Texas</option>
+								 
+									<option value="/state/ut/index.htm">Utah</option>
+								 
+									<option value="/state/vt/index.htm">Vermont</option>
+								 
+									<option value="/state/vi/index.htm">Virgin Islands</option>
+								 
+									<option value="/state/va/index.htm">Virginia</option>
+								 
+									<option value="/state/wa/index.htm">Washington</option>
+								 
+									<option value="/state/wv/index.htm">West Virginia</option>
+								 
+									<option value="/state/wi/index.htm">Wisconsin</option>
+								 
+									<option value="/state/wy/index.htm">Wyoming</option>
+								
+							
+							</select>
+							<input type="image" src="/common/commonspot/templates/images/buttons/go.gif" name="sub1" value="Go" alt="Go" class="submit" title="Go">  
+							<a class="advanced" href="/findapark/index.htm">Advanced Search Tool and Map</a>
+						</div>
+					<input type="hidden" name="as_sfid" value="AAAAAAXP5IwIcZDBPgukCiTKYfxn4UDb-5QUgEF9znjIVXr-7KCYhxICmqBlVVMf60SsHgXAqPFl3bvNZNB0MNDNDBBWU3ZOU_KqDGYqezMBYyTnjw=="><input type="hidden" name="as_fid" value="mIZey1DhnAjRTCSWLsXS"></form>
+					
+					<a href="http://www.nationalparks.org/" onclick="">
+						<img id="supportYourParks" alt="Support Your Parks: National Park Foundation" title="Support Your Parks: National Park Foundation" src="/common/commonspot/templates/images/promos/npf_logo_new2.gif">
+					</a>
+
+					<img id="entrancePass" src="/common/commonspot/templates/images/promos/img_get_pass.jpg" alt="Get Your Entrance Pass Now" title="Get Your Entrance Pass Now" onclick="document.location='/findapark/passes.htm';">
+
+
+				</div>	
+                
+                
+                
+			
+            <div id="content" class="clearfix">
+				
+                
+                
+                
+<!-- News Events and Promo -->               				
+
+                <div id="news" class="items">
+                    <h2>News<span></span> <small><a href="/news">More News »</a></small></h2>
+					<ul>
+					<div id="cs_control_266188" class="cs_control"> 
+			<li><a href="http://www.nps.gov/lake/parknews/park-service-seeking-st-thomas-memories-for-new-project.htm"><strong>Share Your St. Thomas Stories</strong> Lake Mead National Recreation Area   »</a></li>
+		
+			<li><a href="http://www.nps.gov/obed/parknews/conservation-group-purchases-land-at-obed-wild-and-scenic-river.htm"><strong>Land Transfers Aid Conservation Goals</strong>  Obed Wild &amp; Scenic River  »</a></li>
+		
+			<li><a href="http://www.nps.gov/wefa/supportyourpark/volunteer.htm"><strong>Be a VIP</strong> Volunteers welcome at Weir Farm  »</a></li>
+		</div> 
+					</ul>
+                </div>
+
+			
+                <div id="events" class="items">
+                    <h2>Events<span></span> <small><a href="/findapark/event-search.htm">More Events »</a></small></h2>
+					<ul>
+					<div id="cs_control_264680" class="cs_control"> 
+			<li><a href="http://www.nps.gov/grte/parknews/news-release-15-06.htm"><strong>Snowshoe Hikes</strong> Grand Teton National Park   »</a></li>
+		
+			<li><a href="http://www.nps.gov/asis/parknews/assateague-island-national-seashore-celebrates-50-years.htm"><strong>Golden Anniversary Celebrations</strong> Assateague Island National Seashore  »</a></li>
+		
+			<li><a href="http://www.nps.gov/hofr/planyourvisit/event-details.htm?eventID=518552-232573"><strong>FDR Birthday Celebration</strong> Home of Franklin D. Roosevelt  »</a></li>
+		</div> 
+					</ul>
+                </div>
+			
+                <div id="top_promo">				
+					<a href="/findapark/feefreeparks.htm"><img src="/common/commonspot/templates/images/promos/Promo-FeeFree-2015.jpg" alt="Fee-Free Days 2015 - Mark Your Calendar" title="Fee-Free Days 2015 - Mark Your Calendar" style="height: 227px; width: 231px;"></a> 
+                </div>
+				
+
+				
+				<a name="multimedia"></a>				
+									
+				
+                <div id="multimedia">
+                    <div id="multimedia_content">
+                      
+                        <h2>Photos and Multimedia<span></span><small><a href="/media/multimedia-search.htm">More Photos and Multimedia »</a></small></h2>
+                        <div id="cols" class="clearfix">
+
+							<div id="cs_control_265082" class="cs_control"> 
+			   <div class="col">
+					<h3>Movie</h3>
+					<a class="image" href="http://wilderness.nps.gov/features/wildernessact/popup.html"><img alt="Photo of an elk" border="0" src="pwr/npsfeatures/images/Wilderness-140x110.jpg" title="Photo of an elk"></a>
+					
+						<p class="caption">Be a defender</p>
+					
+					<h4><a href="http://wilderness.nps.gov/features/wildernessact/popup.html">America's Wilderness</a></h4>
+					<a class="visit" href="http://wilderness.nps.gov/features/wildernessact/popup.html">Visit Now »</a>
+				</div>
+				
+			   <div class="col">
+					<h3>Interactive</h3>
+					<a class="image" href="http://www.webrangers.us/activities/seagrasses/" onclick=""><img alt="Photo of seagrasses at Biscayne National Park" border="0" src="pwr/npsfeatures/images/seagrass-140x110.jpg" title="Photo of seagrasses at Biscayne National Park"></a>
+					
+						<p class="caption">Underneath the waves</p>
+					
+					<h4><a href="http://www.webrangers.us/activities/seagrasses/" onclick="">A seagrass garden</a></h4>
+					<a class="visit" href="http://www.webrangers.us/activities/seagrasses/" onclick="">Visit Now »</a>
+				</div>
+				
+			   <div class="col">
+					<h3>Web Cam</h3>
+					<a class="image" href="http://www.nps.gov/romo/photosmultimedia/webcams.htm"><img alt="Photo of Longs Peak in Rocky Mountain National Park" border="0" src="pwr/npsfeatures/images/ROMO-longs-140x110.jpg" title="Photo of Longs Peak in Rocky Mountain National Park"></a>
+					
+						<p class="caption">Three different views</p>
+					
+					<h4><a href="http://www.nps.gov/romo/photosmultimedia/webcams.htm">Rocky Mountain</a></h4>
+					<a class="visit" href="http://www.nps.gov/romo/photosmultimedia/webcams.htm">Visit Now »</a>
+				</div>
+				
+			   <div class="col">
+					<h3>Podcast</h3>
+					<a class="image" href="http://www.nps.gov/elca/photosmultimedia/traveling-the-trail.htm"><img alt="Photo of a young girl spinning wool into yarn along the El Camino Real de Tierra Adentro National Historic Trail" border="0" src="pwr/npsfeatures/images/ELCA-girl-140x110.jpg" title="Photo of a young girl spinning wool into yarn along the El Camino Real de Tierra Adentro National Historic Trail"></a>
+					
+						<p class="caption">Children in the 1700s</p>
+					
+					<h4><a href="http://www.nps.gov/elca/photosmultimedia/traveling-the-trail.htm">Work and fun</a></h4>
+					<a class="visit" href="http://www.nps.gov/elca/photosmultimedia/traveling-the-trail.htm">Visit Now »</a>
+				</div>
+				
+			   <div class="col">
+					<h3>Photo Gallery</h3>
+					<a class="image" href="http://www.nps.gov/history/museum/exhibits/band/imgal.html"><img alt="Photo of a San Clemente polychrome bowl found in New Mexico" border="0" src="pwr/npsfeatures/images/BAND-bowl-140x110.jpg" title="Photo of a San Clemente polychrome bowl found in New Mexico"></a>
+					
+						<p class="caption">Museum collections</p>
+					
+					<h4><a href="http://www.nps.gov/history/museum/exhibits/band/imgal.html">Bandelier</a></h4>
+					<a class="visit" href="http://www.nps.gov/history/museum/exhibits/band/imgal.html">Visit Now »</a>
+				</div>
+				</div> 	
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+		<div id="main-bottom" class="chrome-center"></div>
+	</div>

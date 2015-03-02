@@ -1,0 +1,5 @@
+baseurl: ""
+url: "http://www.nps.gov"
+
+# Build settings
+markdown: kramdown
