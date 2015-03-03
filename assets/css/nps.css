@@ -47,7 +47,7 @@
 .invisible {
   visibility: hidden;
 }
-/* to get rid of the extra space at right on small viewports */
+/* Gets rid of the extra space at right on small viewports */
 html,
 body {
   overflow-x: hidden !important;
@@ -132,7 +132,7 @@ h3,
 /* Added for Commonspot */
 .content-container h3 a,
 .content-container .subheading a {
-  font-size: 18px
+  font-size: 18px;
 }
 h4 {
   font-weight: bold;
@@ -154,7 +154,6 @@ ul {
   list-style: none outside none;
 }
 a {
-  /* 508 Change from #b28000 */
   color: #936a00;
   text-decoration: none;
 }
@@ -180,9 +179,6 @@ a:active {
 }
 .content-container a:active {
   text-decoration: underline;
-}
-.content-container a:focus {
-  border: solid 1px gray;
 }
 .parkAlerts {
   margin: 5px 0 5px 0;
@@ -624,10 +620,10 @@ a:active {
 .bap .sub a {
   color: #fff;
 }
-/* Utilities area - Print and  */
+/* Utilities */
 .utils {
   float: right;
-  margin: 17px 20px 10px 0;
+  margin: 17px 25px 10px 0;
 }
   .utils a {
     display: block;
@@ -1286,8 +1282,8 @@ ul.related-promo-list {
   }
 }
 /* Fact */
-.content .fact,
-.fact {
+.fact,
+.content-container .fact {
   background: url("http://www.nps.gov/common/commonspot/templates/images/bg/divider.png") no-repeat scroll center top transparent;
   clear: both;
   color: #7f7565;
@@ -1295,12 +1291,13 @@ ul.related-promo-list {
   padding: 16px 0;
 }
 @media (min-width: 992px){
-  .content .fact,
-  .fact {
+  .fact,
+  .content-container .fact {
     margin-bottom: 0;
   }
 }
-.fact h2 {
+.fact h2,
+.content-container .fact h2 {
   color: #7f7565;
   font-size: 20px;
   font-weight: normal;
@@ -1308,12 +1305,14 @@ ul.related-promo-list {
   margin-left: 0;
   padding-left: 0;
 }
-.fact img {
+.fact img,
+.content-container .fact img {
   border: 1px solid #bdbbb1;
   float: left;
   margin: 4px 20px 5px 0;
 }
-.fact p {
+.fact p,
+.content-container .fact p {
   color: #706D5F;
   font: italic 14px/20px Georgia, "Times New Roman", Times, serif;
   margin-bottom: 0;

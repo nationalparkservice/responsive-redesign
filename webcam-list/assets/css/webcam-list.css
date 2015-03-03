@@ -1,0 +1,30 @@
+.textWrappedAroundImage {
+  margin-bottom: 15px;
+}
+  .textWrappedAroundImage ul {
+    list-style-position: outside;
+    list-style-type: disc;
+  }
+.floatingImage {
+  width: 150px;
+  float: right;
+  text-align: left;
+  margin-left: 15px;
+  margin-bottom: 8px;
+}
+.floatingImage p {
+  padding: 0;
+  margin: 0;
+}
+.floatingImage p.credit {
+  color: #727163;
+  font-size: 11px;
+}
+.floatingImage p.caption {
+  color: #5A712D;
+  font-size: 11px;
+  margin-bottom: 4px;
+}
+.webcamItem ul {
+  padding-left: 0;
+}
