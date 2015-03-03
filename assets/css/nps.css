@@ -796,14 +796,14 @@ a:active {
 }
 .footer-search input {
   -webkit-appearance: none;
-  -moz-appearance: none;
+     -moz-appearance: none;
   background-color: transparent;
   border: medium none;
   color: #808080;
   font-size: 12px;
   left: 30px;
   position: absolute;
-  top: 6px;
+  top: 5px;
   width: 352px;
 }
 #site-map-container {
@@ -832,6 +832,7 @@ a:active {
   border: 1px solid #cfd1c9;
   margin-top: 22px;
   padding: 0 0 15px 15px;
+  width: 960px;
 }
   #site-map h3 {
     font-size: 12px;
@@ -879,9 +880,9 @@ a:active {
     padding-bottom: 49px;
   }
 .footer .top {
-  border-bottom: 1px solid #7F7F7F;
-  margin-left: 82px;
-  padding-bottom: 16px;
+  border-bottom: 1px solid #7f7f7f;
+  margin-left: 71px;
+  padding-bottom: 25px;
   padding-top: 33px;
 }
 .footer .text-logo {
@@ -899,8 +900,8 @@ a:active {
 }
 .footer .links {
   float: left;
-  margin-left: 42px;
-  margin-top: 13px;
+  margin-left: 30px;
+  margin-top: 20px;
 }
   .footer .links a {
     color: #fff
@@ -914,7 +915,7 @@ a:active {
   float: right;
   margin-left: 20px;
   margin-right: 5px;
-  margin-top: 14px;
+  margin-top: 20px;
 }
   .footer .social li {
     margin-bottom: 7px
@@ -948,7 +949,7 @@ a:active {
 /* Sub Navigation */
 .sub-nav-containerWidth {
   margin-top: -12px;
-  width: 209px;
+  width: 215px;
 }
 #sub-nav {
   float: left;
@@ -1058,10 +1059,10 @@ a:active {
   }
   #sub-nav .find-us {
     -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
     background-color: #fff;
     border: 1px solid #e4e3df;
-    border-radius: 5px;
     margin: 24px 0 0 25px;
     width: 158px;
   }
@@ -1074,7 +1075,7 @@ a:active {
       padding: 2px 0 0 6px;
     }
     #sub-nav .find-us ul {
-      padding: 16px 20px 10px
+      padding: 16px 10px 10px
     }
     #sub-nav .find-us li a {
       margin-bottom: 2px;
@@ -1415,57 +1416,70 @@ h2 {
 /* Mobile Footer */
 .footer-mobile {
   background-color: black;
-  padding: 20px 20px 50px 20px;
+  padding: 30px 20px 50px 20px;
   display: inline-block;
   width: 100%;
 }
-.footer-mobile .logo {
-  background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/logos/footer-logo.png") no-repeat scroll #000;
-  float: left;
-  height: 59px;
-  padding: 0 30px 20px;
-  width: 46px;
-}
-.footer-mobile .text-logo {
-  background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/logos/text-logo.png") no-repeat scroll 0 0 transparent;
-  float: left;
-  height: 28px;
-  width: 176px;
-}
-.footer-mobile .slogan {
-  background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/logos/slogan.png") no-repeat scroll 0 0 transparent;
-  float: right;
-  height: 12px;
-  margin-top: 14px;
-  width: 259px;
-}
+  .footer-mobile .logo {
+    background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/logos/footer-logo.png") no-repeat scroll #000;
+    float: left;
+    height: 59px;
+    margin-top: -8px;
+    padding: 0 30px 20px;
+    width: 46px;
+  }
+  .footer-mobile .text-logo {
+    background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/logos/text-logo.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 28px;
+    width: 176px;
+  }
+  .footer-mobile .slogan {
+    background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/logos/slogan.png") no-repeat scroll 0 0 transparent;
+    float: right;
+    height: 12px;
+    margin-top: 14px;
+    width: 259px;
+  }
 .footerHR {
   border-top: 1px solid #7f7f7f;
   clear: right;
-  margin: 40px 0 20px 60px;
+  margin: 60px 0 20px 66px;
 }
 .footerHR2 {
   border-top: 1px solid #7f7f7f;
   clear: right;
   margin: 20px 0 0 60px;
 }
-.footer-mobile .links {
-  float: none;
-  margin-left: 20px;
-  margin-top: 10px;
-}
 @media (min-width: 768px) {
   .footer-mobile .links {
     float: left;
+    padding-left: 0;
   }
 }
-.footer-mobile .links a {
-  color: #fff;
+.footer-mobile .links {
+  margin-left: 65px;
 }
-.footer-mobile .links li {
-  font-size: 12px;
-  font-weight: bold;
-  margin-bottom: 10px;
+  .footer-mobile .links a {
+    color: #fff;
+  }
+  .footer-mobile .links li {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+@media (max-width: 768px) {
+  .footer-mobile .links {
+    margin-left: 60px;
+    padding-left: 0;
+  }
+  .footerHR {
+    margin-top: 50px;
+  }
+  .footerHR,
+  .footerHR2 {
+    margin-left: 58px;
+  }
 }
 .footer-mobile .social {
   float:left;

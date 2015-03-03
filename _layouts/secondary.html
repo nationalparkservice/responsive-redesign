@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include top.html %}
+    <div class="wallpaper-parks">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="middleContentArea group">
+              <div class="col-md-3 hidden-sm hidden-xs sub-nav-containerWidth">
+                <div id="sub-nav">
+                  <div id="npsNav">
+                    <h2>Explore This Park</h2>
+                    <ul>
+                      <li class="active">
+                        <a href="/yose/index.htm" class="active">Park Home</a>
+                      </li>
+                      <li>
+                        <a href="/yose/planyourvisit/index.htm">Plan Your Visit</a>
+                      </li>
+                      <li>
+                        <a href="/yose/photosmultimedia/index.htm">Photos &amp; Multimedia</a>
+                      </li>
+                      <li>
+                        <a href="/yose/historyculture/index.htm">History &amp; Culture</a>
+                      </li>
+                      <li>
+                        <a href="/yose/naturescience/index.htm">Nature &amp; Science</a>
+                      </li>
+                      <li>
+                        <a href="/yose/forteachers/index.htm">For Teachers</a>
+                      </li>
+                      <li>
+                        <a href="/yose/forkids/index.htm">For Kids</a>
+                      </li>
+                      <li>
+                        <a href="/yose/parknews/index.htm">News</a>
+                      </li>
+                      <li>
+                        <a href="/yose/parkmgmt/index.htm">Management</a>
+                      </li>
+                      <li>
+                        <a href="/yose/supportyourpark/index.htm">Support Your Park</a>
+                      </li>
+                      <li class="last">
+                        <a href="/yose/supportyourpark/bookstore.htm">Bookstore</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="park-tools">
+                    <h2>Park Tools</h2>
+                    <ul>
+                      <li class="map">
+                        <a class="colorbox-iframe-map" href="/common/commonspot/customcf/apps/maps/showmap.cfm?alphacode=yose&parkname=Yosemite" name="Yosemite Map">View Park Map</a>
+                      </li>
+                      <li class="faqs">
+                        <a href="/yose/faqs.htm"><abbr title="Frequently Asked Questions">FAQs</abbr></a>
+                      </li>
+                      <li class="context">
+                        <a href="/yose/contacts.htm">Contact Us</a>
+                      </li>
+                      <li class="index">
+                        <a href="/yose/siteindex.htm">Site Index</a>
+                      </li>
+                      <li class="spanish">
+                        <a href="/yose/espanol/index.htm">Español</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="find-us">
+                    <h2>Find Us On</h2>
+                    <ul class="social-connect">
+                      <li class="cwu-facebook">
+                        <a href="http://www.facebook.com/YosemiteNPS">Facebook</a>
+                      </li>
+                      <li class="cwu-twitter">
+                        <a href="http://www.twitter.com/YosemiteNPS">Twitter</a>
+                      </li>
+                      <li class="cwu-youtube">
+                        <a href="http://www.youtube.com/user/yosemitenationalpark">YouTube</a>
+                      </li>
+                      <li class="cwu-more">
+                        <a href="http://www.nps.gov/yose/parknews/socialmedia.htm">More</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="content-container col-md-9 col-xs-12">{{ content }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include bottom.html %}
+  </body>
+</html>
