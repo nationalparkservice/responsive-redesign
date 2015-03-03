@@ -1,0 +1,112 @@
+---
+css:
+  - "../assets/libs/bootstrap-datepicker/datepicker3.css"
+  - "../assets/css/threespot.css"
+js:
+  - "../assets/libs/bootstrap-datepicker/bootstrap-datepicker.js"
+  - "../assets/js/threespot.js"
+layout: primary
+---
+
+<div class="row">
+  <div class="col-md-12 col-sm-12 col-xs-12">
+    <p class="page-title">Calendar</p>
+    <p>Visitors can find exhibits and a 12-minute film about Herbert Hoover's childhood in West Branch at the <a href="/heho/planyourvisit/visitor-center.htm">visitor center</a>, along with maps and audio devices for a self-guided tours of the park. Any child can <a href="/heho/forkids/beajuniorranger.htm">be a Junior Ranger</a> by completing activities during a visit to the park. For more events, visit the online calendars of the <a href="http://www.hoover.archives.gov/">Herbert Hoover Presidential Library and Museum</a> and the <a href="http://westbranchiowa.org/calendar">City of West Branch</a>.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <div class="urb">
+      <div class="urb-header">
+        <h2 class="urb-header-title">Search for Events</h2>
+      </div>
+      <form class="urb-form">
+        <div class="row">
+          <div class="urb-inputContainer clearfix">
+            <div class="col-sm-6 col-xs-12">
+              <div class="form-group">
+                <label for="start_date">By Date</label>
+                <div class="input-daterange input-group" id="datepicker">
+                  <input class="form-control" id="start_date" name="start" placeholder="Start Date" type="text">
+                  <span class="input-group-addon">to</span>
+                  <label class="sr-only" for="end_date">End Date</label>
+                  <input class="form-control" id="end_date" name="end" placeholder="End Date" type="text">
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <div>
+                <div class="form-group">
+                  <label for="keyword">By Keyword</label>
+                  <input class="form-control" id="keyword" placeholder="Keyword" type="text">
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block urb-submitBtn arrow-down" type="submit">Show Results</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <div class="results">
+      <h2>Events Upcoming for January</h2>
+      <div class="display-list-view">
+        <div class="info-micro-filter">
+          <h4>Showing 1 results</h4>
+          <div style="float:left;font-size:.8em;"><input name="recurrenceToggle" id="recurrenceToggle" type="checkbox">&nbsp;Show all instances of recurring events</div>
+          <div style="float:right;"><a href="/rss/eventCalendar.cfm?park=heho" target="_blank"><img src="{{ site.baseurl }}/common/commonspot/templates/images/icons/logo_rss_25x25.gif" style="height:15px;margin-right:5px;" title="RSS Feed" alt="RSS Feed">RSS Feed</a></div>
+        </div>
+        <ul>
+          <li>
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <span class="subtitle">Mount Rainier National Park</span>
+                <h3 class="title">
+                  <a href="http://www.nps.gov/stories/moraroad.htm">Aggredation, Avulsion, and the Historic Nisqually Road at Mount Rainier</a>
+                </h3>
+                <h4 class="date">Thursday, February 26, 2015</h4>
+                <p style="font-size:.7em;">Everyday  from 12/21/2014 to 03/28/2015</p>
+              </div>
+              <div class="col-md-8 col-sm-8 col-xs-12 table-cell">
+                <p>Climate change is making the glaciers at Mount Rainier recede, leading to effects downstream in the waterways alongside the park's historic roads. Find out about techniques used by park staff to adapt to climate change, and preserve the cultural landscape in the process.</p>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12 result-details-container table-cell">
+                <dl class="result-details">
+                  <div class="dl-wrapper">
+                    <div class="dl-wrapper">
+                      <dt>Time:</dt>
+                      <dd>7:00 PM to 8:00 PM</dd>
+                    </div>
+                  </div>
+                  <div class="dl-wrapper">
+                    <div class="dl-wrapper">
+                      <dt>Location:</dt>
+                      <dd>Visitor Center</dd>
+                    </div>
+                  </div>
+                  <div class="dl-wrapper">
+                    <div class="dl-wrapper">
+                      <dt>Fees:</dt>
+                      <dd>Free</dd>
+                    </div>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="fact">
+      <h2>Did You Know?</h2>
+      <img id="dykImage" src="http://www.nps.gov/pwr/yose/photosmultimedia/images/ARC-_lowres.jpg" alt="ARC Students journaling near Hetch Hetchy"><p>Adventure Risk Challenge (ARC) brings youth to Yosemite each summer for a dynamic literacy and leadership immersion program. ARC works with students, boosting academic and leadership skills through a variety of programs, including a 40-day experience in Yosemite full of adventure and learning.&nbsp;<a id="dykMoreInfo" title="Read more about this Did You Know" href="http://www.yosemiteconservancy.org/youth-stewardship/adventure-leadership-youth-development-program-adventure-risk-challenge-arc">More...</a></p>
+    </div>
+  </div>
+</div>
