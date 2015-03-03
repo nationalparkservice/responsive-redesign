@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include top.html %}
+    <div class="wallpaper-parks">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="middleContentArea group">
+              <div class="col-md-3 hidden-sm hidden-xs sub-nav-containerWidth">
+                <div id="sub-nav">
+                  <div id="npsNav">
+                    <h2>Explore This Park</h2>
+                    <ul>
+                      <li class="active">
+                        <a href="#" class="active">Home</a>
+                      </li>
+                      <li>
+                        <a href="#">Understanding Climate Change</a>
+                      </li>
+                      <li>
+                        <a href="#">Effects in Parks</a>
+                      </li>
+                      <li>
+                        <a href="#">NPS Response</a>
+                      </li>
+                      <li>
+                        <a href="#">Photos &amp; Multimedia</a>
+                      </li>
+                      <li>
+                        <a href="#">Useful Resources</a>
+                      </li>
+                      <li>
+                        <a href="#">Get Involved</a>
+                      </li>
+                      <li>
+                        <a href="#">News</a>
+                      </li>
+                      <li class="last">
+                        <a href="#">About Us</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="content-container col-md-9 col-xs-12">{{ content }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include bottom.html %}
+  </body>
+</html>
