@@ -2,8 +2,8 @@
 <div class="hidden-sm hidden-xs row">
   <div class="col-md-12">
     <div class="bap">
-      <div class="small">
-        <img alt="Rainbow over Half Dome" class="img-responsive" src="{{ site.baseurl }}/assets/img/banner-secondary.jpg" title="Rainbow over Half Dome">
+      <div class="{% if page.layout == 'park-primary' %}large{% else %}small{% endif %}">
+        <img alt="Rainbow over Half Dome" class="img-responsive" src="{{ site.baseurl }}/assets/img/banner-park-{% if page.layout == 'park-primary' %}primary{% else %}secondary{% endif %}.jpg" title="Rainbow over Half Dome">
         <div class="title">
           <div class="bapTitleBox">
             <h1>Yosemite</h1>
@@ -21,7 +21,7 @@
   <div class="row">
     <div class="col-md-12">
       <div class="bap-mobile">
-        <img alt="Rainbow over Half Dome" class="img-responsive" src="{{ site.baseurl }}/assets/img/banner.jpg" title="Rainbow over Half Dome">
+        <img alt="Rainbow over Half Dome" class="img-responsive" src="{{ site.baseurl }}/assets/img/banner-park-primary.jpg" title="Rainbow over Half Dome">
         <div class="title">
           <h1>Yosemite</h1>
         </div>

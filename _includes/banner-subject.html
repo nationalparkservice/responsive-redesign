@@ -2,8 +2,8 @@
 <div class="hidden-sm hidden-xs row">
   <div class="col-md-12">
     <div class="bap">
-      <div class="large">
-        <img alt="Two scientists on a glacier." class="img-responsive" src="{{ site.baseurl }}/assets/img/banner-subject-primary.jpg" title="Two scientists on a glacier.">
+      <div class="{% if page.layout == 'subject-primary' %}large{% else %}small{% endif %}">
+        <img alt="Two scientists on a glacier." class="img-responsive" src="{{ site.baseurl }}/assets/img/banner-subject-{% if page.layout == 'subject-primary' %}primary{% else %}secondary{% endif %}.jpg" title="Two scientists on a glacier.">
         <div class="title">
           <div class="bapTitleBox">
             <h1>Climate Change</h1>
