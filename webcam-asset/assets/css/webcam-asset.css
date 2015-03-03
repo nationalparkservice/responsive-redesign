@@ -1,9 +1,7 @@
-
-/* WEBCAM ASSET PAGE */
 body {
-    background-color: white;
+  background-color: white;
 }
-@media (min-width:992px) {
+@media (min-width: 992px) {
   body {
     background-color: black;
   }
@@ -25,8 +23,8 @@ body {
   max-width: 1024px;
 }
 .webcamWidth .page-title {
-    border:none;
-    margin-bottom:0px;   
+  border: none;
+  margin-bottom: 0;
 }
 .webcam-description {
   font-size: 16px;
@@ -35,6 +33,6 @@ body {
 }
 .webcam-image {
   -ms-interpolation-mode: bicubic; /* IE image re-size rendering fix */
-  max-width: 100%;
   margin-bottom: 20px;
+  max-width: 100%;
 }
