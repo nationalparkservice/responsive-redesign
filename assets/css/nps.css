@@ -48,11 +48,11 @@
   visibility: hidden;
 }
 /* to get rid of the extra space at right on small viewports */
-  html,
-  body {
-    overflow-x: hidden !important;
-    width: auto !important;
-  }
+html,
+body {
+  overflow-x: hidden !important;
+  width: auto !important;
+}
 body {
   background-color: #f5f0dd;
   background-image: none;
@@ -139,9 +139,9 @@ h4 {
   line-height: 14px;
   margin-bottom: 10px;
 }
-h4.date {
+  h4.date {
     font-size: 12px;
-}
+  }
 h5 {
   color: #7f7565;
   font-size: 10px;
@@ -272,7 +272,7 @@ a:active {
   }
 }
 .logo a {
-  color: #000000;
+  color: #000;
   font-size: 12px;
   position: relative;
 }
@@ -299,7 +299,7 @@ a:active {
 }
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover {
-  background-color: #b28000 !important
+  background-color: #b28000 !important;
 }
 .navbar a.navbar-brand {
   padding: 9px 15px 8px;
@@ -312,7 +312,7 @@ a:active {
   background-image: linear-gradient(to bottom, #000 0%, #000 100%);
 }
 .navbar .navbar-right {
-  margin-right: 0
+  margin-right: 0;
 }
 .navbar .dropdown-menu {
   border-top: none;
@@ -326,10 +326,10 @@ a:active {
     margin: 0 -19px;
   }
     .navbar .dropdown-menu li a {
-      padding: 7px 15px
+      padding: 7px 15px;
     }
   .navbar .dropdown-menu li:last-child {
-    border-bottom: none
+    border-bottom: none;
   }
   .navbar .dropdown-menu li:hover,
   .navbar .dropdown-menu li a:hover {
@@ -389,7 +389,6 @@ a:active {
     border-top-left-radius: 4px !important;
     border-bottom-left-radius: 4px !important;
   }
-
 @media (min-width: 992px) {
   .navbar-default .navbar-nav > li:not(:last-child) {
     border-right: 1px solid #455724
@@ -628,7 +627,7 @@ a:active {
 /* Utilities area - Print and  */
 .utils {
   float: right;
-  margin: 17px 35px 10px 0;
+  margin: 17px 20px 10px 0;
 }
   .utils a {
     display: block;
