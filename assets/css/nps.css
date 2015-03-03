@@ -1323,8 +1323,7 @@ ul.related-promo-list {
   width: 688px;
   zoom: 1;
 }
-/* More Content area on Subject Sites */
-/* Aligns the green box under the content area */
+/* More content area on subject sites */
 .MoreContentSpacer {
   display: inline-block;
   margin: 0;
@@ -1339,29 +1338,29 @@ ul.related-promo-list {
 @media (min-width: 992px) {
   .MoreContentContainer {
     padding: 0;
-    width: 738px;
+    width: 719px;
   }
 }
 .MoreContentHeader {
   background-color: #506429;
   margin: 0;
 }
-h2 {
-  color: #ffffff;
-  margin: 0;
-  padding: 0 0 10px 23px;
-}
+  .MoreContentHeader h2 {
+    color: #ffffff;
+    margin: 0;
+    padding: 10px 0 10px 23px;
+  }
 .MoreContent {
   background-color: #5e7630;
   display: inline-block;
   margin: 0;
-  padding: 10px 0 0 0;
+  padding: 12px 5px;
 }
   .MoreContent h5 {
     color: #ffe195;
     font-size: 11px;
     font-weight: bold;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
   }
 .MoreContentList {
   display: inline-block;
@@ -1371,21 +1370,20 @@ h2 {
   float: left;
   width: 100%;
 }
-@media (min-width: 768px) {
-  .MoreContentItem {
-    background: url(/assets/img/bg/borderForMoreContentBox.png) repeat-y right;
-    float: left;
-    width: 221px;
-  }
-}
 .MoreContentLast {
   width: 100%;
 }
 @media (min-width: 768px) {
+  .MoreContentItem,
   .MoreContentLast {
     float: left;
+    width: 210px;
+  }
+  .MoreContentItem {
+    background: url(/responsive-redesign/assets/img/bg/borderForMoreContentBox.png) repeat-y right;
+  }
+  .MoreContentLast {
     margin-right: 0 !important;
-    width: 221px;
   }
 }
 .MoreContentList li {
@@ -1404,7 +1402,7 @@ h2 {
   margin-right: 0;
 }
 .MoreContentList ul a {
-  color: #ffffff;
+  color: #fff;
   font-weight: bold;
 }
 .MoreContentList ul .all {

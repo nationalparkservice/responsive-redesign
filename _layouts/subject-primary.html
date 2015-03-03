@@ -10,6 +10,46 @@
             <div class="middleContentArea group">
               {% include subject-subnav.html %}
               <div class="content-container col-md-9 col-xs-12">{{ content }}</div>
+              {% if page.more == null or page.more != false %}
+              <div class="col-md-3 hidden-sm hidden-xs sub-nav-containerWidth">
+                <div class="MoreContentSpacer"></div>
+              </div>
+              <div class="MoreContentContainer col-md-9 col-xs-12">
+                <div class="MoreContentHeader row">
+                  <h2>Experience More</h2>
+                </div>
+                <div class="MoreContent row">
+                  <div class="MoreContentList">
+                    <ul>
+                      <li class="MoreContentItem">
+                        <h5>Subjects</h5>
+                        <ul>
+                          <li><a class="more" href="#">Civil War Teaching With Historic Places</a></li>
+                          <li><a class="more" href="#">International Civil Rights Hall of Fame</a></li>
+                          <li><a class="all more" href="http://www.nps.gov/history">View All Related Subjects</a></li>
+                        </ul>
+                      </li>
+                      <li class="MoreContentItem">
+                        <h5>Subjects</h5>
+                        <ul>
+                          <li><a class="more" href="#">Antietam National Battlefield</a></li>
+                          <li><a class="more" href="#">Shiloh National Military Park</a></li>
+                          <li><a class="all more" href="http://www.nps.gov/history">View All Related Subjects</a></li>
+                        </ul>
+                      </li>
+                      <li class="MoreContentLast">
+                        <h5>Subjects</h5>
+                        <ul>
+                          <li><a class="more" href="#">American Battlefield Protection Program</a></li>
+                          <li><a class="more" href="#">Underground Railroad</a></li>
+                          <li><a class="all more" href="http://www.nps.gov/history">View All Related Subjects</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              {% endif %}
             </div>
           </div>
         </div>
