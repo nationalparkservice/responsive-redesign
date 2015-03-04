@@ -172,9 +172,7 @@ NPS.cycle = {
   }
 };
 NPS.display = {
-  /**
-   * Wraps the dt and dd pair in each dl with a class of wrapper with a div
-   */
+  // Wraps the dt and dd pair in each dl with a class of wrapper with a div
   wrapdldt: function() {
     jQuery('.wrapped dt').each(function() {
       var jQuerycurElement = jQuery(this);
@@ -188,9 +186,7 @@ NPS.display = {
       jQueryselection.wrapAll('<div class="dl-wrapper">');
     });
   },
-  /**
-   * Setting up results show / hide functionality
-   */
+  // Setting up results show / hide functionality
   showHide: function() {
     jQuery('.show-hide a').click(function() {
       if (jQuery(this).hasClass('read-more')) {
@@ -202,9 +198,7 @@ NPS.display = {
       }
     });
   },
-  /**
-   * Setting up tabs functionality - relies on jQuery ui
-   */
+  // Setting up tabs functionality - relies on jQuery ui
   tabsSetup: function() {
     if (jQuery('.list-nav li').length) {
       jQuery('.list-nav li:not(:first-child)').hide();
@@ -234,9 +228,7 @@ NPS.display = {
       jQuery('.tabbed').tabs();
     }
   },
-  /**
-   * Show and hide global alert message
-   */
+  // Show and hide global alert message
   alert: function() {
     if ((jQuery('#content-alert').length) && (jQuery('.alert-toggle').length)) {
       jQuery('#content-alert').hide();
@@ -251,9 +243,7 @@ NPS.display = {
       });
     }
   },
-  /**
-   * Show and hide transcript controls
-   */
+  // Show and hide transcript controls
   transcriptControls: function() {
     if (jQuery('.transcript-control').length) {
       jQuery('.transcript-control a').click(function() {
@@ -288,9 +278,7 @@ NPS.display = {
       });
     }
   },
-  /**
-   * hide and show full field trips
-   */
+  // Hide and show full field trips
   resultAlert: function() {
     if (jQuery('#micro-filter-check').length) {
       jQuery('#micro-filter-check').change(function() {
@@ -302,9 +290,7 @@ NPS.display = {
       });
     }
   },
-  /**
-   * Show and hide the footer
-   */
+  // Show and hide the footer
   footerControls: function() {
     if ((jQuery('#site-map-container').length) || (jQuery('.site-map-container').length)) {
       jQuery('#sm-control').click(function() {
@@ -318,9 +304,7 @@ NPS.display = {
       });
     }
   },
-  /**
-   * Monitor click events, blur divs if shown
-   */
+  // Monitor click events, blur divs if shown
   searchBlur: function() {
     jQuery(document).click(function(e) {
       if (jQuery(e.target).parents('#search-results-container').attr('id') !== 'search-results-container' && jQuery('#search-results-container').is(':visible')) {
@@ -328,9 +312,7 @@ NPS.display = {
       }
     });
   },
-  /**
-   * click functionality for tiles
-   */
+  // Click functionality for tiles
   tiles: function() {
     if(jQuery('.tiles').length) {
       jQuery('.tiles li:nth-child(even)').addClass('even');
@@ -349,9 +331,7 @@ NPS.display = {
       });
     }
   },
-  /**
-   * Add show-hide buttons to reviews
-   */
+  // Add show-hide buttons to reviews
   reviewShow: function(){
     if(jQuery('.content .review-body').length) {
       jQuery('.review-body').hide();
@@ -450,22 +430,22 @@ NPS.forms = {
         },
         success: function(suggestions) {
           if (suggestions.length !== 0) {
-            var i = 0;
-            //generate suggestions html
-            var html = jQuery('<ul>');
-            //var html = '<p>Suggestions</p><ul>';
+            var i = 0,
+              html = jQuery('<ul>');
+
             jQuery.each(suggestions, function(index, suggestion) {
-              if(i < 3){
-                //debug here
+              if (i < 3) {
                 html.append(jQuery('<li>').append(jQuery('<a>').attr('href', '/search/index.htm?query=' + suggestion).text(suggestion)));
               }
+
               i++;
             });
+
             html = jQuery('<p>').text('Suggestions').append(html);
             jQuery('#search-results #suggestions').empty().html(html);
           }
 
-          if (window.location.href.split('/').length - 1 === 3) {
+          if ((window.location.href.split('/').length - 1) === 3) {
             jQuery('#result1').hide();
           }
         }
@@ -1193,6 +1173,7 @@ jQuery(window).load(function() {
 });
 
 if (location.href.indexOf('www') > -1) {
-  document.write('<script src=\'/common/commonspot/templates/js/federated-analytics.js\'><\/script>');
-  document.write('<script src=\'/common/commonspot/templates/js/nps-analytics.js\'><\/script>');
+  $('body')
+    .append('<script src=\'/common/commonspot/templates/js/federated-analytics.js\'><\/script>')
+    .append('<script src=\'/common/commonspot/templates/js/nps-analytics.js\'><\/script>');
 }
