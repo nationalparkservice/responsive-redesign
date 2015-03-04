@@ -537,18 +537,29 @@ NPS.gallery = {
   },
   // Photo gallery setup
   photoGallery: function() {
-    if(jQuery('.gallery-views').length) {
-      var buildControl = jQuery('<div id="gallery-controls"><ul class="view-controls"><li class="active"><a href="#" class="list-view">List View</a></li><li><a href="#" class="grid-view">Grid View</a></li></ul></div>');
+    if (jQuery('.gallery-views').length) {
+      var buildControl = jQuery('' +
+        '<div id="gallery-controls">' +
+          '<ul class="view-controls">' +
+            '<li class="active">' +
+              '<a href="#" class="list-view">List View</a>' +
+            '</li>' +
+            '<li>' +
+              '<a href="#" class="grid-view">Grid View</a>' +
+            '</li>' +
+          '</ul>' +
+        '</div>' +
+      '');
+
       jQuery('.gallery-views #gallery-top').append(buildControl);
       NPS.gallery.galleryControls();
     }
+
     jQuery('#photo-gallery .description h3 a').click(function(e) {
       e.preventDefault();
-      //simulate lightbox click
       jQuery(this).parent().parent().prev().children('a').click();
     });
   },
-  // Switch between grid and list view
   galleryControls: function() {
     jQuery('.list-view, .grid-view').click(function(e){
       e.preventDefault();
@@ -584,20 +595,25 @@ NPS.lightbox = {
         disableNext = 'disable';
       }
 
-        //create next and previous buttons
       html
         .append(jQuery('<span>')
           .attr('id','fancybox-prev')
           .append(jQuery('<a>')
             .addClass(disablePrev)
-            .attr('href','javascript:jQuery.fancybox.prev();')
+            .attr('href','#')
             .text('Previous')))
+            .click(function() {
+              jQuery.fancybox.prev();
+            })
         .append(jQuery('<span>')
           .attr('id','fancybox-next')
           .append(jQuery('<a>')
             .addClass(disableNext)
-            .attr('href','javascript:jQuery.fancybox.next();')
-            .text('Previous')));
+            .attr('href','#')
+            .text('Next')))
+            .click(function() {
+              jQuery.fancybox.next();
+            });
     }
 
     altText = jQuery(currentArray[currentIndex]).children().attr('alt');
@@ -714,7 +730,7 @@ NPS.newContent = {
       .before(jQuery('<li>')
       .addClass('print')
       .append(jQuery('<a>')
-        .attr('href','javascript:void(0);')
+        .attr('href', '#')
         .text('print')
       ));
     jQuery('.print a').click(function() {
@@ -826,7 +842,7 @@ NPS.text = {
   // Resizes the container to the width of the child image.
   resizeToImage: function() {
     if (jQuery('.resize-to-image img').length) {
-      jQuery.each(jQuery('.resize-to-image'), function(index, val) {
+      jQuery.each(jQuery('.resize-to-image'), function() {
         var $this = jQuery(this);
 
         $this.children('img').load(function() {
@@ -1172,7 +1188,7 @@ jQuery(document).ready(function() {
     jQuery('#alert-box').text('There are park alerts in effect.');
   }
 });
-jQuery(window).load(function(){
+jQuery(window).load(function() {
   NPS.utility.setMinContentHeight();
 });
 
