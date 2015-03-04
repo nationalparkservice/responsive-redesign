@@ -629,6 +629,7 @@
       line-height: 1.5;
     }
     .gallery-content .photoData p {
+        font-size: 10px;
         margin: 0;
         padding: 0;
     }
