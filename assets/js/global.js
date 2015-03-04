@@ -1,3 +1,5 @@
+/* globals Modernizr */
+
 var NPS = NPS || {};
 
 NPS.cycle = {
@@ -6,7 +8,7 @@ NPS.cycle = {
       bapSize;
 
     if (jQuery('.bap').length) {
-      jQuery.each(jQuery('.bap .title'), function(index) {
+      jQuery.each(jQuery('.bap .title'), function() {
         var maxWidth = 640;
 
         if (jQuery(this).children('.main').children('h1').width() > maxWidth) {
@@ -31,12 +33,12 @@ NPS.cycle = {
             autostop: 0,
             activePagerClass: 'active',
             pager: '.bap .controls',
-            pagerAnchorBuilder: function(idx, slide) {
+            pagerAnchorBuilder: function(idx) {
               return jQuery('<li>')
                 .attr('class', 'ir')
                 .text('Go to slide ' + (++idx));
             },
-            end: function(options) {
+            end: function() {
               jQuery('.bap .cycle').cycle(0).cycle('pause');
             }
           });
@@ -54,12 +56,12 @@ NPS.cycle = {
             autostop: 0,
             fx: effect,
             pager: '.bap-mini .controls',
-            pagerAnchorBuilder: function(idx, slide) {
+            pagerAnchorBuilder: function(idx) {
               return jQuery('<li>')
                 .attr('class', 'ir')
                 .text('Go to slide ' + (++idx));
             },
-            end: function(options) {
+            end: function() {
               jQuery('.bap-mini .cycle').cycle(0).cycle('pause');
             }
           });
@@ -161,7 +163,7 @@ NPS.cycle = {
     var childHeight = 0,
       height = 0;
 
-    jQuery.each(jQuery(element).children(), function(index) {
+    jQuery.each(jQuery(element).children(), function() {
       childHeight = jQuery(this).height() + 25;
 
       if(childHeight > height) {
@@ -295,9 +297,9 @@ NPS.display = {
     if (jQuery('#micro-filter-check').length) {
       jQuery('#micro-filter-check').change(function() {
         if (jQuery('#micro-filter-check').is(':checked')) {
-          jQuery("#display-list-view li").has(".alert-box").show();
+          jQuery('#display-list-view li').has('.alert-box').show();
         } else{
-          jQuery("#display-list-view li").has(".alert-box").hide();
+          jQuery('#display-list-view li').has('.alert-box').hide();
         }
       });
     }
@@ -323,7 +325,7 @@ NPS.display = {
    */
   searchBlur: function() {
     jQuery(document).click(function(e) {
-      if (jQuery(e.target).parents("#search-results-container").attr('id') != "search-results-container" && jQuery('#search-results-container').is(':visible')) {
+      if (jQuery(e.target).parents('#search-results-container').attr('id') !== 'search-results-container' && jQuery('#search-results-container').is(':visible')) {
         jQuery('#search-results-container').hide();
       }
     });
@@ -361,9 +363,7 @@ NPS.display = {
   }
 };
 NPS.forms = {
-  /**
-   * Add placeholder support for older browsers
-   */
+  // Add placeholder support for older browsers
   placeholder: function() {
     jQuery('[placeholder]').focus(function() {
       var input = jQuery(this);
@@ -389,9 +389,7 @@ NPS.forms = {
       });
     });
   },
-  /**
-   * Submit drop down on click
-   */
+  // Submit dropdown onclick
   searchDropdown: function() {
     jQuery('#park-query').change(function() {
       if (!!jQuery(this).val()) window.location = jQuery(this).val();
@@ -401,9 +399,7 @@ NPS.forms = {
       if (!!jQuery(this).val()) window.location = jQuery(this).val();
     });
   },
-  /**
-   * submit sort by
-   */
+  // Submit sort by
   sortBySubmit: function() {
     if(jQuery('.sort-by #sort-by-select').length) {
       jQuery('.sort-by #sort-by-select').change(function(){
@@ -411,38 +407,34 @@ NPS.forms = {
       });
     }
   },
-  /**
-   * Live search
-   */
+  // Live search
   liveSearch: function(){
     jQuery('#global-search input').keyup(function() {
-      var searchVal = jQuery('#global-search input').val();
-      //get url
-      var url = document.location.href;
-      //split url
-      var urlparts = url.split('/');
-      //get the park
-      var park = urlparts[3];
-      var siteLimit = '';
-      //ensure that the park is 4 letters long
-      if(park.length == 4){
-        var siteLimit = 'nps.gov/' + park;
+      var searchVal = jQuery('#global-search input').val(),
+        url = document.location.href,
+        urlparts = url.split('/'),
+        park = urlparts[3],
+        siteLimit = '',
+        subsites, searchTextGuidance;
+
+      if (park.length === 4) {
+        siteLimit = 'nps.gov/' + park;
       }
 
-      // added 2013-07-06 for orgs and subject site limits for search
-      if(park === 'subjects'){
-        var siteLimit = 'nps.gov/subjects/' +  urlparts[4];
+      if (park === 'subjects') {
+        siteLimit = 'nps.gov/subjects/' +  urlparts[4];
       }
-      if(park === 'orgs'){
-        var siteLimit = 'nps.gov/orgs/' +  urlparts[4];
+
+      if(park === 'orgs') {
+        siteLimit = 'nps.gov/orgs/' +  urlparts[4];
       }
-      
-      var subsites = window.location.pathname.split('/');
-      var searchTextGuidance = 'this site';
-        
-      if (subsites[1] == 'subjects') {
+
+      subsites = window.location.pathname.split('/');
+      searchTextGuidance = 'this site';
+
+      if (subsites[1] === 'subjects') {
         searchTextGuidance = 'this site';
-      } else if (subsites[1] == 'teachers') {
+      } else if (subsites[1] === 'teachers') {
         searchTextGuidance = 'this site';
       }
 
@@ -455,6 +447,9 @@ NPS.forms = {
         },
         dataType: 'jsonp',
         url: 'http://search.usa.gov/sayt?aid=' + NPS.utility.params.saytId,
+        error: function() {
+          jQuery('#search-results #suggestions').empty();
+        },
         success: function(suggestions) {
           if (suggestions.length !== 0) {
             var i = 0;
@@ -475,73 +470,74 @@ NPS.forms = {
           if (window.location.href.split('/').length - 1 === 3) {
             jQuery('#result1').hide();
           }
-        },
-        error: function() {
-          jQuery('#search-results #suggestions').empty();
         }
       });
     });
   }
 };
 NPS.gallery = {
-  /**
-  * tool tip
-  */
-  tooltip: function() { 
-    if(jQuery('.tooltip').length) {
-      xOffset = 10;
-      yOffset = 20; 
+  // Tooltip
+  tooltip: function() {
+    if (jQuery('.tooltip').length) {
+      var xOffset = 10,
+        yOffset = 20;
+
       jQuery('.tooltip img').hover(function(e) {
-        //set empty title attribute for IE7
-        if(NPS.utility.getIeVersion() < 8){
-          jQuery(this).attr('title','');
+        var text;
+
+        if (NPS.utility.getIeVersion() < 8) {
+          jQuery(this).attr('title', '');
         }
+
         jQuery('#tooltip').remove();
-        var text = jQuery(this).attr('alt');
-        if(text != undefined && text != '') {
+        text = jQuery(this).attr('alt');
+
+        if (text !== 'undefined' && text !== '') {
           jQuery('body').append('<p id="tooltip">'+ jQuery(this).attr('alt') +'</p>');
           jQuery('#tooltip')
             .css('top',(e.pageY - xOffset) + 'px')
             .css('left',(e.pageX + yOffset) + 'px')
-            .show();  
+            .show();
         }
-        },
-      function() {
-        this.title = this.t;    
+      }, function() {
+        this.title = this.t;
         jQuery('#tooltip').remove();
-        }); 
+      });
+
       jQuery('.tooltip img').mousemove(function(e) {
         jQuery('#tooltip')
           .css('top',(e.pageY - xOffset) + 'px')
           .css('left',(e.pageX + yOffset) + 'px');
       });
     }
-    if(jQuery('.gallery-content-tooltip').length) {
-      jQuery('.gallery-content-tooltip img').mouseenter(function(e) {
-        //set empty title attribute for IE7
-        if(NPS.utility.getIeVersion() < 8){
+
+    if (jQuery('.gallery-content-tooltip').length) {
+      jQuery('.gallery-content-tooltip img').mouseenter(function() {
+        var tooltip;
+
+        if (NPS.utility.getIeVersion() < 8) {
           jQuery(this).attr('title','');
         }
+
         jQuery('.gallery-tooltip').hide();
-        var tooltip = jQuery(this).parents('.image').children('.gallery-tooltip');
-        if(tooltip.length && !tooltip.is(':visible')){
+        tooltip = jQuery(this).parents('.image').children('.gallery-tooltip');
+
+        if (tooltip.length && !tooltip.is(':visible')) {
           tooltip.show();
-        }
-        else{
+        } else{
           var text = jQuery(this).attr('alt');
-          if(text != undefined && text != '') {
+
+          if (text !== 'undefined' && text !== '') {
             jQuery(this).parents('.image').append(jQuery('<div>').addClass('gallery-tooltip').append(jQuery('<div>').addClass('gallery-tooltip-arrow')).append(jQuery('<p>').text(text))).show();
           }
         }
-        });
-        jQuery('.gallery-content-tooltip img').mouseout(function(e) {
-          jQuery(this).parents('.image').children('.gallery-tooltip').hide();
-        });
-    } 
+      });
+      jQuery('.gallery-content-tooltip img').mouseout(function() {
+        jQuery(this).parents('.image').children('.gallery-tooltip').hide();
+      });
+    }
   },
-  /**
-   * photo gallery setup
-   */
+  // Photo gallery setup
   photoGallery: function() {
     if(jQuery('.gallery-views').length) {
       var buildControl = jQuery('<div id="gallery-controls"><ul class="view-controls"><li class="active"><a href="#" class="list-view">List View</a></li><li><a href="#" class="grid-view">Grid View</a></li></ul></div>');
@@ -554,9 +550,7 @@ NPS.gallery = {
       jQuery(this).parent().parent().prev().children('a').click();
     });
   },
-  /**
-   * switch between grid and list view
-   */
+  // Switch between grid and list view
   galleryControls: function() {
     jQuery('.list-view, .grid-view').click(function(e){
       e.preventDefault();
@@ -576,35 +570,56 @@ NPS.gallery = {
   }
 };
 NPS.lightbox = {
-  lightboxTitle: function(title, currentArray, currentIndex, currentOpts) {
-    var index = (currentIndex + 1);
-    var html = jQuery('<div>').addClass('clearfix');
-    var disablePrev = '', disableNext = '';
+  lightboxTitle: function(title, currentArray, currentIndex) {
+    var disableNext = '',
+      disablePrev = '',
+      html = jQuery('<div>').addClass('clearfix'),
+      index = (currentIndex + 1),
+      altText, linkText;
+
     if (currentArray.length > 1) {
-      if(index == 1) {
+      if (index === 1) {
         disablePrev = 'disable';
       }
-        if(index == currentArray.length) {
-          disableNext = 'disable'
-        }
+
+      if (index === currentArray.length) {
+        disableNext = 'disable';
+      }
+
         //create next and previous buttons
-        html.append(jQuery('<span>').attr('id','fancybox-prev').append(jQuery('<a>').addClass(disablePrev).attr('href','javascript:jQuery.fancybox.prev();').text('Previous')))
-        .append(jQuery('<span>').attr('id','fancybox-next').append(jQuery('<a>').addClass(disableNext).attr('href','javascript:jQuery.fancybox.next();').text('Previous')))
-      }
-      var altText = jQuery(currentArray[currentIndex]).children().attr('alt');
-      var linkText = jQuery(currentArray[currentIndex]).text();
-      if(altText != undefined && altText != '') {
-        title = altText;
-      }
-      else if(linkText != undefined && linkText != '') {
-        title = linkText;
-      }
-      html.append(jQuery('<div>').attr('id','fancybox-description').append(jQuery('<p>').text(title)));
+      html
+        .append(jQuery('<span>')
+          .attr('id','fancybox-prev')
+          .append(jQuery('<a>')
+            .addClass(disablePrev)
+            .attr('href','javascript:jQuery.fancybox.prev();')
+            .text('Previous')))
+        .append(jQuery('<span>')
+          .attr('id','fancybox-next')
+          .append(jQuery('<a>')
+            .addClass(disableNext)
+            .attr('href','javascript:jQuery.fancybox.next();')
+            .text('Previous')));
+    }
+
+    altText = jQuery(currentArray[currentIndex]).children().attr('alt');
+    linkText = jQuery(currentArray[currentIndex]).text();
+
+    if (altText !== 'undefined' && altText !== '') {
+      title = altText;
+    } else if (linkText !== 'undefined' && linkText !== '') {
+      title = linkText;
+    }
+
+    html
+      .append(jQuery('<div>')
+        .attr('id','fancybox-description')
+        .append(jQuery('<p>')
+          .text(title)));
+
     return html;
   },
-  /**
-  * lightbox gallery
-  */
+  // Lightbox gallery
   lightbox: function() {
     if (jQuery('a[data-rel="gallery1"]').length) {
       jQuery('a[data-rel="gallery1"]').fancybox({
@@ -613,7 +628,6 @@ NPS.lightbox = {
       });
     }
 
-    //photo gallery
     if (jQuery('#photo-gallery #gallery-content .image').length) {
       jQuery('#photo-gallery #gallery-content .image a').fancybox({
         'titlePosition': 'inside',
@@ -621,76 +635,67 @@ NPS.lightbox = {
       });
     }
 
-    //slideshow
     if (jQuery('#gallery-listing .slideshow').length) {
       jQuery('#gallery-listing .view-slideshow').click(function() {
-        //remove relationship groupings
         jQuery('#photo-galleries .slideshow li a').attr('rel','');
-        //add relationship grouping to this slideshow group
         jQuery(this).parent().next().children('li').children('a').attr('rel','gallery-slideshow');
         jQuery('a[rel="gallery-slideshow"]').fancybox({
           'titlePosition': 'inside',
           'titleFormat': NPS.lightbox.lightboxTitle
         });
-        //simulate click to start lightbox
         jQuery(this).parent().next().children('li:first').children('a').click();
       });
     }
   },
+  //
   eventDetails: function(){
-    if(jQuery('.results .show-event').length) {
+    if (jQuery('.results .show-event').length) {
       jQuery('.results .show-event').click(function(event) {
-        jQuerythis = jQuery(this);
+        var $this = jQuery(this);
 
-        if (!jQuerythis.hasClass('is-fancy')){
-          //stop event
+        if (!$this.hasClass('is-fancy')) {
           event.preventDefault();
-          //add is-fancy class to link
-          jQuerythis.addClass('is-fancy');
-          //add print link
-          jQuery(this).parents('.wrapper').next().children().append(
-            jQuery('<a>').attr('href','#').addClass('print-event ir').text('Print')
-          );
-          //get event details content + add width/height, hide title, no transition, cleanup on close 
-          jQuerythis.fancybox({
-            'content': jQuery(this).parents('.wrapper').next().children().css('width','475'),
-            'titleShow': false,
-            'transitionIn': 'none',
-            'transitionOut': 'none',
-            'onComplete': function() {
-              //add print style sheet
+          $this
+            .addClass('is-fancy')
+            .parents('.wrapper').next().children().append(jQuery('<a>')
+              .attr('href','#')
+              .addClass('print-event ir')
+              .text('Print'));
+          $this.fancybox({
+            content: jQuery(this).parents('.wrapper').next().children().css('width','475'),
+            titleShow: false,
+            transitionIn: 'none',
+            transitionOut: 'none',
+            onComplete: function() {
               jQuery('<link rel="stylesheet" media="print" id="print-event" href="../global/css/event-details-print.css"/>').appendTo('head');
-              //add print click event
               jQuery('#fancybox-content .print-event').click(function(e) {
                 e.preventDefault();
                 window.print();
                 return false;
               });
             },
-            'onCleanup': function() {
-              //remove print style sheet
+            onCleanup: function() {
               jQuery('#print-event').remove();
             }
           });
-
-          //continue event
-          jQuerythis.trigger(event)
+          $this.trigger(event);
         }
       });
       jQuery('.results .show-event-trigger').click(function(event) {
+        var $this = jQuery(this);
+
         event.preventDefault();
-        jQuerythis = jQuery(this);
-        jQuerythis.parent('h3').siblings('.wrapper').find('.show-event').click();
+        $this.parent('h3')
+          .siblings('.wrapper')
+          .find('.show-event')
+          .click();
       });
     }
   },
-  /**
-   * iframe for rate button
-   */
+  // iframe for rate button
   rateBtn: function () {
     var height = 805;
 
-    //ie 7 height
     if (NPS.utility.getIeVersion() < 8) {
       height = 855;
     }
@@ -765,7 +770,7 @@ NPS.newContent = {
 };
 NPS.slick = {
   setup: function() {
-    $('.responsive').slick({
+    jQuery('.responsive').slick({
       dots: true,
       draggable: false,
       infinite: false,
@@ -796,9 +801,7 @@ NPS.slick = {
   }
 };
 NPS.starRating = {
-  /**
-   * enable star ratings
-   */
+  // Enable star ratings
   starRatings: function () {
     if (jQuery('.ratings-wrapper').length) {
       jQuery.each(jQuery('.ratings-wrapper'), function() {
@@ -826,7 +829,7 @@ NPS.text = {
   resizeToImage: function() {
     if (jQuery('.resize-to-image img').length) {
       jQuery.each(jQuery('.resize-to-image'), function(index, val) {
-        $this = jQuery(this);
+        var $this = jQuery(this);
 
         $this.children('img').load(function() {
           $this.width($this.children('img').width());
@@ -928,8 +931,7 @@ NPS.utility = {
     if (this.ieVersion === 'undefined') {
       var div = document.createElement('div'),
         all = div.getElementsByTagName('i'),
-        v = 3,
-        undef;
+        v = 3;
 
       while (
         div.innerHTML = '<!--[if gt IE ' + (++v) + ']><i></i><![endif]-->',
@@ -952,7 +954,7 @@ NPS.utility = {
       return false;
     }
   },
-  pageSetups: function(value) {
+  pageSetups: function() {
     jQuery('#site-map-container').hide();
     jQuery('#sm-control a').removeClass('expanded');
     jQuery('.content-container .utils').css('visibility', 'visible');
@@ -979,6 +981,32 @@ NPS.utility = {
         }
       }
     }
+  },
+  supportsCssAnimation: function() {
+    var animation = false,
+      animationstring = 'animation',
+      el = document.createElement('div'),
+      keyframeprefix = '',
+      domPrefixes = 'Webkit Moz O ms Khtml'.split(' '),
+      pfx  = '';
+
+    if (el.style.animationName !== undefined) {
+      animation = true;
+    }
+
+    if (animation === false) {
+      for (var i = 0; i < domPrefixes.length; i++) {
+        if (el.style[domPrefixes[i] + 'AnimationName'] !== undefined) {
+          pfx = domPrefixes[ i ];
+          animationstring = pfx + 'Animation';
+          keyframeprefix = '-' + pfx.toLowerCase() + '-';
+          animation = true;
+          break;
+        }
+      }
+    }
+
+    return animation;
   }
 };
 
@@ -1027,7 +1055,7 @@ NPS.loadPlugins = function() {
       originalPosition = slidebox.css('right'),
       boxAnimations;
 
-    if (Modernizr.cssanimations) {
+    if (NPS.utility.supportsCssAnimation()) {
       boxAnimations = {
         open: function() {
           slidebox.addClass('open');
@@ -1076,14 +1104,15 @@ NPS.loadPlugins = function() {
    *     jQuery(".dropdown ul").splitList(3, { splitInto: "div_class_name" });
    */
   jQuery.fn.splitList = function(n, options) {
-    settings = jQuery.extend({
+    var settings = jQuery.extend({
       wrapClass: false,
       splitInto: 'cols'
     }, options);
 
     return this.each(function(){
       var intoCols = (settings.splitInto === 'cols'),
-        w = '<div' + (settings.wrapClass ? ' class="' + settings.wrapClass + '"' : '' ) + '></div>';
+        w = '<div' + (settings.wrapClass ? ' class="' + settings.wrapClass + '"' : '' ) + '></div>',
+        jQueryinc, jQuerylis;
 
       jQuerylis = jQuery(this).find('> li');
       jQueryinc = intoCols ? parseInt((jQuerylis.length/n) + (jQuerylis.length % n > 0 ), 10) : n;
@@ -1106,7 +1135,7 @@ jQuery(document).ready(function() {
   NPS.text.resizeToImage();
 
   if (navigator.userAgent.toLowerCase().indexOf('chrome') >= 0) {
-    jQuery('#global-search').attr('autocomplete', 'off'); 
+    jQuery('#global-search').attr('autocomplete', 'off');
   }
 
   NPS.display.wrapdldt();
@@ -1121,7 +1150,7 @@ jQuery(document).ready(function() {
   NPS.text.textSizes();
   NPS.newContent.webcamLink();
   NPS.newContent.moreLinks();
-  NPS.newContent.getTweets("CivilWarReportr", 1, jQuery('#tweet'));
+  NPS.newContent.getTweets('CivilWarReportr', 1, jQuery('#tweet'));
   NPS.newContent.addPrintLink();
   NPS.forms.searchDropdown();
   NPS.forms.liveSearch();
