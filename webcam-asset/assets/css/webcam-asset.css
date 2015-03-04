@@ -1,30 +1,22 @@
 body {
-  background-color: white;
+  background-color: #fff;
 }
-@media (min-width: 992px) {
-  body {
-    background-color: black;
-  }
-}
-.webcamContainer {
-  padding: 0;
-  width: auto;
-}
-.webcamContainer H1 {
+.page-title {
   margin: 0;
-  padding: 0;
 }
-.webcamParkName {
-  line-height: 50px;
-}
-.webcamWidth {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1024px;
-}
-.webcamWidth .page-title {
+.content-container {
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
   border: none;
-  margin-bottom: 0;
+  margin: 20px 0 0 0;
+  padding: 30px 24px;
+}
+  .content-container div:first-child  {
+    line-height: 50px;
+  }
+.contain {
+  max-width: 1024px;
 }
 .webcam-description {
   font-size: 16px;
@@ -32,7 +24,12 @@ body {
   margin-top: 20px;
 }
 .webcam-image {
-  -ms-interpolation-mode: bicubic; /* IE image re-size rendering fix */
+  -ms-interpolation-mode: bicubic;
   margin-bottom: 20px;
-  max-width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .logo {
+    margin-left: 22px;
+  }
 }

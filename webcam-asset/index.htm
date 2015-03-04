@@ -9,211 +9,38 @@ css:
   {% include head.html %}
   <body>
     <div class="container">
-      {% include black-bar-and-nav.html %}
-    </div>
-
-
-
-
-    
-    {% include top-park-primary.html %}
-    <div class="wallpaper-parks">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="middleContentArea group">
-              {% include park-subnav.html %}
-              <div class="content-container col-md-9 col-xs-12">{{ content }}</div>
-            </div>
-          </div>
+      <div class="hidden-lg hidden-md row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-inverse" role="navigation">
+            <a class="navbar-brand" href="#">
+              <img alt="National Park Service" class="img-responsive" src="{{ site.baseurl }}/assets/img/chrome/logos/main-logoSmall.png">
+            </a>
+          </nav>
         </div>
       </div>
-    </div>
-    {% include bottom.html %}
-  </body>
-</html>
-
-
-
-<body>
-    <div class="container">
-      <!-- TOP BLACK BAR - MOBILE -->
-      <div class="hidden-lg hidden-md">
-        <nav class="navbar navbar-inverse" role="navigation">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button class="navbar-toggle" data-target=".navbar-mobile" data-toggle="collapse" type="button">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-              <img alt="National Park Service" class="img-responsive" src="assets/img/chrome/logos/main-logoSmall.png">
-            </a>
-          </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse navbar-mobile">
-            <ul>
-              <h2>Yosemite National Park</h2>
-              <li><a href="/yose/">Park Home</a></li>
-              <li><a href="/yose/planyourvisit/">Plan Your Visit</a></li>
-              <li><a href="#">Photos &amp; Multimedia</a></li>
-              <li><a href="#">History &amp; Culture</a></li>
-              <li><a href="#">Nature &amp; Science</a></li>
-              <li><a href="#">For Teachers</a></li>
-              <li><a href="#">For Kids</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Management</a></li>
-              <li><a href="#">Support Your Park</a></li>
-              <li><a href="#">Bookstore</a></li>
-            </ul>
-            <ul>
-              <h2>National Park Service</h2>
-                <li><a href="/findapark/index.htm">Find a Park</a></li>
-                <li class="dropdown">
-                  <a href="/history/" class="dropdown-toggle" data-toggle="dropdown">Discover History</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="/history/people.htm">People - MEGAMENUS! This is an example of how you can make it as wide as you want to.</a></li>
-                    <li><a href="/history/places.htm">Places</a></li>
-                    <li><a href="/history/stories.htm">Stories</a></li>
-                    <li><a href="/history/preservation.htm">Preservation</a></li>
-                    <li><a href="/history/collections.htm">Collections</a></li>
-                    <li><a href="/history/travelers.htm">For Travelers</a></li>
-                    <li><a href="/history/teachers.htm">For Teachers</a></li>
-                    <li><a href="/history/kids.htm">For Kids</a></li>
-                    <li><a href="/history/publications.htm">Publications</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a href="nature.nps.gov" class="dropdown-toggle" data-toggle="dropdown">Explore Nature</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="http://www.nature.nps.gov/air/">Air Resources</a></li>
-                    <li><a href="http://www.nature.nps.gov/biology/">Biological Resources</a></li>
-                    <li><a href="/subjects/climatechange/index.htm">Climate Change</a></li>
-                    <li><a href="http://www.nature.nps.gov/protectingrestoring/">Environmental Quality</a></li>
-                    <li><a href="http://www.nature.nps.gov/geology/">Geologic Resources</a></li>
-                    <li><a href="http://science.nature.nps.gov/im/index.cfm">Inventory &amp; Monitoring</a></li>
-                    <li><a href="http://www.nature.nps.gov/nnl/">National Natural Landmarks</a></li>
-                    <li><a href="http://www.nature.nps.gov/sound_night/">Natural Sounds &amp; Night Skies</a></li>
-                    <li><a href="http://www.nature.nps.gov/partnerships.cfm">Partnerships</a></li>
-                    <li><a href="http://www.nature.nps.gov/multimedia.cfm">Photos &amp; Multimedia</a></li>
-                    <li><a href="http://www.nature.nps.gov/publications.cfm">Publications</a></li>
-                    <li><a href="http://www.nature.nps.gov/rlc/">Research Learning Centers</a></li>
-                    <li><a href="http://www.nature.nps.gov/scienceresearch.cfm">Science &amp; Research</a></li>
-                    <li><a href="http://www.nature.nps.gov/socialscience/">Social Science</a></li>
-                    <li><a href="http://www.nature.nps.gov/water/">Water Resources</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a href="/getinvolved/" class="dropdown-toggle" data-toggle="dropdown">Get Involved</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="/getinvolved/volunteer.htm">Volunteer</a></li>
-                      <li><a href="/getinvolved/donate.htm">Donate</a></li>
-                      <li><a href="/getinvolved/partner.htm">Partner</a></li>
-                      <li><a href="/getinvolved/doyourpart.htm">Do Your Part</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                  <a href="/communities/" class="dropdown-toggle" data-toggle="dropdown">Working with Communities</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="/tps/tax-incentives.htm">Tax Incentives</a></li>
-                    <li><a href="/history/nr">National Register of Historic Places</a></li>
-                    <li><a href="/history/grants.htm">Preservation</a></li>
-                    <li><a href="/lwcf">Outdoor Recreation</a></li>
-                    <li><a href="/nts">National Historic Trails</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a href="/teachers/" class="dropdown-toggle" data-toggle="dropdown">Teachers</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="/teachers/classrooms.htm">Parks as Classrooms</a></li>
-                    <li><a href="/teachers/development.htm">Professional Development</a></li>
-                    <li><a href="/teachers/distancelearning.htm">Distance Learning</a></li>
-                  </ul>
-                </li>
-                <li><a href="/kids/">Kids</a></li>
-                <li class="dropdown">
-                  <a href="/aboutus/" class="dropdown-toggle" data-toggle="dropdown">About Us</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="/aboutus/workwithus.htm">Work With Us</a></li>
-                    <li><a href="/aboutus/jobsforstudents.htm">Jobs for Students</a></li>
-                    <li><a href="/aboutus/budget.htm">Budget</a></li>
-                    <li><a href="/aboutus/doingbusinesswithus.htm">Doing Business with Us</a></li>
-                    <li><a href="/aboutus/lawsandpolicies.htm">Laws &amp; Policies</a></li>
-                    <li><a href="/aboutus/publications.htm">Publications</a></li>
-                  </ul>
-                </li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </nav>
-      </div>
-      <!-- TOP BLACK BAR - DESKTOP-->
-      <div class="row hidden-sm hidden-xs">
-        <!-- LOGO -->
-        <div class="col-md-9">
+      <div class="hidden-sm hidden-xs row">
+        <div class="col-md-12 contain">
           <div class="logo"></div>
         </div>
-        <!-- SEARCH -->
-        <div class="col-md-3">
-          <form class="form-inline" role="form">
-            <input class="form-control" type="text">
-            <span class="fa fa-search form-control-feedback"></span>
-          </form>
-        </div>
-        <!-- Mobile Nav -->
       </div>
-        
     </div>
-
-    
-    
-    
-    
-        <!-- Main central container -->
-        <div class="container webcamContainer">
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- column that surrounds the left nav and main content columns -->
-
-
-                        <!-- MAIN CONTENT -->
-                        <div class="content-container col-xs-12 col-md-12">
-                            <div class="webcamWidth">
-                            <h1 class="page-title">Alpine Tundra Webcam</h1>
-                            <a class="webcamParkName" href="/dena/">Denali National Monument</a>
-                          <div class="webcam-image"> 
-                            <img id="webcamimage_2213139" class="img-responsive" src="http://www.nps.gov/webcams-dena/alpine.jpg?2015023144657&amp;201502314477" alt="Sunlight and clouds cross a valley and mountainsides" width="1024" height="576" style="">
-                            <img id="webcamimage_loading_2213139" class="img-responsive" src="/common/commonspot/templates/images/graphics/loader.gif" alt="Sunlight and clouds cross a valley and mountainsides Loading..." style="margin-left: 45px; display: none;">
-                          </div>
-                          <div class="webcam-description">
-                              <p>Have you ever wanted to check conditions for hiking, skiing, and other outdoor activities along the Denali Park Road corridor west of Park Headquarters? A new Alpine Tundra webcam, perched high atop a shoulder of Mount Healy along the park’s Outer Range, offers a westward perspective for several miles beyond the entrance area. Snow and extreme conditions may obscure the view at times. The image is set to refresh several times each minute.</p>
-                          </div>
-                        </div>
-                        </div>
-                </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 content-container">
+          <div class="col-md-12 contain">
+            <h1 class="page-title">Alpine Tundra Webcam</h1>
+            <a href="/dena/">Denali National Monument</a>
+            <div class="webcam-image">
+              <img alt="Sunlight and clouds cross a valley and mountainsides" class="img-responsive" src="http://www.nps.gov/webcams-dena/alpine.jpg?2015023144657&amp;201502314477">
             </div>
+            <div class="webcam-description">
+              <p>Have you ever wanted to check conditions for hiking, skiing, and other outdoor activities along the Denali Park Road corridor west of Park Headquarters? A new Alpine Tundra webcam, perched high atop a shoulder of Mount Healy along the park’s Outer Range, offers a westward perspective for several miles beyond the entrance area. Snow and extreme conditions may obscure the view at times. The image is set to refresh several times each minute.</p>
+            </div>
+          </div>
         </div>
-        <!-- end of main central container -->
-    
-    
-    
-    
-    
-    
-        <div class="webcamFooter"></div>
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://www.nps.gov/npmap/bootstrap/3.2.0/dist/js/nps-bootstrap.min.js"></script>
-    <script src="assets/libs/slick/slick.min.js"></script>
-    <script src="assets/libs/picturefill.min.js" async></script>
-    <!--<script src="assets/libs/colorbox/colorbox.min.js"></script>-->
-    <script src="assets/js/global.js"></script>
-    <script src="assets/js/app.js"></script>
-    
-    <script src="assets/js/readmore.js"></script>
-    <script src="assets/js/threespot.js"></script>
-
-</body>
-
+  </body>
 </html>

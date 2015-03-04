@@ -1,5 +1,3 @@
-/* globals Modernizr */
-
 var NPS = NPS || {};
 
 NPS.cycle = {
