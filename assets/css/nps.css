@@ -1,7 +1,10 @@
 @charset "utf-8";
 
-/* MODERN CLEARFIX */
-/* this is a clearfix to make parents expand with their children. Doesn't work in IE7 */
+/**
+ * Utilities
+ */
+
+/* Modern clearfix - Doesn't work in IE7 */
 .group:after {
   clear: both;
   content: '';
@@ -12,7 +15,7 @@
   display: none;
   visibility: hidden;
 }
-/* Hide only visually, but have it available for screenreaders */
+/* Hide visually, but make it available for screenreaders */
 .visuallyhidden {
   clip: auto;
   height: auto;
@@ -32,7 +35,7 @@
   position: absolute;
   width: 1px;
 }
-  /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard */
+  /* Extends .visuallyhidden to allow the element to be focusable when navigated to via the keyboard */
   .visuallyhidden.focusable:active,
   .visuallyhidden.focusable:focus {
     clip: auto;
@@ -47,6 +50,10 @@
 .invisible {
   visibility: hidden;
 }
+
+/**
+ * Base
+ */
 /* Gets rid of the extra space at right on small viewports */
 html,
 body {
@@ -58,14 +65,16 @@ body {
   background-image: none;
   font: 14px/1.42857 arial,helvetica,sans-serif;
 }
-.wallpaper-parks {
-  background: none
-}
 @media (min-width: 992px) {
   body {
     background-image: url(../img/bg/blackbarBG.png);
     background-repeat: repeat-x;
   }
+}
+.wallpaper-parks {
+  background: none;
+}
+@media (min-width: 992px) {
   .wallpaper-parks {
     background: #f5f0dd url(../img/chrome/wallpapers/parks.jpg) no-repeat scroll center bottom;
     margin: 0;
@@ -80,12 +89,12 @@ body {
   margin: 0 0 20px 0;
   padding-bottom: 18px;
 }
-.page-title.park-title {
-  border-bottom: none;
-  font-size: 26px;
-  margin-bottom: 12px;
-  padding-bottom: 0;
-}
+  .page-title.park-title {
+    border-bottom: none;
+    font-size: 26px;
+    margin-bottom: 12px;
+    padding-bottom: 0;
+  }
 .landing-intro {
   margin-bottom: 20px
 }
@@ -120,6 +129,7 @@ h3,
   font-weight: bold;
   margin-bottom: 10px;
 }
+/* Added for Commonspot */
 .headered-box h2 {
   background-color: #5e7630;
   background-repeat: repeat-x;
@@ -157,17 +167,18 @@ a {
   color: #936a00;
   text-decoration: none;
 }
-a.more:after {
-  content: '\A0\BB';
-}
-a.back:before {
-  content: '\00AB\A0';
-}
-a:hover,
-a:active {
-  color: #b17f00;
-  text-decoration: underline;
-}
+  a:hover,
+  a:active {
+    color: #b17f00;
+    text-decoration: underline;
+  }
+  a.more:after {
+    content: '\A0\BB';
+  }
+  a.back:before {
+    content: '\00AB\A0';
+  }
+
 .content-container a:link {
   text-decoration: underline;
 }
@@ -1302,10 +1313,7 @@ a:active {
       border-top: none;
       padding-top: 0;
     }
-a.more:after {
-  content: '\A0\BB';
-}
-/* mobile quick links */
+/* Mobile quick links */
 .mobileQuicklinks ul li {
   padding: 0;
 }
@@ -1402,93 +1410,7 @@ ul.related-promo-list {
   width: 688px;
   zoom: 1;
 }
-/* More content area on subject sites */
-.MoreContentSpacer {
-  display: inline-block;
-  margin: 0;
-}
-.MoreContentContainer {
-  background-color: #5e7630;
-  border: none;
-  margin: 0;
-  padding: 0 0 30px 0;
-  width: 100%;
-}
-@media (min-width: 992px) {
-  .MoreContentContainer {
-    padding: 0;
-    width: 719px;
-  }
-}
-.MoreContentHeader {
-  background-color: #506429;
-  margin: 0;
-}
-  .MoreContentHeader h2 {
-    color: #ffffff;
-    margin: 0;
-    padding: 10px 0 10px 23px;
-  }
-.MoreContent {
-  background-color: #5e7630;
-  display: inline-block;
-  margin: 0;
-  padding: 12px 5px;
-}
-  .MoreContent h5 {
-    color: #ffe195;
-    font-size: 11px;
-    font-weight: bold;
-    margin-bottom: 4px;
-  }
-.MoreContentList {
-  display: inline-block;
-  padding: 0 22px;
-}
-.MoreContentItem {
-  float: left;
-  width: 100%;
-}
-.MoreContentLast {
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .MoreContentItem,
-  .MoreContentLast {
-    float: left;
-    width: 210px;
-  }
-  .MoreContentItem {
-    background: url(/responsive-redesign/assets/img/bg/borderForMoreContentBox.png) repeat-y right;
-  }
-  .MoreContentLast {
-    margin-right: 0 !important;
-  }
-}
-.MoreContentList li {
-  line-height: 19px;
-  list-style: none;
-  margin-right: 15px;
-  padding-right: 5px;
-}
-.MoreContentList ul {
-  border-color: white;
-  padding-left: 0;
-}
-.MoreContentList li li {
-  float: inherit;
-  margin-bottom: 4px;
-  margin-right: 0;
-}
-.MoreContentList ul a {
-  color: #fff;
-  font-weight: bold;
-}
-.MoreContentList ul .all {
-  font-size: 12px;
-  font-weight: normal;
-}
-/* Mobile Footer */
+/* Mobile footer */
 .footer-mobile {
   background-color: black;
   padding: 30px 20px 50px 20px;
@@ -1590,7 +1512,8 @@ ul.related-promo-list {
     margin-top: 0;
   }
 }
-/* Styles for Subject Site pages */
+
+/* Subject site styles */
 .subjectSiteContent {
   padding-right: 20px;
 }
@@ -1600,12 +1523,88 @@ ul.related-promo-list {
 #npsNav {
   margin-top: -3px;
 }
-/* WEBCAM LISTINGS PAGE */
-.webcamItem {
-    padding:0;
+.MoreContentSpacer {
+  display: inline-block;
+  margin: 0;
 }
-@media (max-width: 767px) {
-  .webcamItem {
-    margin-top: 20px;
+.MoreContentContainer {
+  background-color: #5e7630;
+  border: none;
+  margin: 0;
+  padding: 0 0 30px 0;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .MoreContentContainer {
+    padding: 0;
+    width: 719px;
   }
+}
+.MoreContentHeader {
+  background-color: #506429;
+  margin: 0;
+}
+  .MoreContentHeader h2 {
+    color: #fff;
+    margin: 0;
+    padding: 10px 0 10px 23px;
+  }
+.MoreContent {
+  background-color: #5e7630;
+  display: inline-block;
+  margin: 0;
+  padding: 12px 5px;
+}
+  .MoreContent h5 {
+    color: #ffe195;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+.MoreContentList {
+  display: inline-block;
+  padding: 0 22px;
+}
+.MoreContentItem {
+  float: left;
+  width: 100%;
+}
+.MoreContentLast {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .MoreContentItem,
+  .MoreContentLast {
+    float: left;
+    width: 210px;
+  }
+  .MoreContentItem {
+    background: url(/responsive-redesign/assets/img/bg/borderForMoreContentBox.png) repeat-y right;
+  }
+  .MoreContentLast {
+    margin-right: 0 !important;
+  }
+}
+.MoreContentList li {
+  line-height: 19px;
+  list-style: none;
+  margin-right: 15px;
+  padding-right: 5px;
+}
+.MoreContentList ul {
+  border-color: white;
+  padding-left: 0;
+}
+.MoreContentList li li {
+  float: inherit;
+  margin-bottom: 4px;
+  margin-right: 0;
+}
+.MoreContentList ul a {
+  color: #fff;
+  font-weight: bold;
+}
+.MoreContentList ul .all {
+  font-size: 12px;
+  font-weight: normal;
 }

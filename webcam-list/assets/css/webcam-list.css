@@ -12,19 +12,27 @@
   margin-left: 15px;
   margin-bottom: 8px;
 }
-.floatingImage p {
-  padding: 0;
-  margin: 0;
+  .floatingImage p {
+    padding: 0;
+    margin: 0;
+  }
+    .floatingImage p.credit {
+      color: #727163;
+      font-size: 11px;
+    }
+    .floatingImage p.caption {
+      color: #5A712D;
+      font-size: 11px;
+      margin-bottom: 4px;
+    }
+.webcamItem {
+    padding:0;
 }
-.floatingImage p.credit {
-  color: #727163;
-  font-size: 11px;
-}
-.floatingImage p.caption {
-  color: #5A712D;
-  font-size: 11px;
-  margin-bottom: 4px;
-}
-.webcamItem ul {
-  padding-left: 0;
+  .webcamItem ul {
+    padding-left: 0;
+  }
+@media (max-width: 767px) {
+  .webcamItem {
+    margin-top: 20px;
+  }
 }
