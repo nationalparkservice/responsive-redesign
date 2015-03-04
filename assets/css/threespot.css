@@ -628,6 +628,10 @@
       font-size: 13px;
       line-height: 1.5;
     }
+    .gallery-content .photoData p {
+        margin: 0;
+        padding: 0;
+    }
 
     @media screen and (max-width: 768px) {
       .gallery-content .photoData {
