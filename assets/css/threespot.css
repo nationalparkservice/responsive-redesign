@@ -633,6 +633,10 @@
         margin: 0;
         padding: 0;
     }
+    .photoData .galleryDescription {
+        font-size: 14px;
+    }
+
 
     @media screen and (max-width: 768px) {
       .gallery-content .photoData {
@@ -650,9 +654,6 @@
       font-size: 11px;
       padding: 4px 0;
       margin-top: 10px;
-    }    
-    .gallery-content .photoDownload .galleryChooser {
-      font-size: 12px;
     }
 
     @media screen and (max-width: 768px) {
