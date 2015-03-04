@@ -180,9 +180,6 @@ a:active {
 .content-container a:active {
   text-decoration: underline;
 }
-.parkAlerts {
-  margin: 5px 0 5px 0;
-}
 /* parent container for left nav and main content area */
 .middleContentArea {
   background-color: #f9f7f1;
@@ -676,6 +673,88 @@ a:active {
     .utils .print a:hover {
       background-position: 0 -14px
     }
+/* Alerts */
+#alert {
+  height: 26px;
+  margin-top: -23px;
+  width: 500px;
+}
+.alert-top {
+  background: transparent url("/responsive-redesign/common/commonspot/templates/images/chrome/bg/content-top-alert.png") no-repeat left top;
+  height: 4px;
+  margin-left: -5px;
+  width: 725px;
+}
+.alert-bottom {
+  background-color: #e7e6e0;
+  height: 1px;
+  width: 719px;
+}
+#alert-container {
+  margin-bottom: -6px;
+  z-index: 1;
+}
+#alert a {
+  color: #9f240c;
+  display: block;
+  float: left;
+  font-size: 10px;
+  font-weight: bold;
+  margin: 9px 0 0 10px;
+  text-transform: uppercase;
+}
+#alert-box {
+  background: transparent url("/responsive-redesign/common/commonspot/templates/images/chrome/bg/alert-box-no-text.png") no-repeat left top;
+  color: #fff;
+  cursor: pointer;
+  float: left;
+  font-weight: bold;
+  font-size: 85%;
+  height: 26px;
+  margin-left: 17px;
+  margin-right: 0;
+  padding: 7px 0 0 31px;
+  width: 220px;
+}
+#content-alert {
+  border-left: 1px solid #dfdbca;
+  border-right: 1px solid #dfdbca;
+  box-shadow: 0 0 3px #cecece;
+  color: #464646;
+  display: none;
+  width: 719px;
+}
+#alert-message {
+  background: transparent url("/responsive-redesign/common/commonspot/templates/images/chrome/bg/alert-gradient.png") no-repeat left top;
+  padding: 8px 22px 4px;
+}
+  #alert-message h5 {
+    margin-bottom: 9px;
+    margin-top: 10px;
+  }
+  #alert-message .emergency {
+    color: #b72a0e;
+  }
+  #alert-message ul {
+    border-bottom: 1px dotted #bdbbb1;
+    padding-left: 0;
+  }
+  #alert-message .last {
+    border-bottom: none;
+  }
+  #alert-message li {
+    line-height: 17px;
+    margin-bottom: 12px;
+  }
+  #alert-message li h4 {
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+  #alert-message li p {
+    font-size: 12px;
+    margin-top: 4px;
+  }
 /* Carousel */
 .carouselRow {
   margin-bottom: 20px
@@ -1520,90 +1599,6 @@ ul.related-promo-list {
 }
 #npsNav {
   margin-top: -3px;
-}
-/* Tiles */
-.tiles {
-  margin: 0 0 0 10px;
-  padding: 0;
-}
-@media (min-width: 992px) {
-  .tiles {
-    width: 692px;
-  }
-}
-.tiles li {
-  float: left;
-  list-style: none outside none;
-  height: 262px;
-  margin: 0 0 19px 0;
-  padding: 0;
-  position: relative;
-  margin-right: 10px;
-  width: 336px;
-}
-.tiles .title {
-  background: url("http://www.nps.gov/common/commonspot/templates/images/bg/transparent-70.png") repeat scroll 0 0 transparent;
-  bottom: 0;
-  margin: 13px 11px;
-  padding: 8px 13px;
-  position: absolute;
-  width: 288px;
-}
-.tiles .title h3 {
-  color: #ffffff;
-  font-size: 24px;
-  line-height: 30px;
-  margin: 0px;
-}
-.tiles .description a {
-  font-size: 16px;
-}
-.tiles li:hover {
-  cursor: pointer;
-}
-.tiles img {
-  display: block;
-  height: 262px;
-  width: 336px;
-}
-.tiles .show-info {
-  background: url("http://www.nps.gov/common/commonspot/templates/images/bg/tile-info.jpg") repeat scroll 0 0 transparent;
-  height: 262px;
-  padding: 32px 28px;
-  width: 336px;
-}
-.tiles .show-info .title {
-  background: none;
-  bottom: auto;
-  margin: 0px;
-  padding: 0px;
-  position: relative;
-  width: auto;
-}
-.tiles .show-info h3 {
-  color: #464646;
-  margin-bottom: 13px;
-}
-.tiles .show-info .description p {
-  color: #706d5f;
-  font-size: 16px; 
-  line-height: 22px;
-}
-.tiles .show-info .description a {
-  font-weight: bold;
-}
-.tiles .show-info img {
-  display: none;
-}
-.tilesPageTitle {
-  margin: 0 10px 0 20px;
-}
-.tilesTitle h2 {
-  color: #5e7630;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  margin-top: 20px;
 }
 /* WEBCAM LISTINGS PAGE */
 .webcamItem {
