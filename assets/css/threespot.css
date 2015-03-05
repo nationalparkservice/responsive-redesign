@@ -636,7 +636,12 @@
         margin-top: 8px;
     }
     .galleryChooserText {
-        clear:both
+        clear:both;
+    }
+    @media screen and (max-width: 768px) {
+        .galleryChooserText {
+            margin-bottom: 30px;
+        }
     }
     .numberOfPhotos {
         font-size: 12px;
