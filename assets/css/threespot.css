@@ -624,10 +624,29 @@
       }
     }
 
-    .gallery-content .photoData {
+    .gallery-content .photoData p {
       font-size: 13px;
       line-height: 1.5;
+        margin: 0;
+        padding: 0;
     }
+    .photoData .galleryChooserDescription {
+        font-size: 18px;
+        border-top: solid 1px #dfdcdb;
+        margin-top: 8px;
+    }
+    .galleryChooserText {
+        clear:both;
+    }
+    @media screen and (max-width: 768px) {
+        .galleryChooserText {
+            margin-bottom: 30px;
+        }
+    }
+    .numberOfPhotos {
+        font-size: 12px;
+    }
+
 
     @media screen and (max-width: 768px) {
       .gallery-content .photoData {
