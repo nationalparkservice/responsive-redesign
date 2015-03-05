@@ -624,17 +624,22 @@
       }
     }
 
-    .gallery-content .photoData {
+    .gallery-content .photoData p {
       font-size: 13px;
       line-height: 1.5;
-    }
-    .gallery-content .photoData p {
-        font-size: 12px;
         margin: 0;
         padding: 0;
     }
-    .photoData .galleryDescription {
+    .photoData .galleryChooserDescription {
         font-size: 18px;
+        border-top: solid 1px #dfdcdb;
+        margin-top: 8px;
+    }
+    .galleryChooserText {
+        clear:both
+    }
+    .numberOfPhotos {
+        font-size: 12px;
     }
 
 
