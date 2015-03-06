@@ -455,14 +455,19 @@ a {
     display: block !important;
   }
 }
+
+
+
+.img-responsive {
+  width: 100%;
+}
+
+
 /* Small Banner */
 .bap-mobile {
   overflow: hidden;
   position: relative;
   z-index: 1;
-}
-.img-responsive {
-  width: 100%;
 }
   .bap-mobile .title {
     /* Creates the solid bg for IE8 */
