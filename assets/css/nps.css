@@ -94,9 +94,15 @@ body {
 .page-title {
   border-bottom: 1px solid #d8d8d8;
   color: #464646;
-  font: normal 32px/1.1 Georgia, "Times New Roman", Times, serif;
+  /*font: normal 32px/1.1 Georgia, "Times New Roman", Times, serif;*/
+  font: normal 24px/1.1 Georgia, serif;
   margin: 0 0 20px 0;
   padding-bottom: 18px;
+}
+@media (min-width: 768px) {
+  .page-title {
+    font: normal 32px/1.1 Georgia, serif;
+  }
 }
   .page-title.park-title {
     border-bottom: none;
@@ -726,7 +732,7 @@ a {
   float: left;
   font-size: 10px;
   font-weight: bold;
-  margin: 9px 0 0 10px;
+  margin: 6px 0 0 10px;
   text-transform: uppercase;
 }
 #alert-box {
@@ -1416,7 +1422,8 @@ ul.related-promo-list {
 .fact p,
 .content-container .fact p {
   color: #706D5F;
-  font: italic 14px/20px Georgia, "Times New Roman", Times, serif;
+  /*font: italic 14px/20px Georgia, "Times New Roman", Times, serif;*/
+  font: italic 14px/20px Georgia, serif;
   margin-bottom: 0;
 }
 .adjusted-for-fact .fact {
@@ -1654,45 +1661,44 @@ ul.related-promo-list {
 }
 .subjectWidget .title-wrapper {
     background-color: #fff;
-	border: 1px solid #DADADA;
+  border: 1px solid #DADADA;
 }
 .subjectWidget .title {
     padding: 9px 12px 9px 15px;
 }
 .subjectWidget .title h3 {
-    color: #706d5f;
-	font-size: 13px;
-	text-align: center;
-    text-transform: uppercase;
-    line-height: 19px;
-    margin: 0;
-    padding: 0 0 0 5px;
-    font-family: 'Georgia';
+  color: #706d5f;
+  font-size: 13px;
+  line-height: 19px;
+  margin: 0;
+  padding: 0 0 0 5px;
+  text-align: center;
+  text-transform: uppercase;
 }
 .subjectWidget .title p {
-	font-size: 11px;
-	font-style: italic;
-	text-align: center;
-	margin-bottom: 4px;
-    font-family: 'Georgia', serif;
+  font-family: Georgia, serif;
+  font-size: 11px;
+  font-style: italic;
+  margin-bottom: 4px;
+  text-align: center;
 }
 .subjectWidget .content {
-    padding: 10px 10px 0 10px;
+  padding: 10px 10px 0 10px;
 }
 .subjectWidget .content p {
-	line-height: 18px;
+  line-height: 18px;
 }
 .subject .widgetImage {
     float:none;
 }
-    @media (min-width: 768px) {
-        .subjectWidget .widgetImage {
-            float: left;
-            width: 40%;
-        }
-    }
+@media (min-width: 768px) {
+  .subjectWidget .widgetImage {
+    float: left;
+    width: 40%;
+  }
+}
 .subject .linkText {
-    float:none;
+  float:none;
 }
     @media (min-width: 768px) {
         .subjectWidget .linkText {
@@ -1711,8 +1717,8 @@ ul.related-promo-list {
     width: 120px;
 }
 .ie8 .subjectWidget input[type="text"], .ie7 .columns-3 .column input[type="text"] {
-	padding-top: 3px;
-	height: 18px;
+  padding-top: 3px;
+  height: 18px;
 }
 .subjectWidget select {
     border: 1px solid #C9C9C9;
@@ -1720,7 +1726,7 @@ ul.related-promo-list {
     font-size: 13px;
     float: left;
     height: 22px;
-	margin: 0 8px 0 0;
+  margin: 0 8px 0 0;
     padding: 1px;
     width: 131px;
 }
@@ -1731,16 +1737,16 @@ ul.related-promo-list {
     padding: 0 9px;
 }
 #tweet {
-	font-size: 12px;
-	font-style: italic;
-	min-height: 45px;
+  font-size: 12px;
+  font-style: italic;
+  min-height: 45px;
 }
 #tweet p {
-	line-height: 16px;
-	margin-bottom: 12px;
+  line-height: 16px;
+  margin-bottom: 12px;
 }
 .subjectWidget .twitter {
-	margin-top: 3px;
+  margin-top: 3px;
     padding-left: 2px;
 }
 .subjectWidget .tweeter-icon {
@@ -1756,27 +1762,27 @@ ul.related-promo-list {
     padding-left: 9px;
 }
 .subjectWidget .twitter-info p {
-	color: #706d5f;
-	font-size: 13px;
-	font-weight: bold;
-	margin: 0px;
+  color: #706d5f;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0px;
 }
 .subjectWidget .twitter-bird {
-	background: url("/common/commonspot/templates/images/icons/twitter-bird-small.png") no-repeat 0px 2px transparent;
-	font-size: 10px;
-	font-weight: normal;
-	color: #42c8f4;
-	padding-left: 18px;
+  background: url("/common/commonspot/templates/images/icons/twitter-bird-small.png") no-repeat 0px 2px transparent;
+  font-size: 10px;
+  font-weight: normal;
+  color: #42c8f4;
+  padding-left: 18px;
 }
 .subjectWidget .twitter-bird:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 .loading {
-	background: url("/common/commonspot/templates/images/graphics/loader.gif") no-repeat scroll 0 0 transparent;
-	height: 11px;
-	display: block;
-	margin: auto;
-	width: 16px;
+  background: url("/common/commonspot/templates/images/graphics/loader.gif") no-repeat scroll 0 0 transparent;
+  height: 11px;
+  display: block;
+  margin: auto;
+  width: 16px;
 }
 
 /* Shared Content Pages */
