@@ -1585,6 +1585,7 @@ ul.related-promo-list {
 }
 .MoreContentLast {
   width: 100%;
+  float:left; /* added by JBF to fix a spacing issue in the narrowest view.  */
 }
 @media (min-width: 768px) {
   .MoreContentItem,
