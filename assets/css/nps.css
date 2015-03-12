@@ -1634,15 +1634,15 @@ ul.related-promo-list {
     padding: 2px 2px 0 2px;
     margin:0 0 30px 0;
     min-height: 140px;
+    max-width: 300px;
     background: url(../../subject-widgets/assets/img/subjectWidgetborder.png) repeat-x left top;
 }
     @media (min-width: 768px) {
         .subjectWidgetBorder {
             margin:0;
+            max-width: none;
         }
     }
-
-
 .subjectWidget {
     margin:0;
     padding: 10px;
@@ -1683,7 +1683,7 @@ ul.related-promo-list {
 .subject .widgetImage {
     float:none;
 }
-    @media (min-width: 720px) {
+    @media (min-width: 768px) {
         .subjectWidget .widgetImage {
             float: left;
             width: 40%;
@@ -1692,7 +1692,7 @@ ul.related-promo-list {
 .subject .linkText {
     float:none;
 }
-    @media (min-width: 720px) {
+    @media (min-width: 768px) {
         .subjectWidget .linkText {
             float: right;
             width: 60%;
