@@ -357,7 +357,8 @@ a {
   }
 .nav > li > a {
   font-size: 13px;
-  padding: 6px 15px;
+  /*padding: 6px 15px;*/
+  padding: 6px 19px;
 }
 /* Desktop */
 .desktop-nav .navbar-collapse {
