@@ -1590,7 +1590,7 @@ ul.cycle{
 #right .more-links {
 	
 }
-.more-links h3 {
+div.more-links h3 {
 	background-color: #506429;
 	color: #FFFFFF;
 	font-weight: bold;
@@ -1598,32 +1598,32 @@ ul.cycle{
 	margin-bottom: 0px;
 	padding: 2px 8px;
 }
-.more-links h4 {
+div.more-links h4 {
 	color: #5e7630;
 	font-size: 11px;
 	margin-top: 13px;
 	padding-left: 9px;
 	text-transform: uppercase;
 }
-.more-links ul {
+div.more-links ul {
 	border-bottom: 1px dotted #bdbbb1;
 	margin: 0 9px;
 	padding-bottom: 8px;
 }
-.more-links ul.last {
+div.more-links ul.last {
 	border: none;
 }
-.more-links li {
+div.more-links li {
 	font-size: 13px;
     line-height: 18px;
     list-style: none outside none;
     padding-bottom: 5px;
 }
-.more-links a {
+div.more-links a {
 	color: #7f7565;
 	font-weight: bold;
 }
-.more-links a.all {
+div.more-links a.all {
 	font-weight: normal;
 }
 
