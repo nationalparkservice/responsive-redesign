@@ -320,9 +320,10 @@ a {
   margin-bottom: 0;
   min-height: 30px;
 }
-.navbar-default .navbar-nav > li > a:focus,
-.navbar-default .navbar-nav > li > a:hover {
-  background-color: #b28000 !important;
+.navbar-default .navbar-nav > li > a.active,
+.navbar-default .navbar-nav > li > a.active:focus,
+.navbar-default .navbar-nav > li > a.active:hover {
+  background-color: #b66619;
 }
 .navbar a.navbar-brand {
   padding: 9px 15px 8px;
@@ -384,6 +385,7 @@ a {
     padding: 15px;
   }
   .navbar-mobile h2 {
+    margin: 0;
     padding: 0 0 10px 0;
   }
   .navbar-mobile ul {
@@ -394,6 +396,9 @@ a {
   }
   .navbar-mobile li {
     padding: 3px 0 0;
+  }
+  .navbar-mobile li.active {
+    background-color: #b66619;
   }
     .navbar-mobile li a {
       color: #fff;
@@ -523,6 +528,7 @@ a {
 }
 .bap-mobile .sub h3 {
   color: #000;
+  font-family: inherit;
   font-size: 14px;
   font-weight: bold;
   line-height: 28px;
