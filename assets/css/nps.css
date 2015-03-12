@@ -1777,3 +1777,15 @@ ul.related-promo-list {
 	margin: auto;
 	width: 16px;
 }
+
+/* Shared Content Pages */
+.sharedContent {
+       
+}
+.sharedContentLeft {
+    background-color: red;
+}
+.sharedContentRight {
+    background-color: green;
+       
+}
