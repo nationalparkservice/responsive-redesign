@@ -455,14 +455,19 @@ a {
     display: block !important;
   }
 }
+
+
+
+.img-responsive {
+  width: 100%;
+}
+
+
 /* Small Banner */
 .bap-mobile {
   overflow: hidden;
   position: relative;
   z-index: 1;
-}
-.img-responsive {
-  width: 100%;
 }
   .bap-mobile .title {
     /* Creates the solid bg for IE8 */
@@ -1580,6 +1585,7 @@ ul.related-promo-list {
 }
 .MoreContentLast {
   width: 100%;
+  float:left; /* added by JBF to fix a spacing issue in the narrowest view.  */
 }
 @media (min-width: 768px) {
   .MoreContentItem,
@@ -1616,4 +1622,158 @@ ul.related-promo-list {
 .MoreContentList ul .all {
   font-size: 12px;
   font-weight: normal;
+}
+
+
+
+
+
+
+/* Subject Widgets */
+
+.subjectWidgetBorder {
+    padding: 2px 2px 0 2px;
+    margin:0 0 30px 0;
+    min-height: 140px;
+    max-width: 300px;
+    background: url(../../subject-widgets/assets/img/subjectWidgetborder.png) repeat-x left top;
+}
+    @media (min-width: 768px) {
+        .subjectWidgetBorder {
+            margin:0;
+            max-width: none;
+        }
+    }
+.subjectWidget {
+    margin:0;
+    padding: 10px;
+    min-height: 140px;
+    background: url(../../subject-widgets/assets/img/subjectWidgetBG.png) repeat-x left top;
+    background-color: white;
+}
+.subjectWidget .title-wrapper {
+    background-color: #fff;
+	border: 1px solid #DADADA;
+}
+.subjectWidget .title {
+    padding: 9px 12px 9px 15px;
+}
+.subjectWidget .title h3 {
+    color: #706d5f;
+	font-size: 13px;
+	text-align: center;
+    text-transform: uppercase;
+    line-height: 19px;
+    margin: 0;
+    padding: 0 0 0 5px;
+    font-family: 'Georgia';
+}
+.subjectWidget .title p {
+	font-size: 11px;
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 4px;
+    font-family: 'Georgia', serif;
+}
+.subjectWidget .content {
+    padding: 10px 10px 0 10px;
+}
+.subjectWidget .content p {
+	line-height: 18px;
+}
+.subject .widgetImage {
+    float:none;
+}
+    @media (min-width: 768px) {
+        .subjectWidget .widgetImage {
+            float: left;
+            width: 40%;
+        }
+    }
+.subject .linkText {
+    float:none;
+}
+    @media (min-width: 768px) {
+        .subjectWidget .linkText {
+            float: right;
+            width: 60%;
+        }
+    }
+.subjectWidget input[type="text"] {
+    color: #464646;
+    float: left;
+    font-size: 13px;
+    font-weight: normal;
+    height: 20px;
+    margin: 0 8px 0 0;
+    padding: 0 4px;
+    width: 120px;
+}
+.ie8 .subjectWidget input[type="text"], .ie7 .columns-3 .column input[type="text"] {
+	padding-top: 3px;
+	height: 18px;
+}
+.subjectWidget select {
+    border: 1px solid #C9C9C9;
+    color: #464646;
+    font-size: 13px;
+    float: left;
+    height: 22px;
+	margin: 0 8px 0 0;
+    padding: 1px;
+    width: 131px;
+}
+.subjectWidget .sq-btn {
+    float: left;
+    font-weight: bold;
+    height: 22px;
+    padding: 0 9px;
+}
+#tweet {
+	font-size: 12px;
+	font-style: italic;
+	min-height: 45px;
+}
+#tweet p {
+	line-height: 16px;
+	margin-bottom: 12px;
+}
+.subjectWidget .twitter {
+	margin-top: 3px;
+    padding-left: 2px;
+}
+.subjectWidget .tweeter-icon {
+    background: url("/common/commonspot/templates/images/bg/cw-reporter.jpg") no-repeat scroll left top transparent;
+    float: left;
+    height: 39px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    width: 39px;
+}
+.subjectWidget .twitter-info {
+    float: left;
+    padding-left: 9px;
+}
+.subjectWidget .twitter-info p {
+	color: #706d5f;
+	font-size: 13px;
+	font-weight: bold;
+	margin: 0px;
+}
+.subjectWidget .twitter-bird {
+	background: url("/common/commonspot/templates/images/icons/twitter-bird-small.png") no-repeat 0px 2px transparent;
+	font-size: 10px;
+	font-weight: normal;
+	color: #42c8f4;
+	padding-left: 18px;
+}
+.subjectWidget .twitter-bird:hover {
+	text-decoration: underline;
+}
+.loading {
+	background: url("/common/commonspot/templates/images/graphics/loader.gif") no-repeat scroll 0 0 transparent;
+	height: 11px;
+	display: block;
+	margin: auto;
+	width: 16px;
 }
