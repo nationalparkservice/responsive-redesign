@@ -1800,6 +1800,12 @@ ul.related-promo-list {
 .sharedContent {
 }
 .sharedContentLeft {
+    width: 100%;
+}
+@media (min-width: 900px) {
+    .sharedContentLeft {
+        width:638px;
+    }
 }
 .sharedContentRight {
     margin:0;
