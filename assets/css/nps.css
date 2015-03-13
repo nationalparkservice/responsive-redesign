@@ -1825,46 +1825,46 @@ ul.related-promo-list {
         } 
     }
 .park-name-tags {
-	border-bottom: 1px solid #d8d8d8;
-	margin: 0 0 20px 0;
-	padding-bottom: 18px;
+  border-bottom: 1px solid #d8d8d8;
+  margin: 0 0 20px 0;
+  padding-bottom: 18px;
 }
 .more-links h3 {
-	background-color: #506429;
-	color: #FFFFFF;
-	font-weight: bold;
-	font-size: 16px;
-	margin-bottom: 0px;
-	padding: 5px 5px 5px 10px;
+  background-color: #506429;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 0px;
+  padding: 5px 5px 5px 10px;
 }
 .more-links h4 {
-	color: #5e7630;
-	font-size: 14px;
+  color: #5e7630;
+  font-size: 14px;
     font-weight: normal;
-	margin-top: 13px;
-	padding-left: 9px;
-	text-transform: uppercase;
+  margin-top: 13px;
+  padding-left: 9px;
+  text-transform: uppercase;
 }
 .more-links ul {
-	border-bottom: 1px dotted #bdbbb1;
-	margin: 0 9px;
-	padding-bottom: 8px;
+  border-bottom: 1px dotted #bdbbb1;
+  margin: 0 9px;
+  padding-bottom: 8px;
 }
 .more-links ul.last {
-	border: none;
+  border: none;
 }
 .more-links li {
-	font-size: 14px;
+  font-size: 14px;
     line-height: 18px;
     list-style: none outside none;
     padding-bottom: 5px;
 }
 .more-links a {
-	color: #7f7565;
-	font-weight: bold;
+  color: #7f7565;
+  font-weight: bold;
 }
 .more-links a.all {
-	font-weight: normal;
+  font-weight: normal;
 }
 
 
