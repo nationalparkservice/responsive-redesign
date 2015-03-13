@@ -360,11 +360,15 @@ a {
     background-color: #916800;
     color: #fff;
   }
-.nav > li > a {
-  font-size: 13px;
-  /*padding: 6px 15px;*/
-  padding: 6px 18px;
+.nav > li {
+  text-align: center;
 }
+  .nav > li > a {
+    font-size: 13px;
+    /*padding: 6px 15px;*/
+    /*padding: 6px 18px;*/
+    padding: 6px 0;
+  }
 /* Desktop */
 .desktop-nav .navbar-collapse {
   padding: 0;
@@ -462,6 +466,7 @@ a {
   }
   .navbar-nav > li {
     float: none;
+    text-align: center;
   }
   .navbar-nav > li > a {
     padding-bottom: 10px;
@@ -571,7 +576,7 @@ a {
       letter-spacing: -0.7px;
       line-height: 79px;
       margin: 0;
-      padding: 0 0 0 23px;
+      padding: 0 0 0 25px;
     }
 .no-js .bap .bapTitleBox h1 {
   line-height: 1.1;
@@ -1085,7 +1090,7 @@ a {
     margin: 0;
     margin-bottom: 0;
     padding-bottom: 15px;
-    padding-left: 27px;
+    padding-left: 25px;
   }
   #sub-nav ul {
     padding: 5px 25px;
