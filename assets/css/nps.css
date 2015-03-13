@@ -1801,6 +1801,26 @@ ul.related-promo-list {
   margin: 0 0 20px 0;
   padding-bottom: 18px;
 }
+.shared-people-text {
+    clear:left;
+}
+    @media (max-width: 625px) {
+        .shared-people-text {
+            clear:none;
+        }
+    }
+.shared-people-img {
+    max-width: 340px;
+    float:right;
+    margin: 0 0 0 20px;
+}
+    @media (max-width: 625px) {
+        .shared-people-img {
+            float:none;
+            width:100%;
+            margin: 0;
+        }
+    }
 .more-links {
     margin: 20px 0 0 0;
 }
@@ -1853,12 +1873,32 @@ ul.related-promo-list {
     margin-bottom: 16px;
     padding: 23px;
     width: 234px;
+    min-width: 234px;
 }
-    @media (max-width: 500px) {
+    @media (max-width: 625px) {
         .quick-list {
             width: 100%
         }
     }
+
+
+.quick-list.ql-people {
+    float:left;
+    margin-left:0px;
+}
+    @media (max-width: 841px) {
+        .quick-list.ql-people {
+            float:right;
+            margin-left: 20px;
+        }
+    }
+    @media (max-width: 767px) {
+        .quick-list.ql-people {
+            float:none;
+            margin-left: 0;
+        }
+    }
+
 .quick-list h4 {
 	color: #706d5f;
 	font-size: 14px;
