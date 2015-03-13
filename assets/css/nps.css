@@ -730,13 +730,8 @@ a {
 .alert-top {
   background: transparent url("/responsive-redesign/common/commonspot/templates/images/chrome/bg/content-top-alert.png") no-repeat left top;
   height: 4px;
-  margin-left: -5px;
-  width: 725px;
-}
-.alert-bottom {
-  background-color: #e7e6e0;
-  height: 1px;
-  width: 719px;
+  margin-left: -2px;
+  width: 724px;
 }
 #alert-container {
   margin-bottom: -6px;
@@ -770,7 +765,7 @@ a {
   box-shadow: 0 0 3px #cecece;
   color: #464646;
   display: none;
-  width: 719px;
+  width: 718px;
 }
 #alert-message {
   background: transparent url("/responsive-redesign/common/commonspot/templates/images/chrome/bg/alert-gradient.png") no-repeat left top;
