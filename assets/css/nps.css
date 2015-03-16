@@ -1974,7 +1974,7 @@ ul.related-promo-list {
     }
 .table-wrapper {
   max-width: 100%;
-  overflow-x: auto;
+  overflow-x: scroll;
 }
 
 p.credit {
