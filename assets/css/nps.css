@@ -274,24 +274,27 @@ a {
   }
 }
 /* Logo */
-@media screen and (min-width: 768px) {
-  .logo {
-    background-image: url(../img/chrome/logos/main-logoMedium.png);
-    background-repeat: no-repeat;
-    height: 40px;
-    margin-bottom: .8em;
-    margin-left: 6px;
-    margin-top: 1em;
-  }
+.logo {
+  background-repeat: no-repeat;
 }
 @media screen and (min-width: 992px) {
   .logo {
-    background-image: url(../img/chrome/logos/main-logo.png);
-    background-repeat: no-repeat;
-    height: 51px;
+    background-image: url(../img/chrome/logos/main-logo@2x.png);
+    background-size: 324px 53px;
+    height: 53px;
     margin-top: 1.0em;
     margin-bottom: 1.4em;
     margin-left: 6px;
+  }
+}
+@media (max-width: 768px) {
+  .logo {
+    background-image: url(../img/chrome/logos/main-logo-small@2x.png);
+    background-size: 200px 32.5px;
+    height: 32.5px;
+    margin-left: 15px;
+    margin-top: 10px;
+    width: 200px;
   }
 }
 .logo a {
