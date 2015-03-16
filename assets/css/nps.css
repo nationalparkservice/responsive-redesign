@@ -72,7 +72,7 @@ body {
 body {
   background-color: #f5f0dd;
   background-image: none;
-  /*font: 14px/1.42857 arial,helvetica,sans-serif;*/
+  font: 14px/1.42857 arial,helvetica,sans-serif;
 }
 @media (min-width: 992px) {
   body {
