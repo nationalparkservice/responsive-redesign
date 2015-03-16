@@ -516,6 +516,7 @@ a {
   }
 }
 .bap-mobile .title h1 {
+  font-family: arial,helvetica,sans-serif;
   font-size: 30px;
   font-weight: normal;
   letter-spacing: -0.7px;
@@ -573,6 +574,7 @@ a {
     height: 79px;
   }
     .bap .bapTitleBox h1 {
+      font-family: arial,helvetica,sans-serif;
       font-size: 40px;
       font-weight: normal;
       letter-spacing: -0.7px;
