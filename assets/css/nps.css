@@ -94,14 +94,13 @@ body {
 .page-title {
   border-bottom: 1px solid #d8d8d8;
   color: #464646;
-  /*font: normal 32px/1.1 Georgia, "Times New Roman", Times, serif;*/
   font: normal 24px/1.1 Georgia, serif;
   margin: 0 0 20px 0;
   padding-bottom: 18px;
 }
 @media (min-width: 768px) {
   .page-title {
-    font: normal 32px/1.1 Georgia, serif;
+    font-size: 32px;
   }
 }
   .page-title.park-title {
@@ -197,7 +196,6 @@ a {
   a.back:before {
     content: '\00AB\A0';
   }
-
 .content-container a:link {
   text-decoration: underline;
 }
@@ -368,8 +366,6 @@ a {
 }
   .nav > li > a {
     font-size: 13px;
-    /*padding: 6px 15px;*/
-    /*padding: 6px 18px;*/
     padding: 6px 0;
   }
 /* Desktop */
@@ -479,9 +475,6 @@ a {
     display: block !important;
   }
 }
-
-
-
 .img-responsive {
   width: 100%;
 }
@@ -732,7 +725,7 @@ a {
   width: 500px;
 }
 .alert-top {
-  background: transparent url("/responsive-redesign/common/commonspot/templates/images/chrome/bg/content-top-alert.png") no-repeat left top;
+  background: transparent url(/responsive-redesign/common/commonspot/templates/images/chrome/bg/content-top-alert.png) no-repeat left top;
   height: 4px;
   margin-left: -2px;
   width: 724px;
@@ -751,7 +744,7 @@ a {
   text-transform: uppercase;
 }
 #alert-box {
-  background: transparent url("/responsive-redesign/common/commonspot/templates/images/chrome/bg/alert-box-no-text.png") no-repeat left top;
+  background: transparent url(/responsive-redesign/common/commonspot/templates/images/chrome/bg/alert-box-no-text.png) no-repeat left top;
   color: #fff;
   cursor: pointer;
   float: left;
@@ -772,7 +765,7 @@ a {
   width: 718px;
 }
 #alert-message {
-  background: transparent url("/responsive-redesign/common/commonspot/templates/images/chrome/bg/alert-gradient.png") no-repeat left top;
+  background: transparent url(/responsive-redesign/common/commonspot/templates/images/chrome/bg/alert-gradient.png) no-repeat left top;
   padding: 8px 22px 4px;
 }
   #alert-message h5 {
@@ -1083,6 +1076,7 @@ a {
   #sub-nav h2 {
     border-bottom: 1px solid #e4e2dd;
     color: #804711;
+    font-family: arial,helvetica,sans-serif;
     font-size: 16px;
     font-weight: bold;
     line-height: 25px;
@@ -1092,21 +1086,21 @@ a {
     padding-left: 25px;
   }
   #sub-nav ul {
-    padding: 5px 25px;
     list-style-type: none;
+    padding: 5px 25px;
   }
   #sub-nav li {
     border-top: 1px solid #e4e2dd;
     line-height: 14px;
   }
   #sub-nav li:first-child {
-    border: none
+    border: none;
   }
   #sub-nav li ul {
-    padding: 0 0 4px 15px
+    padding: 0 0 4px 15px;
   }
   #sub-nav li li {
-    border: none
+    border: none;
   }
   #sub-nav a {
     color: #737062;
@@ -1117,7 +1111,7 @@ a {
     padding: 7px 0;
   }
   #sub-nav a:hover {
-    color: #706d5f
+    color: #706d5f;
   }
   #sub-nav a.active,
   #sub-nav .sub a.active {
@@ -1140,10 +1134,10 @@ a {
   }
   #sub-nav .park-tools {
     -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
     background-color: #fff;
     border: 1px solid #e4e3df;
-    border-radius: 5px;
     margin: 24px 0 0 25px;
     width: 158px;
   }
@@ -1163,7 +1157,7 @@ a {
       padding: 2px 0 4px 30px;
     }
     #sub-nav .park-tools li:first-child {
-      border-bottom: 1px solid #E4E3DF;
+      border-bottom: 1px solid #e4e3df;
       margin-bottom: 8px;
       padding-bottom: 17px;
       padding-top: 4px;
@@ -1176,7 +1170,7 @@ a {
   #sub-nav .share li:first-child {
     border: none;
     padding: 2px 0 3px 30px;
-    margin: 0px;
+    margin: 0;
   }
   #sub-nav .find-us {
     -webkit-border-radius: 5px;
@@ -1196,7 +1190,7 @@ a {
       padding: 2px 0 0 6px;
     }
     #sub-nav .find-us ul {
-      padding: 16px 10px 10px
+      padding: 16px 10px 10px;
     }
     #sub-nav .find-us li a {
       margin-bottom: 2px;
@@ -1222,70 +1216,70 @@ a {
       padding-left: 26px;
     }
     #sub-nav .social-connect li a:hover {
-      text-decoration: underline
+      text-decoration: underline;
     }
   #sub-nav .social-connect .cwu-facebook a {
-    background-position: 0 -2px
+    background-position: 0 -2px;
   }
   #sub-nav .social-connect .cwu-facebook a:hover {
-    background-position: 0 -125px
+    background-position: 0 -125px;
   }
   #sub-nav .social-connect .cwu-flickr a {
-    background-position: 0 -73px
+    background-position: 0 -73px;
   }
   #sub-nav .social-connect .cwu-flickr a:hover {
-    background-position: 0 -196px
+    background-position: 0 -196px;
   }
   #sub-nav .social-connect .cwu-more a {
-    background-position: 0 -97px
+    background-position: 0 -97px;
   }
   #sub-nav .social-connect .cwu-more a:hover {
-    background-position: 0 -220px
+    background-position: 0 -220px;
   }
   #sub-nav .social-connect .cwu-twitter a {
-    background-position: 0 -26px
+    background-position: 0 -26px;
   }
   #sub-nav .social-connect .cwu-twitter a:hover {
-    background-position: 0 -149px
+    background-position: 0 -149px;
   }
   #sub-nav .social-connect .cwu-youtube a {
-    background-position: 0 -49px
+    background-position: 0 -49px;
   }
   #sub-nav .social-connect .cwu-youtube a:hover {
-    background-position: 0 -173px
+    background-position: 0 -173px;
   }
   #sub-nav .share .facebook {
-    background-position: 5px 3px
+    background-position: 5px 3px;
   }
   #sub-nav .share .twitter {
-    background-position: 5px -16px
+    background-position: 5px -16px;
   }
   #sub-nav .share .youtube {
-    background-position: 5px -37px
+    background-position: 5px -37px;
   }
   #sub-nav .share .flickr {
-    background-position: 5px -56px
+    background-position: 5px -56px;
   }
   #sub-nav .park-tools .timeline {
-    background-position: 0px 0px
+    background-position: 0 0;
   }
   #sub-nav .park-tools .faqs {
-    background-position: 2px -31px
+    background-position: 2px -31px;
   }
   #sub-nav .park-tools .context {
-    background-position: 2px -51px
+    background-position: 2px -51px;
   }
   #sub-nav .park-tools .index {
-    background-position: 2px -71px
+    background-position: 2px -71px;
   }
   #sub-nav .park-tools .spanish {
-    background-position: 2px -92px
+    background-position: 2px -92px;
   }
   #sub-nav .park-tools li:first-child a {
-    font-size: 14px
+    font-size: 14px;
   }
   #sub-nav .share li:first-child a {
-    font-size: 12px
+    font-size: 12px;
   }
   #sub-nav .tags {
     margin: 35px 0 0 26px;
@@ -1299,7 +1293,7 @@ a {
       padding: 0;
     }
     #sub-nav .tags ul {
-      padding: 0
+      padding: 0;
     }
     #sub-nav .tags li {
       border-top: medium none;
@@ -1309,8 +1303,8 @@ a {
     }
     #sub-nav .tags a {
       -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      border-radius: 3px;
+         -moz-border-radius: 3px;
+              border-radius: 3px;
       background: none repeat scroll 0 0 #fff;
       color: #7f7565;
       display: block;
@@ -1337,13 +1331,13 @@ a {
     border-top: 1px solid #ededec;
     list-style-type: none;
     margin-bottom: 5px;
-    padding-top: 5px;
     padding-left: 12px;
+    padding-top: 5px;
   }
     .quickLinks li a {
+      color: #b28000;
       font-size: 12px;
       font-weight: bold;
-      color: #b28000;
     }
     .quickLinks li:first-child {
       border-top: none;
@@ -1407,7 +1401,7 @@ ul.related-promo-list {
 /* Fact */
 .fact,
 .content-container .fact {
-  background: url("http://www.nps.gov/common/commonspot/templates/images/bg/divider.png") no-repeat scroll center top transparent;
+  background: url(http://www.nps.gov/common/commonspot/templates/images/bg/divider.png) no-repeat scroll center top transparent;
   clear: both;
   color: #7f7565;
   margin-bottom: 20px;
@@ -1437,7 +1431,6 @@ ul.related-promo-list {
 .fact p,
 .content-container .fact p {
   color: #706D5F;
-  /*font: italic 14px/20px Georgia, "Times New Roman", Times, serif;*/
   font: italic 14px/20px Georgia, serif;
   margin-bottom: 0;
 }
@@ -1450,12 +1443,12 @@ ul.related-promo-list {
 /* Mobile footer */
 .footer-mobile {
   background-color: black;
-  padding: 30px 20px 50px 20px;
   display: inline-block;
+  padding: 30px 20px 50px 20px;
   width: 100%;
 }
   .footer-mobile .logo {
-    background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/logos/footer-logo.png") no-repeat scroll #000;
+    background: url(http://www.nps.gov/common/commonspot/templates/images/chrome/logos/footer-logo.png) no-repeat scroll #000;
     float: left;
     height: 59px;
     margin-top: -8px;
@@ -1463,13 +1456,13 @@ ul.related-promo-list {
     width: 46px;
   }
   .footer-mobile .text-logo {
-    background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/logos/text-logo.png") no-repeat scroll 0 0 transparent;
+    background: url(http://www.nps.gov/common/commonspot/templates/images/chrome/logos/text-logo.png) no-repeat scroll 0 0 transparent;
     float: left;
     height: 28px;
     width: 176px;
   }
   .footer-mobile .slogan {
-    background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/logos/slogan.png") no-repeat scroll 0 0 transparent;
+    background: url(http://www.nps.gov/common/commonspot/templates/images/chrome/logos/slogan.png) no-repeat scroll 0 0 transparent;
     float: right;
     height: 12px;
     margin-top: 14px;
@@ -1516,7 +1509,7 @@ ul.related-promo-list {
   }
 }
 .footer-mobile .social {
-  float:left;
+  float: left;
   margin-left: 20px;
   margin-right: 0;
   margin-top: 20px;
@@ -1525,22 +1518,22 @@ ul.related-promo-list {
     margin-bottom: 7px;
   }
   .footer-mobile .social a {
-    color: #ffffff;
+    color: #fff;
     font-size: 12px;
     padding-left: 26px;
   }
   .footer-mobile .social .facebook {
-    background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 0 4px transparent;
+    background: url(http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png) no-repeat scroll 0 4px transparent;
   }
   .footer-mobile .social .twitter {
-    background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 0 -20px transparent;
+    background: url(http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png) no-repeat scroll 0 -20px transparent;
   }
   .footer-mobile .social .youtube {
-    background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 4px -42px transparent;
+    background: url(http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png) no-repeat scroll 4px -42px transparent;
     padding-left: 15px;
   }
   .footer-mobile .social .itunes {
-    background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png") no-repeat scroll 4px -66px transparent;
+    background: url(http://www.nps.gov/common/commonspot/templates/images/chrome/utils/social_v2.png) no-repeat scroll 4px -66px transparent;
     padding-left:15px;
   }
 @media (min-width: 768px) {
@@ -1607,8 +1600,8 @@ ul.related-promo-list {
   width: 100%;
 }
 .MoreContentLast {
+  float: left; /* added by JBF to fix a spacing issue in the narrowest view.  */
   width: 100%;
-  float:left; /* added by JBF to fix a spacing issue in the narrowest view.  */
 }
 @media (min-width: 768px) {
   .MoreContentItem,
@@ -1647,39 +1640,33 @@ ul.related-promo-list {
   font-weight: normal;
 }
 
-
-
-
-
-
 /* Subject Widgets */
-
 .subjectWidgetBorder {
-    padding: 2px 2px 0 2px;
-    margin:0 0 30px 0;
-    min-height: 140px;
-    max-width: 300px;
-    background: url(../../subject-widgets/assets/img/subjectWidgetborder.png) repeat-x left top;
+  padding: 2px 2px 0 2px;
+  margin:0 0 30px 0;
+  min-height: 140px;
+  max-width: 300px;
+  background: url(../../subject-widgets/assets/img/subjectWidgetborder.png) repeat-x left top;
 }
-    @media (min-width: 768px) {
-        .subjectWidgetBorder {
-            margin:0;
-            max-width: none;
-        }
+  @media (min-width: 768px) {
+    .subjectWidgetBorder {
+      margin: 0;
+      max-width: none;
     }
+  }
 .subjectWidget {
-    margin:0;
-    padding: 10px;
-    min-height: 140px;
-    background: url(../../subject-widgets/assets/img/subjectWidgetBG.png) repeat-x left top;
-    background-color: white;
+  margin:0;
+  padding: 10px;
+  min-height: 140px;
+  background: url(../../subject-widgets/assets/img/subjectWidgetBG.png) repeat-x left top;
+  background-color: white;
 }
 .subjectWidget .title-wrapper {
-    background-color: #fff;
+  background-color: #fff;
   border: 1px solid #DADADA;
 }
 .subjectWidget .title {
-    padding: 9px 12px 9px 15px;
+  padding: 9px 12px 9px 15px;
 }
 .subjectWidget .title h3 {
   color: #706d5f;
@@ -1765,7 +1752,7 @@ ul.related-promo-list {
     padding-left: 2px;
 }
 .subjectWidget .tweeter-icon {
-    background: url("/common/commonspot/templates/images/bg/cw-reporter.jpg") no-repeat scroll left top transparent;
+    background: url(/common/commonspot/templates/images/bg/cw-reporter.jpg) no-repeat scroll left top transparent;
     float: left;
     height: 39px;
     margin-bottom: 8px;
@@ -1783,7 +1770,7 @@ ul.related-promo-list {
   margin: 0px;
 }
 .subjectWidget .twitter-bird {
-  background: url("/common/commonspot/templates/images/icons/twitter-bird-small.png") no-repeat 0px 2px transparent;
+  background: url(/common/commonspot/templates/images/icons/twitter-bird-small.png) no-repeat 0px 2px transparent;
   font-size: 10px;
   font-weight: normal;
   color: #42c8f4;
@@ -1793,7 +1780,7 @@ ul.related-promo-list {
   text-decoration: underline;
 }
 .loading {
-  background: url("/common/commonspot/templates/images/graphics/loader.gif") no-repeat scroll 0 0 transparent;
+  background: url(/common/commonspot/templates/images/graphics/loader.gif) no-repeat scroll 0 0 transparent;
   height: 11px;
   display: block;
   margin: auto;
@@ -1905,48 +1892,45 @@ ul.related-promo-list {
     }
 
 .quick-list h4 {
-	color: #706d5f;
-	font-size: 14px;
-	text-transform: uppercase;
+  color: #706d5f;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 .quick-list .result-details .dl-wrapper {
     margin-bottom: 3px;
 }
 
 .result-details {
-	font-size: 12px;
-	font-weight: bold;	
+  font-size: 12px;
+  font-weight: bold;
 }
 .result-details .dl-wrapper {
-	margin-bottom: 6px;
-	overflow: hidden;
+  margin-bottom: 6px;
+  overflow: hidden;
 }
 .display-list-view .result-details .dl-wrapper {
-	margin-bottom: 4px;
+  margin-bottom: 4px;
 }
 .result-details dt {
-	color: #7f7565;
-	clear: left;
-	display: block;
-	float: left;
-	font-size: 11px;
-	line-height: 15px;
-	margin: 1px 0 0 0;
-	padding-right: 5px;
-	text-transform: uppercase;
+  color: #7f7565;
+  clear: left;
+  display: block;
+  float: left;
+  font-size: 11px;
+  line-height: 15px;
+  margin: 1px 0 0 0;
+  padding-right: 5px;
+  text-transform: uppercase;
 }
 .result-details dd {
-	font-weight: normal;
-	font-size: 12px;
-	margin: 0 0 4px 0;
-	line-height: 16px;
+  font-weight: normal;
+  font-size: 12px;
+  margin: 0 0 4px 0;
+  line-height: 16px;
 }
-.js .result-details dd {	
-	display: inline;
+.js .result-details dd {
+  display: inline;
 }
-
-
-
 
 /* Text Wrapped Around an Image */
 .text-wrapped-around-image {
