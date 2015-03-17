@@ -69,6 +69,14 @@ body {
   overflow-x: hidden !important;
   width: auto !important;
 }
+/* NO GUTTER gets rid of the padding on rows and columns. Apply it to the row and the columns pick it up also */
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+
+
 body {
   background-color: #f5f0dd;
   background-image: none;
@@ -86,6 +94,17 @@ body {
 @media (min-width: 992px) {
   .wallpaper-parks {
     background: #f5f0dd url(../img/chrome/wallpapers/parks.jpg) no-repeat scroll center bottom;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+.wallpaper-home {
+  background: none;
+}
+@media (min-width: 992px) {
+  .wallpaper-home {
+    background: #f5f0dd url(http://www.nps.gov/pwr/templates/images/bg/page.gif) no-repeat scroll center top;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -1988,3 +2007,4 @@ p.caption {
     margin-bottom: 4px;
     margin-top: 8px;
 }
+
