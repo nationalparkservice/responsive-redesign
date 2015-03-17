@@ -526,7 +526,11 @@ a {
     position: absolute;
     width: 100%;
   }
+  .bap-mobile .small img {
+    height: 85px;
+  }
 }
+
 .bap-mobile .title h1 {
   font-family: arial,helvetica,sans-serif;
   font-size: 30px;
