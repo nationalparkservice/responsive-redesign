@@ -2057,3 +2057,5 @@ p.caption {
     vertical-align:bottom;
 }
 
+/* testing a table idea  */
+table, thead, tbody, th, td, tr { display: block; }
