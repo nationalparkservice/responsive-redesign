@@ -1,74 +1,55 @@
 
 /* NPS homepage nps-home styles */
-.homepageFaderBox {
-    float: none;
-    width:100%;
+
+.home-content-area {/* this is the style that's in the layout file */
+    background-color: white;
 }
-    @media (min-width: 782px) {
-        .homepageFaderBox {
-            float:left;
-            width: 70%;
-        }
-    }
-    @media (min-width: 992px) {
-        .homepageFaderBox {
-            float:left;
-            width:710px;
-        }
-    }
+
+.row-fader-tools {
+    background-color:  #916800;
+}
+
+
 .fader.homepageFader {
-    width:100%
+    width:100%;
+    padding-bottom:0;
+    margin-bottom:0;
 }
 
-.home-content-area {
-  background-color: #f9f7f1;
-}
-    @media (min-width: 992px) {
-      .home-content-area {
-        background-color: #f9f7f1;
-        border-bottom: 1px solid #dfdbca;
-        margin-bottom: 17px;
-        padding: 0;
-      }
-    }
 
-
-.home-content-topRow {
-    width: 100%;
-    height: 340px;
+.homeTools {
+    float:none;
     background-color: #916800;
+    padding: 0 20px 0 20px;
 }
-    .home-content-topRow H2{
+    @media (min-width:768px) {
+        .homeTools {
+            padding: 0 20px 0 20px;
+        }
+    }
+    @media (min-width:991px) {
+        .homeTools {
+          background: #916800 url(http://www.nps.gov/common/commonspot/templates/images/bg/tools02b_dark.gif) 0px -97px no-repeat;
+          padding: 10px 20px 0 20px;
+        }
+    }
+    .homeTools H2{
         font-size:16px;
         font-family: sans-serif;
         color: white;
         margin:0 0 10px 0;
         padding:0;
     }
-
-
-.homeTools {
-    float:none;
-    max-height: 340px;
+.toolsFindAPark {
+    float:left;
 }
-    @media (min-width:768px) {
-        .homeTools {
-            float:right;
-            padding: 0 20px 0 20px;
-            width:30%
-        }
-    }
     @media (min-width:991px) {
-        .homeTools {
-          float: right;
-          display: inline;
-          background: #916800 url(http://www.nps.gov/common/commonspot/templates/images/bg/tools02b_dark.gif) 0px -97px no-repeat;
-          padding: 10px 20px 0 20px;
-          width: 250px;
-          height:100%;
+        .toolsFindAPark {
+            float:none;
         }
     }
 .toolsSupport {
+    float:left;
     padding: 10px 0 15px 0;
     margin:0;
     border-top: 1px solid #BA8D1A;
@@ -80,11 +61,16 @@
         }
     }
 .toolsPass {
+    float:left;
     padding: 5px 0 5px 0;
     margin:0;
     border-top: 1px solid #BA8D1A;
 }
-
+    @media (min-width:991px) {
+        .toolsPass {
+            float:none;
+        }
+    }
 
 
 
@@ -102,31 +88,20 @@
         #search_form .submit, #find_park_form .submit { margin-left: 5px; margin-bottom: 5px;}
 
         #find_park_form select {
-			width: 156px;
+			width: 146px;
 			font-size: 12px;
 			line-height: 14px;
 			color: #666;
 			margin-bottom: 5px;
 			border: none;
 			vertical-align: middle;
-			padding: 2px;
-			padding-top: 3px;
+			padding: 3px 0 2px 2px;
         }
 
             body.small #find_park_form select { font-size: 10px; }
             body.large #find_park_form select { font-size: 16px; }
 
-        #search_form .query {
-            padding: 3px;
-            border: none;
-            font-size: 12px;
-            line-height: 14px;
-            color: #666;
-            width: 150px;
-            margin-bottom: 5px;
-        }
-
-        #search_form .advanced, #find_park_form .advanced {
+        #find_park_form .advanced {
             font-size: 10px;
             line-height: 16px;
             color: #fff;
@@ -134,17 +109,15 @@
             text-decoration: none;
         }
 
-            body.small #search_form .advanced, body.small #find_park_form .advanced {
+            body.small #find_park_form .advanced {
                 font-size: 10px;
             }
 
-            body.large #search_form .advanced, body.large #find_park_form .advanced {
+            body.large #find_park_form .advanced {
                 font-size: 13px;
             }
 
-            #find_park_form .advanced { width: 160px; }
-
-            #search_form .advanced:hover, #find_park_form .advanced:hover { text-decoration: underline; }
+            #find_park_form .advanced:hover { text-decoration: underline; }
 
 
 
@@ -152,9 +125,10 @@
 
 #news, #events {
     float: left;
-    width: 320px;
+    width: 100%;
     margin-right: 25px;
     border-bottom: 1px solid #cccccc;
+    background-color: white;
 }
 
 #events { margin-right: 20px; }
