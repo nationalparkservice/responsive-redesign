@@ -1,13 +1,18 @@
 
 /* NPS homepage nps-home styles */
 
-.home-content-area {/* this is the style that's in the layout file */
+.home-content-area {
     background-color: white;
 }
 
 .row-fader-tools {
-    background-color:  #916800;
+    background-color: #916800;
 }
+    @media (min-width:992px) {
+        .row-fader-tools {
+            background: none;
+        }
+    }
 
 
 .fader.homepageFader {
@@ -27,10 +32,11 @@
             padding: 0 20px 0 20px;
         }
     }
-    @media (min-width:991px) {
+    @media (min-width:992px) {
         .homeTools {
           background: #916800 url(http://www.nps.gov/common/commonspot/templates/images/bg/tools02b_dark.gif) 0px -97px no-repeat;
           padding: 10px 20px 0 20px;
+            height:348px;
         }
     }
     .homeTools H2{
@@ -123,26 +129,59 @@
 
 
 
-#news, #events {
-    float: left;
+.home-news {
     width: 100%;
-    margin-right: 25px;
-    border-bottom: 1px solid #cccccc;
-    background-color: white;
 }
-
-#events { margin-right: 20px; }
-
-    #news h2 span {
-        background: url(/pwr/home/images/titles/news.gif) top left no-repeat;
+    @media (min-width: 768px) {
+        .home-news {
+            padding: 0 0 0 20px;
+        }
+    }
+    @media (min-width: 992px) {
+        .home-news {
+            width:320px;
+            margin-left: 20px;
+            padding: 0 0 0 0;
+        }
+    }
+.home-events {
+    width: 100%;
+}
+    @media (min-width: 768px) {
+        .home-events {
+            padding: 0 0 0 20px;
+        }
+    }
+    @media (min-width: 992px) {
+        .home-events {
+            width:320px;
+            margin-left: 30px;
+            padding: 0 0 0 0;
+        }
+    }
+.home-ad-space {
+    width: 100%;
+}
+    @media (min-width: 768px) {
+        .home-ad-space {
+            padding: 20px 0 0 0;
+        }
+    }
+    @media (min-width: 992px) {
+        .home-ad-space {
+            padding: 20px 0 0 50px;
+        }
+    }
+    .home-news h2 span {
+        background: url(http://www.nps.gov/pwr/home/images/titles/news.gif) top left no-repeat;
         position: absolute;
         top: 10px; left: 0;
         height: 19px;
         width: 56px;
     }
 
-    #events h2 span {
-        background: url(/pwr/home/images/titles/events.gif) top left no-repeat;
+    .home-events h2 span {
+        background: url(http://www.nps.gov/pwr/home/images/titles/events.gif) top left no-repeat;
         position: absolute;
         top: 10px; left: 0;
         height: 18px;
@@ -150,7 +189,7 @@
     }
 
 .items {
-
+    margin-bottom: 20px;
 }
 
     .items h2 {
@@ -183,7 +222,7 @@
                 .items h2 small a:hover { text-decoration: underline; }
 
     .items ul {
-       padding-bottom: 10px;
+       padding: 0 0 10px 0;
     }
 
         .items li {
@@ -210,44 +249,49 @@
                 body.small .items li strong { font-size: 13px; }
                 body.large .items li strong { font-size: 19px; line-height: 22px; }
 
-#top_promo {
-    float: left;
-    width: 229px;
-    height: 225px;
-    border: 1px solid #cccccc;
+
+
+
+
+
+
+
+
+
+
+
+
+.home-multimedia {
+    margin-top: 20px;
 }
-
-    #top_promo img, #top_promo a { display: block; }
-
-#multimedia {
-    padding-top: 25px;
-    clear: both;
-    padding-bottom: 36px;
-    background: url(/pwr/templates/images/bg/multimedia_shadow.gif) bottom left no-repeat;
+.home-multimedia-title {
+    margin: 0 20px 0 20px;
+    padding: 10px 20px 0 20px;
+    height: 50px;
+    background-color: #f5f5f5;
+    border-top: 2px solid #b2b2b2;
+    border-bottom: 1px solid #acacac;
 }
-
-    #multimedia_content {
-        padding-top: 14px;
-        background: #fff url(/pwr/templates/images/bg/multimedia_gradient.gif) top left repeat-x;
+    .home-multimedia-title h2 {
+        height: 21px;
+        margin: 0;
+        padding: 0;
+        float:left;
     }
-
-    #multimedia h2 {
-        padding-left: 20px;
-        border-bottom: 1px solid #acacac;
-        position: relative;
-        height: 29px;
-    }
-
-        #multimedia h2 span {
+.home-multimedia-title p {
+    float:right;
+    margin:0;
+    padding: 5px 0 0 0;
+}
+        .home-multimedia-title h2 span {
             position: absolute;
             display: block;
-            background: url(/pwr/templates/images/titles/photos_multimedia.gif) top left no-repeat;
-            top: 0; left: 20px;
+            background: url(http://www.nps.gov/pwr/templates/images/titles/photos_multimedia.gif) top left no-repeat;
             height: 21px;
             width: 214px;
         }
 
-        #multimedia h2 small {
+        .home-multimedia-title h2 small {
             position: absolute;
             bottom: 14px;
             right: 21px;
@@ -255,32 +299,42 @@
             font-size: 11px;
             line-height: 14px;
         }
-            body.small #multimedia h2 small { font-size: 10px; }
-            body.large #multimedia h2 small { font-size: 14px; line-height: 16px; }
+            body.small .home-multimedia h2 small { font-size: 10px; }
+            body.large .home-multimedia h2 small { font-size: 14px; line-height: 16px; }
 
-            #multimedia h2 small a {
+            .home-multimedia h2 small a {
                 text-decoration: none;
                 font-weight: normal;
                 color: #b28000;
             }
 
-                #multimedia h2 small a:hover {
+                .home-multimedia h2 small a:hover {
                     text-decoration: underline;
                 }
 
-        #multimedia #cols {
+
+
+
+.home-multimedia-features {
+    margin: 0 20px 0 20px;
+}
+@media (min-width:992px) {
+    .home-multimedia-features {
+        background: #f7f7f7 url(../feature-bottom-border.png) bottom left no-repeat;
+        height:320px
+    }
+}
+
+
+.home-multimedia-feature {
+    
+}
+    .home-multimedia-feature {
             margin-top: 16px;
             padding-left: 20px;
-            background: url(/pwr/templates/images/bg/multimedia_cols.gif) top left repeat-y;
         }
 
-            #multimedia #cols .col {
-                float: left; display: inline;
-                width: 160px;
-                margin-right: 19px;
-            }
-
-                #multimedia .col h3 {
+                .home-multimedia-feature h3 {
                     color: #707070;
                     text-transform: uppercase;
                     font-size: 12px;
@@ -288,52 +342,40 @@
                     font-weight: bold;
                     margin-bottom: 9px;
                 }
-                    body.small #multimedia .col h3 { font-size: 10px; }
-                    body.large #multimedia .col h3 { font-size: 19px; line-height: 22px; }
 
-                #multimedia .col a.image {
-                    display: block;
-                    margin-bottom: 8px;
+                .home-multimedia-feature p.caption {
+                    font-size: 12px;
+                    color: #666666;
+                    line-height: 14px;
+                    margin-bottom: 2px;
                 }
 
-                    #multimedia .col a.image img { display: block; }
-
-                #multimedia .col p.caption { font-size: 12px; color: #666666; line-height: 14px; margin-bottom: 2px; }
-                    body.small #multimedia .col p.caption { font-size: 10px; }
-                    body.large #multimedia .col p.caption { font-size: 15px; line-height: 18px;}
-
-                #multimedia .col h4 {
+                .home-multimedia-feature h4 {
                     color: #5e7630;
                     font-size: 18px;
                     line-height: 22px;
                     font-weight: normal;
                     margin-bottom: 6px;
                 }
-
-                    body.small #multimedia .col h4 { font-size: 15px; }
-                    body.large #multimedia .col h4 { font-size: 25px; line-height: 28px; }
-
-                    #multimedia .col h4 a {
+                    .home-multimedia-feature h4 a {
                         color: #5e7630;
                         text-decoration: none;
                     }
 
-                        #multimedia .col h4 a:hover {
+                        .home-multimedia-feature h4 a:hover {
                             text-decoration: underline;
                         }
 
-                #multimedia .col a.visit {
+                .home-multimedia-feature a.visit {
                     color: #b28000;
                     font-size: 12px;
                     text-decoration: none;
                 }
-
-                    body.small #multimedia .col a.visit { font-size: 10px; }
-                    body.large #multimedia .col a.visit { font-size: 15px; }
-
-                    #multimedia .col a.visit:hover {
+                    .home-multimedia-feature a.visit:hover {
                         text-decoration: underline;
                     }
+
+
 
 #promos {
     margin-top: 10px;
