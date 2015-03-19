@@ -1774,8 +1774,12 @@ ul.related-promo-list {
   margin-top: 3px;
     padding-left: 2px;
 }
+.message-border {
+  background: url(../../subject-widgets/assets/img/messageBorder1.png) no-repeat left top;
+  height: 12px;
+}
 .subjectWidget .tweeter-icon {
-    background: url(/common/commonspot/templates/images/bg/cw-reporter.jpg) no-repeat scroll left top transparent;
+    background: url(http://www.nps.gov/common/commonspot/templates/images/bg/cw-reporter.jpg) no-repeat scroll left top transparent;
     float: left;
     height: 39px;
     margin-bottom: 8px;
@@ -1793,7 +1797,7 @@ ul.related-promo-list {
   margin: 0px;
 }
 .subjectWidget .twitter-bird {
-  background: url(/common/commonspot/templates/images/icons/twitter-bird-small.png) no-repeat 0px 2px transparent;
+  background: url(http://www.nps.gov/common/commonspot/templates/images/icons/twitter-bird-small.png) no-repeat 0px 2px transparent;
   font-size: 10px;
   font-weight: normal;
   color: #42c8f4;
