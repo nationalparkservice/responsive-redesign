@@ -1820,6 +1820,41 @@ ul.related-promo-list {
   margin: 0 0 20px 0;
   padding-bottom: 18px;
 }
+
+.super-title {
+  background: url("http://www.nps.gov/common/commonspot/templates/images/bg/super-title.png") no-repeat scroll 0 0 transparent;
+  height: 28px;
+  margin-bottom: 17px;
+  margin-left: -8px;
+  margin-top: -5px;
+}
+    .super-title h3 {
+        background-color: #804711;
+        color: #FFFFFF;
+        float: left;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        margin-left: 6px;
+        margin-top: 8px;
+        padding: 0 8px 0 3px;
+        width: auto;
+    }
+.story-intro {
+  font-size: 18px;
+}
+
+.pull-quote blockquote {
+  font: italic 16px/24px Georgia, "Times New Roman", Times, serif;
+  padding: 8px 0 28px 25px;
+}
+    .pull-quote .citation {
+      display: block;
+      font: normal 11px/15px arial,helvetica,sans-serif;
+      margin-left: 40px;
+      margin-top: 12px;
+    }
+
 .shared-people-text {
     clear:left;
 }
