@@ -2096,3 +2096,39 @@ p.caption {
     vertical-align:bottom;
 }
 
+
+/* fixed ul's and ol's */
+
+.content-container ul{
+  list-style:outside disc;
+}
+.content-container ul,.content-container ol{
+  margin:0 0 1.5em 1.7em;
+  padding:0;
+}
+.content-container li ul,.content-container li ol{
+  padding:0;
+  margin:0 0 0 1.5em;
+}
+.content-container li ul li,.content-container li ol li{
+  margin:0;
+  
+}
+
+/* ul/ol style for the RTE..... */
+.commonspotRTE ul{
+  list-style:outside disc;
+}
+.commonspotRTE ul,.commonspotRTE ol{
+  margin:0 0 1.5em 1.5em;
+  padding:0;
+}
+.commonspotRTE li ul,.commonspotRTE li ol{
+  padding:0;
+  margin:0 0 0 1.5em;
+}
+.commonspotRTE li ul li,.commonspotRTE li ol li{
+  margin:0;
+  
+}
+
