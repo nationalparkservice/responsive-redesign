@@ -2004,7 +2004,7 @@ ul.related-promo-list {
 }
   @media (max-width: 767px) {
     .floating-image {
-      text-align: center !important;
+      text-align: left !important;
       width: 100% !important;
     }
   }
