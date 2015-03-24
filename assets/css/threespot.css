@@ -584,7 +584,7 @@
 
   .photo-gallery ul {
     padding: 0;
-    list-style:none;
+    list-style:none !important;
   }
 
   .photo-gallery li {
@@ -599,7 +599,7 @@
 
   .gallery-content {}
   #gallery-content {
-    list-style: none;
+    list-style: none !important;
   }
 
     .gallery-content .galleryItem {}
