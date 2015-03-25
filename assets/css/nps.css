@@ -1336,49 +1336,38 @@ a {
     padding: 4px 0 3px;
     border: none;
   }
-    #sub-nav .social-connect li a {
-      background: url(../img/chrome/connect-icons.gif) no-repeat;
-      color: #706d5f;
-      display: block;
-      font-size: 12px;
-      font-weight: bold;
-      height: 18px;
-      line-height: 14px;
-      padding-left: 26px;
-    }
-    #sub-nav .social-connect li a:hover {
-      text-decoration: underline;
-    }
-  #sub-nav .social-connect .cwu-facebook a {
-    background-position: 0 -2px;
-  }
-  #sub-nav .social-connect .cwu-facebook a:hover {
-    background-position: 0 -125px;
-  }
-  #sub-nav .social-connect .cwu-flickr a {
-    background-position: 0 -73px;
-  }
-  #sub-nav .social-connect .cwu-flickr a:hover {
-    background-position: 0 -196px;
-  }
-  #sub-nav .social-connect .cwu-more a {
-    background-position: 0 -97px;
-  }
-  #sub-nav .social-connect .cwu-more a:hover {
-    background-position: 0 -220px;
-  }
-  #sub-nav .social-connect .cwu-twitter a {
-    background-position: 0 -26px;
-  }
-  #sub-nav .social-connect .cwu-twitter a:hover {
-    background-position: 0 -149px;
-  }
-  #sub-nav .social-connect .cwu-youtube a {
-    background-position: 0 -49px;
-  }
-  #sub-nav .social-connect .cwu-youtube a:hover {
-    background-position: 0 -173px;
-  }
+   
+  #sub-nav .social-connect li a {
+  background: url("../img/chrome/nps_social_badges_2015_color.png") no-repeat;
+  color: #706d5f;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: bold;
+  padding-left: 26px;
+  height:20px;
+  display: block;
+}
+
+/* SM Icons */
+
+#sub-nav .social-connect .cwu-facebook a { background-position: 0 0; }
+
+#sub-nav .social-connect .cwu-twitter a { background-position: 0 -27px; }
+
+#sub-nav .social-connect .cwu-instagram a { background-position: 0 -54px; }
+
+#sub-nav .social-connect .cwu-youtube a { background-position: 0 -83px; }
+
+#sub-nav .social-connect .cwu-flickr a { background-position: 0 -112px; }
+
+#sub-nav .social-connect .cwu-tumblr a { background-position: 0 -140px; }
+
+#sub-nav .social-connect .cwu-foursquare a { background-position: 0 -170px; }
+
+#sub-nav .social-connect .cwu-pinterest a { background-position: 0 -200px; }
+
+#sub-nav .social-connect .cwu-more a { background-position: 0 -230px; }
+
   #sub-nav .share .facebook {
     background-position: 5px 3px;
   }
