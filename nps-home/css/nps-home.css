@@ -1,0 +1,433 @@
+
+/* NPS homepage nps-home styles */
+
+.home-content-area {
+    background-color: white;
+}
+
+.row-fader-tools {
+    background-color: #916800;
+}
+    @media (min-width:992px) {
+        .row-fader-tools {
+            background: none;
+        }
+    }
+
+
+.fader.homepageFader {
+    width:100%;
+    padding-bottom:0;
+    margin-bottom:0;
+}
+@media (min-width:768px) {
+    .fader.homepageFader {
+        width:100%;
+    }
+}
+@media (min-width:992px) {
+    .fader.homepageFader {
+        width:100%;
+        margin-bottom:30px;
+    }
+}
+
+
+.homeTools {
+    background-color: #916800;
+    padding: 0 20px 0 20px;
+    margin: 0 auto;
+    width: 100%;
+    height: 150px;
+}
+    @media (min-width:768px) {
+        .homeTools {
+        }
+    }
+    @media (min-width:992px) {
+        .homeTools {
+            background: #916800 url(http://www.nps.gov/common/commonspot/templates/images/bg/tools02b_dark.gif) 0px -97px no-repeat;
+            padding: 10px 20px 0 20px;
+            height:348px;
+        }
+    }
+    .homeTools H2{
+        font-size:16px;
+        font-family: sans-serif;
+        color: white;
+        margin:0 0 10px 0;
+        padding:0;
+    }
+.toolsFindAPark {
+    float:left;
+}
+    @media (min-width:991px) {
+        .toolsFindAPark {
+            float:none;
+        }
+    }
+.toolsSupport {
+    float:left;
+    padding: 10px 0 15px 0;
+    margin:0;
+}
+    @media (min-width:768px) {
+        .toolsSupport {
+            border-top: 1px solid #BA8D1A;
+        }
+    }
+    @media (min-width:991px) {
+        .toolsSupport {
+            margin:30px 0 0 0;
+        }
+    }
+.toolsPass {
+    float:left;
+    padding: 5px 0 5px 0;
+    margin:0;
+}
+    @media (min-width:768px) {
+        .toolsPass {
+            float:none;
+        }
+    }
+    @media (min-width:991px) {
+        .toolsPass {
+            float:none;
+        }
+    }
+
+
+
+    #search_form, #find_park_form {
+        display: block;
+        padding: 0 0 10px 0;
+        margin:0;
+        
+    }
+
+#search_form label, #find_park_form label { display: block; margin-bottom: 12px; }
+
+        #search_form input, #find_park_form input { display: inline; vertical-align: middle; }
+
+        #search_form .submit, #find_park_form .submit { margin-left: 5px; margin-bottom: 5px;}
+
+        #find_park_form select {
+			width: 146px;
+			font-size: 12px;
+			line-height: 14px;
+			color: #666;
+			margin-bottom: 5px;
+			border: none;
+			vertical-align: middle;
+			padding: 3px 0 2px 2px;
+        }
+
+            body.small #find_park_form select { font-size: 10px; }
+            body.large #find_park_form select { font-size: 16px; }
+
+        #find_park_form .advanced {
+            font-size: 10px;
+            line-height: 16px;
+            color: #fff;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+
+            body.small #find_park_form .advanced {
+                font-size: 10px;
+            }
+
+            body.large #find_park_form .advanced {
+                font-size: 13px;
+            }
+
+            #find_park_form .advanced:hover { text-decoration: underline; }
+
+
+
+.news-events-ad {
+    margin: 25px 0 0 0;
+}
+@media (min-width:768px) {
+    .news-events-ad {
+        margin: 25px 0 0 0;
+    }
+}
+@media (min-width:992px) {
+    .news-events-ad {
+        margin: 0 0 0 10px;
+    }
+}
+
+.home-news {
+    width: 90%;
+    margin:0 auto;
+}
+    @media (min-width: 768px) {
+        .home-news {
+            padding: 0 0 0 0;
+            width:110%
+        }
+    }
+    @media (min-width: 992px) {
+        .home-news {
+            width:330px;
+            padding: 0 0 0 0;
+            margin:0
+        }
+    }
+.home-events {
+    width: 90%;
+    margin:0 auto;
+}
+    @media (min-width: 768px) {
+        .home-events {
+            padding: 0 0 0 20px;
+            width:110%
+        }
+    }
+    @media (min-width: 992px) {
+        .home-events {
+            width:330px;
+            padding: 0 0 0 20px;
+            margin-left: 16px
+        }
+    }
+.home-ad-space {
+    width: 90%;
+    margin:0 auto;
+}
+    @media (min-width: 768px) {
+        .home-ad-space {
+            padding: 20px 0 0 0;
+        }
+    }
+    @media (min-width: 992px) {
+        .home-ad-space {
+            padding: 20px 0 0 30px;
+        }
+    }
+    .home-news h2 span {
+        background: url(http://www.nps.gov/pwr/home/images/titles/news.gif) top left no-repeat;
+        position: absolute;
+        top: 10px; left: 0;
+        height: 19px;
+        width: 56px;
+    }
+
+    .home-events h2 span {
+        background: url(http://www.nps.gov/pwr/home/images/titles/events.gif) top left no-repeat;
+        position: absolute;
+        top: 10px; left: 0;
+        height: 18px;
+        width: 65px;
+    }
+
+.items {
+    margin-bottom: 20px;
+}
+
+    .items h2 {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 10px 0 8px 0;
+        border-top: 2px solid #d1b366;
+        border-bottom: 1px solid #cccccc;
+        position: relative;
+        margin-bottom: 18px;
+    }
+
+        .items h2 small {
+            position: absolute;
+            bottom: 10px; right: 0;
+            font-size: 11px;
+            line-height: 14px;
+            color: #b28000;
+            font-weight: normal;
+        }
+
+            body.small .items h2 small { font-size: 10px; }
+            body.large .items h2 small { font-size: 14px; line-height: 16px; }
+
+            .items h2 small a {
+                color: #b28000;
+                text-decoration: none;
+            }
+
+                .items h2 small a:hover { text-decoration: underline; }
+
+    .items ul {
+       padding: 0 0 10px 0;
+    }
+
+        .items li {
+            margin-bottom: 10px;
+            font-size: 14px;
+            line-height: 18px;
+            color: #666666;
+        }
+
+            body.small .items li { font-size: 11px; }
+            body.large .items li { font-size: 17px; line-height: 20px; }
+
+            .items li a { display: block; text-decoration: none; color: #666;}
+            .items li a:hover strong { color: #d39800; }
+            .items li a:hover { color: #999; }
+
+            .items li strong {
+                display: block;
+                font-weight: bold;
+                color: #b28000;
+                font-size: 16px;
+                line-height: 20px;
+            }
+                body.small .items li strong { font-size: 13px; }
+                body.large .items li strong { font-size: 19px; line-height: 22px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.home-multimedia {
+    margin-top: 20px;
+}
+.home-multimedia-title {
+    margin: 0 20px 0 20px;
+    padding: 10px 20px 0 20px;
+    height: 50px;
+    background-color: #f5f5f5;
+    border-top: 2px solid #b2b2b2;
+    border-bottom: 1px solid #acacac;
+}
+    @media (max-width:768px) {
+        .home-multimedia-title {
+            margin:0;
+        }
+    }
+    .home-multimedia-title h2 {
+        height: 21px;
+        margin: 0;
+        padding: 0;
+        float:left;
+    }
+.home-multimedia-title p {
+    float:right;
+    margin:0;
+    padding: 5px 0 0 0;
+}
+        .home-multimedia-title h2 span {
+            position: absolute;
+            display: block;
+            background: url(http://www.nps.gov/pwr/templates/images/titles/photos_multimedia.gif) top left no-repeat;
+            height: 21px;
+            width: 214px;
+        }
+
+        .home-multimedia-title h2 small {
+            position: absolute;
+            bottom: 14px;
+            right: 21px;
+            color: #b28000;
+            font-size: 11px;
+            line-height: 14px;
+        }
+            body.small .home-multimedia h2 small { font-size: 10px; }
+            body.large .home-multimedia h2 small { font-size: 14px; line-height: 16px; }
+
+            .home-multimedia h2 small a {
+                text-decoration: none;
+                font-weight: normal;
+                color: #b28000;
+            }
+
+                .home-multimedia h2 small a:hover {
+                    text-decoration: underline;
+                }
+
+
+
+
+.home-multimedia-features {
+    margin: 0 20px 0 20px;
+}
+@media (min-width:992px) {
+    .home-multimedia-features {
+        background: #f7f7f7 url(../feature-bottom-border.png) bottom left no-repeat;
+        height:320px
+    }
+}
+
+
+.home-multimedia-feature {
+    
+}
+    .home-multimedia-feature {
+            margin-top: 16px;
+            padding-left: 20px;
+        }
+
+                .home-multimedia-feature h3 {
+                    color: #707070;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    line-height: 16px;
+                    font-weight: bold;
+                    margin-bottom: 9px;
+                }
+
+                .home-multimedia-feature p.caption {
+                    font-size: 12px;
+                    color: #666666;
+                    line-height: 14px;
+                    margin-bottom: 2px;
+                }
+
+                .home-multimedia-feature h4 {
+                    color: #5e7630;
+                    font-size: 18px;
+                    line-height: 22px;
+                    font-weight: normal;
+                    margin-bottom: 6px;
+                }
+                    .home-multimedia-feature h4 a {
+                        color: #5e7630;
+                        text-decoration: none;
+                    }
+
+                        .home-multimedia-feature h4 a:hover {
+                            text-decoration: underline;
+                        }
+
+                .home-multimedia-feature a.visit {
+                    color: #b28000;
+                    font-size: 12px;
+                    text-decoration: none;
+                }
+                    .home-multimedia-feature a.visit:hover {
+                        text-decoration: underline;
+                    }
+
+
+
+#promos {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+    #promos li { display: inline; margin-right: 15px;}
+
+        #promos li.last { margin-right: 0; }
+
+        #promos li a { display: inline;  }
+
+            #promos li img { border: 1px solid #ccc; }

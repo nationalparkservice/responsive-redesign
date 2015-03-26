@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <div class="container">
+      {% include black-bar-and-nav.html %}
+    </div>
+    <div class="wallpaper-home">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="home-content-area group">
+              {{ content }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include bottom.html %}
+  </body>
+</html>
