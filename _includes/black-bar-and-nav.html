@@ -142,10 +142,30 @@
     <div class="collapse navbar-collapse navbar-mobile">
       <div>
         <h2>Yosemite National Park</h2>
-        <ul>
+        <ul class="nav navbar-nav">
           <li><a href="/yose/">Park Home</a></li>
-          <li><a href="/yose/planyourvisit/">Plan Your Visit</a></li>
-          <li><a href="#">Photos &amp; Multimedia</a></li>
+          <li class="dropdown">
+            <!-- href="/yose/planyourvisit/" -->
+            <a aria-expanded="false" class="dropdown-toggle" href="#" data-toggle="dropdown" role="button">Plan Your Visit <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Photos &amp; Multimedia</a><ul>
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a><ul>
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a><ul>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+              </ul></li>
+              <li><a href="#">Something else here</a></li>
+            </ul></li>
+            <li><a href="#">Something else here</a></li>
+          </ul></li>
           <li><a href="#">History &amp; Culture</a></li>
           <li><a href="#">Nature &amp; Science</a></li>
           <li><a href="#">For Teachers</a></li>
@@ -156,7 +176,7 @@
           <li><a href="#">Bookstore</a></li>
         </ul>
         <h2>National Park Service</h2>
-        <ul>
+        <ul class="nav navbar-nav">
           <li><a href="/findapark/index.htm">Find a Park</a></li>
           <li class="dropdown">
             <a href="/history/" class="dropdown-toggle" data-toggle="dropdown">Discover History</a>
