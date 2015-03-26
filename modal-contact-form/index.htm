@@ -15,9 +15,9 @@ layout: wide
 
 
 <style>
-.fieldSpacer {
-    margin-below: 10px;   
-}
+    .form-group .required:after {
+        content:"*";color:red;
+    }
 </style>
 
 
@@ -54,7 +54,12 @@ layout: wide
           <form role="form">
               
               <div class="form-group">
-                  <label for="Email">Email address</label>
+                  <label class="required"></label>Required information
+              
+              </div>
+              
+              <div class="form-group">
+                  <label class="required" for="Email">Email address</label>
                   <input type="email" class="form-control" id="Email" placeholder="example@email.com">
               </div>
               
@@ -79,7 +84,7 @@ layout: wide
               </div>
               
               <div class="form-group">
-                  <label for="Message">Your Message</label>
+                  <label class="required" for="Message">Your Message</label>
                   <textarea class="form-control" rows="3" id="Message" placeholder="Type your message here"></textarea>
               </div>
               
