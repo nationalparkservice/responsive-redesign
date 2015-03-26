@@ -5,10 +5,10 @@
     <a class="logo" href="/" style="display:block;"></a>
   </div>
   <!-- SEARCH -->
-  <div class="col-md-3 search-large">
+  <div class="col-md-3 search">
     <form action="/search/index.htm" autocomplete="off" class="form-inline" id="global-search" method="get" role="form">
-      <label class="visuallyhidden" for="header-query">Search</label>
-      <input class="form-control" id="header-query" name="query" type="text">
+      <label class="visuallyhidden" for="search-query">Search</label>
+      <input class="form-control" id="search-query" name="query" type="text">
       <input name="siteLimit" type="hidden" value="nps.gov/yose">
       <input name="as_sfid" type="hidden" value="AAAAAAVIXgb9Jvp45gBKLe5jrkoUEnJcCTlr9kt2dN_NFij81tXP8FBI_-ESDDp0brr3KUVKPFM5m83ZgsAyV6VSm16f4mlK3Dte5DM_k2J3pFGOkQ==">
       <input name="as_fid" type="hidden" value="5sPXH0SK9fPvqhVCFP2L">
@@ -110,49 +110,41 @@
   </nav>
 </div>
 <!-- Mobile black bar and nav -->
-<div class="hidden-lg hidden-md mobile-black-bar">
+<div class="hidden-lg hidden-md">
   <nav class="navbar navbar-inverse" role="navigation">
     <div class="navbar-header">
       <a class="logo navbar-brand" href="/"></a>
-      <button class="navbar-toggle" data-target=".navbar-mobile" data-toggle="collapse" type="button">
+      <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <button class="navbar-toggle navbar-toggle-search-mobile" data-target=".search-mobile" data-toggle="collapse" type="button">
+      <button class="navbar-toggle" data-target="form.collapse" data-toggle="collapse" type="button">
         <span class="sr-only">Toggle search</span>
         <i class="fa fa-lg fa-search"></i>
       </button>
     </div>
-    <form action="/search/index.htm" autocomplete="off" class="collapse row search-mobile" method="get" role="form">
+    <form action="/search/index.htm" autocomplete="off" class="collapse row" method="get" role="form">
       <div class="form-group">
         <div class="input-group">
-          <label class="visuallyhidden" for="search-mobile-query">Search</label>
-          <input class="form-control" id="search-mobile-query" name="query" type="text">
+          <label class="visuallyhidden" for="search-query-mobile">Search</label>
+          <input class="form-control" id="search-query-mobile" name="query" type="text">
           <span class="input-group-btn">
             <button class="btn btn-default" type="submit">Search</button>
           </span>
         </div>
       </div>
-      <input name="siteLimit" type="hidden" value="nps.gov/yose">
-      <input name="as_sfid" type="hidden" value="AAAAAAVIXgb9Jvp45gBKLe5jrkoUEnJcCTlr9kt2dN_NFij81tXP8FBI_-ESDDp0brr3KUVKPFM5m83ZgsAyV6VSm16f4mlK3Dte5DM_k2J3pFGOkQ==">
       <input name="as_fid" type="hidden" value="5sPXH0SK9fPvqhVCFP2L">
+      <input name="as_sfid" type="hidden" value="AAAAAAVIXgb9Jvp45gBKLe5jrkoUEnJcCTlr9kt2dN_NFij81tXP8FBI_-ESDDp0brr3KUVKPFM5m83ZgsAyV6VSm16f4mlK3Dte5DM_k2J3pFGOkQ==">
+      <input name="siteLimit" type="hidden" value="nps.gov/yose">
     </form>
-    <div class="collapse navbar-collapse navbar-mobile">
+    <div class="collapse navbar-collapse">
       <div>
         <h2>Yosemite National Park</h2>
         <ul class="nav navbar-nav">
           <li><a href="/yose/">Park Home</a></li>
-          <li class="dropdown">
-            <!-- href="/yose/planyourvisit/" -->
-            <a aria-expanded="false" class="dropdown-toggle" href="#" data-toggle="dropdown" role="button">Plan Your Visit <span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-            </ul>
-          </li>
+          <li><a href="/yose/planyourvisit/">Plan Your Visit</a></li>
           <li><a href="#">Photos &amp; Multimedia</a><ul>
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a><ul>
