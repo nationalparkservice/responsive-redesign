@@ -330,6 +330,16 @@ a.back:before {
     width: 200px;
   }
 }
+@media (max-width: 401px) { 
+  .logo {
+    background-image: url(../img/chrome/logos/main-logo-tiny@2x.png);
+    background-size: 175px 28.5px;
+    height: 28.5px;
+    margin-left: 15px;
+    margin-top: 10px;
+    width: 175px;
+  }
+}
 .logo a {
   color: #000;
   font-size: 12px;
