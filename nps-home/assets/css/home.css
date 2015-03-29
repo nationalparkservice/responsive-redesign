@@ -1,0 +1,393 @@
+.home-content-area {
+  background-color: white;
+}
+.row-fader-tools {
+  background-color: #916800;
+}
+@media (min-width:992px) {
+  .row-fader-tools {
+    background: none;
+  }
+}
+.fader.homepageFader {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  width: 100%;
+}
+.homeTools {
+  background-color: #916800;
+  height: 150px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .homeTools {
+    background: #916800 url(http://www.nps.gov/common/commonspot/templates/images/bg/tools02b_dark.gif) 0 -97px no-repeat;
+    height: 349px;
+    padding: 10px 20px 0 20px;
+  }
+}
+  .homeTools h2 {
+    color: white;
+    font-size: 16px;
+    margin: 0 0 10px 0;
+    padding: 0;
+  }
+.toolsFindAPark {
+  float: left;
+}
+@media (min-width: 991px) {
+  .toolsFindAPark {
+    float: none;
+  }
+}
+.news-events-ad {
+  margin-top: 25px;
+}
+@media (min-width: 992px) {
+  .news-events-ad {
+    margin-left: 10px;
+  }
+}
+.items h2 {
+  border-top: 2px solid #d1b366;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 18px;
+  padding: 10px 0 8px 0;
+  position: relative;
+}
+  .items h2 small {
+    bottom: 13px;
+    color: #b28000;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 14px;
+    position: absolute;
+    right: 0;
+  }
+  /*
+  body.small .items h2 small {
+    font-size: 10px;
+  }
+  body.large .items h2 small {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  */
+    .items h2 small a {
+      color: #b28000;
+      text-decoration: none;
+    }
+      .items h2 small a:hover {
+        text-decoration: underline;
+      }
+.items ul {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 0 0 10px 0;
+}
+.items li {
+  color: #666666;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+  .items li a {
+    color: #666;
+    display: block;
+    text-decoration: none;
+  }
+    .items li a:hover {
+      color: #999;
+    }
+      .items li a:hover strong {
+        color: #d39800;
+      }
+/*
+body.small .items li {
+  font-size: 11px;
+}
+  body.small .items li strong {
+    font-size: 13px;
+  }
+body.large .items li {
+  font-size: 17px;
+  line-height: 20px;
+}
+  body.large .items li strong {
+    font-size: 19px;
+    line-height: 22px;
+  }
+*/
+  .items li strong {
+    color: #b28000;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+  }
+.home-news h2 span,
+.home-events h2 span {
+  left: 0;
+  position: absolute;
+  top: 10px;
+}
+.home-news h2 span {
+  background: url(http://www.nps.gov/pwr/home/images/titles/news.gif) top left no-repeat;
+  height: 19px;
+  width: 56px;
+}
+.home-events h2 span {
+  background: url(http://www.nps.gov/pwr/home/images/titles/events.gif) top left no-repeat;
+  height: 18px;
+  width: 65px;
+}
+.home-ad-space {
+  margin-left: 35px;
+}
+.home-multimedia {
+  background: url(http://www.nps.gov/pwr/templates/images/bg/multimedia_shadow.gif);
+  background-position: 40px 320px;
+  background-repeat: no-repeat;
+  background-size: 910px 21px;
+  margin-top: 5px;
+  padding-bottom: 36px;
+}
+.home-multimedia-title {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #acacac;
+  border-top: 2px solid #b2b2b2;
+  height: 50px;
+  margin: 0 25px;
+  padding: 10px 20px 0 20px;
+}
+@media (max-width:768px) {
+  .home-multimedia-title {
+    margin: 0;
+  }
+}
+  .home-multimedia-title h2 {
+    float: left;
+    height: 21px;
+    margin: 0;
+    padding: 0;
+  }
+  .home-multimedia-title p {
+    float: right;
+    margin: 0;
+    padding: 5px 0 0 0;
+  }
+  .home-multimedia-title h2 img {
+    margin-top: -2px;
+  }
+  .home-multimedia-title h2 span {
+    background: url(http://www.nps.gov/pwr/templates/images/titles/photos_multimedia.gif) top left no-repeat;
+    display: block;
+    height: 21px;
+    position: absolute;
+    width: 214px;
+  }
+  .home-multimedia-title h2 small {
+      font-size: 11px;
+      line-height: 14px;
+      position: absolute;
+      right: 63px;
+      top: 19px;
+  }
+    .home-multimedia h2 small a {
+      color: #b28000;
+      font-weight: normal;
+      text-decoration: none;
+    }
+      .home-multimedia h2 small a:hover {
+        text-decoration: underline;
+      }
+.home-multimedia-features {
+  margin: 0 25px;
+  padding: 0 20px;
+}
+  .home-multimedia-features .home-multimedia-feature {
+    border-right: 1px solid #cbcbcb;
+  }
+    .home-multimedia-features .home-multimedia-feature:last-child {
+      border-right: none;
+    }
+@media (min-width: 992px) {
+  .home-multimedia-features {
+    background: #f7f7f7 url(../feature-bottom-border.png) bottom left no-repeat;
+    height: 270px
+  }
+    .home-multimedia-features .col-md-2 {
+      padding-left: 15px;
+      width: 20%;
+    }
+}
+.home-multimedia-feature {
+  margin-top: 16px;
+  padding-left: 20px;
+}
+  .home-multimedia-feature h3 {
+    color: #707070;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px;
+    margin-bottom: 9px;
+    margin-top: 0;
+    text-transform: uppercase;
+  }
+  .home-multimedia-feature p.caption {
+    color: #666666;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 2px;
+  }
+  .home-multimedia-feature h4 {
+    color: #5e7630;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 22px;
+    margin-bottom: 6px;
+    margin-top: 0;
+  }
+    .home-multimedia-feature h4 a {
+      color: #5e7630;
+      text-decoration: none;
+    }
+      .home-multimedia-feature h4 a:hover {
+        text-decoration: underline;
+      }
+  .home-multimedia-feature a.visit {
+    color: #b28000;
+    font-size: 12px;
+    text-decoration: none;
+  }
+    .home-multimedia-feature a.visit:hover {
+      text-decoration: underline;
+    }
+
+
+
+
+
+
+
+
+
+.toolsSupport {
+    float:left;
+    padding: 10px 0 15px 0;
+    margin:0;
+}
+    @media (min-width:768px) {
+        .toolsSupport {
+            border-top: 1px solid #BA8D1A;
+        }
+    }
+    @media (min-width:991px) {
+        .toolsSupport {
+            margin:30px 0 0 0;
+        }
+    }
+.toolsPass {
+    float:left;
+    padding: 5px 0 5px 0;
+    margin:0;
+}
+    @media (min-width:768px) {
+        .toolsPass {
+            float:none;
+        }
+    }
+    @media (min-width:991px) {
+        .toolsPass {
+            float:none;
+        }
+    }
+
+
+
+    #search_form, #find_park_form {
+        display: block;
+        padding: 0 0 10px 0;
+        margin:0;
+        
+    }
+
+#search_form label, #find_park_form label { display: block; margin-bottom: 12px; }
+
+        #search_form input, #find_park_form input { display: inline; vertical-align: middle; }
+
+        #search_form .submit, #find_park_form .submit { margin-left: 5px; margin-bottom: 5px;}
+
+        #find_park_form select {
+			width: 146px;
+			font-size: 12px;
+			line-height: 14px;
+			color: #666;
+			margin-bottom: 5px;
+			border: none;
+			vertical-align: middle;
+			padding: 3px 0 2px 2px;
+        }
+
+            body.small #find_park_form select { font-size: 10px; }
+            body.large #find_park_form select { font-size: 16px; }
+
+        #find_park_form .advanced {
+            font-size: 10px;
+            line-height: 16px;
+            color: #fff;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+
+            body.small #find_park_form .advanced {
+                font-size: 10px;
+            }
+
+            body.large #find_park_form .advanced {
+                font-size: 13px;
+            }
+
+            #find_park_form .advanced:hover { text-decoration: underline; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#promos {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+    #promos li { display: inline; margin-right: 15px;}
+
+        #promos li.last { margin-right: 0; }
+
+        #promos li a { display: inline;  }
+
+            #promos li img { border: 1px solid #ccc; }

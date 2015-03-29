@@ -2,8 +2,8 @@
 css:
   - "../assets/libs/slick/slick.css"
   - "../assets/css/threespot.css"
-  - "css/nps-home.css"
-  - "css/equal-height-columns.css"
+  - "assets/css/home.css"
+  - "assets/css/equal-height-columns.css"
 js:
   - "../assets/libs/slick/slick.min.js"
   - "../assets/js/threespot.js"
@@ -11,321 +11,268 @@ layout: home
 ---
 
 <div class="row row-eq-height">
-    <div class="row-fader-tools">
-    
-        <div class="col-xs-12 col-sm-8 col-md-9" style="padding-right:0">
-            <div class="-with-description fader homepageFader" data-fader>
-              <ul>
-                <li>
-                  <a href="/dena/planyourvisit/visiting-denali.htm">
-                      <img class="img-responsive" src="http://www.nps.gov/npsfeatures/images/CHIS_FB_11-7-2014_Underwater_710x34_1.jpg" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
-                    <div class="title">
-                      <div class="sub">
-                        <h2>Sightsee by bus</h2>
-                        <p>Curabitur blandit tempus porttitor.</p>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="/dena/planyourvisit/ranger-programs.htm">
-                      <img class="img-responsive" src="http://www.nps.gov/npsfeatures/images/RTCA_ChristinaRiver_WilmingtonDelaware_710x340_1.jpg" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
-                    <div class="title">
-                      <div class="sub">
-                        <h2>Join a ranger for a hike, talk or demonstration</h2>
-                        <p>Curabitur blandit tempus porttitor.</p>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="/dena/planyourvisit/wildlife-viewing.htm">
-                      <img class="img-responsive" src="http://www.nps.gov/npsfeatures/images/WIHO_Taft-Boyhood-Home_710x340_1.jpg" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
-                    <div class="title">
-                      <div class="sub">
-                        <h2>Look for wildlife</h2>
-                        <p>Curabitur blandit tempus porttitor.</p>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="/dena/planyourvisit/dayhiking.htm">
-                      <img class="img-responsive" src="http://www.nps.gov/npsfeatures/images/FOSC_ForTeachers_IMG_1566_710x340_1.jpg" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
-                    <div class="title">
-                      <div class="sub">
-                        <h2>Take a hike! Use a trail or set your own path.</h2>
-                        <p>Curabitur blandit tempus porttitor.</p>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="/dena/planyourvisit/backcountry.htm">
-                      <img class="img-responsive" src="http://www.nps.gov/npsfeatures/images/WEFA_FB-08-09-2013_710x340_1.jpg" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
-                    <div class="title">
-                      <div class="sub">
-                        <h2>Backpack in the wilderness</h2>
-                        <p>Curabitur blandit tempus porttitor.</p>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="viewAll">
-                  <a href="#" class="viewAll-link">View All<span class="sr-only"> Features</span> »</a>
-                </li>
-              </ul>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-4 col-md-3" style="padding-left:0;">
-            <div class="homeTools">
-                <a name="findapark"></a>
-                <div id="skip" style="visibility:hidden"><a href="#navigation">Skip to Navigation</a></div>
-
-                <div class="toolsFindAPark">
-                    <form id="find_park_form" action="/findapark" method="get">
-                            <label for="park-query">
-                                <H2>Find a Park</H2>
-                            </label>
-                            <select id="park-query">
-                                                <option value="">by State...</option>
-
-
-                                                    <option value="/state/al/index.htm">Alabama</option>
-
-                                                    <option value="/state/ak/index.htm">Alaska</option>
-
-                                                    <option value="/state/as/index.htm">American Samoa</option>
-
-                                                    <option value="/state/az/index.htm">Arizona</option>
-
-                                                    <option value="/state/ar/index.htm">Arkansas</option>
-
-                                                    <option value="/state/ca/index.htm">California</option>
-
-                                                    <option value="/state/co/index.htm">Colorado</option>
-
-                                                    <option value="/state/ct/index.htm">Connecticut</option>
-
-                                                    <option value="/state/de/index.htm">Delaware</option>
-
-                                                    <option value="/state/dc/index.htm">District of Columbia</option>
-
-                                                    <option value="/state/fl/index.htm">Florida</option>
-
-                                                    <option value="/state/ga/index.htm">Georgia</option>
-
-                                                    <option value="/state/gu/index.htm">Guam</option>
-
-                                                    <option value="/state/hi/index.htm">Hawaii</option>
-
-                                                    <option value="/state/id/index.htm">Idaho</option>
-
-                                                    <option value="/state/il/index.htm">Illinois</option>
-
-                                                    <option value="/state/in/index.htm">Indiana</option>
-
-                                                    <option value="/state/ia/index.htm">Iowa</option>
-
-                                                    <option value="/state/ks/index.htm">Kansas</option>
-
-                                                    <option value="/state/ky/index.htm">Kentucky</option>
-
-                                                    <option value="/state/la/index.htm">Louisiana</option>
-
-                                                    <option value="/state/me/index.htm">Maine</option>
-
-                                                    <option value="/state/md/index.htm">Maryland</option>
-
-                                                    <option value="/state/ma/index.htm">Massachusetts</option>
-
-                                                    <option value="/state/mi/index.htm">Michigan</option>
-
-                                                    <option value="/state/mn/index.htm">Minnesota</option>
-
-                                                    <option value="/state/ms/index.htm">Mississippi</option>
-
-                                                    <option value="/state/mo/index.htm">Missouri</option>
-
-                                                    <option value="/state/mt/index.htm">Montana</option>
-
-                                                    <option value="/state/ne/index.htm">Nebraska</option>
-
-                                                    <option value="/state/nv/index.htm">Nevada</option>
-
-                                                    <option value="/state/nh/index.htm">New Hampshire</option>
-
-                                                    <option value="/state/nj/index.htm">New Jersey</option>
-
-                                                    <option value="/state/nm/index.htm">New Mexico</option>
-
-                                                    <option value="/state/ny/index.htm">New York</option>
-
-                                                    <option value="/state/nc/index.htm">North Carolina</option>
-
-                                                    <option value="/state/nd/index.htm">North Dakota</option>
-
-                                                    <option value="/state/mp/index.htm">Northern Mariana Islands</option>
-
-                                                    <option value="/state/oh/index.htm">Ohio</option>
-
-                                                    <option value="/state/ok/index.htm">Oklahoma</option>
-
-                                                    <option value="/state/or/index.htm">Oregon</option>
-
-                                                    <option value="/state/pa/index.htm">Pennsylvania</option>
-
-                                                    <option value="/state/pr/index.htm">Puerto Rico</option>
-
-                                                    <option value="/state/ri/index.htm">Rhode Island</option>
-
-                                                    <option value="/state/sc/index.htm">South Carolina</option>
-
-                                                    <option value="/state/sd/index.htm">South Dakota</option>
-
-                                                    <option value="/state/tn/index.htm">Tennessee</option>
-
-                                                    <option value="/state/tx/index.htm">Texas</option>
-
-                                                    <option value="/state/ut/index.htm">Utah</option>
-
-                                                    <option value="/state/vt/index.htm">Vermont</option>
-
-                                                    <option value="/state/vi/index.htm">Virgin Islands</option>
-
-                                                    <option value="/state/va/index.htm">Virginia</option>
-
-                                                    <option value="/state/wa/index.htm">Washington</option>
-
-                                                    <option value="/state/wv/index.htm">West Virginia</option>
-
-                                                    <option value="/state/wi/index.htm">Wisconsin</option>
-
-                                                    <option value="/state/wy/index.htm">Wyoming</option>
-
-
-                                            </select>
-                            <input type="image" src="http://www.nps.gov/common/commonspot/templates/images/buttons/go.gif" name="sub1" value="Go" alt="Go" class="submit" title="Go">
-                            <br><a class="advanced" style="clear:both" href="/findapark/index.htm">Advanced Search Tool and Map</a>
-                        <input type="hidden" name="as_sfid" value="AAAAAAUv8KiY7nvP3cJOKv6AndUandZfOjvf6ej3pI2sQ8Oiuf_1B40ZddtC0saqRDRCSmB1s7tcNupB1EiUq69h4x01NQdJpoty6LvZ8al1sYDUSA=="><input type="hidden" name="as_fid" value="BX1HjnT_mcX1MYVPgRKp">
-                    </form>
+  <div class="row-fader-tools">
+    <div class="col-xs-12 col-sm-8 col-md-9" style="padding-left:14px;padding-right:0;">
+      <div class="-with-description fader homepageFader" data-fader>
+        <ul>
+          <li>
+            <a href="/dena/planyourvisit/visiting-denali.htm">
+              <img alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia" class="img-responsive" src="http://www.nps.gov/npsfeatures/images/CHIS_FB_11-7-2014_Underwater_710x34_1.jpg">
+              <div class="title">
+                <div class="sub">
+                  <h2>Sightsee by bus</h2>
+                  <p>Curabitur blandit tempus porttitor.</p>
                 </div>
-
-                <div class="toolsSupport">
-                    <H2>Support Your Parks</H2>
-                    <a href="http://www.nationalparks.org/" onclick=""><img id="supportYourParks" alt="Support Your Parks: National Park Foundation" title="Support Your Parks: National Park Foundation" src="npf-GO.png"></a>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/dena/planyourvisit/ranger-programs.htm">
+              <img alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia" class="img-responsive" src="http://www.nps.gov/npsfeatures/images/RTCA_ChristinaRiver_WilmingtonDelaware_710x340_1.jpg">
+              <div class="title">
+                <div class="sub">
+                  <h2>Join a ranger for a hike, talk or demonstration</h2>
+                  <p>Curabitur blandit tempus porttitor.</p>
                 </div>
-
-                <div class="toolsPass">
-                    <a href="http://www.nps.gov/findapark/passes.htm"><img id="entrancePass" src="entrancePass.png" alt="Get Your Entrance Pass Now" title="Get Your Entrance Pass Now" onclick="document.location='/findapark/passes.htm';"></a>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/dena/planyourvisit/wildlife-viewing.htm">
+              <img alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia" class="img-responsive" src="http://www.nps.gov/npsfeatures/images/WIHO_Taft-Boyhood-Home_710x340_1.jpg">
+              <div class="title">
+                <div class="sub">
+                  <h2>Look for wildlife</h2>
+                  <p>Curabitur blandit tempus porttitor.</p>
                 </div>
-            </div>
-        </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/dena/planyourvisit/dayhiking.htm">
+              <img alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia" class="img-responsive" src="http://www.nps.gov/npsfeatures/images/FOSC_ForTeachers_IMG_1566_710x340_1.jpg">
+              <div class="title">
+                <div class="sub">
+                  <h2>Take a hike! Use a trail or set your own path.</h2>
+                  <p>Curabitur blandit tempus porttitor.</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/dena/planyourvisit/backcountry.htm">
+              <img alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia" class="img-responsive" src="http://www.nps.gov/npsfeatures/images/WEFA_FB-08-09-2013_710x340_1.jpg">
+              <div class="title">
+                <div class="sub">
+                  <h2>Backpack in the wilderness</h2>
+                  <p>Curabitur blandit tempus porttitor.</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="viewAll">
+            <a href="#" class="viewAll-link">View All<span class="sr-only"> Features</span> »</a>
+          </li>
+        </ul>
+      </div>
     </div>
+    <div class="col-xs-12 col-sm-4 col-md-3" style="padding-left:0;padding-right:16px;">
+      <div class="homeTools">
+        <a name="findapark"></a>
+        <div class="toolsFindAPark">
+          <form id="find_park_form" action="/findapark" method="get">
+            <label for="park-query">
+              <h2>Find a Park</h2>
+            </label>
+            <select id="park-query">
+              <option value="">by State...</option>
+              <option value="/state/al/index.htm">Alabama</option>
+              <option value="/state/ak/index.htm">Alaska</option>
+              <option value="/state/as/index.htm">American Samoa</option>
+              <option value="/state/az/index.htm">Arizona</option>
+              <option value="/state/ar/index.htm">Arkansas</option>
+              <option value="/state/ca/index.htm">California</option>
+              <option value="/state/co/index.htm">Colorado</option>
+              <option value="/state/ct/index.htm">Connecticut</option>
+              <option value="/state/de/index.htm">Delaware</option>
+              <option value="/state/dc/index.htm">District of Columbia</option>
+              <option value="/state/fl/index.htm">Florida</option>
+              <option value="/state/ga/index.htm">Georgia</option>
+              <option value="/state/gu/index.htm">Guam</option>
+              <option value="/state/hi/index.htm">Hawaii</option>
+              <option value="/state/id/index.htm">Idaho</option>
+              <option value="/state/il/index.htm">Illinois</option>
+              <option value="/state/in/index.htm">Indiana</option>
+              <option value="/state/ia/index.htm">Iowa</option>
+              <option value="/state/ks/index.htm">Kansas</option>
+              <option value="/state/ky/index.htm">Kentucky</option>
+              <option value="/state/la/index.htm">Louisiana</option>
+              <option value="/state/me/index.htm">Maine</option>
+              <option value="/state/md/index.htm">Maryland</option>
+              <option value="/state/ma/index.htm">Massachusetts</option>
+              <option value="/state/mi/index.htm">Michigan</option>
+              <option value="/state/mn/index.htm">Minnesota</option>
+              <option value="/state/ms/index.htm">Mississippi</option>
+              <option value="/state/mo/index.htm">Missouri</option>
+              <option value="/state/mt/index.htm">Montana</option>
+              <option value="/state/ne/index.htm">Nebraska</option>
+              <option value="/state/nv/index.htm">Nevada</option>
+              <option value="/state/nh/index.htm">New Hampshire</option>
+              <option value="/state/nj/index.htm">New Jersey</option>
+              <option value="/state/nm/index.htm">New Mexico</option>
+              <option value="/state/ny/index.htm">New York</option>
+              <option value="/state/nc/index.htm">North Carolina</option>
+              <option value="/state/nd/index.htm">North Dakota</option>
+              <option value="/state/mp/index.htm">Northern Mariana Islands</option>
+              <option value="/state/oh/index.htm">Ohio</option>
+              <option value="/state/ok/index.htm">Oklahoma</option>
+              <option value="/state/or/index.htm">Oregon</option>
+              <option value="/state/pa/index.htm">Pennsylvania</option>
+              <option value="/state/pr/index.htm">Puerto Rico</option>
+              <option value="/state/ri/index.htm">Rhode Island</option>
+              <option value="/state/sc/index.htm">South Carolina</option>
+              <option value="/state/sd/index.htm">South Dakota</option>
+              <option value="/state/tn/index.htm">Tennessee</option>
+              <option value="/state/tx/index.htm">Texas</option>
+              <option value="/state/ut/index.htm">Utah</option>
+              <option value="/state/vt/index.htm">Vermont</option>
+              <option value="/state/vi/index.htm">Virgin Islands</option>
+              <option value="/state/va/index.htm">Virginia</option>
+              <option value="/state/wa/index.htm">Washington</option>
+              <option value="/state/wv/index.htm">West Virginia</option>
+              <option value="/state/wi/index.htm">Wisconsin</option>
+              <option value="/state/wy/index.htm">Wyoming</option>
+            </select>
+            <input type="image" src="http://www.nps.gov/common/commonspot/templates/images/buttons/go.gif" name="sub1" value="Go" alt="Go" class="submit" title="Go">
+            <br>
+            <a class="advanced" style="clear:both" href="/findapark/index.htm">Advanced Search Tool and Map</a>
+            <input type="hidden" name="as_sfid" value="AAAAAAUv8KiY7nvP3cJOKv6AndUandZfOjvf6ej3pI2sQ8Oiuf_1B40ZddtC0saqRDRCSmB1s7tcNupB1EiUq69h4x01NQdJpoty6LvZ8al1sYDUSA==">
+            <input type="hidden" name="as_fid" value="BX1HjnT_mcX1MYVPgRKp">
+          </form>
+        </div>
+        <div class="toolsSupport">
+          <h2>Support Your Parks</h2>
+          <a href="http://www.nationalparks.org/" onclick="">
+            <img id="supportYourParks" alt="Support Your Parks: National Park Foundation" title="Support Your Parks: National Park Foundation" src="npf-GO.png">
+          </a>
+        </div>
+        <div class="toolsPass">
+          <a href="http://www.nps.gov/findapark/passes.htm"><img id="entrancePass" src="entrancePass.png" alt="Get Your Entrance Pass Now" title="Get Your Entrance Pass Now" onclick="document.location='/findapark/passes.htm';"></a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-
-
-
-
-<div class="row news-events-ad">
-    
-    <div class="col-sx-4 col-sm-4 col-md-4">
-        <div class="home-news items">
-                    <h2>News<span></span> <small><a href="/news">More News »</a></small></h2>
-					<ul>
-			<li><a href="http://www.nps.gov/lake/parknews/park-service-seeking-st-thomas-memories-for-new-project.htm"><strong>Share Your St. Thomas Stories</strong> Lake Mead National Recreation Area   »</a></li>
-		
-			<li><a href="http://www.nps.gov/obed/parknews/conservation-group-purchases-land-at-obed-wild-and-scenic-river.htm"><strong>Land Transfers Aid Conservation Goals</strong>  Obed Wild &amp; Scenic River  »</a></li>
-		
-			<li><a href="http://www.nps.gov/wefa/supportyourpark/volunteer.htm"><strong>Be a VIP</strong> Volunteers welcome at Weir Farm  »</a></li>
-					</ul>
-                </div>
+<div class="news-events-ad row">
+  <div class="col-md-4 col-sm-4 col-xs-4 home-news items">
+    <h2>News<span></span> <small><a href="/news">More News »</a></small></h2>
+    <ul>
+      <li>
+        <a href="http://www.nps.gov/lake/parknews/park-service-seeking-st-thomas-memories-for-new-project.htm"><strong>Share Your St. Thomas Stories</strong> Lake Mead National Recreation Area »</a>
+      </li>
+      <li>
+        <a href="http://www.nps.gov/obed/parknews/conservation-group-purchases-land-at-obed-wild-and-scenic-river.htm"><strong>Land Transfers Aid Conservation Goals</strong> Obed Wild &amp; Scenic River »</a>
+      </li>
+      <li>
+        <a href="http://www.nps.gov/wefa/supportyourpark/volunteer.htm"><strong>Be a VIP</strong> Volunteers welcome at Weir Farm »</a>
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-4 col-sm-4 col-xs-4 home-events items">
+    <h2>Events<span></span> <small><a href="/findapark/event-search.htm">More Events »</a></small></h2>
+    <ul>
+      <li>
+        <a href="http://www.nps.gov/grte/parknews/news-release-15-06.htm"><strong>Snowshoe Hikes</strong> Grand Teton National Park »</a>
+      </li>
+      <li>
+        <a href="http://www.nps.gov/asis/parknews/assateague-island-national-seashore-celebrates-50-years.htm"><strong>Golden Anniversary Celebrations</strong> Assateague Island National Seashore »</a>
+      </li>
+      <li>
+        <a href="http://www.nps.gov/hofr/planyourvisit/event-details.htm?eventID=518552-232573"><strong>FDR Birthday Celebration</strong> Home of Franklin D. Roosevelt »</a>
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-4 col-sm-4 col-xs-4" style="margin-top:20px;">
+    <div class="home-ad-space">
+      <a href="/findapark/feefreeparks.htm"><img src="http://www.nps.gov/common/commonspot/templates/images/promos/Promo-FeeFree-2015.jpg" alt="Fee-Free Days 2015 - Mark Your Calendar" title="Fee-Free Days 2015 - Mark Your Calendar"></a>
     </div>
-    
-    <div class="col-sx-4 col-sm-4 col-md-4">
-        <div class="home-events items">
-            <h2>Events<span></span> <small><a href="/findapark/event-search.htm">More Events »</a></small></h2>
-            <ul>
-                    <li><a href="http://www.nps.gov/grte/parknews/news-release-15-06.htm"><strong>Snowshoe Hikes</strong> Grand Teton National Park   »</a></li>
-                    <li><a href="http://www.nps.gov/asis/parknews/assateague-island-national-seashore-celebrates-50-years.htm"><strong>Golden Anniversary Celebrations</strong> Assateague Island National Seashore  »</a></li>
-                    <li><a href="http://www.nps.gov/hofr/planyourvisit/event-details.htm?eventID=518552-232573"><strong>FDR Birthday Celebration</strong> Home of Franklin D. Roosevelt  »</a></li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="col-sx-4 col-sm-4 col-md-4">
-        <div class="home-ad-space">
-            <a href="/findapark/feefreeparks.htm"><img src="http://www.nps.gov/common/commonspot/templates/images/promos/Promo-FeeFree-2015.jpg" alt="Fee-Free Days 2015 - Mark Your Calendar" title="Fee-Free Days 2015 - Mark Your Calendar"></a>
-        </div>
-    </div>
-
-
+  </div>
 </div>
-
-
-
-<div class="row" style="margin-bottom: 20px;">
-    <div class="col-xs-12 col-sm-12 col-md-12">
-        <div class="home-multimedia">
-            
-            
-            <div class="home-multimedia-title">
-                <a name="multimedia"></a>
-                <h2><span style="visibility:hidden">Photos and Multimedia</span><img src="http://www.nps.gov/pwr/templates/images/titles/photos_multimedia.gif"></h2>
-                <p class="hidden-xs"><a href="/media/multimedia-search.htm">More Photos and Multimedia »</a></p>
-            </div>
-            
-            <div class="home-multimedia-features">
-            
-                <div class="col-xs-6 col-sm-3 col-md-2 home-multimedia-feature">
-                    <h3>Movie</h3>
-                    <a class="image" href="http://wilderness.nps.gov/features/wildernessact/popup.html"><img alt="Photo of an elk" border="0" src="http://www.nps.gov/pwr/npsfeatures/images/Wilderness-140x110.jpg" title="Photo of an elk"></a>
-                    <p class="caption">Be a defender</p>
-                    <h4><a href="http://wilderness.nps.gov/features/wildernessact/popup.html">America's Wilderness</a></h4>
-                    <a class="visit" href="http://wilderness.nps.gov/features/wildernessact/popup.html">Visit Now »</a>
-                </div>
-
-                <div class="col-xs-6 col-sm-3 col-md-2 home-multimedia-feature">
-                    <h3>Interactive</h3>
-                    <a class="image" href="http://www.webrangers.us/activities/seagrasses/" onclick=""><img alt="Photo of seagrasses at Biscayne National Park" border="0" src="http://www.nps.gov/pwr/npsfeatures/images/seagrass-140x110.jpg" title="Photo of seagrasses at Biscayne National Park"></a>
-                    <p class="caption">Underneath the waves</p>
-                    <h4><a href="http://www.webrangers.us/activities/seagrasses/" onclick="">A seagrass garden</a></h4>
-                    <a class="visit" href="http://www.webrangers.us/activities/seagrasses/" onclick="">Visit Now »</a>
-                </div>
-                
-                    <li class="clearfix visible-xs-block"></li>
-
-                <div class="col-xs-6 col-sm-3 col-md-2 home-multimedia-feature">
-                    <h3>Web Cam</h3>
-                    <a class="image" href="http://www.nps.gov/romo/photosmultimedia/webcams.htm"><img alt="Photo of Longs Peak in Rocky Mountain National Park" border="0" src="http://www.nps.gov/pwr/npsfeatures/images/ROMO-longs-140x110.jpg" title="Photo of Longs Peak in Rocky Mountain National Park"></a>
-                    <p class="caption">Three different views</p>
-                    <h4><a href="http://www.nps.gov/romo/photosmultimedia/webcams.htm">Rocky Mountain</a></h4>
-                    <a class="visit" href="http://www.nps.gov/romo/photosmultimedia/webcams.htm">Visit Now »</a>
-                </div>
-
-                <div class="col-xs-6 col-sm-3 col-md-2 home-multimedia-feature">
-                    <h3>Podcast</h3>
-                    <a class="image" href="http://www.nps.gov/elca/photosmultimedia/traveling-the-trail.htm"><img alt="Photo of a young girl spinning wool into yarn along the El Camino Real de Tierra Adentro National Historic Trail" border="0" src="http://www.nps.gov/pwr/npsfeatures/images/ELCA-girl-140x110.jpg" title="Photo of a young girl spinning wool into yarn along the El Camino Real de Tierra Adentro National Historic Trail"></a>
-                    <p class="caption">Children in the 1700s</p>
-                    <h4><a href="http://www.nps.gov/elca/photosmultimedia/traveling-the-trail.htm">Work and fun</a></h4>
-                    <a class="visit" href="http://www.nps.gov/elca/photosmultimedia/traveling-the-trail.htm">Visit Now »</a>
-                </div>
-                
-                    <li class="clearfix visible-sm-block"></li>
-
-                <div class="col-xs-6 col-sm-3 col-md-2 home-multimedia-feature">
-                    <h3>Photo Gallery</h3>
-                    <a class="image" href="http://www.nps.gov/history/museum/exhibits/band/imgal.html"><img alt="Photo of a San Clemente polychrome bowl found in New Mexico" border="0" src="http://www.nps.gov/pwr/npsfeatures/images/BAND-bowl-140x110.jpg" title="Photo of a San Clemente polychrome bowl found in New Mexico"></a>
-                    <p class="caption">Museum collections</p>
-                    <h4><a href="http://www.nps.gov/history/museum/exhibits/band/imgal.html">Bandelier</a></h4>
-                    <a class="visit" href="http://www.nps.gov/history/museum/exhibits/band/imgal.html">Visit Now »</a>
-                </div>
-
-                <div class="col-xs-6 col-sm-3 col-md-2 home-multimedia-feature"><p class="hidden-sm hidden-md hidden-lg" style="margin:50px 0 0 0"><a href="/media/multimedia-search.htm">More Photos and Multimedia »</a></p>
-                </div>
-            
-            </div> 
-              
-        </div>
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 home-multimedia">
+    <div class="home-multimedia-title">
+      <a name="multimedia"></a>
+      <h2>
+        <span class="sr-only">Photos and Multimedia</span>
+        <img src="http://www.nps.gov/pwr/templates/images/titles/photos_multimedia.gif">
+        <small class="hidden-xs">
+          <a href="/media/multimedia-search.htm">More Photos and Multimedia »</a>
+        </small>
+      </h2>
     </div>
+    <div class="home-multimedia-features">
+      <div class="col-md-2 col-sm-3 col-xs-6 home-multimedia-feature">
+        <h3>Movie</h3>
+        <a class="image" href="http://wilderness.nps.gov/features/wildernessact/popup.html">
+          <img alt="Photo of an elk" class="img-responsive" src="http://www.nps.gov/pwr/npsfeatures/images/Wilderness-140x110.jpg" title="Photo of an elk">
+        </a>
+        <p class="caption">Be a defender</p>
+        <h4>
+          <a href="http://wilderness.nps.gov/features/wildernessact/popup.html">America's Wilderness</a>
+        </h4>
+        <a class="visit" href="http://wilderness.nps.gov/features/wildernessact/popup.html">Visit Now »</a>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-6 home-multimedia-feature">
+        <h3>Interactive</h3>
+        <a class="image" href="http://www.webrangers.us/activities/seagrasses/">
+          <img alt="Photo of seagrasses at Biscayne National Park" class="img-responsive" src="http://www.nps.gov/pwr/npsfeatures/images/seagrass-140x110.jpg" title="Photo of seagrasses at Biscayne National Park">
+        </a>
+        <p class="caption">Underneath the waves</p>
+        <h4>
+          <a href="http://www.webrangers.us/activities/seagrasses/">A seagrass garden</a>
+        </h4>
+        <a class="visit" href="http://www.webrangers.us/activities/seagrasses/">Visit Now »</a>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-6 home-multimedia-feature">
+        <h3>Web Cam</h3>
+        <a class="image" href="http://www.nps.gov/romo/photosmultimedia/webcams.htm">
+          <img alt="Photo of Longs Peak in Rocky Mountain National Park" class="img-responsive" src="http://www.nps.gov/pwr/npsfeatures/images/ROMO-longs-140x110.jpg" title="Photo of Longs Peak in Rocky Mountain National Park">
+        </a>
+        <p class="caption">Three different views</p>
+        <h4>
+          <a href="http://www.nps.gov/romo/photosmultimedia/webcams.htm">Rocky Mountain</a>
+        </h4>
+        <a class="visit" href="http://www.nps.gov/romo/photosmultimedia/webcams.htm">Visit Now »</a>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-6 home-multimedia-feature">
+        <h3>Podcast</h3>
+        <a class="image" href="http://www.nps.gov/elca/photosmultimedia/traveling-the-trail.htm">
+          <img alt="Photo of a young girl spinning wool into yarn along the El Camino Real de Tierra Adentro National Historic Trail" class="img-responsive" src="http://www.nps.gov/pwr/npsfeatures/images/ELCA-girl-140x110.jpg" title="Photo of a young girl spinning wool into yarn along the El Camino Real de Tierra Adentro National Historic Trail">
+        </a>
+        <p class="caption">Children in the 1700s</p>
+        <h4>
+          <a href="http://www.nps.gov/elca/photosmultimedia/traveling-the-trail.htm">Work and fun</a>
+        </h4>
+        <a class="visit" href="http://www.nps.gov/elca/photosmultimedia/traveling-the-trail.htm">Visit Now »</a>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-6 home-multimedia-feature">
+        <h3>Photo Gallery</h3>
+        <a class="image" href="http://www.nps.gov/history/museum/exhibits/band/imgal.html">
+          <img alt="Photo of a San Clemente polychrome bowl found in New Mexico" class="img-responsive" src="http://www.nps.gov/pwr/npsfeatures/images/BAND-bowl-140x110.jpg" title="Photo of a San Clemente polychrome bowl found in New Mexico">
+        </a>
+        <p class="caption">Museum collections</p>
+        <h4>
+          <a href="http://www.nps.gov/history/museum/exhibits/band/imgal.html">Bandelier</a>
+        </h4>
+        <a class="visit" href="http://www.nps.gov/history/museum/exhibits/band/imgal.html">Visit Now »</a>
+      </div>
+      <!--
+      <div class="col-xs-6 col-sm-3 col-md-2 home-multimedia-feature">
+        <p class="hidden-lg hidden-md hidden-sm" style="margin:50px 0 0 0;">
+          <a href="/media/multimedia-search.htm">More Photos and Multimedia »</a>
+        </p>
+      </div>
+      -->
+    </div> 
+  </div>
 </div>
