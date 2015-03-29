@@ -207,7 +207,7 @@
   font-size: 10px;
   padding: 6px 8px;
   margin: 0px;
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 .display-list-view .featured ul {
   margin: 0px;
@@ -232,7 +232,6 @@
 .floatingImage.-right {
   width: 100%;
 }
-
 @media screen and (min-width: 400px) {
   .floatingImage.-right {
     float: right;
@@ -240,36 +239,29 @@
     width: 200px;
   }
 }
-
 @media screen and (min-width: 768px) {
   .floatingImage.-right {
     width: 285px;
   }
 }
-
 .floatingImage img {
   height: auto;
   margin-bottom: 5px;
   width: 100%;
 }
-
 .floatingImage p {
   padding: 0;
   margin: 0; 
 }
-  
-.floatingImage p.credit { 
-  color: #727163; /* Changed from #777 for 508 - Dan */
-  font-size: 11px;
-   
-  
-}
-.floatingImage p.caption  {
-  color: #5A712D; /* Changed from #668033 for 508 - Dan */
-  font-size: 11px;
-  margin-bottom:4px;
-}
-
+  .floatingImage p.credit { 
+    color: #727163; /* Changed from #777 for 508 - Dan */
+    font-size: 11px;
+  }
+  .floatingImage p.caption  {
+    color: #5A712D; /* Changed from #668033 for 508 - Dan */
+    font-size: 11px;
+    margin-bottom:4px;
+  }
 
 /*---------------------------------------------------*\
 ** Fader
@@ -555,16 +547,12 @@
 /*---------------------------------------------------*\
 ** Photo Gallery
 \*---------------------------------------------------*/
-
-
-
 #galleryDescription {
   border-bottom: solid 1px #dfdcdb;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
-
-#gallery-content .description h4 {
+  #gallery-content .description h4 {
     border-bottom: 1px dotted #D8D8D8;
     color: #706D5F;
     font-size: 10px;
@@ -573,124 +561,98 @@
     padding-bottom: 9px;
     text-transform: uppercase;
     width: 100%;
-}
-
-#gallery-content .description p {
-  font-size: 12px;  
-  line-height: 18px;
-}
-
-.photo-gallery {}
-
-  .photo-gallery ul {
-    padding: 0;
-    list-style:none !important;
   }
-
-  .photo-gallery li {
-    margin-bottom: 20px;
+  #gallery-content .description p {
+    font-size: 12px;  
+    line-height: 18px;
   }
-
+.photo-gallery ul {
+  padding: 0;
+  list-style:none !important;
+}
+.photo-gallery li {
+  margin-bottom: 20px;
+}
 .photoCredit {
-    font-size:80%;
-    margin:0 0 3px 0;
+    font-size: 80%;
+    margin: 0 0 3px 0;
     padding: 0;
 }
-
-  .gallery-content {}
-  #gallery-content {
-    list-style: none !important;
+#gallery-content {
+  list-style: none !important;
+}
+  .gallery-content .image {
+    border: solid #dfdcdb 1px;
+    float: left;
+    margin-bottom: 2px;
+    padding: 2px;
   }
-
-    .gallery-content .galleryItem {}
-
-    .gallery-content .galleryItem-wrapper {
-
-    }
-
-    .gallery-content .image {
-      border: solid #dfdcdb 1px;
-      float: left;
-      padding: 2px;
-      margin-bottom: 2px;
-    }
-
+  .gallery-content .photoTitle {
+    clear: both;
+    float: left;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  @media screen and (max-width: 768px) {
     .gallery-content .photoTitle {
-      clear: both;
-      font-size: 14px;
-      float: left;
-      margin-top: 5px;
+      font-size: 18px;
     }
-
-    @media screen and (max-width: 768px) {
-      .gallery-content .photoTitle {
-        font-size: 18px;
-      }
-    }
-
-    .gallery-content .photoData p {
-      font-size: 13px;
-      line-height: 1.5;
-        margin: 0;
-        padding: 0;
-    }
-    .photoData .galleryChooserDescription {
-        font-size: 18px;
-        border-top: solid 1px #dfdcdb;
-        margin-top: 8px;
-    }
+  }
+  .gallery-content .photoData p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+  .photoData .galleryChooserDescription {
+    font-size: 18px;
+    margin-top: 8px;
+  }
+  .galleryChooserText {
+    clear: both;
+    padding-top: 8px;
+  }
+  @media screen and (max-width: 768px) {
     .galleryChooserText {
-        clear:both;
+      margin-bottom: 30px;
     }
-    @media screen and (max-width: 768px) {
-        .galleryChooserText {
-            margin-bottom: 30px;
-        }
+  }
+  .numberOfPhotos {
+    border-bottom: solid 1px #dfdcdb;
+    font-size: 12px;
+    padding-bottom: 8px
+  }
+  @media screen and (max-width: 768px) {
+    .gallery-content .photoData {
+      font-size: 15px;
     }
-    .numberOfPhotos {
-        font-size: 12px;
-    }
-
-
-    @media screen and (max-width: 768px) {
-      .gallery-content .photoData {
-        font-size: 15px;
-      }
-    }
-
-    .gallery-content .photoDescription {
-      display: block;
-    }
-
+  }
+  .gallery-content .photoDescription {
+    display: block;
+  }
+  .gallery-content .photoDownload {
+    border-top: solid 1px rgb(233, 220, 219);
+    display: block;
+    font-size: 11px;
+    padding: 4px 0;
+    margin-top: 10px;
+  }
+  @media screen and (max-width: 768px) {
     .gallery-content .photoDownload {
-      border-top: solid 1px rgb(233, 220, 219);
-      display: block;
-      font-size: 11px;
-      padding: 4px 0;
-      margin-top: 10px;
+      font-size: 13px;
     }
-
-    @media screen and (max-width: 768px) {
-      .gallery-content .photoDownload {
-        font-size: 13px;
-      }
-    }
-    
-    .gallery-content .toggle {
-      display: block;
-      font-size: 11px;
-      margin: 4px 0;
-    }
-
-
+  }
+  .gallery-content .toggle {
+    display: block;
+    font-size: 11px;
+    margin: 4px 0;
+  }
 .related-advanced-search {
   margin-bottom: 20px;
 }
 .related-advanced-search p {
   margin-bottom: 0;
 }
-
-
 /*---------------------------------------------------*\
 ** Layout Overrides
 \*---------------------------------------------------*/

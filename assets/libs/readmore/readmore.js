@@ -15,22 +15,20 @@
   'use strict';
 
   var readmore = 'readmore',
-      defaults = {
-        speed: 100,
-        collapsedHeight: 200,
-        heightMargin: 16,
-        moreLink: '<a href="#">Read More</a>',
-        lessLink: '<a href="#">Close</a>',
-        embedCSS: true,
-        blockCSS: 'display: block; width: 100%;',
-        startOpen: false,
-
-        // callbacks
-        beforeToggle: function(){},
-        afterToggle: function(){}
-      },
-      cssEmbedded = {},
-      uniqueIdCounter = 0;
+    defaults = {
+      speed: 100,
+      collapsedHeight: 200,
+      heightMargin: 50,
+      moreLink: '<a href="#">Read More</a>',
+      lessLink: '<a href="#">Close</a>',
+      embedCSS: true,
+      blockCSS: 'display: block; width: 100%;',
+      startOpen: false,
+      beforeToggle: function() {},
+      afterToggle: function() {}
+    },
+    cssEmbedded = {},
+    uniqueIdCounter = 0;
 
   function debounce(func, wait, immediate) {
     var timeout;
@@ -62,14 +60,14 @@
 
   function setBoxHeights(element) {
     var el = element.clone().css({
-          height: 'auto',
-          width: element.width(),
-          maxHeight: 'none',
-          overflow: 'hidden'
-        }).insertAfter(element),
-        expandedHeight = el.outerHeight(),
-        cssMaxHeight = parseInt(el.css({maxHeight: ''}).css('max-height').replace(/[^-\d\.]/g, ''), 10),
-        defaultHeight = element.data('defaultHeight');
+        height: 'auto',
+        width: element.width(),
+        maxHeight: 'none',
+        overflow: 'hidden'
+      }).insertAfter(element),
+      expandedHeight = el.outerHeight(),
+      cssMaxHeight = parseInt(el.css({maxHeight: ''}).css('max-height').replace(/[^-\d\.]/g, ''), 10),
+      defaultHeight = element.data('defaultHeight');
 
     el.remove();
 
@@ -258,11 +256,11 @@
       });
 
       $(trigger).replaceWith($($this.options[newLink])
-          .on('click', function(event) { $this.toggle(this, element, event); })
-          .attr({
-            'data-readmore-toggle': '',
-            'aria-controls': $element.attr('id')
-          }));
+        .on('click', function(event) { $this.toggle(this, element, event); })
+        .attr({
+          'data-readmore-toggle': '',
+          'aria-controls': $element.attr('id')
+        }));
     },
 
     destroy: function() {
