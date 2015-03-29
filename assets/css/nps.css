@@ -831,6 +831,7 @@ a.back:before {
           font-size: 12px;
           margin-top: 4px;
         }
+/* Mobile alerts */
 .alert p {
   margin-bottom: 0;
 }
