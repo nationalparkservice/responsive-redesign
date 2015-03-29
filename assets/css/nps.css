@@ -831,6 +831,12 @@ a.back:before {
           font-size: 12px;
           margin-top: 4px;
         }
+.alert p {
+  margin-bottom: 0;
+}
+.alert h4 {
+  line-height: 1.1;
+}
 /* ===[ Carousel ]===
    ================================================== */
 .carouselRow {
@@ -2188,10 +2194,6 @@ p.caption {
     display: table-cell;
     float: none !important;
   }
-}
-/* firefox fix   */
-.img-responsive {
-  width: 100%
 }
 /* vertical alignment styles   */
 .col-top {
