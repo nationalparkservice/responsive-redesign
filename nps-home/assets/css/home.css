@@ -12,6 +12,16 @@
     background: none;
   }
 }
+  .row-fader-tools .col-md-9 {
+    padding-left: 14px;
+    padding-right: 0;
+    width: 717px;
+  }
+  .row-fader-tools .col-md-3 {
+    padding-left: 0;
+    padding-right: 14px;
+    width: 271px;
+  }
 .fader.homepageFader {
   margin-bottom: 0;
   padding-bottom: 0;
@@ -27,8 +37,8 @@
 @media (min-width: 992px) {
   .homeTools {
     background: #916800 url(http://www.nps.gov/common/commonspot/templates/images/bg/tools02b_dark.gif) 0 -97px no-repeat;
-    height: 349px;
-    padding: 10px 20px 0 20px;
+    height: 337px;
+    padding: 10px 25px;
   }
 }
   .homeTools h2,
@@ -43,7 +53,7 @@
 .toolsSupport {
   float: left;
   margin: 0;
-  padding: 15px 0 25px 0;
+  padding: 15px 0 20px 0;
 }
 @media (min-width: 768px) {
   .toolsSupport {
@@ -53,13 +63,11 @@
 }
 @media (min-width: 991px) {
   .toolsSupport {
-    margin: 75px 0 20px 0;
+    margin: 70px 0 20px 0;
   }
 }
 .toolsPass {
   float: left;
-  padding: 5px 0;
-  margin: 0;
 }
 @media (min-width: 768px) {
   .toolsPass {
@@ -113,7 +121,7 @@ body.large #toolsFindAPark .advanced {
 #find_park_form select {
   float: left;
   height: 22px;
-  width: 146px;
+  width: 155px;
 }
 #find_park_form input {
   float: right;
@@ -293,7 +301,6 @@ body.large .items li {
     }
 @media (min-width: 992px) {
   .home-multimedia-features {
-    background: #f7f7f7 url(../feature-bottom-border.png) bottom left no-repeat;
     height: 270px
   }
   .home-multimedia-features .col-md-2 {
