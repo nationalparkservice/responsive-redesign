@@ -4,128 +4,117 @@
 .home-content-area {
   background-color: #fff;
 }
-.row-fader-tools {
+.row.fader-tools {
   background-color: #916800;
 }
+  .row.fader-tools .col-md-9 .fader {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    width: 100%;
+  }
+  .row.fader-tools .col-md-3 {
+    padding-right: 13px;
+  }
 @media (min-width: 992px) {
-  .row-fader-tools {
+  .row.fader-tools {
     background: none;
   }
+    .row.fader-tools .col-md-9 {
+      padding-right: 0;
+      width: 717px;
+    }
+    .row.fader-tools .col-md-3 {
+      padding-left: 0;
+      width: 271px;
+    }
 }
-  .row-fader-tools .col-md-9 {
-    padding-left: 14px;
-    padding-right: 0;
-    width: 717px;
+@media (min-width: 768px) and (max-width: 990px) {
+  .row.fader-tools .col-md-3 {
+    margin-left: -15px;
   }
-  .row-fader-tools .col-md-3 {
-    padding-left: 0;
-    padding-right: 14px;
-    width: 271px;
-  }
-.fader.homepageFader {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  width: 100%;
 }
-.homeTools {
+.home-tools {
   background-color: #916800;
-  height: 150px;
   margin: 0 auto;
-  padding: 0 20px 0 20px;
+  padding: 10px 25px;
   width: 100%;
 }
-@media (min-width: 992px) {
-  .homeTools {
-    background: #916800 url(http://www.nps.gov/common/commonspot/templates/images/bg/tools02b_dark.gif) 0 -97px no-repeat;
-    height: 337px;
-    padding: 10px 25px;
+@media (min-width: 768px) {
+  .home-tools {
+    /*height: 287px;*/
   }
 }
-  .homeTools h2,
-  .homeTools label {
+@media (min-width: 991px) {
+  .home-tools {
+    background: #916800 url(http://www.nps.gov/common/commonspot/templates/images/bg/tools02b_dark.gif) 0 -97px no-repeat;
+    height: 336px;
+  }
+}
+  .home-tools h2,
+  .home-tools label {
     color: #f8e9c2;
     font-size: 16px;
     padding: 0;
   }
-  .homeTools h2 {
+  .home-tools h2 {
     margin: 0 0 10px 0;
   }
-.toolsSupport {
+  .home-tools label {
+    display: block;
+  }
+.home-tools .find-a-park {
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 990px) {
+  .home-tools .find-a-park {
+    border-bottom: 1px solid #ba8d1a;
+    padding-bottom: 15px;
+  }
+}
+  .home-tools .find-a-park form select {
+    float: left;
+    height: 22px;
+    width: 155px;
+  }
+  .home-tools .find-a-park form input {
+    margin-left: 15px;
+  }
+  .home-tools .find-a-park .advanced {
+    color: #fff;
+    display: block;
+    font-size: 10px;
+    line-height: 16px;
+    text-decoration: none;
+  }
+    .home-tools .find-a-park .advanced:hover {
+      text-decoration: underline; 
+    }
+.home-tools .support {
+  border-bottom: 1px solid #ba8d1a;
   float: left;
   margin: 0;
   padding: 15px 0 20px 0;
 }
-@media (min-width: 768px) {
-  .toolsSupport {
-    border-bottom: 1px solid #ba8d1a;
+@media (min-width: 991px) {
+  .home-tools .support {
     border-top: 1px solid #ba8d1a;
+    margin: 70px 0 15px 0;
   }
+}
+.home-tools .pass {
+  float: left;
 }
 @media (min-width: 991px) {
-  .toolsSupport {
-    margin: 70px 0 20px 0;
+  .home-tools .pass {
+    float: none;
   }
-}
-.toolsPass {
-  float: left;
 }
 @media (min-width: 768px) {
-  .toolsPass {
+  .home-tools .pass {
     float: none;
   }
 }
-@media (min-width: 991px) {
-  .toolsPass {
-    float: none;
-  }
-}
-.toolsFindAPark {
-  float: left;
-}
-@media (min-width: 991px) {
-  .toolsFindAPark {
-    float: none;
-  }
-}
-/*
-#search_form, #find_park_form {
-  display: block;
-  margin: 0;
-  padding: 0 0 10px 0;
-}
-*/
-.toolsFindAPark .advanced {
-  color: #fff;
-  font-size: 10px;
-  line-height: 16px;
-  margin-top: 10px;
-  text-decoration: none;
-}
-  .toolsFindAPark .advanced:hover {
-    text-decoration: underline; 
-  }
-/*
-body.small #find_park_form select {
-  font-size: 10px;
-}
-body.large #find_park_form select {
-  font-size: 16px;
-}
-body.small #toolsFindAPark .advanced {
-  font-size: 10px;
-}
-body.large #toolsFindAPark .advanced {
-  font-size: 13px;
-}
-*/
-#find_park_form select {
-  float: left;
-  height: 22px;
-  width: 155px;
-}
-#find_park_form input {
-  float: right;
-}
+
 .news-events-ad {
   margin-top: 25px;
 }
@@ -137,8 +126,9 @@ body.large #toolsFindAPark .advanced {
 .items h2 {
   border-bottom: 1px solid #ccc;
   border-top: 2px solid #d1b366;
-  font-size: 14px;
-  line-height: 22px;
+  color: #7e7e7e;
+  font-size: 20px;
+  line-height: 24px;
   margin-bottom: 18px;
   padding: 10px 0 8px 0;
   position: relative;
@@ -233,62 +223,51 @@ body.large .items li {
   margin-left: 35px;
 }
 .home-multimedia {
-  background: url(http://www.nps.gov/pwr/templates/images/bg/multimedia_shadow.gif);
-  background-position: 40px 320px;
-  background-repeat: no-repeat;
-  background-size: 910px 21px;
   margin-top: 5px;
   padding-bottom: 50px;
 }
-.home-multimedia-title {
-  background-color: #f5f5f5;
-  border-bottom: 1px solid #acacac;
-  border-top: 2px solid #b2b2b2;
-  height: 50px;
-  margin: 0 25px;
-  padding: 10px 20px 0 20px;
+@media (min-width: 992px) {
+  .home-multimedia {
+    background: url(http://www.nps.gov/pwr/templates/images/bg/multimedia_shadow.gif);
+    background-position: 40px 320px;
+    background-repeat: no-repeat;
+    background-size: 910px 21px;
+  }
 }
-@media (max-width:768px) {
   .home-multimedia-title {
-    margin: 0;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #acacac;
+    border-top: 2px solid #b2b2b2;
+    height: 47px;
+    margin: 0 25px;
+    padding: 0 20px;
   }
-}
-  .home-multimedia-title h2 {
-    float: left;
-    height: 21px;
-    margin: 0;
-    padding: 0;
-  }
-  .home-multimedia-title p {
-    float: right;
-    margin: 0;
-    padding: 5px 0 0 0;
-  }
-  .home-multimedia-title h2 img {
-    margin-top: -2px;
-  }
-  .home-multimedia-title h2 span {
-    background: url(http://www.nps.gov/pwr/templates/images/titles/photos_multimedia.gif) top left no-repeat;
-    display: block;
-    height: 21px;
-    position: absolute;
-    width: 214px;
-  }
-  .home-multimedia-title h2 small {
-      font-size: 11px;
-      line-height: 14px;
-      position: absolute;
-      right: 63px;
-      top: 19px;
-  }
-    .home-multimedia h2 small a {
-      color: #b28000;
-      font-weight: normal;
-      text-decoration: none;
+  @media (max-width:768px) {
+    .home-multimedia-title {
+      margin: 0;
     }
-      .home-multimedia h2 small a:hover {
-        text-decoration: underline;
+  }
+    .home-multimedia-title h2 {
+      color: #7e7e7e;
+      font-size: 20px;
+      line-height: 47px;
+      margin: 0;
+      width: 100%;
+    }
+      .home-multimedia-title h2 small {
+        float: right;
+        font-size: 11px;
+        line-height: 11px;
+        margin-top: 17px;
       }
+        .home-multimedia h2 small a {
+          color: #b28000;
+          font-weight: normal;
+          text-decoration: none;
+        }
+          .home-multimedia h2 small a:hover {
+            text-decoration: underline;
+          }
 .home-multimedia-features {
   margin: 0 25px;
   padding: 0 20px;
