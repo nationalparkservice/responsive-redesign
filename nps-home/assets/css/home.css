@@ -1,11 +1,11 @@
 .wallpaper-home {
-  margin-bottom: 20px !important;
+  margin-bottom: 20px !important
 }
 .home-content-area {
-  background-color: #fff;
+  background-color: #fff
 }
 .row.fader-tools {
-  background-color: #916800;
+  background-color: #916800
 }
   .row.fader-tools .col-md-9 .fader {
     margin-bottom: 0;
@@ -13,11 +13,11 @@
     width: 100%;
   }
   .row.fader-tools .col-md-3 {
-    padding-right: 13px;
+    padding-right: 13px
   }
-@media (min-width: 992px) {
+@media (min-width: 992px) { 
   .row.fader-tools {
-    background: none;
+    background: none
   }
     .row.fader-tools .col-md-9 {
       padding-right: 0;
@@ -28,9 +28,9 @@
       width: 271px;
     }
 }
-@media (min-width: 768px) and (max-width: 990px) {
+@media (min-width: 768px) and (max-width: 990px) { 
   .row.fader-tools .col-md-3 {
-    margin-left: -15px;
+    margin-left: -15px
   }
 }
 .home-tools {
@@ -39,88 +39,82 @@
   padding: 10px 25px;
   width: 100%;
 }
-@media (min-width: 768px) {
-  .home-tools {
-    /*height: 287px;*/
-  }
-}
-@media (min-width: 991px) {
+@media (min-width: 991px) { 
   .home-tools {
     background: #916800 url(http://www.nps.gov/common/commonspot/templates/images/bg/tools02b_dark.gif) 0 -97px no-repeat;
     height: 336px;
   }
 }
-  .home-tools h2,
-  .home-tools label {
-    color: #f8e9c2;
-    font-size: 16px;
-    padding: 0;
-  }
-  .home-tools h2 {
-    margin: 0 0 10px 0;
-  }
-  .home-tools label {
-    display: block;
-  }
-.home-tools .find-a-park {
-  width: 100%;
+.home-tools h2,
+.home-tools label {
+  color: #f8e9c2;
+  font-size: 16px;
+  padding: 0;
 }
-@media (min-width: 768px) and (max-width: 990px) {
+.home-tools h2 {
+  margin: 0 0 10px 0
+}
+.home-tools label {
+  display: block
+}
+.home-tools .find-a-park {
+  width: 100%
+}
+@media (min-width: 768px) and (max-width: 990px) { 
   .home-tools .find-a-park {
     border-bottom: 1px solid #ba8d1a;
     padding-bottom: 15px;
   }
 }
-  .home-tools .find-a-park form select {
-    float: left;
-    height: 22px;
-    width: 155px;
-  }
-  .home-tools .find-a-park form input {
-    margin-left: 15px;
-  }
-  .home-tools .find-a-park .advanced {
-    color: #fff;
-    display: block;
-    font-size: 10px;
-    line-height: 16px;
-    text-decoration: none;
-  }
-    .home-tools .find-a-park .advanced:hover {
-      text-decoration: underline; 
-    }
+.home-tools .find-a-park form select {
+  float: left;
+  height: 22px;
+  width: 155px;
+}
+.home-tools .find-a-park form input {
+  margin-left: 15px
+}
+.home-tools .find-a-park .advanced {
+  color: #fff;
+  display: block;
+  font-size: 10px;
+  line-height: 16px;
+  text-decoration: none;
+}
+.home-tools .find-a-park .advanced:hover {
+  text-decoration: underline
+}
 .home-tools .support {
   border-bottom: 1px solid #ba8d1a;
   float: left;
   margin: 0;
   padding: 15px 0 20px 0;
 }
-@media (min-width: 991px) {
+@media (min-width: 991px) { 
   .home-tools .support {
     border-top: 1px solid #ba8d1a;
     margin: 70px 0 15px 0;
   }
 }
 .home-tools .pass {
-  float: left;
+  float: left
 }
-@media (min-width: 991px) {
+@media (min-width: 991px) { 
   .home-tools .pass {
-    float: none;
+    float: none
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) { 
   .home-tools .pass {
-    float: none;
+    float: none
   }
 }
-
 .news-events-ad {
-  margin-top: 25px;
+  margin-top: 25px
 }
-@media (min-width: 992px) {
+@media (min-width: 992px) { 
   .news-events-ad {
-    margin-left: 10px;
+    margin-left: 10px
   }
 }
 .items h2 {
@@ -142,22 +136,13 @@
     position: absolute;
     right: 0;
   }
-  /*
-  body.small .items h2 small {
-    font-size: 10px;
-  }
-  body.large .items h2 small {
-    font-size: 14px;
-    line-height: 16px;
-  }
-  */
     .items h2 small a {
       color: #b28000;
       text-decoration: none;
     }
-      .items h2 small a:hover {
-        text-decoration: underline;
-      }
+    .items h2 small a:hover {
+      text-decoration: underline
+    }
 .items ul {
   border-bottom: 1px solid #ccc;
   margin-bottom: 20px;
@@ -174,28 +159,12 @@
     display: block;
     text-decoration: none;
   }
-    .items li a:hover {
-      color: #999;
+  .items li a:hover {
+    color: #999
+  }
+    .items li a:hover strong {
+      color: #d39800
     }
-      .items li a:hover strong {
-        color: #d39800;
-      }
-/*
-body.small .items li {
-  font-size: 11px;
-}
-  body.small .items li strong {
-    font-size: 13px;
-  }
-body.large .items li {
-  font-size: 17px;
-  line-height: 20px;
-}
-  body.large .items li strong {
-    font-size: 19px;
-    line-height: 22px;
-  }
-*/
   .items li strong {
     color: #b28000;
     display: block;
@@ -203,30 +172,14 @@ body.large .items li {
     font-weight: bold;
     line-height: 20px;
   }
-.home-news h2 span,
-.home-events h2 span {
-  left: 0;
-  position: absolute;
-  top: 10px;
-}
-.home-news h2 span {
-  background: url(http://www.nps.gov/pwr/home/images/titles/news.gif) top left no-repeat;
-  height: 19px;
-  width: 56px;
-}
-.home-events h2 span {
-  background: url(http://www.nps.gov/pwr/home/images/titles/events.gif) top left no-repeat;
-  height: 18px;
-  width: 65px;
-}
 .home-ad-space {
-  margin-left: 35px;
+  margin-left: 35px
 }
 .home-multimedia {
   margin-top: 5px;
   padding-bottom: 50px;
 }
-@media (min-width: 992px) {
+@media (min-width: 992px) { 
   .home-multimedia {
     background: url(http://www.nps.gov/pwr/templates/images/bg/multimedia_shadow.gif);
     background-position: 40px 320px;
@@ -234,58 +187,58 @@ body.large .items li {
     background-size: 910px 21px;
   }
 }
+.home-multimedia-title {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #acacac;
+  border-top: 2px solid #b2b2b2;
+  height: 47px;
+  margin: 0 25px;
+  padding: 0 20px;
+}
+@media (max-width:768px) { 
   .home-multimedia-title {
-    background-color: #f5f5f5;
-    border-bottom: 1px solid #acacac;
-    border-top: 2px solid #b2b2b2;
-    height: 47px;
-    margin: 0 25px;
-    padding: 0 20px;
+    margin: 0
   }
-  @media (max-width:768px) {
-    .home-multimedia-title {
-      margin: 0;
-    }
+}
+.home-multimedia-title h2 {
+  color: #7e7e7e;
+  font-size: 20px;
+  line-height: 47px;
+  margin: 0;
+  width: 100%;
+}
+  .home-multimedia-title h2 small {
+    float: right;
+    font-size: 11px;
+    line-height: 11px;
+    margin-top: 17px;
   }
-    .home-multimedia-title h2 {
-      color: #7e7e7e;
-      font-size: 20px;
-      line-height: 47px;
-      margin: 0;
-      width: 100%;
-    }
-      .home-multimedia-title h2 small {
-        float: right;
-        font-size: 11px;
-        line-height: 11px;
-        margin-top: 17px;
-      }
-        .home-multimedia h2 small a {
-          color: #b28000;
-          font-weight: normal;
-          text-decoration: none;
-        }
-          .home-multimedia h2 small a:hover {
-            text-decoration: underline;
-          }
+.home-multimedia h2 small a {
+  color: #b28000;
+  font-weight: normal;
+  text-decoration: none;
+}
+.home-multimedia h2 small a:hover {
+  text-decoration: underline
+}
 .home-multimedia-features {
   margin: 0 25px;
   padding: 0 20px;
 }
   .home-multimedia-features .home-multimedia-feature {
-    border-right: 1px solid #cbcbcb;
+    border-right: 1px solid #cbcbcb
   }
-    .home-multimedia-features .home-multimedia-feature:last-child {
-      border-right: none;
-    }
-@media (min-width: 992px) {
+  .home-multimedia-features .home-multimedia-feature:last-child {
+    border-right: none
+  }
+@media (min-width: 992px) { 
   .home-multimedia-features {
     height: 270px
   }
-  .home-multimedia-features .col-md-2 {
-    padding-left: 15px;
-    width: 20%;
-  }
+    .home-multimedia-features .col-md-2 {
+      padding-left: 15px;
+      width: 20%;
+    }
 }
 .home-multimedia-feature {
   margin-top: 16px;
@@ -318,58 +271,14 @@ body.large .items li {
       color: #5e7630;
       text-decoration: none;
     }
-      .home-multimedia-feature h4 a:hover {
-        text-decoration: underline;
-      }
+    .home-multimedia-feature h4 a:hover {
+      text-decoration: underline
+    }
   .home-multimedia-feature a.visit {
     color: #b28000;
     font-size: 12px;
     text-decoration: none;
   }
-    .home-multimedia-feature a.visit:hover {
-      text-decoration: underline;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#promos {
-    margin-top: 10px;
-    display: block;
-    text-align: center;
-}
-
-    #promos li { display: inline; margin-right: 15px;}
-
-        #promos li.last { margin-right: 0; }
-
-        #promos li a { display: inline;  }
-
-            #promos li img { border: 1px solid #ccc; }
+  .home-multimedia-feature a.visit:hover {
+    text-decoration: underline
+  }
