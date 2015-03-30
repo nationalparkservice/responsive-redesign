@@ -1,10 +1,13 @@
+.wallpaper-home {
+  margin-bottom: 20px !important;
+}
 .home-content-area {
-  background-color: white;
+  background-color: #fff;
 }
 .row-fader-tools {
   background-color: #916800;
 }
-@media (min-width:992px) {
+@media (min-width: 992px) {
   .row-fader-tools {
     background: none;
   }
@@ -28,12 +31,46 @@
     padding: 10px 20px 0 20px;
   }
 }
-  .homeTools h2 {
-    color: white;
+  .homeTools h2,
+  .homeTools label {
+    color: #f8e9c2;
     font-size: 16px;
-    margin: 0 0 10px 0;
     padding: 0;
   }
+  .homeTools h2 {
+    margin: 0 0 10px 0;
+  }
+.toolsSupport {
+  float: left;
+  margin: 0;
+  padding: 15px 0 25px 0;
+}
+@media (min-width: 768px) {
+  .toolsSupport {
+    border-bottom: 1px solid #ba8d1a;
+    border-top: 1px solid #ba8d1a;
+  }
+}
+@media (min-width: 991px) {
+  .toolsSupport {
+    margin: 75px 0 20px 0;
+  }
+}
+.toolsPass {
+  float: left;
+  padding: 5px 0;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .toolsPass {
+    float: none;
+  }
+}
+@media (min-width: 991px) {
+  .toolsPass {
+    float: none;
+  }
+}
 .toolsFindAPark {
   float: left;
 }
@@ -41,6 +78,45 @@
   .toolsFindAPark {
     float: none;
   }
+}
+/*
+#search_form, #find_park_form {
+  display: block;
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+*/
+.toolsFindAPark .advanced {
+  color: #fff;
+  font-size: 10px;
+  line-height: 16px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+  .toolsFindAPark .advanced:hover {
+    text-decoration: underline; 
+  }
+/*
+body.small #find_park_form select {
+  font-size: 10px;
+}
+body.large #find_park_form select {
+  font-size: 16px;
+}
+body.small #toolsFindAPark .advanced {
+  font-size: 10px;
+}
+body.large #toolsFindAPark .advanced {
+  font-size: 13px;
+}
+*/
+#find_park_form select {
+  float: left;
+  height: 22px;
+  width: 146px;
+}
+#find_park_form input {
+  float: right;
 }
 .news-events-ad {
   margin-top: 25px;
@@ -51,8 +127,8 @@
   }
 }
 .items h2 {
-  border-top: 2px solid #d1b366;
   border-bottom: 1px solid #ccc;
+  border-top: 2px solid #d1b366;
   font-size: 14px;
   line-height: 22px;
   margin-bottom: 18px;
@@ -154,7 +230,7 @@ body.large .items li {
   background-repeat: no-repeat;
   background-size: 910px 21px;
   margin-top: 5px;
-  padding-bottom: 36px;
+  padding-bottom: 50px;
 }
 .home-multimedia-title {
   background-color: #f5f5f5;
@@ -220,10 +296,10 @@ body.large .items li {
     background: #f7f7f7 url(../feature-bottom-border.png) bottom left no-repeat;
     height: 270px
   }
-    .home-multimedia-features .col-md-2 {
-      padding-left: 15px;
-      width: 20%;
-    }
+  .home-multimedia-features .col-md-2 {
+    padding-left: 15px;
+    width: 20%;
+  }
 }
 .home-multimedia-feature {
   margin-top: 16px;
@@ -239,7 +315,7 @@ body.large .items li {
     text-transform: uppercase;
   }
   .home-multimedia-feature p.caption {
-    color: #666666;
+    color: #666;
     font-size: 12px;
     line-height: 14px;
     margin-bottom: 2px;
@@ -273,86 +349,6 @@ body.large .items li {
 
 
 
-
-
-
-.toolsSupport {
-    float:left;
-    padding: 10px 0 15px 0;
-    margin:0;
-}
-    @media (min-width:768px) {
-        .toolsSupport {
-            border-top: 1px solid #BA8D1A;
-        }
-    }
-    @media (min-width:991px) {
-        .toolsSupport {
-            margin:30px 0 0 0;
-        }
-    }
-.toolsPass {
-    float:left;
-    padding: 5px 0 5px 0;
-    margin:0;
-}
-    @media (min-width:768px) {
-        .toolsPass {
-            float:none;
-        }
-    }
-    @media (min-width:991px) {
-        .toolsPass {
-            float:none;
-        }
-    }
-
-
-
-    #search_form, #find_park_form {
-        display: block;
-        padding: 0 0 10px 0;
-        margin:0;
-        
-    }
-
-#search_form label, #find_park_form label { display: block; margin-bottom: 12px; }
-
-        #search_form input, #find_park_form input { display: inline; vertical-align: middle; }
-
-        #search_form .submit, #find_park_form .submit { margin-left: 5px; margin-bottom: 5px;}
-
-        #find_park_form select {
-			width: 146px;
-			font-size: 12px;
-			line-height: 14px;
-			color: #666;
-			margin-bottom: 5px;
-			border: none;
-			vertical-align: middle;
-			padding: 3px 0 2px 2px;
-        }
-
-            body.small #find_park_form select { font-size: 10px; }
-            body.large #find_park_form select { font-size: 16px; }
-
-        #find_park_form .advanced {
-            font-size: 10px;
-            line-height: 16px;
-            color: #fff;
-            margin-top: 10px;
-            text-decoration: none;
-        }
-
-            body.small #find_park_form .advanced {
-                font-size: 10px;
-            }
-
-            body.large #find_park_form .advanced {
-                font-size: 13px;
-            }
-
-            #find_park_form .advanced:hover { text-decoration: underline; }
 
 
 

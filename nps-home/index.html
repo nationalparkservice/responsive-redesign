@@ -84,7 +84,7 @@ layout: home
             <label for="park-query">
               <h2>Find a Park</h2>
             </label>
-            <select id="park-query">
+            <select class="form-control" id="park-query">
               <option value="">by State...</option>
               <option value="/state/al/index.htm">Alabama</option>
               <option value="/state/ak/index.htm">Alaska</option>
@@ -143,12 +143,11 @@ layout: home
               <option value="/state/wi/index.htm">Wisconsin</option>
               <option value="/state/wy/index.htm">Wyoming</option>
             </select>
-            <input type="image" src="http://www.nps.gov/common/commonspot/templates/images/buttons/go.gif" name="sub1" value="Go" alt="Go" class="submit" title="Go">
-            <br>
-            <a class="advanced" style="clear:both" href="/findapark/index.htm">Advanced Search Tool and Map</a>
-            <input type="hidden" name="as_sfid" value="AAAAAAUv8KiY7nvP3cJOKv6AndUandZfOjvf6ej3pI2sQ8Oiuf_1B40ZddtC0saqRDRCSmB1s7tcNupB1EiUq69h4x01NQdJpoty6LvZ8al1sYDUSA==">
-            <input type="hidden" name="as_fid" value="BX1HjnT_mcX1MYVPgRKp">
+            <input alt="Go" class="submit" name="sub1" src="http://www.nps.gov/common/commonspot/templates/images/buttons/go.gif" title="Go" type="image" value="Go">
+            <input name="as_sfid" type="hidden" value="AAAAAAUv8KiY7nvP3cJOKv6AndUandZfOjvf6ej3pI2sQ8Oiuf_1B40ZddtC0saqRDRCSmB1s7tcNupB1EiUq69h4x01NQdJpoty6LvZ8al1sYDUSA==">
+            <input name="as_fid" type="hidden" value="BX1HjnT_mcX1MYVPgRKp">
           </form>
+          <a class="advanced" style="clear:both" href="/findapark/index.htm">Advanced Search Tool and Map</a>
         </div>
         <div class="toolsSupport">
           <h2>Support Your Parks</h2>
@@ -157,7 +156,9 @@ layout: home
           </a>
         </div>
         <div class="toolsPass">
-          <a href="http://www.nps.gov/findapark/passes.htm"><img id="entrancePass" src="entrancePass.png" alt="Get Your Entrance Pass Now" title="Get Your Entrance Pass Now" onclick="document.location='/findapark/passes.htm';"></a>
+          <a href="http://www.nps.gov/findapark/passes.htm">
+            <img alt="Get Your Entrance Pass Now" id="entrancePass" onclick="document.location='/findapark/passes.htm';" src="entrancePass.png" title="Get Your Entrance Pass Now">
+          </a>
         </div>
       </div>
     </div>
