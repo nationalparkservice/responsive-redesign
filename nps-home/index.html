@@ -9,7 +9,7 @@ js:
 layout: home
 ---
 
-<div class="row fader-tools">
+<div class="fader-tools row">
   <div class="col-md-9 col-sm-8 col-xs-12">
     <div class="fader -with-description" data-fader>
       <ul>
@@ -74,7 +74,7 @@ layout: home
       </ul>
     </div>
   </div>
-  <div class="col-xs-12 col-sm-4 col-md-3">
+  <div class="col-md-3 col-sm-4 col-xs-12">
     <div class="home-tools">
       <div class="find-a-park">
         <form id="find_park_form" action="/findapark" method="get">
@@ -148,20 +148,20 @@ layout: home
       </div>
       <div class="support">
         <h2>Support Your Parks</h2>
-        <a href="http://www.nationalparks.org/" onclick="">
-          <img id="supportYourParks" alt="Support Your Parks: National Park Foundation" title="Support Your Parks: National Park Foundation" src="assets/img/npf-go.png">
+        <a href="http://www.nationalparks.org/">
+          <img alt="Support Your Parks: National Park Foundation" id="supportYourParks" title="Support Your Parks: National Park Foundation" src="assets/img/npf-go.png">
         </a>
       </div>
       <div class="pass">
-        <a href="http://www.nps.gov/findapark/passes.htm">
-          <img alt="Get Your Entrance Pass Now" id="entrancePass" onclick="document.location='/findapark/passes.htm';" src="assets/img/entrance-pass.png" title="Get Your Entrance Pass Now">
+        <a href="/findapark/passes.htm">
+          <img alt="Get Your Entrance Pass Now" id="entrancePass" src="assets/img/entrance-pass.png" title="Get Your Entrance Pass Now">
         </a>
       </div>
     </div>
   </div>
 </div>
 <div class="news-events-ad row">
-  <div class="col-md-4 col-sm-4 col-xs-4 home-news items">
+  <div class="col-md-4 col-sm-4 col-xs-6 home-news items">
     <h2>News<small><a href="/news">More News »</a></small></h2>
     <ul>
       <li>
@@ -175,7 +175,7 @@ layout: home
       </li>
     </ul>
   </div>
-  <div class="col-md-4 col-sm-4 col-xs-4 home-events items">
+  <div class="col-md-4 col-sm-4 col-xs-6 home-events items">
     <h2>Events<small><a href="/findapark/event-search.htm">More Events »</a></small></h2>
     <ul>
       <li>
@@ -189,14 +189,16 @@ layout: home
       </li>
     </ul>
   </div>
-  <div class="col-md-4 col-sm-4 col-xs-4" style="margin-top:20px;">
+  <div class="col-md-4 col-sm-4 col-xs-6">
     <div class="home-ad-space">
-      <a href="/findapark/feefreeparks.htm"><img src="http://www.nps.gov/common/commonspot/templates/images/promos/Promo-FeeFree-2015.jpg" alt="Fee-Free Days 2015 - Mark Your Calendar" title="Fee-Free Days 2015 - Mark Your Calendar"></a>
+      <a href="/findapark/feefreeparks.htm">
+        <img alt="Fee-Free Days 2015 - Mark Your Calendar" class="img-responsive" src="http://www.nps.gov/common/commonspot/templates/images/promos/Promo-FeeFree-2015.jpg" title="Fee-Free Days 2015 - Mark Your Calendar">
+      </a>
     </div>
   </div>
 </div>
 <div class="row">
-  <div class="col-xs-12 col-sm-12 col-md-12 home-multimedia">
+  <div class="col-md-12 col-sm-12 col-xs-12 home-multimedia">
     <div class="home-multimedia-title">
       <h2>Photos and Multimedia<small class="hidden-xs"><a href="/media/multimedia-search.htm">More Photos and Multimedia »</a></small></h2>
     </div>
@@ -257,12 +259,12 @@ layout: home
         <a class="visit" href="http://www.nps.gov/history/museum/exhibits/band/imgal.html">Visit Now »</a>
       </div>
       <!--
-      <div class="col-xs-6 col-sm-3 col-md-2 home-multimedia-feature">
+      <div class="col-md-2 col-sm-3 col-xs-6 home-multimedia-feature">
         <p class="hidden-lg hidden-md hidden-sm" style="margin:50px 0 0 0;">
           <a href="/media/multimedia-search.htm">More Photos and Multimedia »</a>
         </p>
       </div>
       -->
-    </div> 
+    </div>
   </div>
 </div>

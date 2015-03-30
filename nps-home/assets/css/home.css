@@ -1,11 +1,13 @@
-.wallpaper-home {
-  margin-bottom: 20px !important
+@media (min-width: 991px) {
+  .wallpaper-home {
+    margin-bottom: 20px !important;
+  }
 }
 .home-content-area {
-  background-color: #fff
+  background-color: #fff;
 }
 .row.fader-tools {
-  background-color: #916800
+  background-color: #916800;
 }
   .row.fader-tools .col-md-9 .fader {
     margin-bottom: 0;
@@ -13,11 +15,11 @@
     width: 100%;
   }
   .row.fader-tools .col-md-3 {
-    padding-right: 13px
+    padding-right: 13px;
   }
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
   .row.fader-tools {
-    background: none
+    background: none;
   }
     .row.fader-tools .col-md-9 {
       padding-right: 0;
@@ -28,9 +30,9 @@
       width: 271px;
     }
 }
-@media (min-width: 768px) and (max-width: 990px) { 
+@media (min-width: 768px) and (max-width: 990px) {
   .row.fader-tools .col-md-3 {
-    margin-left: -15px
+    margin-left: -15px;
   }
 }
 .home-tools {
@@ -39,7 +41,7 @@
   padding: 10px 25px;
   width: 100%;
 }
-@media (min-width: 991px) { 
+@media (min-width: 991px) {
   .home-tools {
     background: #916800 url(http://www.nps.gov/common/commonspot/templates/images/bg/tools02b_dark.gif) 0 -97px no-repeat;
     height: 336px;
@@ -52,15 +54,17 @@
   padding: 0;
 }
 .home-tools h2 {
-  margin: 0 0 10px 0
+  margin: 0 0 10px 0;
 }
 .home-tools label {
-  display: block
+  display: block;
 }
-.home-tools .find-a-park {
-  width: 100%
+.home-tools .find-a-park,
+.home-tools .pass,
+.home-tools .support {
+  width: 100%;
 }
-@media (min-width: 768px) and (max-width: 990px) { 
+@media (min-width: 768px) and (max-width: 990px) {
   .home-tools .find-a-park {
     border-bottom: 1px solid #ba8d1a;
     padding-bottom: 15px;
@@ -72,7 +76,7 @@
   width: 155px;
 }
 .home-tools .find-a-park form input {
-  margin-left: 15px
+  margin-left: 15px;
 }
 .home-tools .find-a-park .advanced {
   color: #fff;
@@ -82,41 +86,37 @@
   text-decoration: none;
 }
 .home-tools .find-a-park .advanced:hover {
-  text-decoration: underline
+  text-decoration: underline;
 }
 .home-tools .support {
   border-bottom: 1px solid #ba8d1a;
-  float: left;
   margin: 0;
   padding: 15px 0 20px 0;
 }
-@media (min-width: 991px) { 
+@media (min-width: 991px) {
   .home-tools .support {
     border-top: 1px solid #ba8d1a;
     margin: 70px 0 15px 0;
   }
 }
-.home-tools .pass {
-  float: left
-}
-@media (min-width: 991px) { 
+@media (min-width: 768px) and (max-width: 990px) {
   .home-tools .pass {
-    float: none
-  }
-}
-@media (min-width: 768px) { 
-  .home-tools .pass {
-    float: none
+    padding-top: 15px;
   }
 }
 .news-events-ad {
-  margin-top: 25px
+  margin-top: 25px;
+  padding: 0 25px;
 }
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
   .news-events-ad {
-    margin-left: 10px
+    margin-left: 10px;
+    padding: 0;
   }
 }
+  .news-events-ad .col-md-4:last-child {
+    margin-top: 20px;
+  }
 .items h2 {
   border-bottom: 1px solid #ccc;
   border-top: 2px solid #d1b366;
@@ -141,7 +141,7 @@
       text-decoration: none;
     }
     .items h2 small a:hover {
-      text-decoration: underline
+      text-decoration: underline;
     }
 .items ul {
   border-bottom: 1px solid #ccc;
@@ -160,10 +160,10 @@
     text-decoration: none;
   }
   .items li a:hover {
-    color: #999
+    color: #999;
   }
     .items li a:hover strong {
-      color: #d39800
+      color: #d39800;
     }
   .items li strong {
     color: #b28000;
@@ -172,14 +172,17 @@
     font-weight: bold;
     line-height: 20px;
   }
-.home-ad-space {
-  margin-left: 35px
+@media (min-width: 992px) {
+  .home-ad-space {
+    float: left;
+    margin-left: 35px;
+  }
 }
 .home-multimedia {
   margin-top: 5px;
   padding-bottom: 50px;
 }
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
   .home-multimedia {
     background: url(http://www.nps.gov/pwr/templates/images/bg/multimedia_shadow.gif);
     background-position: 40px 320px;
@@ -195,9 +198,9 @@
   margin: 0 25px;
   padding: 0 20px;
 }
-@media (max-width:768px) { 
+@media (max-width: 768px) {
   .home-multimedia-title {
-    margin: 0
+    margin: 0;
   }
 }
 .home-multimedia-title h2 {
@@ -219,22 +222,22 @@
   text-decoration: none;
 }
 .home-multimedia h2 small a:hover {
-  text-decoration: underline
+  text-decoration: underline;
 }
 .home-multimedia-features {
   margin: 0 25px;
   padding: 0 20px;
 }
-  .home-multimedia-features .home-multimedia-feature {
-    border-right: 1px solid #cbcbcb
-  }
-  .home-multimedia-features .home-multimedia-feature:last-child {
-    border-right: none
-  }
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
   .home-multimedia-features {
-    height: 270px
+    height: 270px;
   }
+    .home-multimedia-features .home-multimedia-feature {
+      border-right: 1px solid #cbcbcb;
+    }
+    .home-multimedia-features .home-multimedia-feature:last-child {
+      border-right: none;
+    }
     .home-multimedia-features .col-md-2 {
       padding-left: 15px;
       width: 20%;
@@ -272,7 +275,7 @@
       text-decoration: none;
     }
     .home-multimedia-feature h4 a:hover {
-      text-decoration: underline
+      text-decoration: underline;
     }
   .home-multimedia-feature a.visit {
     color: #b28000;
@@ -280,5 +283,5 @@
     text-decoration: none;
   }
   .home-multimedia-feature a.visit:hover {
-    text-decoration: underline
+    text-decoration: underline;
   }
