@@ -1757,6 +1757,17 @@ ul.related-promo-list {
   float: left;
   width: 100%;
 }
+.MoreContentItem.column1 {
+    background: none;
+}
+.MoreContentItem.column2 {
+    padding-top: 0;
+}
+    @media (min-width: 768px) {
+        .MoreContentItem.column2 {
+            padding-top: 25px;
+        }
+    }
 .MoreContentLast {
   float: left; /* added by JBF to fix a spacing issue in the narrowest view.  */
   width: 100%;
