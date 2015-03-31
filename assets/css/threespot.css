@@ -12,9 +12,6 @@
 ** Carrot 
 \*---------------------------------------------------
    ================================================== */
-.carrot-end {
-
-}
 .carrot-end:after {
   content: "\203A";
   font-size: 110%;
@@ -385,9 +382,6 @@
     font-size: 20px
   }
 }
-.fader a {
-
-}
 .fader a:link {
   text-decoration: none
 }
@@ -415,11 +409,6 @@
 }
 .fader.-with-description .sub {
   font-family: "ArimoRegular", sans-serif
-}
-@media screen and (min-width: 768px) { 
-  .fader.-with-description .sub {
-
-  }
 }
 .fader .viewAll-link {
   bottom: 55px;
@@ -625,9 +614,6 @@
 ** Layout Overrides
 \*---------------------------------------------------
    ================================================== */
-.middleContentArea {
-
-}
 @media (min-width: 992px) { 
   .middleContentArea.-full_width {
     padding: 0 20px 20px
@@ -692,10 +678,6 @@
   background: url(../img/controls/pagination.png) no-repeat right 3px;
   margin-left: 6px;
   padding-right: 10px;
-}
-.pagination-old a.prev,
-.pagination-old a.next {
-
 }
 .pagination-old li a.active,
 .pagination-old li a:hover,
@@ -1020,13 +1002,8 @@ h2.urb-header-title {
 .urb .input-group-addon {
   background-color: #EFE7D1
 }
-/* .urb .input-group {
-  padding: 0 15px;
-}
-   ================================================== */
 .urb .form-group .form-control {
   margin: 0;
-  /*font-size: 16px;*/
 }
 @media screen and (max-width: 768px) { 
   .urb .form-group .form-control {
