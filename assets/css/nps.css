@@ -521,7 +521,8 @@ a.back:before {
 
 /* active links on hamburger nav */
 #mobileNavDynamic li.active a.active {
-  color:#5e7630;
+  color:#a65523;
+    font-weight: bold;
 }
 /* ===[ Small Banner ]===
    ================================================== */
