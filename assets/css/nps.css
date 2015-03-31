@@ -518,6 +518,11 @@ a.back:before {
     content: none;
   }
 }
+
+/* active links on hamburger nav */
+#mobileNavDynamic li.active a.active {
+  color:#5e7630;
+}
 /* ===[ Small Banner ]===
    ================================================== */
 .bap-mobile {
@@ -1275,7 +1280,7 @@ a.back:before {
     }
     #sub-nav .sub > a,
     #sub-nav .sub .sub > a {
-      background: url(../images/icons/nav-pointer.png) no-repeat right .9em;
+      background: url(../img/chrome/nav-pointer.png) no-repeat right .9em;
       font-weight: bold;
       padding-right: 20px;
       color: #647630;
@@ -1756,6 +1761,17 @@ ul.related-promo-list {
   float: left;
   width: 100%;
 }
+.MoreContentItem.column1 {
+    background: none;
+}
+.MoreContentItem.column2 {
+    padding-top: 0;
+}
+    @media (min-width: 768px) {
+        .MoreContentItem.column2 {
+            padding-top: 25px;
+        }
+    }
 .MoreContentLast {
   float: left; /* added by JBF to fix a spacing issue in the narrowest view.  */
   width: 100%;
@@ -2252,3 +2268,5 @@ p.caption {
     .commonspotRTE li ol li {
       margin: 0
     }
+
+

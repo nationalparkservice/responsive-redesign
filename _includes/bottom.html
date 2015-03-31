@@ -23,7 +23,8 @@
   }
     .social-connect-mobile ul {
       border-bottom: none;
-      margin: 0;
+      margin: 0 40px 0 0;
+      padding:0 0 0 0;
     }
       .social-connect-mobile li {
         list-style: none;
@@ -70,46 +71,86 @@
   .park-tools-mobile {
     float: left;
   }
-  .park-tools-mobile ul {
-    border-bottom: none;
-    margin-bottom: 0;
-    margin-right: 40px;
-    padding: 5px 10px 10px 0;
-  }
+    .park-tools-mobile ul {
+      border-bottom: none;
+      margin-bottom: 0;
+      margin-right: 40px;
+      padding: 5px 10px 10px 0;
+    }
     .park-tools-mobile li { 
       background: url(http://www.nps.gov/common/commonspot/templates/images/bg/park-tools.png) no-repeat;
       border: none;
       padding: 2px 0 4px 30px;
     }
-      .park-tools-mobile li:first-child {
-        border-bottom: 1px solid #e4e3df;
-        margin-bottom: 8px;
-        padding-bottom: 10px;
-        padding-top: 0;
-      }
+    .park-tools-mobile li:first-child {
+      border-bottom: 1px solid #e4e3df;
+      margin-bottom: 8px;
+      padding-bottom: 10px;
+      padding-top: 0;
+    }
       .park-tools-mobile li a {
         color: #706d5f;
-        display: block;
         font-size: 12px;
-        font-weight: bold;
-        height: 20px;
         line-height: 14px;
-        padding: 0;
+        font-weight: bold;
+        padding:0;
+        height: 20px;
+        display: block;
       }
-  .park-tools-mobile .timeline {
-    background-position: 0 0;
-  }
-  .park-tools-mobile .faqs {
-    background-position: 2px -31px;
-  }
-  .park-tools-mobile .context {
-    background-position: 2px -51px;
-  }
-  .park-tools-mobile .index {
-    background-position: 2px -71px;
-  }
-  .park-tools-mobile .spanish {
-    background-position: 2px -92px;
+    .park-tools-mobile .timeline {
+      background-position: 0px 0px;
+    }
+    .park-tools-mobile .faqs {
+      background-position: 2px -31px;
+    }
+    .park-tools-mobile .context {
+      background-position: 2px -51px;
+    }
+    .park-tools-mobile .index {
+      background-position: 2px -71px;
+    }
+    .park-tools-mobile .spanish {
+      background-position: 2px -92px;
+    }
+    .subject-tools-mobile {
+        float:left;
+    }
+      .subject-tools-mobile ul {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding: 5px 10px 10px 0;
+      }
+      .subject-tools-mobile li {
+        background: none;
+        border: none;
+        padding: 2px 0 4px 30px;
+      }
+      .subject-tools-mobile li a {
+        color: #706d5f;
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: bold;
+        padding:0;
+        height: 20px;
+        display: block;
+      }
+      .subject-tools-mobile .calendar {
+        background: url("http://www.nps.gov/common/commonspot/templates/images/icons/icon_calendar.gif") 7px 4px no-repeat
+      }
+      .subject-tools-mobile .faqs {
+        background: url("http://www.nps.gov/common/commonspot/templates/images/bg/faqs.png") 7px 4px no-repeat
+      }
+      .subject-tools-mobile .index {
+        background: url("http://www.nps.gov/common/commonspot/templates/images/icons/icon_teachers.jpg") 7px 4px no-repeat
+      }
+      .subject-tools-mobile  .contact {
+        background: url("http://www.nps.gov/common/commonspot/templates/images/icons/icon_contact.gif") 7px 4px no-repeat
+      }
+  .small-tools-ad {
+    margin: 20px 0 0 0;
+    padding: 2px;
+    border: 1px solid #959284;
+    background: white;
   }
 </style>
 <!-- DESKTOP - Breadcrumbs -->
@@ -335,45 +376,97 @@
     </div>
   </div>
 </div>
-<!-- MOBILE - tools -->
-<div class="tools-mobile hidden-lg hidden-md">
-  <div class="park-tools-mobile">
-    <h3>Park Tools:</h3>
-    <ul>
-      <li class="map">
-        <a class="colorbox-iframe-map" href="/common/commonspot/customcf/apps/maps/showmap.cfm?alphacode=yose&parkname=Yosemite" name="Yosemite Map">View Park Map</a>
-      </li>
-      <li class="faqs">
-        <a href="/yose/faqs.htm"><abbr title="Frequently Asked Questions">FAQs</abbr></a>
-      </li>
-      <li class="context">
-        <a href="/yose/contacts.htm">Contact Us</a>
-      </li>
-      <li class="index">
-        <a href="/yose/siteindex.htm">Site Index</a>
-      </li>
-      <li class="spanish">
-        <a href="/yose/espanol/index.htm">Español</a>
-      </li>
-    </ul>
-  </div>
-  <div class="social-connect-mobile">
-    <h3>Find Us On:</h3>
-    <ul>
-      <li class="cwu-facebook">
-        <a href="http://www.facebook.com/YosemiteNPS">Facebook</a>
-      </li>
-      <li class="cwu-twitter">
-        <a href="http://www.twitter.com/YosemiteNPS">Twitter</a>
-      </li>
-      <li class="cwu-youtube">
-        <a href="http://www.youtube.com/user/yosemitenationalpark">YouTube</a>
-      </li>
-      <li class="cwu-more">
-        <a href="http://www.nps.gov/yose/parknews/socialmedia.htm">More</a>
-      </li>
-    </ul>
-  </div>
+<!-- MOBILE - Park tools -->
+<div class="hidden-md col-sm-12 col-xs-12 tools-mobile">
+    <div class="park-tools-mobile col-sm-4 col-xs-6">
+        <h3>Test Park Tools:</h3>
+            <ul>
+                <li class="map">
+                    <a class="colorbox-iframe-map" href="/common/commonspot/customcf/apps/maps/showmap.cfm?alphacode=yose&parkname=Yosemite" name="Yosemite Map">View Park Map</a>
+                </li>
+                <li class="faqs">
+                    <a href="/yose/faqs.htm"><abbr title="Frequently Asked Questions">FAQs</abbr></a>
+                </li>
+                <li class="context">
+                  <a href="/yose/contacts.htm">Contact Us</a>
+                </li>
+                <li class="index">
+                  <a href="/yose/siteindex.htm">Site Index</a>
+                </li>
+                <li class="spanish">
+                  <a href="/yose/espanol/index.htm">Español</a>
+                </li>
+            </ul>
+    </div>
+    <div class="social-connect-mobile col-sm-4 col-xs-6">
+        <H3>Find Us On:</H3>
+        <ul>
+            <li class="cwu-facebook">
+              <a href="http://www.facebook.com/YosemiteNPS">Facebook</a>
+            </li>
+            <li class="cwu-twitter">
+              <a href="http://www.twitter.com/YosemiteNPS">Twitter</a>
+            </li>
+            <li class="cwu-youtube">
+              <a href="http://www.youtube.com/user/yosemitenationalpark">YouTube</a>
+            </li>
+            <li class="cwu-more">
+              <a href="http://www.nps.gov/yose/parknews/socialmedia.htm">More</a>
+            </li>
+        </ul>
+    </div>
+    
+        <!-- Add clearfix for responsive viewport. Needs to be added after every two sections -->
+        <div class="clearfix visible-xs-block"></div>
+    
+    <div class="col-sm-4 col-xs-6">
+        <img class="small-tools-ad" src="assets/img/chrome/logos/FindYourPark158.png" alt="Find Your Park. Share Your Story.">
+    </div>
+</div>
+
+<!-- MOBILE - Subject tools -->
+<div class="hidden-md col-sm-12 col-xs-12 tools-mobile">
+    <div class="subject-tools-mobile col-sm-4 col-xs-6">
+      <h3>Tools:</h3>
+        <ul>
+            <li class="calendar">
+              <a href="/yose/faqs.htm">Calendar</a>
+            </li>
+            <li class="index">
+              <a href="/yose/contacts.htm">Teachers</a>
+            </li>
+            <li class="faqs">
+              <a href="/yose/siteindex.htm"><abbr title="Frequently Asked Questions">FAQs</abbr></a>
+            </li>
+            <li class="contact">
+              <a href="/yose/espanol/index.htm">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+    <div class="social-connect-mobile col-sm-4 col-xs-6">
+        <H3>Find Us On:</H3>
+        <ul>
+            <li class="cwu-facebook">
+              <a href="http://www.facebook.com/YosemiteNPS">Facebook</a>
+            </li>
+            <li class="cwu-twitter">
+              <a href="http://www.twitter.com/YosemiteNPS">Twitter</a>
+            </li>
+            <li class="cwu-youtube">
+              <a href="http://www.youtube.com/user/yosemitenationalpark">YouTube</a>
+            </li>
+            <li class="cwu-more">
+              <a href="http://www.nps.gov/yose/parknews/socialmedia.htm">More</a>
+            </li>
+        </ul>
+    </div>
+    
+        <!-- Add clearfix for responsive viewport. Needs to be added after every two sections -->
+        <div class="clearfix visible-xs-block"></div>
+    
+    <div class="col-sm-4 col-xs-6">
+        <img class="small-tools-ad" src="assets/img/chrome/logos/FindYourPark158.png" alt="Find Your Park. Share Your Story.">
+    </div>
 </div>
 <div class="footer-mobile hidden-lg hidden-md">
   <div class="top">
