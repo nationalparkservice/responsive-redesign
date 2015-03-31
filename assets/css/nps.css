@@ -1280,7 +1280,7 @@ a.back:before {
     }
     #sub-nav .sub > a,
     #sub-nav .sub .sub > a {
-      background: url(../images/icons/nav-pointer.png) no-repeat right .9em;
+      background: url(../img/chrome/nav-pointer.png) no-repeat right .9em;
       font-weight: bold;
       padding-right: 20px;
       color: #647630;
