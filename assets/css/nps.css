@@ -520,7 +520,7 @@ a.back:before {
 }
 
 /* active links on hamburger nav */
-#mobileNavDynamic li.active a {
+#mobileNavDynamic li.active a.active {
   color:#5e7630;
 }
 /* ===[ Small Banner ]===
