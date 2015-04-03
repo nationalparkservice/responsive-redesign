@@ -2280,6 +2280,12 @@ margin: 0 0 0 1.5em;
     top:-40px;
     margin-left: 20px;
 }
+
+@media (max-width: 991px) {
+  .admin-buttons {
+    display: none;
+  }
+}
 .admin-buttons a {
   font-weight: bold;
   font-size: 12px;
