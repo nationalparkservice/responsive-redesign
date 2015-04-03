@@ -2233,9 +2233,12 @@ p.caption {
 .col-bottom {
   vertical-align: bottom
 }
-/* fixed ul's and ol's   */
+
+
+/* ===[ <ol>/<li> modifications taken from npsOld.  Showing bullets by default  ]===
+   ================================================== */
 .content-container ul {
-  list-style: outside disc
+  list-style: outside disc;
 }
 .content-container ul,
 .content-container ol {
@@ -2247,27 +2250,219 @@ p.caption {
   padding: 0;
   margin: 0 0 0 1.5em;
 }
-    .content-container li ul li,
-    .content-container li ol li {
-      margin: 0
-    }
+  .content-container li ul li,
+  .content-container li ol li {
+    margin: 0
+  }
 /* ul/ol style for the RTE.....   */
 .commonspotRTE ul {
-  list-style: outside disc
+list-style: outside disc
 }
 .commonspotRTE ul,
 .commonspotRTE ol {
-  margin: 0 0 1.5em 1.5em;
-  padding: 0;
+margin: 0 0 1.5em 1.5em;
+padding: 0;
 }
 .commonspotRTE li ul,
 .commonspotRTE li ol {
-  padding: 0;
-  margin: 0 0 0 1.5em;
+padding: 0;
+margin: 0 0 0 1.5em;
 }
-    .commonspotRTE li ul li,
-    .commonspotRTE li ol li {
-      margin: 0
-    }
+.commonspotRTE li ul li,
+.commonspotRTE li ol li {
+  margin: 0
+}
 
+/* ===[  Admin Tools.  Used on nearly every page so this is a good place for them ]===
+   ================================================== */
+.admin-buttons {
+    position:absolute;
+    top:-40px;
+    margin-left: 20px;
+}
+.admin-buttons a {
+  font-weight: bold;
+  font-size: 12px;
+  color: #51652A;
+    display: inline;
+}
+.login {
+    background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/icon_lock.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    clear: both;
+}
+.logout {
+    background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/icon_lock.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    clear: both;
+}
+.admin-buttons a.siteadmin {
+    background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/icon_gear.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    clear: both;
+}
+
+/* ===[  Mobile Park/subject/org tools ]===
+   ================================================== */
+.tools-mobile {
+  background-color: #f9f7f3;
+  display: inline-block;
+  padding: 20px 50px;
+  width: 100%;
+}
+    .tools-mobile H3 {
+        color: #959284;
+        font-family: arial,helvetica,sans-serif;
+        
+    }
+    .tools-mobile a {
+        color: black;
+        text-decoration: underline;
+    }
+    
+.park-tools-mobile {
+}
+.park-tools-mobile ul{
+      border-bottom: none;
+      margin-bottom: 0;
+    padding: 5px 10px 10px 0;
+    }
+    .park-tools-mobile li { 
+        background: url("http://www.nps.gov/common/commonspot/templates/images/bg/park-tools.png") no-repeat;
+        border: none;
+        padding: 2px 0 4px 30px;
+    }
+    .park-tools-mobile li:first-child {
+        border-bottom: 1px solid #E4E3DF;
+        margin-bottom: 8px;
+        padding-bottom: 10px;
+        padding-top: 0;
+    }
+    .park-tools-mobile li a {
+          color: #706d5f;
+          font-size: 12px;
+          line-height: 14px;
+          font-weight: bold;
+          padding:0;
+          height: 20px;
+          display: block;
+    }
+.park-tools-mobile .timeline {
+  background-position: 0px 0px;
+}
+.park-tools-mobile .faqs {
+  background-position: 2px -31px;
+}
+.park-tools-mobile .context {
+  background-position: 2px -51px;
+}
+.park-tools-mobile .index {
+  background-position: 2px -71px;
+}
+.park-tools-mobile .spanish {
+  background-position: 2px -92px;
+}
+    
+
+    .subject-tools-mobile {
+        float:left;
+    }
+        .subject-tools-mobile ul {
+          border-bottom: none;
+          margin-bottom: 0;
+          padding: 5px 10px 10px 0;
+        }
+        .subject-tools-mobile li {
+          background: none;
+          border: none;
+          padding: 2px 0 4px 30px;
+        }
+        .subject-tools-mobile li a {
+          color: #706d5f;
+          font-size: 12px;
+          line-height: 14px;
+          font-weight: bold;
+          padding:0;
+          height: 20px;
+          display: block;
+        }
+        .subject-tools-mobile .calendar {
+          background: url("http://www.nps.gov/common/commonspot/templates/images/icons/icon_calendar.gif") 7px 4px no-repeat
+        }
+        .subject-tools-mobile .faqs {
+          background: url("http://www.nps.gov/common/commonspot/templates/images/bg/faqs.png") 7px 4px no-repeat
+        }
+        .subject-tools-mobile .index {
+          background: url("http://www.nps.gov/common/commonspot/templates/images/icons/icon_teachers.jpg") 7px 4px no-repeat
+        }
+        .subject-tools-mobile  .contact {
+          background: url("http://www.nps.gov/common/commonspot/templates/images/icons/icon_contact.gif") 7px 4px no-repeat
+        }
+.small-tools-ad {
+    margin: 20px 0 0 0;
+    padding: 2px;
+    border: 1px solid #959284;
+    background: white;
+}
+
+/* ===[  Mobile social media icons ]===
+   ================================================== */
+.social-connect-mobile {
+      float:left;   
+}
+.social-connect-mobile ul {
+      border-bottom: none;
+      margin: 0 40px 0 0;
+      padding:0 0 0 0;
+    }
+    .social-connect-mobile li {
+      list-style: none;
+      padding: 4px 0 3px;
+      border: none;
+    }
+        .social-connect-mobile li a {
+          background: url("http://www.nps.gov/common/commonspot/templates/images/icons/nps_social_badges_2015_color.png") no-repeat;
+          color: #706d5f;
+          font-size: 12px;
+          line-height: 14px;
+          font-weight: bold;
+          padding-left: 26px;
+          height: 20px;
+          display: block;
+        }
+
+    .social-connect-mobile .cwu-facebook a {
+      background-position: 0 0
+    }
+    .social-connect-mobile .cwu-twitter a {
+      background-position: 0 -27px
+    }
+    .social-connect-mobile .cwu-instagram a {
+      background-position: 0 -54px
+    }
+    .social-connect-mobile .cwu-youtube a {
+      background-position: 0 -83px
+    }
+    .social-connect-mobile .cwu-flickr a {
+      background-position: 0 -112px
+    }
+    .social-connect-mobile .cwu-tumblr a {
+      background-position: 0 -140px
+    }
+    .social-connect-mobile .cwu-foursquare a {
+      background-position: 0 -170px
+    }
+    .social-connect-mobile .cwu-pinterest a {
+      background-position: 0 -200px
+    }
+    .social-connect-mobile .cwu-more a {
+      background-position: 0 -230px
+    }
+    
 
