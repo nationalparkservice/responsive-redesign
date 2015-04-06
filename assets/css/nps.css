@@ -87,6 +87,14 @@ body {
   background-image: none;
   font: 14px/1.42857 arial,helvetica,sans-serif;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: arial,helvetica,sans-serif;
+}
 @media (min-width: 992px) {
   body {
     background-image: url(../img/bg/blackbarBG.png);
@@ -140,11 +148,11 @@ body {
 .landing-intro {
   margin-bottom: 20px
 }
-    .landing-intro p {
-      color: #706d5f;
-      font-size: 16px;
-      line-height: 24px;
-    }
+  .landing-intro p {
+    color: #706d5f;
+    font-size: 16px;
+    line-height: 24px;
+  }
 @media (min-width: 768px) { 
   .landing-intro {
     margin-bottom: 40px
@@ -307,7 +315,7 @@ a.back:before {
 /* ===[ Logo ]===
    ================================================== */
 .logo {
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
 }
 @media screen and (min-width: 992px) {
   .logo {
@@ -320,7 +328,7 @@ a.back:before {
     width: 324px;
   }
 }
-@media (max-width: 991px) { 
+@media (max-width: 991px) {
   .logo {
     background-image: url(../img/chrome/logos/main-logo-small@2x.png);
     background-size: 200px 32.5px;
@@ -330,7 +338,7 @@ a.back:before {
     width: 200px;
   }
 }
-@media (max-width: 400px) { 
+@media (max-width: 400px) {
   .logo {
     background-image: url(../img/chrome/logos/main-logo-tiny@2x.png);
     background-size: 175px 28.5px;
@@ -368,46 +376,46 @@ a.back:before {
   margin-bottom: 0;
   min-height: 30px;
 }
-    .navbar a.navbar-brand {
-      padding: 9px 15px 8px
+  .navbar a.navbar-brand {
+    padding: 9px 15px 8px
+  }
+  .navbar .navbar-inverse {
+    background-image: -o-linear-gradient(bottom, #000 0%, #000 100%);
+    background-image: -moz-linear-gradient(bottom, #000 0%, #000 100%);
+    background-image: -webkit-linear-gradient(bottom, #000 0%, #000 100%);
+    background-image: -ms-linear-gradient(bottom, #000 0%, #000 100%);
+    background-image: linear-gradient(to bottom, #000 0%, #000 100%);
+  }
+  .navbar .navbar-right {
+    margin-right: 0
+  }
+  .navbar .dropdown-menu {
+    border-top: none;
+    margin-left: -2px;
+    padding: 5px 19px;
+  }
+    .navbar .dropdown-menu li {
+      border-bottom: 1px solid #e4e2dd;
+      color: #5b5b5b;
+      font-size: 13px;
+      margin: 0 -19px;
     }
-    .navbar .navbar-inverse {
-      background-image: -o-linear-gradient(bottom, #000 0%, #000 100%);
-      background-image: -moz-linear-gradient(bottom, #000 0%, #000 100%);
-      background-image: -webkit-linear-gradient(bottom, #000 0%, #000 100%);
-      background-image: -ms-linear-gradient(bottom, #000 0%, #000 100%);
-      background-image: linear-gradient(to bottom, #000 0%, #000 100%);
+      .navbar .dropdown-menu li a {
+        padding: 7px 15px
+      }
+    .navbar .dropdown-menu li:last-child {
+      border-bottom: none
     }
-    .navbar .navbar-right {
-      margin-right: 0
+    .navbar .dropdown-menu li:hover,
+    .navbar .dropdown-menu li a:hover {
+      background-color: #916800;
+      color: #fff;
     }
-    .navbar .dropdown-menu {
-      border-top: none;
-      margin-left: -2px;
-      padding: 5px 19px;
-    }
-        .navbar .dropdown-menu li {
-          border-bottom: 1px solid #e4e2dd;
-          color: #5b5b5b;
-          font-size: 13px;
-          margin: 0 -19px;
-        }
-            .navbar .dropdown-menu li a {
-              padding: 7px 15px
-            }
-        .navbar .dropdown-menu li:last-child {
-          border-bottom: none
-        }
-        .navbar .dropdown-menu li:hover,
-        .navbar .dropdown-menu li a:hover {
-          background-color: #916800;
-          color: #fff;
-        }
-    .navbar-default .navbar-nav > li > a.active,
-    .navbar-default .navbar-nav > li > a.active:focus,
-    .navbar-default .navbar-nav > li > a.active:hover {
-      background-color: #b66619
-    }
+  .navbar-default .navbar-nav > li > a.active,
+  .navbar-default .navbar-nav > li > a.active:focus,
+  .navbar-default .navbar-nav > li > a.active:hover {
+    background-color: #b66619
+  }
 .nav > li {
   text-align: center
 }
@@ -521,7 +529,8 @@ a.back:before {
 
 /* active links on hamburger nav */
 #mobileNavDynamic li.active a.active {
-  color:#5e7630;
+    color:#BA5D24;
+    font-weight: bold;
 }
 /* ===[ Small Banner ]===
    ================================================== */
@@ -847,12 +856,18 @@ a.back:before {
           margin-top: 4px;
         }
 /* Mobile alerts */
-.alert p {
-  margin-bottom: 0;
+#mobile-alerts ul {
+  margin: 0;
 }
-.alert h4 {
-  line-height: 1.1;
-}
+  #mobile-alerts li {
+    list-style-type: none;
+  }
+  #mobile-alerts p {
+    margin-bottom: 0;
+  }
+  .mobile-alerts h4 {
+    line-height: 1.1;
+  }
 /* ===[ Carousel ]===
    ================================================== */
 .carouselRow {
@@ -1275,7 +1290,7 @@ a.back:before {
     }
     #sub-nav a.active,
     #sub-nav .sub a.active {
-      color: #607832;
+      color: #a65523;
       font-weight: bold;
     }
     #sub-nav .sub > a,
@@ -2232,9 +2247,12 @@ p.caption {
 .col-bottom {
   vertical-align: bottom
 }
-/* fixed ul's and ol's   */
+
+
+/* ===[ <ol>/<li> modifications taken from npsOld.  Showing bullets by default  ]===
+   ================================================== */
 .content-container ul {
-  list-style: outside disc
+  list-style: outside disc;
 }
 .content-container ul,
 .content-container ol {
@@ -2246,27 +2264,225 @@ p.caption {
   padding: 0;
   margin: 0 0 0 1.5em;
 }
-    .content-container li ul li,
-    .content-container li ol li {
-      margin: 0
-    }
+  .content-container li ul li,
+  .content-container li ol li {
+    margin: 0
+  }
 /* ul/ol style for the RTE.....   */
 .commonspotRTE ul {
-  list-style: outside disc
+list-style: outside disc
 }
 .commonspotRTE ul,
 .commonspotRTE ol {
-  margin: 0 0 1.5em 1.5em;
-  padding: 0;
+margin: 0 0 1.5em 1.5em;
+padding: 0;
 }
 .commonspotRTE li ul,
 .commonspotRTE li ol {
-  padding: 0;
-  margin: 0 0 0 1.5em;
+padding: 0;
+margin: 0 0 0 1.5em;
 }
-    .commonspotRTE li ul li,
-    .commonspotRTE li ol li {
-      margin: 0
+.commonspotRTE li ul li,
+.commonspotRTE li ol li {
+  margin: 0
+}
+
+/* ===[  Admin Tools.  Used on nearly every page so this is a good place for them ]===
+   ================================================== */
+.admin-buttons {
+    position:absolute;
+    top:-40px;
+    margin-left: 20px;
+}
+
+@media (max-width: 991px) {
+  .admin-buttons {
+    display: none;
+  }
+}
+.admin-buttons a {
+  font-weight: bold;
+  font-size: 12px;
+  color: #51652A;
+    display: inline;
+}
+.login {
+    background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/icon_lock.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    clear: both;
+}
+.logout {
+    background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/icon_lock.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    clear: both;
+}
+.admin-buttons a.siteadmin {
+    background: url("http://www.nps.gov/common/commonspot/templates/images/chrome/utils/icon_gear.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    clear: both;
+}
+
+/* ===[  Mobile Park/subject/org tools ]===
+   ================================================== */
+.tools-mobile {
+  background-color: #f9f7f3;
+  display: inline-block;
+  padding: 20px 50px;
+  width: 100%;
+}
+  .tools-mobile h3 {
+    color: #959284;
+    font-family: arial,helvetica,sans-serif;
+  }
+  .tools-mobile a {
+    color: black;
+    text-decoration: underline;
+  }
+.park-tools-mobile ul,
+.social-connect-mobile ul {
+  padding: 5px 0 0 0;
+}
+.social-connect-mobile {
+  float: left;
+}
+  .social-connect-mobile ul {
+    border-bottom: none;
+    margin: 0 40px 0 0;
+    padding: 0;
+  }
+    .social-connect-mobile li {
+      list-style: none;
+      padding: 4px 0 3px;
+      border: none;
     }
-
-
+    .social-connect-mobile li a {
+      background: url(http://www.nps.gov/common/commonspot/templates/images/icons/nps_social_badges_2015_color.png) no-repeat;
+      color: #706d5f;
+      display: block;
+      font-size: 12px;
+      font-weight: bold;
+      height: 20px;
+      line-height: 14px;
+      padding-left: 26px;
+    }
+  .social-connect-mobile .cwu-facebook a {
+    background-position: 0 0;
+  }
+  .social-connect-mobile .cwu-twitter a {
+    background-position: 0 -27px;
+  }
+  .social-connect-mobile .cwu-instagram a {
+    background-position: 0 -54px;
+  }
+  .social-connect-mobile .cwu-youtube a {
+    background-position: 0 -83px;
+  }
+  .social-connect-mobile .cwu-flickr a {
+    background-position: 0 -112px;
+  }
+  .social-connect-mobile .cwu-tumblr a {
+    background-position: 0 -140px;
+  }
+  .social-connect-mobile .cwu-foursquare a {
+    background-position: 0 -170px;
+  }
+  .social-connect-mobile .cwu-pinterest a {
+    background-position: 0 -200px;
+  }
+  .social-connect-mobile .cwu-more a {
+    background-position: 0 -230px;
+  }
+.park-tools-mobile {
+  float: left;
+}
+  .park-tools-mobile ul {
+    border-bottom: none;
+    margin-bottom: 0;
+    margin-right: 40px;
+    padding: 5px 10px 10px 0;
+  }
+  .park-tools-mobile li { 
+    background: url(http://www.nps.gov/common/commonspot/templates/images/bg/park-tools.png) no-repeat;
+    border: none;
+    padding: 2px 0 4px 30px;
+  }
+  .park-tools-mobile li:first-child {
+    border-bottom: 1px solid #e4e3df;
+    margin-bottom: 8px;
+    padding-bottom: 10px;
+    padding-top: 0;
+  }
+    .park-tools-mobile li a {
+      color: #706d5f;
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: bold;
+      padding: 0;
+      height: 20px;
+      display: block;
+    }
+  .park-tools-mobile .timeline {
+    background-position: 0 0;
+  }
+  .park-tools-mobile .faqs {
+    background-position: 2px -31px;
+  }
+  .park-tools-mobile .context {
+    background-position: 2px -51px;
+  }
+  .park-tools-mobile .index {
+    background-position: 2px -71px;
+  }
+  .park-tools-mobile .spanish {
+    background-position: 2px -92px;
+  }
+  .subject-tools-mobile {
+      float:left;
+  }
+    .subject-tools-mobile ul {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding: 5px 10px 10px 0;
+    }
+    .subject-tools-mobile li {
+      background: none;
+      border: none;
+      padding: 2px 0 4px 30px;
+    }
+    .subject-tools-mobile li a {
+      color: #706d5f;
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: bold;
+      padding:0;
+      height: 20px;
+      display: block;
+    }
+    .subject-tools-mobile .calendar {
+      background: url(http://www.nps.gov/common/commonspot/templates/images/icons/icon_calendar.gif) 7px 4px no-repeat
+    }
+    .subject-tools-mobile .faqs {
+      background: url(http://www.nps.gov/common/commonspot/templates/images/bg/faqs.png) 7px 4px no-repeat
+    }
+    .subject-tools-mobile .index {
+      background: url(http://www.nps.gov/common/commonspot/templates/images/icons/icon_teachers.jpg) 7px 4px no-repeat
+    }
+    .subject-tools-mobile  .contact {
+      background: url(http://www.nps.gov/common/commonspot/templates/images/icons/icon_contact.gif) 7px 4px no-repeat
+    }
+.small-tools-ad {
+  margin: 20px 0 0 0;
+  padding: 2px;
+  border: 1px solid #959284;
+  background: white;
+}
+#modal-park-map iframe {
+  height: 100%;
+  width: 100%;
+}

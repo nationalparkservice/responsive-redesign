@@ -2,13 +2,13 @@
 layout: park-primary
 ---
 
-<a class="btn btn-large btn-primary" data-toggle="modal" href="#modal-intercept" role="button">Launch Modal</a>
-<div class="modal" id="modal-intercept">
+<a class="btn btn-large btn-primary" data-toggle="modal" href="#modal-intercept" role="button">View Map</a>
+<div aria-labeledby="modal-intercept-label" class="modal" id="modal-intercept" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
-        <h4 class="modal-title">You are exiting the<br>National Park Service website.</h4>
+        <h4 class="modal-title" id="modal-intercept-label">You are exiting the<br>National Park Service website.</h4>
       </div>
       <div class="modal-body">
         <h3>Thank you for visiting our site.</h3>

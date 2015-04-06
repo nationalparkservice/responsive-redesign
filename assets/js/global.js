@@ -704,6 +704,22 @@ NPS.lightbox = {
     }
   }
 };
+NPS.modals = {
+  init: function() {
+    if ($('#modal-park-map')) {
+      var $body = $('#modal-park-map .modal-body');
+
+      function setHeight() {
+        $body.css({
+          height: $(window).height() - 85
+        });
+      }
+
+      $(window).resize(setHeight);
+      setHeight();
+    }
+  }
+};
 NPS.newContent = {
   addPrintLink: function() {
     jQuery('.addthis_toolbox')
@@ -1157,11 +1173,12 @@ jQuery(document).ready(function() {
   NPS.lightbox.lightbox();
   NPS.lightbox.rateBtn();
   NPS.lightbox.eventDetails();
+  NPS.modals.init();
   NPS.gallery.tooltip();
   NPS.gallery.photoGallery();
   NPS.starRating.starRatings();
   NPS.slick.setup();
-  
+
   if (jQuery('#slidebox').length) {
     jQuery('#slidebox').slidebox();
   }

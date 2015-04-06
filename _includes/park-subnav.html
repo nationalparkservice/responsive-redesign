@@ -1,3 +1,9 @@
+<!-- xxxxxxxxxxx NEW CODE FOR CMS ADMINS xxxxxxxxx -->
+<div class="admin-buttons">
+  <a class="logout" href="logout.cfm">CMS Logout</a>
+  <a class="siteadmin" href="/siteadmin/index.htm">Site Admin</a>
+</div>
+<!-- xxxxxxxxxxx END CODE FOR CMS ADMINS xxxxxxxxx -->
 <div class="col-md-3 hidden-sm hidden-xs sub-nav-containerWidth">
   <div id="sub-nav">
     <div id="npsNav">
@@ -42,7 +48,7 @@
       <h2>Park Tools</h2>
       <ul>
         <li class="map">
-          <a class="colorbox-iframe-map" href="/common/commonspot/customcf/apps/maps/showmap.cfm?alphacode=yose&parkname=Yosemite" name="Yosemite Map">View Park Map</a>
+          <a data-toggle="modal" href="#modal-park-map" name="Map of Yosemite National Park">View Park Map</a>
         </li>
         <li class="faqs">
           <a href="/yose/faqs.htm"><abbr title="Frequently Asked Questions">FAQs</abbr></a>
@@ -74,6 +80,19 @@
           <a href="http://www.nps.gov/yose/parknews/socialmedia.htm">More</a>
         </li>
       </ul>
+    </div>
+  </div>
+</div>
+<div aria-labeledby="modal-park-map-label" class="modal" id="modal-park-map" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+        <h4 class="sr-only" id="modal-park-map-label">Map of Yellowstone National Park</h4>
+      </div>
+      <div class="modal-body">
+        <iframe frameborder="0" src="http://www.nps.gov/common/commonspot/customcf/apps/maps/showmap.cfm?alphacode=yose&parkname=Yosemite"></iframe>
+      </div>
     </div>
   </div>
 </div>

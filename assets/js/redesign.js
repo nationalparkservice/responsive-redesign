@@ -1,4 +1,3 @@
-/* THREESPOT */
 $(document).ready(function() {
 
   // BAR 
