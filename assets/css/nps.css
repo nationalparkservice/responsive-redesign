@@ -153,7 +153,7 @@ h6 {
     font-size: 16px;
     line-height: 24px;
   }
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   .landing-intro {
     margin-bottom: 40px
   }
@@ -862,12 +862,12 @@ a.back:before {
   #mobile-alerts li {
     list-style-type: none;
   }
-  #mobile-alerts p {
-    margin-bottom: 0;
-  }
-  .mobile-alerts h4 {
-    line-height: 1.1;
-  }
+#mobile-alerts p {
+  margin-bottom: 0;
+}
+#mobile-alerts h4 {
+  line-height: 1.1;
+}
 /* ===[ Carousel ]===
    ================================================== */
 .carouselRow {
@@ -2482,6 +2482,14 @@ margin: 0 0 0 1.5em;
   border: 1px solid #959284;
   background: white;
 }
+/* Modal overrides */
+.modal.in {
+  padding-right: 0 !important;
+}
+.modal-open {
+  padding-right: 0 !important;
+}
+/* Modal park map */
 #modal-park-map iframe {
   height: 100%;
   width: 100%;

@@ -707,16 +707,23 @@ NPS.lightbox = {
 NPS.modals = {
   init: function() {
     if ($('#modal-park-map')) {
-      var $body = $('#modal-park-map .modal-body');
+      var $body = $('#modal-park-map .modal-body'),
+        iframe = document.getElementById('modal-park-map-iframe');
 
       function setHeight() {
         $body.css({
           height: $(window).height() - 85
         });
+
+        /*
+        try {
+          iframe.contentWindow.NPMap.config.L.invalidateSize();
+        } catch(e) {}
+        */
       }
 
       $(window).resize(setHeight);
-      setHeight();
+      $('#modal-park-map').on('shown.bs.modal', setHeight);
     }
   }
 };
