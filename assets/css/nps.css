@@ -382,7 +382,7 @@ a.back:before {
     z-index: 10;
 }
 #search-results-container .top {
-  background: url("/common/commonspot/templates/images/chrome/bg//results-top.png") no-repeat scroll left top transparent;
+  background: url("/common/commonspot/templates/images/chrome/bg/results-top.png") no-repeat scroll left top transparent;
   height: 18px;
 }
 #search-results-container .bottom {
