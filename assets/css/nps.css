@@ -2295,7 +2295,6 @@ margin: 0 0 0 1.5em;
     top:-40px;
     margin-left: 20px;
 }
-
 @media (max-width: 991px) {
   .admin-buttons {
     display: none;
@@ -2404,9 +2403,8 @@ margin: 0 0 0 1.5em;
 }
   .park-tools-mobile ul {
     border-bottom: none;
-    margin-bottom: 0;
-    margin-right: 40px;
-    padding: 5px 10px 10px 0;
+    margin: 0;
+    padding: 5px 0 10px 0;
   }
   .park-tools-mobile li { 
     background: url(http://www.nps.gov/common/commonspot/templates/images/bg/park-tools.png) no-repeat;
@@ -2414,10 +2412,7 @@ margin: 0 0 0 1.5em;
     padding: 2px 0 4px 30px;
   }
   .park-tools-mobile li:first-child {
-    border-bottom: 1px solid #e4e3df;
-    margin-bottom: 8px;
-    padding-bottom: 10px;
-    padding-top: 0;
+    margin-bottom: 10px;
   }
     .park-tools-mobile li a {
       color: #706d5f;
@@ -2427,6 +2422,17 @@ margin: 0 0 0 1.5em;
       padding: 0;
       height: 20px;
       display: block;
+    }
+    .park-tools-mobile li:first-child a {
+      margin-top: -3px;
+    }
+    @media (min-width: 768px) {
+      .park-tools-mobile li:first-child {
+        margin-bottom: 3px;
+      }
+        .park-tools-mobile li:first-child a {
+          margin-top: 3px;
+        }
     }
   .park-tools-mobile .timeline {
     background-position: 0 0;
