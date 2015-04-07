@@ -706,13 +706,13 @@ NPS.lightbox = {
 };
 NPS.modals = {
   init: function() {
-    if ($('#modal-park-map')) {
-      var $body = $('#modal-park-map .modal-body'),
+    if (jQuery('#modal-park-map')) {
+      var $body = jQuery('#modal-park-map .modal-body'),
         iframe = document.getElementById('modal-park-map-iframe');
 
       function setHeight() {
         $body.css({
-          height: $(window).height() - 85
+          height: jQuery(window).height() - 85
         });
 
         /*
@@ -722,8 +722,8 @@ NPS.modals = {
         */
       }
 
-      $(window).resize(setHeight);
-      $('#modal-park-map').on('shown.bs.modal', setHeight);
+      jQuery(window).resize(setHeight);
+      jQuery('#modal-park-map').on('shown.bs.modal', setHeight);
     }
   }
 };
