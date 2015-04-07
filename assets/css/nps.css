@@ -370,6 +370,51 @@ a.back:before {
   position: absolute;
   top: 36px;
 }
+
+/* ===[ DESKTOP AUTOCOMPLETE SEARCH RESULTS ]===
+   ================================================== */
+#search-results-container {
+  display: none;
+    position: absolute;
+    right: -7px;
+    top: 22px;
+    width: 190px;
+    z-index: 10;
+}
+#search-results-container .top {
+  background: url("/common/commonspot/templates/images/chrome/bg//results-top.png") no-repeat scroll left top transparent;
+  height: 18px;
+}
+#search-results-container .bottom {
+  background: url("/common/commonspot/templates/images/chrome/bg/results-bottom.png") no-repeat scroll left top transparent;
+  height: 18px;
+}
+#search-results-container #search-results {
+  background: url("/common/commonspot/templates/images/chrome/bg/results.png") repeat-y scroll left top transparent;
+}
+#search-results {
+  font-size: 11px;
+  word-wrap: break-word;
+  padding: 0px 24px;
+}
+#search-results p {
+  color: #9e9e9e;
+}
+#search-results ul {
+  padding-top: 7px;
+}
+#search-results li {
+  padding-bottom: 7px;
+}
+#search-results a {
+  color: #363636;
+}
+#search-results #suggestions ul {
+  border-bottom: 1px solid #D5D5D5;
+    margin-bottom: 6px;
+    padding-bottom: 4px;
+}
+
 /* ===[ Nav Bar ]===
    ================================================== */
 .navbar {
