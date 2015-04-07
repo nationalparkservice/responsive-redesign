@@ -705,25 +705,33 @@ NPS.lightbox = {
   }
 };
 NPS.modals = {
+  _setModalParkMapHeight: function($body) {
+    $body.css({
+      height: $(window).height() - 85
+    });
+  },
   init: function() {
+    var me = this;
+
     if ($('#modal-park-map')) {
       var $body = $('#modal-park-map .modal-body'),
-        iframe = document.getElementById('modal-park-map-iframe');
+        $iframe = $('#modal-park-map-iframe'),
+        loaded = false;
 
-      function setHeight() {
-        $body.css({
-          height: $(window).height() - 85
-        });
+      $('#modal-park-map').modal({
+        show: false
+      });
+      $(window).resize(function() {
+        me._setModalParkMapHeight($body);
+      });
+      $('#modal-park-map').on('show.bs.modal shown.bs.modal', function() {
+        if (!loaded) {
+          $iframe.attr('src', $iframe.attr('data-src'));
+          loaded = true;
+        }
 
-        /*
-        try {
-          iframe.contentWindow.NPMap.config.L.invalidateSize();
-        } catch(e) {}
-        */
-      }
-
-      $(window).resize(setHeight);
-      $('#modal-park-map').on('shown.bs.modal', setHeight);
+        me._setModalParkMapHeight($body);
+      });
     }
   }
 };
