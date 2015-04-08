@@ -297,8 +297,10 @@ a.back:before {
 }
 .utilsWrapper {
   background-color: #f9f7f1;
+  /*
   border-left: 1px solid #dfdbca;
   border-right: 1px solid #dfdbca;
+  */
   height: 42px;
   margin: 0;
   padding: 0;
