@@ -798,7 +798,8 @@ NPS.slick = {
     if (jQuery('.responsive').length) {
       jQuery('.responsive').slick({
         dots: true,
-        draggable: false,
+        draggable: true,
+        swipe:true,
         infinite: false,
         speed: 300,
         slidesToShow: 3,
