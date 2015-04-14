@@ -327,11 +327,14 @@
     text-decoration: underline;
   }
 
-/* this overrides a style that is used in faders on pages other than the homepage */
+/* this overrides basic fader styles but leaves them intact on pages other than the homepage */
 @media screen and (max-width: 768px) { 
   .fader .slick-dots {
-    margin: 0;
     padding-bottom: 20px;
-    background-color: black;
   }
+}
+@media screen and (max-width: 768px) {
+    .fader {
+        background-color: black
+    }
 }
