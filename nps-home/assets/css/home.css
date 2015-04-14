@@ -117,6 +117,13 @@
   .news-events-ad .col-md-4:last-child {
     margin-top: 20px;
   }
+@media (max-width:600px) {
+    .items {
+        clear: both;
+        width:100%
+    }
+}
+    
 .items h2 {
   border-bottom: 1px solid #ccc;
   border-top: 2px solid #d1b366;
@@ -177,6 +184,11 @@
     float: left;
     margin-left: 35px;
   }
+}
+@media (max-width:600px) {
+    .home-ad-space {
+        margin-bottom: 20px;
+    }
 }
 .home-multimedia {
   margin-top: 5px;
@@ -246,6 +258,13 @@
 .home-multimedia-feature {
   margin-top: 16px;
   padding-left: 20px;
+}
+@media (max-width: 500px) {
+    .home-multimedia-feature {
+        clear:both;
+        width:100%;
+        margin-bottom: 20px;
+    }
 }
   .home-multimedia-feature h3 {
     color: #707070;
