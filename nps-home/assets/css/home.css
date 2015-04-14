@@ -117,12 +117,13 @@
   .home-tools .support {
       margin-right: 25px;
       margin-bottom: 20px;
-      border:none;
   }
 }
-@media (min-width: 768px) and (max-width: 990px) {
-  .home-tools .pass {
-    padding-top: 15px;
+@media (max-width: 767px) {
+  .home-tools .support {
+      margin-right: 25px;
+      margin-bottom: 20px;
+      border:none;
   }
 }
 .news-events-ad {
