@@ -304,3 +304,12 @@
   .home-multimedia-feature a.visit:hover {
     text-decoration: underline;
   }
+
+/* this overrides a style that is used in faders on pages other than the homepage */
+@media screen and (max-width: 768px) { 
+  .fader .slick-dots {
+    margin: 0;
+    padding-bottom: 20px;
+    background-color: black;
+  }
+}
