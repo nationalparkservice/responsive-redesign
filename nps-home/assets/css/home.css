@@ -59,15 +59,30 @@
 .home-tools label {
   display: block;
 }
-.home-tools .find-a-park,
-.home-tools .pass,
-.home-tools .support {
+@media (max-width: 991px) {
+    .home-tools .find-a-park,
+    .home-tools .pass,
+    .home-tools .support {
+        float:left;
+        padding-bottom:20px;
+    }
+}
+@media (min-width: 768px) {
+    .home-tools .find-a-park,
+    .home-tools .pass,
+    .home-tools .support {
   width: 100%;
+    }
 }
 @media (min-width: 768px) and (max-width: 990px) {
   .home-tools .find-a-park {
     border-bottom: 1px solid #ba8d1a;
     padding-bottom: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .home-tools .find-a-park {
+      margin-right: 20px;
   }
 }
 .home-tools .find-a-park form select {
@@ -95,8 +110,14 @@
 }
 @media (min-width: 991px) {
   .home-tools .support {
-    border-top: 1px solid #ba8d1a;
     margin: 50px 0 15px 0;
+  }
+}
+@media (max-width: 991px) {
+  .home-tools .support {
+      margin-right: 25px;
+      margin-bottom: 20px;
+      border:none;
   }
 }
 @media (min-width: 768px) and (max-width: 990px) {
