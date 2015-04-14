@@ -126,6 +126,11 @@
       border:none;
   }
 }
+@media (max-width: 500px) {
+  .home-tools .pass {
+      clear:both;
+  }
+}
 .news-events-ad {
   margin-top: 25px;
   padding: 0 25px;
