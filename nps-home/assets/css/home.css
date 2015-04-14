@@ -43,7 +43,7 @@
 }
 @media (min-width: 991px) {
   .home-tools {
-    background: #916800 url(http://www.nps.gov/common/commonspot/templates/images/bg/tools02b_dark.gif) 0 -97px no-repeat;
+    background: #916800 url(../../assets/img/tools02b_dark.png) 0 -97px no-repeat;
     height: 336px;
   }
 }
@@ -96,7 +96,7 @@
 @media (min-width: 991px) {
   .home-tools .support {
     border-top: 1px solid #ba8d1a;
-    margin: 70px 0 15px 0;
+    margin: 50px 0 15px 0;
   }
 }
 @media (min-width: 768px) and (max-width: 990px) {
@@ -185,7 +185,7 @@
     margin-left: 35px;
   }
 }
-@media (max-width:600px) {
+@media (max-width:767px) {
     .home-ad-space {
         margin-bottom: 20px;
     }
