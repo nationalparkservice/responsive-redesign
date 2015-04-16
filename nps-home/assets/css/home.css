@@ -178,7 +178,6 @@
       text-decoration: underline;
     }
 .items ul {
-  border-bottom: 1px solid #ccc;
   margin-bottom: 20px;
   padding: 0 0 10px 0;
 }
@@ -215,12 +214,17 @@
 @media (max-width:767px) {
     .home-ad-space {
         margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+        text-align: center;
+        display: table;
     }
 }
 .home-multimedia {
-  margin-top: 5px;
-  padding-bottom: 50px;
+    margin-top: 5px;
+    /* padding-bottom: 50px; */
 }
+/*
 @media (min-width: 992px) {
   .home-multimedia {
     background: url(http://www.nps.gov/pwr/templates/images/bg/multimedia_shadow.gif);
@@ -229,6 +233,7 @@
     background-size: 910px 21px;
   }
 }
+*/
 .home-multimedia-title {
   background-color: #f5f5f5;
   border-bottom: 1px solid #acacac;
@@ -335,11 +340,17 @@
 /* this overrides basic fader styles but leaves them intact on pages other than the homepage */
 @media screen and (max-width: 768px) { 
   .fader .slick-dots {
-    padding-bottom: 20px;
+      padding-bottom: 20px;
+      margin-top:0;
+      margin-bottom:0;
   }
 }
 @media screen and (max-width: 768px) {
     .fader {
         background-color: black
     }
+}
+
+.photo-multi h2 {
+  margin: 0 25px 18px 25px;
 }
