@@ -59,6 +59,13 @@
 .home-tools label {
   display: block;
 }
+
+.home-tools .find-a-park a,
+.home-tools .pass a,
+.home-tools .support a:hover {
+    color: white;
+    
+}
 @media (max-width: 991px) {
     .home-tools .find-a-park,
     .home-tools .pass,
@@ -72,6 +79,12 @@
     .home-tools .pass,
     .home-tools .support {
   width: 100%;
+    }
+}
+@media (max-width: 493px) {
+    .home-tools .find-a-park,
+    .home-tools .support {
+        margin-bottom: 10px;
     }
 }
 @media (min-width: 768px) and (max-width: 990px) {
@@ -125,9 +138,37 @@
       border:none;
   }
 }
+@media (max-width: 767px) {
+  .home-tools .support {
+      padding-top: 0;
+      margin-bottom:0;
+  }
+}
+@media (max-width: 767px) {
+  .home-tools .find-a-park {
+      margin-right: 40px;
+  }
+}
+@media (max-width: 767px) and (min-width: 600px) {
+  .home-tools .support {
+      margin-right: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .home-tools .support p {
+      padding: 10px 0 0 0;
+      color: white;
+  }
+}
 @media (max-width: 500px) {
   .home-tools .pass {
       clear:both;
+  }
+}
+@media (max-width: 767px) {
+  .home-tools .pass p {
+      padding: 10px 0 0 0;
+      color: white;
   }
 }
 .news-events-ad {
