@@ -1,0 +1,7 @@
+.form-group .required:after {
+    content:"*";color:red;
+}
+form {
+    clear: both;
+    margin-bottom: 50px;
+}
