@@ -32,7 +32,23 @@
 .slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before { opacity: 1; }
 .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before { opacity: 0.00; }
 
+    /*added by Matt*/
+    @media (max-width: 991px) {
+        .slick-prev, .slick-next {
+            height: 40px;
+            width: 40px;
+        }
+    }
+
+
 .slick-prev:before, .slick-next:before { font-family: "slick"; font-size: 20px; line-height: 1; color: #5e7630; opacity: 0.75; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+    /*added by Matt*/
+    @media (max-width: 991px) {
+        .slick-prev:before, .slick-next:before {
+            font-size: 40px;
+        }
+    }
 
 .slick-prev { left: -25px; }
 .slick-prev:before { content: "\2190"; }
