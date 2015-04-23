@@ -1,0 +1,5 @@
+.form-group .required:after {
+    content:"*";color:red;
+}
+
+
