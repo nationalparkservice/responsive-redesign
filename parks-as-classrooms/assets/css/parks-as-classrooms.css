@@ -1,0 +1,20 @@
+
+/* Landing Promo List */
+
+
+.classroom-item {
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+    .classroom-item.last {
+        border:none;
+        padding-bottom: 0
+    }
+.classroom-item H2 {
+    margin-top:0;
+}
+.classroom-item H3 {
+    font-size: 14px;
+    margin-top: 10px
+}
