@@ -14,6 +14,10 @@
 .classroom-item H2 {
     margin-top:0;
 }
+H2 a  {
+    color: #657547;
+    text-decoration: none!important;
+}
 .classroom-item H3 {
     font-size: 14px;
     margin-top: 10px
