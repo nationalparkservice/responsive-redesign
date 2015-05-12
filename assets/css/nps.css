@@ -2458,7 +2458,8 @@ margin: 0 0 0 1.5em;
   .park-tools-mobile li { 
     background: url(http://www.nps.gov/common/commonspot/templates/images/bg/park-tools.png) no-repeat;
     border: none;
-    height: 26px;
+    display: block;
+    /*height: 26px;*/
     margin-bottom: 5px;
     padding: 0 0 0 30px;
   }
@@ -2501,7 +2502,7 @@ margin: 0 0 0 1.5em;
     background-position: 2px -92px;
   }
   .subject-tools-mobile {
-    float:left;
+    float: left;
   }
     .subject-tools-mobile ul {
       border-bottom: none;
