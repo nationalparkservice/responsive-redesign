@@ -2477,6 +2477,9 @@ margin: 0 0 0 1.5em;
       margin-top: -3px;
     }
     @media (min-width: 768px) {
+      .park-tools-mobile li {
+        padding-top: 5px;
+      }
       .park-tools-mobile li:first-child {
         margin-bottom: 3px;
       }
