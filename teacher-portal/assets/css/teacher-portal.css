@@ -2,10 +2,31 @@
 
 /* Matt's new styles */
 
+
 .portal-header {
     width: 100%;
     height: 400px;
     background: url(http://www.nps.gov/common/commonspot/templates/images/education/header-img-canyon-2.jpg) no-repeat left top;
+}
+.portal-header-content {
+    margin-top: 50px;
+}
+.portal-header-content .input-lg {
+    font-size: 14px;
+}
+label {
+    color: white;
+}
+.portal-search-btn {
+    background-color: #628237;
+    margin-top:24px;
+    border:none;
+}
+.portal-search-btn i {
+    font-size: 18px;
+}
+.portal-search-btn a:hover {
+    text-decoration:none;
 }
 
 
