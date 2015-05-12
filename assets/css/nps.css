@@ -935,6 +935,10 @@ a.back:before {
       margin: 0;
       padding: 10px 0 10px 17px;
     }
+.slider .slick-dots {
+  bottom: -60px;
+  margin-left: 0;
+}
 .slick-slide {
   margin: 30px 40px 0 40px
 }
@@ -1535,6 +1539,7 @@ a.back:before {
           line-height: 14px;
           font-weight: bold;
           padding-left: 26px;
+          padding-top: 3px;
           height: 20px;
           display: block;
         }
