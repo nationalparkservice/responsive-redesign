@@ -1,21 +1,42 @@
 /* CSS Document */
 
-/* Matt's new styles */
 
+
+
+@media (min-width: 992px) { 
+  .content-container-teacher {
+    border: 1px solid #dfdbca;
+      border-top:none;
+    margin: 0 0 0 0;
+    padding: 30px 24px;
+    background-color: white;
+  }
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
 
 .portal-header {
     width: 100%;
     height: 400px;
     background: url(http://www.nps.gov/common/commonspot/templates/images/education/header-img-canyon-2.jpg) no-repeat left top;
 }
+    @media (max-width: 767px) {
+       .portal-header {
+            width: 100%;
+            height: auto;
+            background: none;
+        }
+    }
 .portal-header-content {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 .portal-header-content .input-lg {
     font-size: 14px;
-}
-label {
-    color: white;
 }
 .portal-search-btn {
     background-color: #628237;
@@ -29,169 +50,52 @@ label {
     text-decoration:none;
 }
 
-
-
-
-
-
-
-
-
-
-
-/*==========CONTENT HEADER IMAGE==========*/
-
-
-.portal-header-content {
-  top: 50px;
-}
-
-.portal-header-content h1, .portal-header-content p {
+.portal-header-content h1, .portal-header-content p, .portal-header-content label {
  color: #ffffff;
 }
-
+    @media (max-width: 767px) {
+       .portal-header-content h1, .portal-header-content p, .portal-header-content label {
+         color: #000000;
+        }
+    }
 .portal-header-content h1 {
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 25px;
 }
-
 .portal-header-content p {
   font-size: 26px;
+    margin-bottom: 40px;
 }
 
-/* Search Form */
-.page-header-form {
-}
 
-.page-header-form .portal-search {
-	width: 560px; 
-	height: 40px;
-	padding-left: 10px;
+.feature-item-area {
+    margin-top: 40px;
 }
-
-input[type="text"].ui-widget-header {
-	color: #989898;
-	border-color: #989898;
-	background-color: #ffffff;
-	background-image: none;
+.feature-item {
 }
-input[type="text"].ui-widget-content {
-	background-image: none;
-	border-color: transparent;
+.feature-item H3 a {
+    color:#333333;
+    text-decoration: none !important;
 }
-
-span.selections {
-  display: block;
-  color: #ffffff;
-  margin-top: 10px;
-  width: 610px;
-}
-
-span.selections select {
-	margin-left: 10px;
-	max-width: 200px;
-	height: 30px;
-	color: #989898;
-}
-/* End Search Form */
-
-#main-container.portal-page #content-container {
-  margin-top: -5px;
-}
-
-#main-container.portal-page #content-container #content {
-	background-image: none;
-	background-color: #ffffff;
-	-moz-box-shadow: 0 3px 2px 3px #eeece7;
-    -webkit-box-shadow: 0 3px 2px 3px #eeece7;
-    box-shadow: 0 3px 2px 3px #eeece7;
-	padding: 20px 0 0;
-    width: 930px;
-	margin: 0 auto 0 2px;
-}
-
-#main-container.portal-page #content-top {
-	display: none;
-}
-
-#main-container.portal-page #main-bottom.chrome-center {
-	padding: 0px;
-	margin-left: -4px;
-	width: 964px;	
-}
-
-.portal-content-wrapper.features {
-  background: #f7f9f1;
-}
-
-.portal-content {
-  margin: 0 auto;
-  max-width: 700px;
-  padding: 50px 0;
-}
-
-.features .portal-content {
-	padding-top: 45px;
-}
-
-.right-arrow:after {
-	content: "\203A"; /*&rasquo; (right-arrow) */
-    font-weight: normal;
-    padding-left: 5px;
-}
-
-h3 a.right-arrow:after {
-	font-size: 20px;
-}
-
-.portal-page h3 a {
-  color: #333333;
-  text-decoration: none !important;
-}
-
-.portal-content .feature-item {
-    float: left;
-    max-width: 340px;
-}
-
-.feature-item p, .feature-item-three  p {
-  line-height: 1.2;
-  font-size: 13px;
-  margin-right: 5px;
-}
-
-.portal-content .feature-item:first-child {
-    margin-right: 20px;
+@media (max-width:767px) {
+    .feature-item {
+        margin-bottom: 40px;
+    }
 }
 
 .feature-item-small {
-  list-style: none !important;
-   margin: 20px 0 0 0 !important;
-}
 
-.feature-item-small li {
-  display: inline-block;
-  margin-left: 15px;
-  max-width: 160px;
-  position: relative;
 }
-
-.feature-item-small > li:first-child {
-  margin: 0;
+@media (max-width:767px) {
+    .feature-item-small {
+        max-width:200px;
+    }
 }
-
-.feature-item-small a {
-  display: inline-block;
-  margin:0;
-  padding:0;
-  text-decoration: none !important;
-}
-
-.feature-item-small a img {
-  display: block;
-  margin-bottom: 0;
-  width: 100%
+@media (max-width:991px) {
+    .feature-item-small {
+        margin-bottom:20px;
+    }
 }
 
 .feature-item-small a span {
@@ -205,39 +109,20 @@ h3 a.right-arrow:after {
   text-decoration: none !important;
 }
 
-.portal-content h2 {
-	color: #333333;
+.right-arrow:after {
+	content: "\203A"; /*&rasquo; (right-arrow) */
+    font-weight: normal;
+    padding-left: 5px;
 }
 
-.features-row .feature-item-three {
-  float: left;
-  margin-left: 10px;
-  width: 32.3%;
-  height: 300px;  
+h3 a.right-arrow:after {
+	font-size: 20px;
 }
 
-.features-row .feature-item-three:first-child {
-	margin-left: 0;
-}
 
-/*More Buttons*/
-.button {
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	clear: both;
-	display: inline-block;
-	float: right;
-	margin: 0;
-}
 
-.button.green {
-	background: #628237;
-}
 
-.button a {
-	color: #ffffff;
-	display: block;
-	padding: 8px 20px;
-	text-decoration: none !important;
-}
+
+
+
+
