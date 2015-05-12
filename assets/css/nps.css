@@ -2478,14 +2478,11 @@ margin: 0 0 0 1.5em;
     }
     @media (min-width: 768px) {
       .park-tools-mobile li {
-        padding-top: 5px;
+        margin-top: 3px;
       }
       .park-tools-mobile li:first-child {
-        margin-bottom: 3px;
+        margin-top: 0;
       }
-        .park-tools-mobile li:first-child a {
-          margin-top: 3px;
-        }
     }
   .park-tools-mobile .timeline {
     background-position: 0 0;
