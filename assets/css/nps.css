@@ -2401,12 +2401,13 @@ margin: 0 0 0 1.5em;
   .social-connect-mobile ul {
     border-bottom: none;
     margin: 0 40px 0 0;
-    padding: 0;
+    padding: 5px 0 10px 0;
   }
     .social-connect-mobile li {
+      border: none;
+      height: 30px;
       list-style: none;
       padding: 4px 0 3px;
-      border: none;
     }
     .social-connect-mobile li a {
       background: url(http://www.nps.gov/common/commonspot/templates/images/icons/nps_social_badges_2015_color.png) no-repeat;
@@ -2417,6 +2418,7 @@ margin: 0 0 0 1.5em;
       height: 20px;
       line-height: 14px;
       padding-left: 26px;
+      padding-top: 3px;
     }
   .social-connect-mobile .cwu-facebook a {
     background-position: 0 0;
@@ -2456,7 +2458,8 @@ margin: 0 0 0 1.5em;
   .park-tools-mobile li { 
     background: url(http://www.nps.gov/common/commonspot/templates/images/bg/park-tools.png) no-repeat;
     border: none;
-    padding: 2px 0 4px 30px;
+    height: 26px;
+    padding: 0 0 0 30px;
   }
   .park-tools-mobile li:first-child {
     margin-bottom: 10px;
@@ -2466,7 +2469,7 @@ margin: 0 0 0 1.5em;
       font-size: 12px;
       line-height: 14px;
       font-weight: bold;
-      padding: 0;
+      padding: 3px 0 0 0;
       height: 20px;
       display: block;
     }
