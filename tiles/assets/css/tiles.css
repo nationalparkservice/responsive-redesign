@@ -39,7 +39,7 @@
   position: absolute;
   width: 288px;
 }
-@media (max-width:767px) {
+@media (max-width:360px) {
     .tiles .title {
         width: 258px;
     }
