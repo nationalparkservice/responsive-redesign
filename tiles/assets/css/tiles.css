@@ -69,6 +69,7 @@
 @media (max-width:767px) {
     .tiles .show-info {
         width: 100%;
+        max-width:336px;
     }
 }
 
