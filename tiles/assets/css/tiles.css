@@ -23,7 +23,7 @@
 }
 @media (max-width:767px) {
     .tiles li {
-      width: 326px;
+      width: 316px;
     }
 }
     
@@ -36,7 +36,7 @@
   margin: 13px 11px;
   padding: 8px 13px;
   position: absolute;
-  width: 278px;
+  width: 288px;
 }
 .tiles .title h3 {
   color: #ffffff;
@@ -62,7 +62,7 @@
 }
 @media (max-width:767px) {
     .tiles .show-info {
-      width: 326px;
+      width: 316px;
     }
 }
 
