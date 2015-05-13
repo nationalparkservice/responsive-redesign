@@ -1,5 +1,10 @@
+.subjectSiteContent {
+    margin-left: 10px;
+}
+
+
 .tiles {
-  margin: 0 0 0 10px;
+  margin: 0 0 0 0 !important;
   padding: 0;
 }
 @media (min-width: 992px) {
@@ -38,8 +43,7 @@
 }
 .tiles img {
   display: block;
-  height: 262px;
-  width: 336px;
+  width: 100%;
 }
 .tiles .show-info {
   background: url("http://www.nps.gov/common/commonspot/templates/images/bg/tile-info.jpg") repeat scroll 0 0 transparent;
@@ -77,5 +81,4 @@
   color: #5e7630;
   font-size: 24px;
   font-weight: bold;
-  margin: 20px;
 }
