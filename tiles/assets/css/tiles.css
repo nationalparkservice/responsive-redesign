@@ -42,7 +42,6 @@
 @media (max-width:360px) {
     .tiles .title {
         width: 258px;
-    background-size: 100% auto;
     }
 }
 .tiles .title h3 {
@@ -70,6 +69,7 @@
 @media (max-width:767px) {
     .tiles .show-info {
         width: 100%;
+        background-size: 100% 100%;
     }
 }
 
