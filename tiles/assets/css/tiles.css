@@ -23,7 +23,7 @@
 }
 @media (max-width:767px) {
     .tiles li {
-      width: 316px;
+      width: 306px;
     }
 }
     
@@ -62,7 +62,7 @@
 }
 @media (max-width:767px) {
     .tiles .show-info {
-      width: 316px;
+      width: 306px;
     }
 }
 
