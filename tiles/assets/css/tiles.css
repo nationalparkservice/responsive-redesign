@@ -21,13 +21,22 @@
   position: relative;
   width: 336px;
 }
+@media (max-width:767px) {
+    .tiles li {
+      width: 326px;
+    }
+}
+    
+    
+    
+    
 .tiles .title {
   background: url("http://www.nps.gov/common/commonspot/templates/images/bg/transparent-70.png") repeat scroll 0 0 transparent;
   bottom: 0;
   margin: 13px 11px;
   padding: 8px 13px;
   position: absolute;
-  width: 288px;
+  width: 278px;
 }
 .tiles .title h3 {
   color: #ffffff;
@@ -51,6 +60,14 @@
   padding: 32px 28px;
   width: 336px;
 }
+@media (max-width:767px) {
+    .tiles .show-info {
+      width: 326px;
+    }
+}
+
+
+
 .tiles .show-info .title {
   background: none;
   bottom: auto;
