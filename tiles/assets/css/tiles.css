@@ -39,6 +39,11 @@
   position: absolute;
   width: 288px;
 }
+@media (max-width:767px) {
+    .tiles .title {
+        width: 268px;
+    }
+}
 .tiles .title h3 {
   color: #ffffff;
   font-size: 24px;
